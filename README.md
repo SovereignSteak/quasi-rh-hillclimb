@@ -1,4 +1,4 @@
-# Quasi-RH: pushing the zero-free half-plane slightly past 7/8
+# Quasi-RH: proof progress, contributors and zero-free boundaries
 
 > **We're now sponsored by Agent37, so the first 100 contributors get Agent37 sandboxes for free to run experiments!** To qualify, submit a PR using our [auto-research.md](auto-research.md) and include your contact email in the PR description to redeem the offer. See [Sponsors](#sponsors).
 
@@ -15,9 +15,72 @@ The 5 October 2026 companion preprint in the same repository proves 11/12 only, 
 > python auto-research/whatif.py --alpha 0.75   # Track B: what would a better input buy?
 > ```
 
-![The improvement past 7/8](graphs/improvement.png)
+## Progress and Lean verification
 
-## Claim (conditional, see Status)
+**Strongest endpoint independently checked here: θ = 8747729897/10000000000 = 0.8747729897**, contributed by **Hailey Collet in [PR #8](https://github.com/rohanarun/quasi-rh-hillclimb/pull/8)**. On 22 October 2026, an independent native Lean 4.34.1 run rebuilt all **6,471** source modules, matched the canonical all-moduli Dirichlet statement, audited its axioms, and passed a fresh Lean kernel replay. Only `propext`, `Classical.choice` and `Quot.sound` were used; the proof sources are unchanged. [Verification report and receipts](verification/pr8-independent/README.md).
+
+The [accepted tracker record](https://gtimg.github.io/QuasiRiemannTracker/) remains **θ = 0.8748087**, Zhongpai Gao's [tracker PR #68](https://github.com/GTimG/QuasiRiemannTracker/pull/68). PR #8's [tracker submission #69](https://github.com/GTimG/QuasiRiemannTracker/pull/69) still awaits Comparator/NanoDa/con-ron admission. Both statements concern nonvanishing for **Re(s) > θ**, with the principal pole excluded. Lower θ is stronger.
+
+![Current best boundary in the cited results, independently verified in native Lean](graphs/pr8-comparison.png)
+
+[SVG chart](graphs/pr8-comparison.svg) · [Exact comparison data](graphs/pr8-comparison.json) · [Contributor credits](CONTRIBUTORS.md). The chart compares the cited tracker catalogue with the independently checked PR #8 endpoint.
+
+### Contributions in this repository
+
+Snapshot: **22 October 2026**. PR numbers in this table refer to **this repository**; upstream links are explicitly labeled “tracker”. Merge status and Lean verification are separate columns. Conditional arithmetic certificates do not establish a complete Lean nonvanishing theorem. Author-reported Lean evidence means the submitted logs were inspected but the build was not independently replayed in this audit.
+
+| PR / work | Contributor | Contribution and boundary | Lean verification status | PR state |
+|---|---|---|---|---|
+| [Initial research](AUDIT_SUMMARY.md) | Rohan Arun, with Claude | Track A: audited `20649/23600`; final-section certificate `10195/11652`; budget and architecture analysis | Exact arithmetic and written audit; conditional on the preprint; full endpoint not Lean-verified | On main |
+| [#1](https://github.com/rohanarun/quasi-rh-hillclimb/pull/1) | Rohan Arun, with Claude; builds on ArviFoxy's tracker #67 | Three/four affine levels; four-level θ ≤ `0.874810282` | Conditional on H1–H5; exact arithmetic certificates; no complete Lean endpoint | Merged |
+| [#2](https://github.com/rohanarun/quasi-rh-hillclimb/pull/2) | Sudarsh Chaturvedi (@Sudarsh3301), with Claude | Five/six levels under the width-floor test; six-level θ ≤ `0.874809989` | Conditional on H1–H5 and larger caps; no complete Lean endpoint | Merged |
+| [#3](https://github.com/rohanarun/quasi-rh-hillclimb/pull/3) | Rohan Arun, with Claude | Constrained re-optimization; θ ≤ `0.874810187` at four levels and `0.874809963` at seven | Conditional on H1–H5; exact arithmetic certificates; no complete Lean endpoint | Merged |
+| [#5](https://github.com/rohanarun/quasi-rh-hillclimb/pull/5) | Rohan Arun, with Claude | Structural leverage and method-limit analysis; no new proved boundary | Analysis only; literature references marked “memory” in the submission remain unchecked | Open |
+| [#6](https://github.com/rohanarun/quasi-rh-hillclimb/pull/6) | Rohan Arun, with Claude; builds on Zhongpai Gao's tracker #68 | Sharper slot price; θ ≤ `0.874807887` at six stages | Conditional arithmetic certificate; Lean changes and complete endpoint proof pending | Open |
+| [#7](https://github.com/rohanarun/quasi-rh-hillclimb/pull/7) | Rohan Arun, with Claude; Agent37 sponsorship | Contributor sandbox sponsorship and README support | Not applicable: documentation/support contribution | Merged |
+| [#8](https://github.com/rohanarun/quasi-rh-hillclimb/pull/8) | Hailey Collet ([@HaileyStorm](https://github.com/HaileyStorm)), with substantial AI assistance and inherited credits | Standalone finite ordinary-source proof; θ = `0.8747729897` | **Independent native Lean replay passed:** 6,471 fresh modules, canonical endpoint, standard axioms, fresh kernel replay. [Evidence](verification/pr8-independent/README.md). Tracker three-kernel admission pending | Merged |
+| [#9](https://github.com/rohanarun/quasi-rh-hillclimb/pull/9) | Rohan Arun, with Claude; based on Argonaut Math's overlay | Track A Lean anchor: `139999/160000 = 0.87499375` | **Author-reported** full Lean build, axiom audits and Comparator acceptance; [submitted evidence](https://github.com/rohanarun/quasi-rh-hillclimb/tree/a5f09d2c62efd512394e2c53b4234cde65abdfd5/lean-tau/evidence); not independently replayed here | Open |
+
+The independent verification and comparison chart in this update were prepared by Rohan Arun with Codex (AI-assisted). Hailey Collet remains the sole human author of the PR #8 contribution; all inherited proof credits and licenses are retained. [PR metadata snapshot](verification/readme-progress/pull-requests.json).
+
+### Upstream contributors and verified bounds
+
+These **26 entries** come from the [tracker catalogue snapshot](verification/readme-progress/tracker-catalogue.json), retrieved on 22 October 2026. “Tracker verified” links to that entry's certificate; it reports the tracker's verification, rather than claiming a new independent rebuild of every row here. Decimal bounds below are rounded to 12 places; exact statements and source revisions are in the certificates. Useful non-record contributions remain listed and credited.
+
+<!-- tracker-verification-table:start -->
+
+| Contributor | Source | Boundary θ (approx.) | Lean verification status |
+|---|---|---:|---|
+| Classical Euler-product theorem | [Tracker #5](https://github.com/nielstron/QuasiRiemannTracker/pull/5) | 1 | [Tracker verified](https://gtimg.github.io/QuasiRiemannTracker/certificates/classical-euler-product.json) |
+| OpenAI | [Checked source](https://github.com/GTimG/QuasiRiemannTracker/blob/d716ecaae80f7823a5b8314916364fdfa0d133fb/public/proofs/palomar-20261009/openai/src/Solution.lean) | 0.875 | [Tracker verified](https://gtimg.github.io/QuasiRiemannTracker/certificates/openai-baseline.json) |
+| Argonaut Math | [Checked source](https://github.com/GTimG/QuasiRiemannTracker/blob/d716ecaae80f7823a5b8314916364fdfa0d133fb/public/proofs/argonaut-20261010-safe-replay/solution-src/Solution.lean) | 0.87499975 | [Tracker verified](https://gtimg.github.io/QuasiRiemannTracker/certificates/argonaut-20261008.json) |
+| Baiying Liu | [Checked source](https://github.com/GTimG/QuasiRiemannTracker/blob/d716ecaae80f7823a5b8314916364fdfa0d133fb/public/proofs/liu-20261010-safe-replay/solution-src/Solution.lean) | 0.874957069799 | [Tracker verified](https://gtimg.github.io/QuasiRiemannTracker/certificates/liu-20261008.json) |
+| Tim Gehrunger · ProofCouncil | [Checked source](https://github.com/GTimG/QuasiRiemannTracker/blob/d716ecaae80f7823a5b8314916364fdfa0d133fb/public/proofs/palomar-20261009/qrh/src/Solution.lean) | 0.874957019421 | [Tracker verified](https://gtimg.github.io/QuasiRiemannTracker/certificates/proofcouncil-20261009.json) |
+| nielstron | [Checked source](https://github.com/GTimG/QuasiRiemannTracker/blob/d716ecaae80f7823a5b8314916364fdfa0d133fb/public/proofs/nielstron-algebraic-20261009-kernels/src/Solution.lean) | 0.87495701942 | [Tracker verified](https://gtimg.github.io/QuasiRiemannTracker/certificates/nielstron-algebraic-20261009.json) |
+| Akash Levy | [Tracker #6](https://github.com/akashlevy/QuasiRiemannTracker/pull/6) | 0.874916666667 | [Tracker verified](https://gtimg.github.io/QuasiRiemannTracker/certificates/akashlevy-20261009-weighted-numerator.json) |
+| Hailey Collet | [Tracker #8](https://github.com/HaileyStorm/QuasiRiemannTracker/pull/8) | 0.878787878788 | [Tracker verified](https://gtimg.github.io/QuasiRiemannTracker/certificates/single-prime-29-33-20261010.json) |
+| Hailey Collet | [Tracker #9](https://github.com/HaileyStorm/QuasiRiemannTracker/pull/9) | 0.87488664704 | [Tracker verified](https://gtimg.github.io/QuasiRiemannTracker/certificates/cycle25-quartic-20261010.json) |
+| nielstron | [Tracker #26](https://github.com/GTimG/QuasiRiemannTracker/pull/26) | 0.87487 | [Tracker verified](https://gtimg.github.io/QuasiRiemannTracker/certificates/local44-20261013.json) |
+| Kari Roegnvaldsson | [Tracker #37](https://github.com/GTimG/QuasiRiemannTracker/pull/37) | 0.8748694 | [Tracker verified](https://gtimg.github.io/QuasiRiemannTracker/certificates/affine-local-20261013.json) |
+| Kari Roegnvaldsson | [Tracker #38](https://github.com/GTimG/QuasiRiemannTracker/pull/38) | 0.87486797 | [Tracker verified](https://gtimg.github.io/QuasiRiemannTracker/certificates/reserve-local-20261013.json) |
+| Zhongpai Gao | [Tracker #41](https://github.com/GTimG/QuasiRiemannTracker/pull/41) | 0.8748673 | [Tracker verified](https://gtimg.github.io/QuasiRiemannTracker/certificates/gao-asymmetric-reserves-20261013.json) |
+| Hailey Collet | [Tracker #42](https://github.com/GTimG/QuasiRiemannTracker/pull/42) | 0.874861 | [Tracker verified](https://gtimg.github.io/QuasiRiemannTracker/certificates/cycle61-c0125139.json) |
+| Zhongpai Gao | [Tracker #43](https://github.com/GTimG/QuasiRiemannTracker/pull/43) | 0.8748598 | [Tracker verified](https://gtimg.github.io/QuasiRiemannTracker/certificates/gao-cycle61-plane-20261013.json) |
+| timbalud | [Tracker #48](https://github.com/GTimG/QuasiRiemannTracker/pull/48) | 0.874858 | [Tracker verified](https://gtimg.github.io/QuasiRiemannTracker/certificates/marked-high-count-20261014.json) |
+| timbalud | [Tracker #50](https://github.com/GTimG/QuasiRiemannTracker/pull/50) | 0.8748559 | [Tracker verified](https://gtimg.github.io/QuasiRiemannTracker/certificates/radical-asymmetric-count-20261014.json) |
+| Devin Watson | [Tracker #53](https://github.com/GTimG/QuasiRiemannTracker/pull/53) | 0.87486648 | [Tracker verified](https://gtimg.github.io/QuasiRiemannTracker/certificates/certb-local-20261013.json) |
+| DaysSky | [Tracker #56](https://github.com/GTimG/QuasiRiemannTracker/pull/56) | 0.874846 | [Tracker verified](https://gtimg.github.io/QuasiRiemannTracker/certificates/detector-affine-c0125154.json) |
+| Zhongpai Gao | [Tracker #60](https://github.com/GTimG/QuasiRiemannTracker/pull/60) | 0.87484 | [Tracker verified](https://gtimg.github.io/QuasiRiemannTracker/certificates/gao-affine-asymmetric-20261015.json) |
+| Zhongpai Gao | [Tracker #62](https://github.com/GTimG/QuasiRiemannTracker/pull/62) | 0.874836 | [Tracker verified](https://gtimg.github.io/QuasiRiemannTracker/certificates/gao-directional-affine-20261016.json) |
+| Zhongpai Gao | [Tracker #63](https://github.com/GTimG/QuasiRiemannTracker/pull/63) | 0.87483 | [Tracker verified](https://gtimg.github.io/QuasiRiemannTracker/certificates/gao-balanced-marked-20261017.json) |
+| ArviFoxy | [Tracker #64](https://github.com/GTimG/QuasiRiemannTracker/pull/64) | 0.874835173 | [Tracker verified](https://gtimg.github.io/QuasiRiemannTracker/certificates/no-hardcoding-20261017.json) |
+| Sil | [Tracker #66](https://github.com/GTimG/QuasiRiemannTracker/pull/66) | 0.874828524351 | [Tracker verified](https://gtimg.github.io/QuasiRiemannTracker/certificates/sil-uneven-normalization-20261019.json) |
+| ArviFoxy | [Tracker #67](https://github.com/GTimG/QuasiRiemannTracker/pull/67) | 0.874817065 | [Tracker verified](https://gtimg.github.io/QuasiRiemannTracker/certificates/two-level-affine-20261019.json) |
+| Zhongpai Gao | [Tracker #68](https://github.com/GTimG/QuasiRiemannTracker/pull/68) | 0.8748087 | [Tracker verified](https://gtimg.github.io/QuasiRiemannTracker/certificates/gao-five-step-affine-20261020.json) |
+
+<!-- tracker-verification-table:end -->
+
+## Original Track A claim (conditional)
 
 Assume the preprint's theorem (zero-free for Re s > 7/8). Then every finite-order Hecke L-function over Q(√-3) has no zeros in
 
@@ -29,19 +92,19 @@ This covers every Dirichlet L-function, including ζ(s). It comes from re-runnin
 
 applying the edits listed in `AUDIT_SUMMARY.md`. This point is about 99% of the way to the method's limit: with every other structural choice frozen, the edge of feasibility is σ₀ ≈ 7/8 − 4.29·10⁻⁵. An earlier version of this note claimed 7/8 − 1/28000.
 
+![The original conditional improvement past 7/8](graphs/improvement.png)
+
 ## Separate track: a third affine level for the Lean tracker (conditional)
 
 The accepted record on the [QuasiRiemannTracker](https://github.com/GTimG/QuasiRiemannTracker) is Zhongpai Gao's PR #68, θ = 8748087/10000000 = 0.8748087. ArviFoxy's earlier PR #67 gives θ = 174963413/200000000 ≈ 0.874817065, already well below the conditional bound above. [`depth3/`](depth3/PROOF.md) extends PR #67's two affine levels to three and gets **θ ≤ 874812431/10⁹ ≈ 0.874812431**, about 4.6·10⁻⁶ lower, a fourth level gets **θ ≤ 0.874810282** (6.8·10⁻⁶ below PR #67), and re-optimising with the branch-D room held at the certifier threshold gets **θ ≤ 0.874810187** at four levels and **θ ≤ 0.874809963** at seven (7.1·10⁻⁶ below PR #67). On top of tracker PR #68 (Lean-proved 0.8748087, five stages), a sixth stage that keeps all of PR #68's per-stage caps gives **θ ≤ 0.874807999** (`python depth3/certify_gao_depth.py --six`), and eight stages with a larger ratio cap give 0.874806549. All of these are **conditional on five structural hypotheses (H1–H5) that are not yet in Lean**. The arithmetic is certified exactly (`python depth3/certify_depth3.py`, `--four`, `--four-tight`, `--seven`; the same code reproduces PR #67's own constants). It is not a tracker record until the full proof checks in Lean.
 
-![The best boundary over time, with contributors](graphs/timeline.png)
+[Earlier timeline of tracker bounds and conditional affine proposals](graphs/timeline.png).
 
 ## Independently Lean-verified bound: finite ordinary source moments
 
 Hailey Collet ([@HaileyStormC](https://x.com/HaileyStormC)) contributes a [standalone paper, exact Lean sources and verification receipts](submissions/hailey-collet-1252270103/README.md) for **Re(s) > 8747729897/10000000000 = 0.8747729897**, covering all Dirichlet characters with the principal pole excluded. This separate structural route includes the analytic arguments and exact finite certificates; its manuscript claims an unconditional theorem. An [independent native Lean 4.34.1 verification](verification/pr8-independent/README.md) on 22 October 2026 compiled all 6,471 source modules fresh, matched the canonical all-moduli Dirichlet endpoint, passed the axiom audit with only Lean's three standard axioms, and passed a fresh Lean kernel replay. The proof sources are unchanged. Tracker Comparator/NanoDa/con-ron acceptance remains pending. See the [Track B writeup](auto-research/proposals/2026-10-21-finite-ordinary-source-moments.md) for the proof route and evidence scopes. The existing conditional claims and audits elsewhere on this page retain their original scope.
 
-![Current best boundary in the cited results, independently verified in native Lean](graphs/pr8-comparison.png)
-
-The comparison uses the live tracker catalogue and the separately verified PR #8 endpoint; it distinguishes native Lean verification from tracker admission. [Exact comparison data](graphs/pr8-comparison.json) · [SVG chart](graphs/pr8-comparison.svg).
+The current comparison chart and PR verification table are shown in [Progress and Lean verification](#progress-and-lean-verification).
 
 [QRH-Catalogue](https://github.com/HaileyStorm/QRH-Catalogue), used extensively for this work, is a public index of reusable QRH mathematics and formal components, open to source-backed contributions and corrections.
 
@@ -66,7 +129,7 @@ The comparison uses the live tracker catalogue and the separately verified PR #8
   - the preprint's second Euler region (x_r ≥ 7/8) must be lowered to x_r ≥ σ₀, which holds with wide margins;
   - the completed-row norm picks up an extra loss below 3/11800, which the low estimate absorbs.
 
-## Status: read before citing
+## Status of the original Track A audit
 
 - **Not formally verified.** The audit is an AI-assisted reading, not a referee report. A human expert should check the Euler-region and row-norm edits in particular. Lines 1–3723 were not re-read.
 - **Inherits the preprint's status.** The preprint has not been fully refereed, and its Lean formalization covers 7/8 only.
@@ -90,6 +153,8 @@ Contributions from humans and agents are welcome. See [CONTRIBUTING.md](CONTRIBU
 - `AUDIT_SUMMARY.md`, `audit/*.md`: the line-by-line audit.
 - `auto-research.md`, `auto-research/`: instructions and tools for agents continuing the hill-climb (`hillclimb.py`, `whatif.py`, `results.md`, `proposals/`). The pipeline already found a slightly better final-section certificate, 7/8 − 1/23304; see `auto-research/results.md`.
 - `auto-research/plot_improvement.py`: regenerates `graphs/improvement.png`.
+- `auto-research/plot_pr8_comparison.py`: regenerates the independently verified comparison chart; see the [verification report](verification/pr8-independent/README.md).
+- `auto-research/update_readme_progress.py`: regenerates the upstream contributor/verification table from the retained tracker snapshot.
 - `CONTRIBUTING.md`, `AGENTS.md`, `CONTRIBUTORS.md`: how to contribute, the agent quick start, and credits.
 - `depth3/`: the conditional third affine level on top of tracker PR #67 (`PROOF.md`, `certify_depth3.py`, `model.py`, `reports/`).
 - `upload.sh`: pushes this folder to GitHub.

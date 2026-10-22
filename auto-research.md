@@ -4,6 +4,8 @@ This file is for automated research agents (and humans) who want to push the Qua
 
 ## Current state
 
+See the README's [PR progress and Lean verification tables](README.md#progress-and-lean-verification) for contributor credits, open proposals, submitted verification evidence and tracker certificates.
+
 | | value |
 |---|---|
 | Independently Lean-verified source-moment endpoint | θ = 8747729897/10000000000; [fresh 6,471-module build, canonical endpoint, standard-axiom audit and fresh Lean kernel replay passed](verification/pr8-independent/README.md); tracker three-kernel admission pending |

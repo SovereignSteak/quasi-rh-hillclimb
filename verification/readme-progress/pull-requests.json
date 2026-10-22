@@ -1,0 +1,130 @@
+[
+  {
+    "author": {
+      "id": "MDQ6VXNlcjExNjU5ODM5",
+      "is_bot": false,
+      "login": "rohanarun",
+      "name": ""
+    },
+    "createdAt": "2026-10-22T01:32:12Z",
+    "headRefName": "lean-tau-1-40000",
+    "headRefOid": "a5f09d2c62efd512394e2c53b4234cde65abdfd5",
+    "mergedAt": null,
+    "number": 9,
+    "state": "OPEN",
+    "title": "Lean-verified Track A point: Re s > 139999/160000",
+    "url": "https://github.com/rohanarun/quasi-rh-hillclimb/pull/9"
+  },
+  {
+    "author": {
+      "id": "MDQ6VXNlcjU1NjA2MzA0",
+      "is_bot": false,
+      "login": "HaileyStorm",
+      "name": "Hailey Collet"
+    },
+    "createdAt": "2026-10-22T01:23:48Z",
+    "headRefName": "finite-ordinary-source-c01252270103",
+    "headRefOid": "594fc4838e9c92d5a16bedf270d07d1f51161be7",
+    "mergedAt": "2026-10-22T02:28:21Z",
+    "number": 8,
+    "state": "MERGED",
+    "title": "Standalone proof at theta 0.8747729897 with complete Lean sources and local evidence",
+    "url": "https://github.com/rohanarun/quasi-rh-hillclimb/pull/8"
+  },
+  {
+    "author": {
+      "id": "MDQ6VXNlcjExNjU5ODM5",
+      "is_bot": false,
+      "login": "rohanarun",
+      "name": ""
+    },
+    "createdAt": "2026-10-21T17:49:44Z",
+    "headRefName": "sponsor-agent37",
+    "headRefOid": "1a0a6e431dd537adb162319aec7b428ad945a248",
+    "mergedAt": "2026-10-21T17:53:03Z",
+    "number": 7,
+    "state": "MERGED",
+    "title": "README: Agent37 sponsorship",
+    "url": "https://github.com/rohanarun/quasi-rh-hillclimb/pull/7"
+  },
+  {
+    "author": {
+      "id": "MDQ6VXNlcjExNjU5ODM5",
+      "is_bot": false,
+      "login": "rohanarun",
+      "name": ""
+    },
+    "createdAt": "2026-10-21T14:03:39Z",
+    "headRefName": "depth3-beta-bootstrap",
+    "headRefOid": "30d5f5b3effd5f98be9b6354b4fd0ee0e7a5d56b",
+    "mergedAt": null,
+    "number": 6,
+    "state": "OPEN",
+    "title": "Price the slot with PR #68's own \u03b2: \u03b8 \u2264 0.874807887 (six stages), 0.874808544 (five)",
+    "url": "https://github.com/rohanarun/quasi-rh-hillclimb/pull/6"
+  },
+  {
+    "author": {
+      "id": "MDQ6VXNlcjExNjU5ODM5",
+      "is_bot": false,
+      "login": "rohanarun",
+      "name": ""
+    },
+    "createdAt": "2026-10-21T14:03:07Z",
+    "headRefName": "auto-research-limits",
+    "headRefOid": "be95e6ab9b450d3e812742b30e35c342904ac974",
+    "mergedAt": null,
+    "number": 5,
+    "state": "OPEN",
+    "title": "auto-research/limits: where the tracker chain's limits are",
+    "url": "https://github.com/rohanarun/quasi-rh-hillclimb/pull/5"
+  },
+  {
+    "author": {
+      "id": "MDQ6VXNlcjExNjU5ODM5",
+      "is_bot": false,
+      "login": "rohanarun",
+      "name": ""
+    },
+    "createdAt": "2026-10-21T02:57:57Z",
+    "headRefName": "depth3-constrained",
+    "headRefOid": "74ffc77a2d9772621d5e05ed0ab5f49366e0e4d5",
+    "mergedAt": "2026-10-21T12:45:39Z",
+    "number": 3,
+    "state": "MERGED",
+    "title": "Constrained re-optimisation: \u03b8 \u2264 0.874810187 (four levels), \u03b8 \u2264 0.874809963 (seven levels)",
+    "url": "https://github.com/rohanarun/quasi-rh-hillclimb/pull/3"
+  },
+  {
+    "author": {
+      "id": "MDQ6VXNlcjg0ODUxNjc4",
+      "is_bot": false,
+      "login": "Sudarsh3301",
+      "name": "Sudarsh Chaturvedi"
+    },
+    "createdAt": "2026-10-20T17:22:08Z",
+    "headRefName": "depth3-five-six",
+    "headRefOid": "5276f9d881ddb2f0febece2cd9e6ac0306acbeb2",
+    "mergedAt": "2026-10-21T12:04:21Z",
+    "number": 2,
+    "state": "MERGED",
+    "title": "Five and six nested affine levels under the width-floor room test (conditional, \u03b8 \u2264 0.874809989)",
+    "url": "https://github.com/rohanarun/quasi-rh-hillclimb/pull/2"
+  },
+  {
+    "author": {
+      "id": "MDQ6VXNlcjExNjU5ODM5",
+      "is_bot": false,
+      "login": "rohanarun",
+      "name": ""
+    },
+    "createdAt": "2026-10-20T15:15:33Z",
+    "headRefName": "depth3-conditional",
+    "headRefOid": "8760d0eaf71a064948997ce9bce53d455af7c685",
+    "mergedAt": "2026-10-21T12:45:34Z",
+    "number": 1,
+    "state": "MERGED",
+    "title": "Conditional nested affine levels on the QuasiRiemannTracker record (\u03b8 \u2264 0.874810282)",
+    "url": "https://github.com/rohanarun/quasi-rh-hillclimb/pull/1"
+  }
+]
