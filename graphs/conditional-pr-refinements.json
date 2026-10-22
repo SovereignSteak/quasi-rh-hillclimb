@@ -1,0 +1,38 @@
+[
+  {
+    "time_utc": "2026-10-21 02:57:57",
+    "contributor": "rohanarun \u00b7 4 levels, tightened",
+    "theta_exact": "874810187/1000000000",
+    "status": "conditional, not Lean-verified",
+    "pr": 3,
+    "source": "https://github.com/rohanarun/quasi-rh-hillclimb/pull/3",
+    "timestamp_source": "PR creation time; bound from current PR description"
+  },
+  {
+    "time_utc": "2026-10-21 02:57:57",
+    "contributor": "rohanarun \u00b7 7 levels",
+    "theta_exact": "874809963/1000000000",
+    "status": "conditional, not Lean-verified",
+    "pr": 3,
+    "source": "https://github.com/rohanarun/quasi-rh-hillclimb/pull/3",
+    "timestamp_source": "PR creation time; bound from current PR description"
+  },
+  {
+    "time_utc": "2026-10-21 14:03:39",
+    "contributor": "rohanarun \u00b7 5 stages, sharper slot",
+    "theta_exact": "874808544/1000000000",
+    "status": "conditional, not Lean-verified",
+    "pr": 6,
+    "source": "https://github.com/rohanarun/quasi-rh-hillclimb/pull/6",
+    "timestamp_source": "PR creation time; bound from current PR description"
+  },
+  {
+    "time_utc": "2026-10-21 14:03:39",
+    "contributor": "rohanarun \u00b7 6 stages, sharper slot",
+    "theta_exact": "874807887/1000000000",
+    "status": "conditional, not Lean-verified",
+    "pr": 6,
+    "source": "https://github.com/rohanarun/quasi-rh-hillclimb/pull/6",
+    "timestamp_source": "PR creation time; bound from current PR description"
+  }
+]
