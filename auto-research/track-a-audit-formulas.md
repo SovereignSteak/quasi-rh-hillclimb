@@ -4,7 +4,7 @@ AI-assisted audit follow-up, 2026-10-22. This supplies the non-adaptive arithmet
 
 **Pinned primary source.** All paper line numbers below were checked directly in `openai/math`, commit [`1581d4cbdd69a0faf34b2089614fe2a814316a6a`](https://github.com/openai/math/commit/1581d4cbdd69a0faf34b2089614fe2a814316a6a), file `preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/build/paper.tex`, Git blob `268c4e3206d460c617d3d2129742a72b831b3def` (16,677 lines). The latest commit touching that path is [`adc7f1241b42e322a6451854ab7e4b4c146bf78a`](https://github.com/openai/math/commit/adc7f1241b42e322a6451854ab7e4b4c146bf78a), 2026-10-06. Read against local guidance, `AUDIT_SUMMARY.md`, and reports A–F at repository base `e4cf5a2b1f967746b36606d3352549ee598e373f`.
 
-The certificate at **N=5824, h=405967/500000** has executable evidence in [track-a-5824.md](track-a-5824.md). It establishes the adaptive budget separately from the checks below.
+**No new endpoint is claimed.** [PR #12](https://github.com/rohanarun/quasi-rh-hillclimb/pull/12), opened during this work, independently submits the same **N=5824, h=405967/500000** point. Its [certificate report at commit 9fa8611](https://github.com/thakrarsagar/quasi-rh-hillclimb/blob/9fa86113ccf025d53812e9a540ad928d2a53ab0f/auto-research/track-a-5824.md) records the new endpoint. This contribution adds the pinned-source edit map, exact bounds over a parameter rectangle, the compact polynomial identity, and an independent certificate with a negative control. It builds on Rohan Arun and Claude's existing budget and audit, without duplicating PR #12's code or record updates.
 
 ## Geometry and normalization
 
@@ -150,13 +150,48 @@ F = j_y[-C0 + (h-1/2-3ell/2+ell*y)delta]
 
 The geometry-independent denominator satisfies `70<=108J<=270`. These formulas follow from the source's balanced count at 15962–16025; the polynomial was compared symbolically with `adaptive_poly` at the old audit point and all four candidate rectangle corners, with exact equality. [Balanced endpoint formulas][p-endpoint].
 
-For **N=5824, h=405967/500000**, the [completed certificate](track-a-5824.md) supplies 26 positive Bernstein boxes, minimum coefficient `564781781/229008998400000`, hence
+For **N=5824, h=405967/500000**, an independent run of the existing certifier with explicit `maxdepth=24` supplies 26 positive Bernstein boxes, minimum coefficient `564781781/229008998400000`, hence
 
 ```text
 -E_star >= 564781781/61832429568000000 > 0.
 ```
 
 After adjustable losses, the correct comparison is `E_actual(h)-Delta' <= -m_star-Delta'+epsilon_total`; there is no `h Delta/4` capacity cost. The program's extra check `1-h/4>0` is harmless but is unnecessary for this fixed-kappa comparison. The polynomial identity was checked separately from the adaptive positivity certificate.
+
+Run this from the repository root with SymPy installed. It works against the
+unchanged base certifier; it does not require PR #12's increased default depth.
+
+```sh
+python - <<'PY'
+from fractions import Fraction as Fr
+import sympy as sp
+import certify as C
+
+ell = Fr(1, 6) + Fr(1, 5824)
+h = Fr(405967, 500000)
+box = ((sp.Rational(0), sp.Rational(5, 6)),
+       (sp.Rational(0), sp.Rational(1, 2)))
+F, J108 = C.adaptive_poly(ell, h)
+log = []
+assert C.prove_positive(F, box, maxdepth=24, log=log)
+assert len(log) == 26
+assert min(bound for _, bound in log) == sp.Rational(564781781, 229008998400000)
+assert C.bernstein_min(J108, box) == 70
+assert -C.bernstein_min(-J108, box) == 270
+assert all(value > 0 for value in C.side_constraints(ell, h).values())
+
+# An exact negative value rejects the neighboring point at this same h.
+Fbad, _ = C.adaptive_poly(Fr(1, 6) + Fr(1, 5823), h)
+witness = Fbad.as_expr().subs({C.d: sp.Rational(194323, 500000), C.y: 0})
+assert witness == -sp.Rational(33322263931253, 15164062500000000000)
+assert witness < 0
+assert not C.prove_positive(Fbad, box, maxdepth=24)
+print('Exact certificate and negative control passed.')
+PY
+```
+
+The negative control excludes N=5823 only **at this h**; it does not establish
+a ceiling over all h. This replay used Python 3.13.5 and SymPy 1.14.0.
 
 ## Exact non-adaptive checks and remaining scope
 

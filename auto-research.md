@@ -11,8 +11,8 @@ See the README's [PR progress and Lean verification tables](README.md#progress-a
 | Independently Lean-verified source-moment endpoint | θ = 8747729897/10000000000; [fresh 6,471-module build, canonical endpoint, standard-axiom audit and fresh Lean kernel replay passed](verification/pr8-independent/README.md); tracker three-kernel admission pending |
 | Preprint bound (OpenAI, 30 Sep 2026) | Re s > 7/8 |
 | Best audited here | **Re s > 20649/23600 = 7/8 − 1/23600** |
-| Best certified (final section only) | Re s > 20383/23296 = 7/8 − 1/23296 (ℓ = 1/6 + 1/5824, h = 405967/500000); [certificate and scope](auto-research/track-a-5824.md) |
-| Audited point | ℓ = 2953/17700 (= 1/6 + 1/5900), h = 405989/500000 |
+| Best certified (final section only) | Re s > 10195/11652 = 7/8 − 1/23304 (ℓ = 1/6 + 1/5826, h = 405967/500000) |
+| Point | ℓ = 2953/17700 (= 1/6 + 1/5900), h = 405989/500000 |
 | Edge of the frozen architecture | σ₀ ≈ 7/8 − 4.293·10⁻⁵ (ℓ ≈ 1/6 + 1.7172·10⁻⁴) |
 | Ceiling with idealized inputs | ≈ 0.864 (perfect row counts and large sieve) |
 | Accepted Lean tracker record (separate admission) | θ = 0.8748087 (QuasiRiemannTracker PR #68) |
@@ -32,11 +32,11 @@ where E_* is the high exponent at d = h with the balanced row count R_*. The cod
 
 ### Track A: parameter hill-climbing (small gains, easy to verify)
 
-Track A is nearly exhausted: the best certified integer is now N = 5824, and the numerical edge is ℓ − 1/6 ≈ 1/5823.4. To claim a further improvement:
+The remaining room is about 2·10⁻⁸ in σ₀ (the edge is ℓ − 1/6 ≈ 1/5823.4), so Track A is nearly exhausted. To claim any of it:
 
-1. Pick a rational ℓ greater than 1/6 + 1/5824, and a rational h near 0.811934. The command below accepts integer N; finer rational ℓ can be checked through the functions in `certify.py`.
+1. Pick a rational ℓ = 1/6 + 1/N with N < 5826, and a rational h near 0.811978.
 2. Run `python certify.py N h`. Every line must print `OK`, and the adaptive endpoint must print `True`.
-3. If the Bernstein bisection gives up (prints `False`) close to the edge, raise `maxdepth` in `prove_positive`, or subdivide more cleverly. The default is now 24; depth 20 was insufficient at N = 5824. A `False` is not a disproof.
+3. If the Bernstein bisection gives up (prints `False`) close to the edge, raise `maxdepth` in `prove_positive`, or subdivide more cleverly. A `False` is not a disproof.
 4. Record the result (see "Reporting" below).
 
 `auto-research/hillclimb.py` automates this: it finds the numerical edge, then tries rational candidates from the edge inward until one certifies.
@@ -82,8 +82,7 @@ Append one row to `auto-research/results.md` and open a pull request:
 
 ```
 pip install numpy scipy sympy
-python certify.py                   # audited baseline
-python certify.py 5824 405967/500000 # best Track A final-section certificate
+python certify.py                   # current best, about 1 s
 python auto-research/hillclimb.py   # Track A
 python auto-research/whatif.py --alpha 0.75 --cap 1.5   # Track B
 ```
