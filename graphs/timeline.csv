@@ -17,8 +17,10 @@ time_utc,contributor,theta_exact,theta_decimal,status
 2026-10-17 11:32,Zhongpai Gao,87483/100000,0.874830000000,Lean-verified record
 2026-10-20 00:51,Sil,874828524351/1000000000000,0.874828524351,Lean-verified record
 2026-10-20 01:49,ArviFoxy (PR #67),174963413/200000000,0.874817065000,Lean-verified record
-2026-10-20 23:14,Zhongpai Gao · PR #68 (current record),8748087/10000000,0.874808700000,Lean-verified record
+2026-10-20 23:14,Zhongpai Gao · PR #68 (verified record),8748087/10000000,0.874808700000,Lean-verified record
 2026-10-20 15:07,rohanarun · 3 levels (conditional),874812431/1000000000,0.874812431000,"conditional, not Lean-verified"
 2026-10-20 15:39,rohanarun · 4 levels (conditional),437405141/500000000,0.874810282000,"conditional, not Lean-verified"
 2026-10-20 17:18,Sudarsh3301 · 6 levels (conditional),874809989/1000000000,0.874809989000,"conditional, not Lean-verified"
 2026-10-21 11:59,rohanarun · 6 stages on PR #68 (cond.),874807999/1000000000,0.874807999000,"conditional, not Lean-verified"
+2026-10-21 13:58,"rohanarun · 6 stages, PR #68's own β (cond.)",874807887/1000000000,0.874807887000,"conditional, not Lean-verified"
+2026-10-21 19:58,"Hailey Collet · CURRENT LEADER (Lean, verification pending)",8747729897/10000000000,0.874772989700,"Lean proof submitted, verification pending"
