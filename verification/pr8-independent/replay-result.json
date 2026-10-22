@@ -1,0 +1,33 @@
+{
+  "started_at": "2026-10-22T02:58:57.107448+00:00",
+  "source_modules": 6471,
+  "fresh_candidate_objects": true,
+  "jobs": 4,
+  "threads_per_compiler": 2,
+  "lean_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "status": "passed",
+  "native_mac_replay": true,
+  "tracker_acceptance": false,
+  "independent_external_kernels": false,
+  "compiled_modules": 6471,
+  "failed_modules": [],
+  "stage": "kernel-replay",
+  "endpoint": {
+    "exit_code": 0,
+    "elapsed_seconds": 6.143,
+    "log_sha256": "0ebcf79ef99d5a5aa385882ce75332ebf196d12e64f0dd8f3a04d31df576887d"
+  },
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "axiom_audit_passed": true,
+  "kernel-replay": {
+    "exit_code": 0,
+    "elapsed_seconds": 1808.597,
+    "log_sha256": "f1e5e9c3355007f4b45909d735df18ecc7c022ca5ddebea6dca8a49d416e1886"
+  },
+  "completed_at": "2026-10-22T05:53:58.708165+00:00",
+  "sources_unchanged": true
+}

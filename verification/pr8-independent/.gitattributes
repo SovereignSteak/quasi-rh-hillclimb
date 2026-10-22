@@ -1,0 +1,3 @@
+# Preserve byte-exact upstream patch context lines and compiler evidence.
+dependency-patches/*.patch -whitespace
+*.log -whitespace

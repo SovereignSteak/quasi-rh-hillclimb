@@ -1,0 +1,22 @@
+{
+  "source_commit": "ac76d5ef6008d976a7b8f3c1d921af2317e79ce9",
+  "inventory_sha256": "89f57fcdea71b70f01e273800e79ad67e6249abe692ae6d823917e2a59f41d83",
+  "driver_sha256": "cf99db1009c3cb5ec59bd7c95499a218a98bd3449009d1f9b016bdcff766582d",
+  "canonical_target_sha256": "6d5c9f2400b5fac1a659546742f1f38ec50840e07ba9685537a61cc857607806",
+  "endpoint_check_sha256": "c19a749afb60b95b4112fd81a5c207bc03a85ad8ada6cb6d2952437ecac0dc84",
+  "lean_binary_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "kernel_replay_binary_sha256": "cfde41cb11dde58c84e9c60c551fd104bb2fc1104ad44dca932a923120272a35",
+  "compile_command": [
+    "python3",
+    "-B",
+    "replay_local.py",
+    "--inventory",
+    "source-inventory.json",
+    "--jobs",
+    "4",
+    "--threads",
+    "2"
+  ],
+  "runtime_directory": "/Users/rohanarun/LocalBuilds/quasi-rh-pr8",
+  "storage_exception": "User explicitly approved the internal non-iCloud build directory for this task."
+}

@@ -1,0 +1,4 @@
+'IndependentAudit.verified' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Candidate.bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+theorem IndependentAudit.verified : Target :=
+fun q [NeZero q] χ s hs hpole => Candidate.bound χ hs hpole

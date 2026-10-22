@@ -1,0 +1,54 @@
+{
+  "scope": "Axiom audits of the compiled source endpoint declarations; the Dirichlet endpoint additionally matched the independent canonical target.",
+  "log_sha256": "1ece3327953eb77ee22bb4b0c4a7ec314cbe45f0442b191aab719ba8ca108ef6",
+  "declarations": [
+    {
+      "declaration": "QRH.Record1252270103Source.Endpoint.seed_step",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "QRH.Record1252270103Source.Endpoint.nf_step",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "QRH.Record1252270103Source.Endpoint.beta_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "QRH.Record1252270103Source.Endpoint.hecke_nonvanishing",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "QRH.Record1252270103Source.Endpoint.dirichlet_nonvanishing",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "QRH.Record1252270103Source.Endpoint.zeta_nonvanishing",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}
