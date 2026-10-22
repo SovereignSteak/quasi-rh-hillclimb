@@ -23,7 +23,7 @@ The [accepted tracker record](https://gtimg.github.io/QuasiRiemannTracker/) rema
 
 ![Current best boundary in the cited results, independently verified in native Lean](graphs/pr8-comparison.png)
 
-[SVG chart](graphs/pr8-comparison.svg) · [Exact comparison data](graphs/pr8-comparison.json) · [Contributor credits](CONTRIBUTORS.md). The chart compares the cited tracker catalogue with the independently checked PR #8 endpoint.
+[SVG chart](graphs/pr8-comparison.svg) · [Exact comparison data](graphs/pr8-comparison.json) · [Contributor credits](CONTRIBUTORS.md). The chart compares the cited tracker catalogue with the independently checked PR #8 endpoint. Each plotted point is labeled with its contributor, source PR where available, and boundary, connected by a leader line.
 
 ### Contributions in this repository
 

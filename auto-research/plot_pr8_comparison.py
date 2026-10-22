@@ -71,26 +71,24 @@ accent = GREEN if verified else AMBER
 plt.rcParams.update({"font.family": "DejaVu Sans", "text.color": INK,
                      "axes.labelcolor": MUTED, "xtick.color": MUTED, "ytick.color": MUTED,
                      "font.size": 11, "svg.fonttype": "none"})
-fig = plt.figure(figsize=(16, 10), facecolor=BG)
-fig.text(.06, .94, "Current best boundary in the cited results" if verified else "The strongest boundary in this comparison", fontsize=25, weight="bold")
-fig.text(.06, .902, "All-moduli Dirichlet nonvanishing for Re(s) > θ, excluding the principal pole. Lower θ is stronger.", fontsize=12, color=MUTED)
-fig.text(.06, .826, f"θ = {float(target):.10f}", fontsize=36, weight="bold", color=accent)
-fig.text(.06, .784, f"{author} · hillclimb PR #{pr['url'].split('/')[-1]} · {summary['result']['theta']}", fontsize=12)
+fig = plt.figure(figsize=(16, 16), facecolor=BG)
+fig.text(.06, .96, "Current best boundary in the cited results" if verified else "The strongest boundary in this comparison", fontsize=25, weight="bold")
+fig.text(.06, .935, "All-moduli Dirichlet nonvanishing for Re(s) > θ, excluding the principal pole. Lower θ is stronger.", fontsize=12, color=MUTED)
+fig.text(.06, .885, f"θ = {float(target):.10f}", fontsize=36, weight="bold", color=accent)
+fig.text(.06, .855, f"{author} · hillclimb PR #{pr['url'].split('/')[-1]} · {summary['result']['theta']}", fontsize=12)
 status = "Fresh native Lean compilation + kernel replay passed" if verified else "Lowest submitted boundary · independent Lean replay pending"
-fig.text(.06, .747, status, fontsize=12, color=accent, weight="bold")
-fig.text(.66, .843, f"{float(relative_gain):.1%}", fontsize=32, weight="bold", color=accent)
-fig.text(.66, .807, "more improvement beyond 7/8", fontsize=12)
-fig.text(.66, .778, "than the accepted tracker record", fontsize=12, color=MUTED)
-fig.text(.66, .743, f"Boundary reduction: {float(gain):.10f}", fontsize=11, color=MUTED)
+fig.text(.06, .825, status, fontsize=12, color=accent, weight="bold")
+fig.text(.66, .9, f"{float(relative_gain):.1%}", fontsize=32, weight="bold", color=accent)
+fig.text(.66, .875, "more improvement beyond 7/8", fontsize=12)
+fig.text(.66, .855, "than the accepted tracker record", fontsize=12, color=MUTED)
+fig.text(.66, .825, f"Boundary reduction: {float(gain):.10f}", fontsize=11, color=MUTED)
 
-ax = fig.add_axes([.08, .23, .48, .43], facecolor=BG)
+ax = fig.add_axes([.08, .38, .46, .39], facecolor=BG)
 times, values = [stamp(r) for r in frontier], [float(fraction(r)) for r in frontier]
 ax.step(times + [candidate_time], values + [values[-1]], where="post", color=BLUE, lw=2.4)
 ax.scatter(times, values, s=26, color=BLUE, zorder=3)
 ax.plot([candidate_time, candidate_time], [values[-1], float(target)], color=accent, ls="--", lw=2)
 ax.scatter([candidate_time], [float(target)], s=95, marker="D", color=accent if verified else BG, edgecolor=accent, lw=2, zorder=4)
-ax.annotate(f"{author}\n{float(target):.10f}", (candidate_time, float(target)), xytext=(-12, 7), textcoords="offset points", ha="right", fontsize=11, weight="bold", color=accent)
-ax.annotate(f"Accepted tracker best\n{float(fraction(best)):.7f}", (times[-1], values[-1]), xytext=(-12, 32), textcoords="offset points", ha="right", color=BLUE, fontsize=10)
 ax.set_title("Progress in the accepted tracker catalogue", loc="left", pad=16, fontsize=12, weight="bold")
 ax.set_ylabel("Zero-free boundary θ")
 ax.yaxis.set_major_formatter(FormatStrFormatter("%.5f"))
@@ -98,7 +96,35 @@ ax.xaxis.set_major_locator(mdates.AutoDateLocator(minticks=4, maxticks=6, tz=tz)
 ax.xaxis.set_major_formatter(mdates.DateFormatter("%b %d", tz=tz))
 ax.margins(x=.05, y=.13)
 
-bx = fig.add_axes([.68, .23, .25, .43], facecolor=BG)
+# Keep labels in boundary order in their own column. Even vertical spacing
+# separates the crowded recent points while retaining a leader to every point.
+fig.text(.59, .785, "Contributor · tracker PR · boundary θ", fontsize=12, weight="bold")
+points = [
+    (stamp(r), fraction(r), ", ".join(a["name"] for a in r["authors"]),
+     f"#{r['pr']}" if r.get("pr") else "", BLUE, r["id"] == best["id"])
+    for r in frontier
+]
+points.append((candidate_time, target, author,
+               f"PR #{pr['url'].split('/')[-1]} (this repo)", accent, True))
+points.sort(key=lambda p: p[1], reverse=True)
+contributor_labels = []
+for index, (time, boundary, name, source, color, highlight) in enumerate(points):
+    label_y = .757 - index * (.363 / max(1, len(points) - 1))
+    value = f"{float(boundary):.12f}".rstrip("0").rstrip(".")
+    label = " · ".join(part for part in (name, source, value) if part)
+    annotation = ax.annotate(
+        label, (time, float(boundary)), xycoords="data",
+        xytext=(.59, label_y), textcoords="figure fraction",
+        ha="left", va="center", fontsize=12,
+        color=color if highlight else INK,
+        weight="bold" if highlight else "normal", annotation_clip=False,
+        arrowprops=dict(arrowstyle="-", color=color if highlight else MUTED,
+                        lw=.7, alpha=.8, shrinkA=5, shrinkB=3,
+                        relpos=(0, .5), connectionstyle="arc3,rad=0"),
+    )
+    contributor_labels.append(annotation)
+
+bx = fig.add_axes([.08, .16, .85, .14], facecolor=BG)
 recent = sorted(records, key=fraction)[:3][::-1]
 labels = [", ".join(a["name"] for a in r["authors"]) + f" · #{r['pr']}" for r in recent] + [author + " · PR #8"]
 gains = [float((base - fraction(r)) * 10**6) for r in recent] + [float((base - target) * 10**6)]
@@ -120,10 +146,10 @@ for a in (ax, bx):
         spine.set_visible(False)
 foot = ("Blue: accepted tracker records. " + ("Green: independent native Lean verification." if verified else "Amber: submitted proof, replay pending.") +
         " Tracker Comparator/NanoDa/con-ron acceptance for PR #8 remains pending.")
-fig.text(.06, .145, foot, fontsize=9, color=MUTED)
-fig.text(.06, .086, f"Compared {checked_label} · {len(records)} accepted tracker entries plus PR #8. Timeline dates shown in America/New_York.\n"
+fig.text(.06, .1, foot, fontsize=9, color=MUTED)
+fig.text(.06, .06, f"Compared {checked_label} · {len(records)} accepted tracker entries plus PR #8. Timeline dates shown in America/New_York.\n"
          "Sources: GTimG/QuasiRiemannTracker live catalogue; rohanarun/quasi-rh-hillclimb PR #8 and frozen source package.", fontsize=9, color=MUTED, linespacing=1.7)
-fig.text(.06, .040, "This is a comparison of the cited sources, not a claim of a worldwide record or independent verification of the entire manuscript.", fontsize=9, color=MUTED)
+fig.text(.06, .025, "This is a comparison of the cited sources, not a claim of a worldwide record or independent verification of the entire manuscript.", fontsize=9, color=MUTED)
 args.output.parent.mkdir(parents=True, exist_ok=True)
 for suffix in ("png", "svg"):
     fig.savefig(args.output.with_suffix("."+suffix), dpi=200, facecolor=BG)
