@@ -127,6 +127,9 @@ fig.text(.06, .040, "This is a comparison of the cited sources, not a claim of a
 args.output.parent.mkdir(parents=True, exist_ok=True)
 for suffix in ("png", "svg"):
     fig.savefig(args.output.with_suffix("."+suffix), dpi=200, facecolor=BG)
+    if suffix == "svg":
+        svg = args.output.with_suffix(".svg")
+        svg.write_text("\n".join(line.rstrip() for line in svg.read_text().splitlines()) + "\n")
 args.output.with_suffix(".json").write_text(json.dumps({"candidate_theta": str(target), "accepted_best_theta": str(fraction(best)),
     "difference_exact": str(gain), "relative_gain_beyond_baseline_exact": str(relative_gain),
     "independent_native_lean_passed": verified, "tracker_acceptance": False,
