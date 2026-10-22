@@ -83,7 +83,7 @@ plt.rcParams.update({"font.family": "DejaVu Sans", "text.color": INK,
                      "axes.labelcolor": MUTED, "xtick.color": MUTED, "ytick.color": MUTED,
                      "font.size": 11, "svg.fonttype": "none"})
 fig = plt.figure(figsize=(20, 20), facecolor=BG)
-fig.text(.06, .96, "Current best boundary in the cited results" if verified else "The strongest boundary in this comparison", fontsize=25, weight="bold")
+fig.text(.06, .96, "Quasi-Riemann Hypothesis: progress in the zero-free boundary", fontsize=25, weight="bold")
 fig.text(.06, .935, "All-moduli Dirichlet nonvanishing for Re(s) > θ, excluding the principal pole. Lower θ is stronger.", fontsize=12, color=MUTED)
 fig.text(.06, .885, f"θ = {float(target):.10f}", fontsize=36, weight="bold", color=accent)
 fig.text(.06, .855, f"{author} · hillclimb PR #{pr['url'].split('/')[-1]} · {summary['result']['theta']}", fontsize=12)
@@ -100,10 +100,17 @@ ax.step(times + [candidate_time], values + [values[-1]], where="post", color=BLU
 ax.scatter(times, values, s=26, color=BLUE, zorder=3)
 ax.plot([candidate_time, candidate_time], [values[-1], float(target)], color=accent, ls="--", lw=2)
 ax.scatter([candidate_time], [float(target)], s=95, marker="D", color=accent if verified else BG, edgecolor=accent, lw=2, zorder=4)
-for row in conditional:
-    ax.scatter([date(row["time_utc"].replace(" ", "T") + ("Z" if not row["time_utc"].endswith("Z") else ""))],
-               [float(Fraction(row["theta_exact"]))], s=48, facecolors=BG,
-               edgecolors=AMBER, linewidths=1.8, zorder=4)
+conditional_time = lambda row: date(row["time_utc"].replace(" ", "T") + ("Z" if not row["time_utc"].endswith("Z") else ""))
+conditional_groups = {number: [r for r in conditional if r["pr"] == number]
+                      for number in sorted({r["pr"] for r in conditional})}
+conditional_endpoints = []
+for number, group in conditional_groups.items():
+    ordered = sorted(group, key=lambda r: (conditional_time(r), -Fraction(r["theta_exact"])))
+    ax.plot([conditional_time(r) for r in ordered],
+            [float(Fraction(r["theta_exact"])) for r in ordered],
+            color=AMBER, lw=1.5, ls="--", marker="_", markevery=[len(ordered)-1],
+            markersize=9, markeredgewidth=1.5, zorder=4)
+    conditional_endpoints.append(min(group, key=lambda r: Fraction(r["theta_exact"])))
 ax.set_title("Tracker progress and conditional PR contributions", loc="left", pad=16, fontsize=12, weight="bold")
 ax.set_ylabel("Zero-free boundary θ")
 ax.yaxis.set_major_formatter(FormatStrFormatter("%.5f"))
@@ -121,9 +128,9 @@ points = [
 ]
 points.append((candidate_time, target, author,
                f"PR #{pr['url'].split('/')[-1]} (this repo)", accent, True))
-for row in conditional:
-    points.append((date(row["time_utc"].replace(" ", "T") + ("Z" if not row["time_utc"].endswith("Z") else "")),
-                   Fraction(row["theta_exact"]), row["contributor"].replace(" (conditional)", "").replace(" (cond.)", ""),
+for row in conditional_endpoints:
+    points.append((conditional_time(row), Fraction(row["theta_exact"]),
+                   row["contributor"].split(" · ")[0],
                    f"repo #{row['pr']} · conditional", AMBER, True))
 points.sort(key=lambda p: p[1], reverse=True)
 contributor_labels = []
@@ -164,7 +171,7 @@ for a in (ax, bx):
     for spine in a.spines.values():
         spine.set_visible(False)
 foot = ("Blue: accepted tracker records. " + ("Green: independent native Lean verification." if verified else "Amber: submitted proof, replay pending.") +
-        " Orange hollow: conditional proposals; not Lean-verified.")
+        " Orange dashed: one line per conditional PR; not Lean-verified.")
 fig.text(.06, .085, "Tracker Comparator/NanoDa/con-ron acceptance for PR #8 remains pending.", fontsize=9, color=MUTED)
 
 fig.text(.06, .1, foot, fontsize=9, color=MUTED)
