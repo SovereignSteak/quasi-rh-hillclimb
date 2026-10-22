@@ -1,0 +1,15 @@
+Submissions/hailey_collet_1252270103/Record1252270103Return/PhysicalDirect/FiniteError/Normalized.lean:28:8: warning: automatically included section variable(s) unused in theorem `_private.Submissions.hailey_collet_1252270103.Record1252270103Return.PhysicalDirect.FiniteError.Normalized.0.QRH.Record1252270103Return.GenericPhysical.PhysicalDirect.PhysicalHighRowFamily.transferPoolOutside`:
+  [Geometry.Parameters]
+  [Geometry.Bounds]
+  scheme
+  [PhysicalSchedule]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Geometry.Parameters] [Geometry.Bounds] scheme [PhysicalSchedule] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'QRH.Record1252270103Return.GenericPhysical.PhysicalDirect.PhysicalHighRowFamily.actual_normalized_cube_fullW_arbitrary_saving' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QRH.Record1252270103Return.GenericPhysical.PhysicalDirect.PhysicalHighRowFamily.actual_normalized_cube_fullW_arbitrary_saving' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,68 @@
+[
+  {
+    "component": "finite-certificates",
+    "original_receipt_sha256": "9f7c3ef73b8a20347980d0662ec9add7dd15a8577bc8faa563d78ee162bbb905",
+    "qualification": "Earlier component-stage checks, not a replacement for final exact-head independent kernel acceptance. Source namespaces were subsequently adapted in the frozen public closure.",
+    "status": "PASS",
+    "completed_at": "2026-10-20T17:06:32.094212+00:00",
+    "scope": "Local finite scalar development compilation with pinned cached Mathlib and verified old Bernstein helper; no analytic endpoint, clean dependency build, Comparator, independent kernel replay or acceptance.",
+    "compiler_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+    "new_modules": 657,
+    "audited_theorems_and_lemmas": 2953,
+    "observed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "source_graph": {
+      "all_nodes": 302,
+      "derived_checked": 301,
+      "selected_nodes_including_natural": 222,
+      "selected_derived": 221
+    },
+    "seed_graph": {
+      "selected_derived_checked": 64,
+      "density_intervals": 768,
+      "natural_K": "112445673/25000000"
+    },
+    "return_rectangles": 224,
+    "supplied_return_coefficients": 2688,
+    "unique_admission_boxes": 49,
+    "admission_guards_per_branch": 15,
+    "complement_reserves": 33
+  },
+  {
+    "component": "kernel-mass",
+    "original_receipt_sha256": "9fd13ffd44c004bf76fa1e900c428af43c6bb06052deb0445accd5a85483a9ae",
+    "qualification": "Earlier component-stage checks, not a replacement for final exact-head independent kernel acceptance. Source namespaces were subsequently adapted in the frozen public closure.",
+    "scope": "Actual ideal-pair local-to-global divisor kernels and good-ideal weighted absolute mass. No analytic source theorem or endpoint acceptance claim.",
+    "passed": true,
+    "new_component_empty_object_replay": true,
+    "whole_dependency_clean_build": false,
+    "independent_kernel_replay": false,
+    "source_modules": 14,
+    "new_theorems_audited": 94,
+    "axioms_observed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "component": "Record1252270103Restoration",
+    "original_receipt_sha256": "fda1185cd0adb7f9c3b1f732bff67ceb2328bd943555b3d2beb76138ef863b44",
+    "qualification": "Empty NEW-component object directory; source-bound verified immutable dependency overlays and pinned package objects reused. Not a complete dependency clean source build or independent kernel replay.",
+    "status": "PASS",
+    "modules": 22,
+    "theorems": 69,
+    "definitions": 27,
+    "audited_declarations": 96,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "main_theorem": "QRH.Record1252270103Restoration.globalSource_of_squarefree",
+    "forward_theorem": "QRH.Record1252270103Restoration.forward_energy_transfer"
+  }
+]

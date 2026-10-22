@@ -1,0 +1,27 @@
+Submissions/hailey_collet_1252270103/Record1252270103Source/Admission/SelectedRegularCanonicalAbsoluteData.lean:27:29: warning: Variable name `l` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _l
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Submissions/hailey_collet_1252270103/Record1252270103Source/Admission/SelectedRegularCanonicalAbsoluteData.lean:39:32: warning: Variable name `q` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _q
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Submissions/hailey_collet_1252270103/Record1252270103Source/Admission/SelectedRegularCanonicalAbsoluteData.lean:49:21: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'QRH.Record1252270103Source.Admission.SelectedRegularCanonicalAbsolute.allocated_frequency' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QRH.Record1252270103Source.Admission.SelectedRegularCanonicalAbsolute.budget_true' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QRH.Record1252270103Source.Admission.SelectedRegularCanonicalAbsolute.full_budget_of_true' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QRH.Record1252270103Source.Admission.SelectedRegularCanonicalAbsolute.full_family_absolute' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

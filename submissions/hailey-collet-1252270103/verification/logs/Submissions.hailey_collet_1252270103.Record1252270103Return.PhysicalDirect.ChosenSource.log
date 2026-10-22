@@ -1,0 +1,15 @@
+Submissions/hailey_collet_1252270103/Record1252270103Return/PhysicalDirect/ChosenSource.lean:22:0: warning: automatically included section variable(s) unused in theorem `QRH.Record1252270103Return.GenericPhysical.PhysicalDirect.physical_affine_input_of_unit`:
+  [Geometry.Bounds]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Geometry.Bounds] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'QRH.Record1252270103Return.GenericPhysical.PhysicalDirect.physical_affine_input_of_unit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QRH.Record1252270103Return.GenericPhysical.PhysicalDirect.exists_chosen_initial_source_small_mesh' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QRH.Record1252270103Return.GenericPhysical.PhysicalDirect.chosen_initial_source_of_uniform_faces' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

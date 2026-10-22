@@ -1,0 +1,6 @@
+'QRH.Record1252270103Source.InitialRegularToTruncated.seed_truncated' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QRH.Record1252270103Source.InitialRegularToTruncated.nf_truncated' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

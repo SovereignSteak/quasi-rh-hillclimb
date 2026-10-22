@@ -1,0 +1,23 @@
+'QRH.Record1252270103Return.Final.literal_numerator_of_global_sources' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QRH.Record1252270103Return.Intermediate.literal_numerator_of_global_sources' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QRH.Record1252270103Return.beta_from_two_stage_global_sources' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QRH.Record1252270103Return.Final.hecke_of_global_sources' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRH.Record1252270103Return.Final.dirichlet_of_global_sources' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QRH.Record1252270103Return.Final.zeta_of_global_sources' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRH.Record1252270103Return.hecke_from_two_stage_global_sources' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QRH.Record1252270103Return.dirichlet_from_two_stage_global_sources' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QRH.Record1252270103Return.zeta_from_two_stage_global_sources' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

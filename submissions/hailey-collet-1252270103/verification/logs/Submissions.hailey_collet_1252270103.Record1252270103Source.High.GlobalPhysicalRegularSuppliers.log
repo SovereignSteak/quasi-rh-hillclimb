@@ -1,0 +1,6 @@
+'QRH.Record1252270103Source.High.GlobalPhysical.regular_supplier_some' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QRH.Record1252270103Source.High.GlobalPhysical.regular_supplier_natural' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,679 @@
+% qrh-direct-exposition-v1
+% qrh-source-alignment-v1
+\hypertarget{feedback:chapter-31.-feeding-proved-ordinary-moments-into-the-complete-high-count}{%
+\subsection{Chapter 31. Feeding proved ordinary moments into the complete HIGH count}\label{feedback:chapter-31.-feeding-proved-ordinary-moments-into-the-complete-high-count}}
+
+\hypertarget{feedback:feeding-proved-global-ordinary-sources-into-the-complete-high-count}{%
+\section{Feeding proved global ordinary sources into the complete HIGH count}\label{feedback:feeding-proved-global-ordinary-sources-into-the-complete-high-count}}
+
+\hypertarget{feedback:scope}{%
+\subsection{Scope}\label{feedback:scope}}
+
+Use the natural inverse moment, the same-zero detector and strictly earlier global ordinary moments.
+
+Fix a finite list of already proved moments
+
+\[
+ G(B_i,\Lambda_i,h_i):\qquad
+ m_1+m_2+\Lambda_i s\le B_i Q,\quad
+ m_1,m_2\ge0,\quad 0\le s\le h_iQ.
+\tag{HF1}
+\]
+
+Use only faces satisfying \(22/23\le B_i\le1,\ \Lambda_i>1,\ 0\le h_i<1\). The natural source may be included. The actual final coefficient and row restrictions, canonical fine marked pools, common profiles, heights, holes and fixed-inducing exclusions are those of the global source theorem (G1). Every face in (HF1) is fixed before the moving rows or witness lengths.
+
+Let \(Q>0\) be the ambient row exponent, \(S\ge0\) the available marked width and \(1/2\le\nu\le3/4\) the HIGH density. Put
+
+\[
+ w=5-6\nu,\quad d=5-2\nu,\quad t_\nu=3d=10+w,\qquad
+ \xi_0=\frac{10}{t_\nu},\quad
+ \rho=1-\nu\xi_0,\quad \phi=\frac{\nu w}{d}.
+\tag{HF2}
+\]
+
+Here \(\xi\) below is a LENGTH EXPONENT, not a normalized density: the target unweighted counting exponent at amplitude \(p=1/2\) is \(Q-\nu\xi\).
+
+\hypertarget{feedback:the-actual-witness-thresholds}{%
+\subsection{1. The actual witness thresholds}\label{feedback:the-actual-witness-thresholds}}
+
+The natural inverse moment permits selected width \(z_I=\min(S,(Q-r)/2)\). Therefore a target \(r+z_I\ge\xi\) is guaranteed once
+
+\[
+ r\ge r_*(\xi):=\max(\xi-S,\,2\xi-Q).
+\tag{HF3}
+\]
+
+For the plain witness put \(y=2m\). The earlier source (HF1) permits
+
+\[
+ z_P=\min\!\left(S,hQ,\frac{BQ-y}{\Lambda}\right).
+\]
+
+The target \(y+z_P\ge\xi\) is guaranteed once
+
+\[
+ y\ge y_*(\xi):=
+ \max\!\left(\xi-S,\ \xi-hQ,\
+                  \frac{\Lambda\xi-BQ}{\Lambda-1}\right).
+\tag{HF4}
+\]
+
+This formula retains both the total marked-width cap and the affine source cap. There is no lower plain or marked edge to restore. When a literal witness has \(y>BQ\), the inherited unmarked natural plain estimate supplies the required count whenever \(\xi\le BQ\). Witnesses above the natural upper range retain their inherited long unmarked treatment; they are not inserted into (HF1).
+
+The same-zero detector has the exact cutoff equation
+
+\[
+ 6\nu\xi+w\{r_*(\xi)+y_*(\xi)/2\}=5Q.
+\tag{HF5}
+\]
+
+Its left side is continuous and strictly increasing in \(\xi\). Let \(\xi_{B,\Lambda,h}(S,Q)\) be its unique solution.
+
+The admissions are uniform. At \(\xi=\xi_0Q\), each threshold in (HF3)--(HF4) is at most \(\xi_0Q\), because \(B\ge22/23>20/21\ge\xi_0\). Thus \(\xi\ge\xi_0Q\). At \(\xi=BQ\), the inverse-cap and plain-affine branches give
+
+\[
+6\nu B+w(5B/2-1)\ge5,
+\]
+
+because \[
+\frac{5+w}{6\nu+5w/2}\le\frac{22}{23}\le B.
+\]
+
+The first inequality has the exact cleared remainder \[
+ \frac{22}{23}(6\nu+5w/2)-(5+w)
+ =\frac{60}{23}(3/4-\nu)\ge0.
+\]
+
+Hence \(\xi\le BQ\), which justifies the unmarked fallback above. Also \(\xi<Q\): the inverse-cap/plain-cap branch at \(\xi=Q\) has left side greater than \(5Q\) when \(h<1\). The same-zero cutoff \(r_*+y_*/2=(5Q-6\nu\xi)/w\) therefore lies strictly above \(Q\) and at most \(5Q/d\le10Q/7<3Q/2\). The plain threshold is positive at this root. Indeed, if \(y_*\le0\), then \(r_*\le2\xi-Q\) at a possible solution with \(\xi\ge\xi_0Q\), and the left side of (HF5) is at most \((10-6\nu)\xi-wQ<5Q\), a contradiction.
+
+Moreover \(r_*\ge2\xi_0Q-Q\ge2Q/3\). On every invoked inverse branch, \(2r+8z_I\le4Q-2r\le8Q/3\), leaving the same positive second inverse-gate reserve \(Q/3\). The original small width and witness enclosure erosions fit inside these uniform reserves.
+
+\hypertarget{feedback:six-explicit-rational-facets}{%
+\subsection{2. Six explicit rational facets}\label{feedback:six-explicit-rational-facets}}
+
+Define the improvement over the unmarked density exponent by
+
+\[
+ \mathcal G_{B,\Lambda,h}(S,Q)
+   =\nu\{\xi_{B,\Lambda,h}(S,Q)-\xi_0Q\}.
+\tag{HF6}
+\]
+
+The two maxima in (HF3)--(HF4) give exactly six branches. Put
+
+\[
+ D_{13}=\Lambda t_\nu-10,\qquad
+ D_{23}=\Lambda(10+3w)-(10+2w).
+\]
+
+Both denominators are positive for \(\Lambda>1\). Then \(\mathcal G_{B,\Lambda,h}\) is the minimum of the following six quantities:
+
+\begin{landscape}
+\begingroup % exact-table-layout
+\fontsize{7.5}{9.5}\selectfont\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.18}
+\begin{longtable}{@{}
+ >{\raggedright\arraybackslash}p{35mm}
+ >{\raggedright\arraybackslash}p{35mm}
+ >{\raggedright\arraybackslash}p{170mm}@{}}
+\toprule\noalign{}
+Inverse branch & Plain branch & Exact gain \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Available slots & Available slots & \(\phi S\) \\
+Available slots & Parent width cap & \((2\phi/3)S+(\phi h/3)Q\) \\
+Available slots & Parent affine cap & \(\dfrac{2\nu w(\Lambda-1)}{D_{13}}S+\dfrac{\nu w(Bt_\nu-10)}{t_\nu D_{13}}Q\) \\
+Inverse cap & Available slots & \(\dfrac{\nu w}{10+3w}S+\dfrac{2\nu w^2}{t_\nu(10+3w)}Q\) \\
+Inverse cap & Parent width cap & \(\left\{\dfrac{2\nu w^2}{t_\nu(10+3w)}+\dfrac{\nu wh}{10+3w}\right\}Q\) \\
+Inverse cap & Parent affine cap & \(\dfrac{\nu w\{2w(\Lambda-1)+Bt_\nu-10\}}{t_\nu D_{23}}Q\) \\
+\end{longtable}
+\endgroup
+\end{landscape}
+
+These are identities obtained by solving six linear equations for \(\xi\). No witness branch, cap or complement is omitted. For the natural face \(B=1,\Lambda=9/2\), with an inactive width cap, the usual three NR branches are recovered after removing redundant facets. Using the actually proved natural cost \(K=4.4973108\) is permitted directly in the same six-facet formula.
+
+For a finite proved family define
+
+\[
+ \mathcal G_*(S,Q)=
+        \max_i\mathcal G_{B_i,\Lambda_i,h_i}(S,Q).
+\tag{HF7}
+\]
+
+For each fixed face, the entire detector argument, including its cutoff, proves the full row-class count below. Taking the minimum of this finite list of complete bounds gives (HF7). Equivalently, the face can be selected using \((S,Q,\nu)\) before invoking the detector and before its inverse or ordinary witness is produced. Every selected theorem is strictly earlier, and its cutoff remains fixed throughout the detector and witness argument.
+
+\hypertarget{feedback:count-and-weighted-mass-at-the-original-zero}{%
+\subsection{3. Count and weighted mass at the original zero}\label{feedback:count-and-weighted-mass-at-the-original-zero}}
+
+At marked amplitude \(p=1/2\), the preceding inverse and plain bounds give the count exponent
+
+\[
+ \#\mathrm{HIGH}\ll
+ U^{\rho Q-\mathcal G_*(S,Q)+\epsilon}.
+\tag{HF8}
+\]
+
+For \(0\le p\le1/2\), the same deduction gives
+
+\[
+ \#\mathrm{HIGH}\ll
+ U^{\rho Q+(1-2p)\nu S-\mathcal G_*(S,Q)+\epsilon}.
+\tag{HF9}
+\]
+
+Indeed each retained marked width \(z\le S\) satisfies \(2pz+(1-2p)S\ge z\), in both the inverse and plain Markov estimates. The detector stays at the original zero and retains its original finite witness and independent common height. Multiplying by the original amplitude-bin weight gives the complete marked weighted-mass exponent
+
+\[
+ \boxed{\quad
+ \rho Q+\nu S-\mathcal G_*(S,Q)+\epsilon .
+ \quad}
+\tag{HF10}
+\]
+
+All statements keep the same original eligible presentations and fixed-inducing exclusions as the inherited HIGH count.
+
+\hypertarget{feedback:common-width-losses-and-full-sixth-root-completion}{%
+\subsection{4. Common-width losses and full sixth-root completion}\label{feedback:common-width-losses-and-full-sixth-root-completion}}
+
+Every facet has nonnegative coefficients in \(S,Q\). Nonnegativity of the affine-parent row coefficients follows from \(B\ge\xi_0\). The marked-width coefficients are at most \(\phi\). Every row coefficient is at most
+
+\[
+ C_{\max}(\nu)=\nu(1-\xi_0)=\nu+\rho-1.
+\tag{HF11}
+\]
+
+For the latter assertion, the corresponding normalized root of each linear branch at \(S=0\) is at most one. This follows directly from \(B\le1,\ h<1,\ \Lambda>1,\ w>0\). More explicitly, if that root is \(N/D\), then in either inverse branch the three values of \(D-N\), in the order of the plain branches, are \[
+ \frac w2,\qquad\frac{w(1-h)}2,\qquad
+ \frac{w(\Lambda-B)}{2(\Lambda-1)}.
+\] All are nonnegative. Thus each gain, its minimum of facets, and the finite maximum (HF7) are monotone, \(\phi\)-Lipschitz in \(S\), and \(C_{\max}\)-Lipschitz in \(Q\). The first and either slot-independent facet also give \(\mathcal G_*\le\min(\phi S,C_{\max}Q)\).
+
+The existing restricted first-common calculation therefore still pays the full loss of gain:
+
+\[
+ \nu-\phi-2C_{\max}
+ =\frac{\nu(8\nu-10/3)}{5-2\nu}
+ \ge\frac1{12}>0
+ \quad(1/2\le\nu\le3/4).
+\tag{HF12}
+\]
+
+For an exact check of its uniform margin, \[
+ \nu-\phi-2C_{\max}-\frac1{12}
+ =\frac{(2\nu-1)(48\nu+5)}{12(5-2\nu)}\ge0.
+\]
+
+The original common relations \(L+c+b_2\ge S\) and \(Q+2c+2b_2\ge F\), together with the individually favorable restricted common form, suffice. Fixed-inducing and tiny-core HIGH sectors use (LD15)--(LD17), with their actual core counts; (HF10) is used only on its eligible ordinary cores.
+
+The complete sixth-root argument also retains explicit positive reserves:
+
+\[
+ 6(\rho-C_{\max})=6(1-\nu)\ge\frac32>1,
+\tag{HF13}
+\]
+
+\[
+ \frac{\rho-1/6}{2}-C_{\max}
+ =\frac5{12}-\nu+\frac{5\nu}{3(5-2\nu)}
+ \ge\frac1{42}>0.
+\tag{HF14}
+\]
+
+The last margin has the exact factorization \[
+ \frac{\rho-1/6}{2}-C_{\max}-\frac1{42}
+ =\frac{(3-4\nu)(55-42\nu)}{84(5-2\nu)}\ge0.
+\] The complete root summation (RT1) now applies with g=Cmax, using (HF13) for the small-root series and (HF14) for the large-root tail. The proof retains natural zeros, all six units, supplementary root holes and the separate fixed-inducing terminal exclusions.
+
+\hypertarget{feedback:finite-source-certification-requirement}{%
+\subsection{5. Finite source certification requirement}\label{feedback:finite-source-certification-requirement}}
+
+In a new source proof replace the regular HIGH gate by
+
+\[
+ H+\mathcal G_*(S,F_p)>e_H,\qquad
+ H=1-\rho-\nu T-a(5-6\rho).
+\tag{HF15}
+\]
+
+LOW, true diagonal, centered terminal, natural reference and special HIGH gates remain explicit. Each HIGH source ID in (HF7) is an additional earlier dependency of the new node.
+
+For an exact proof, choose one earlier HIGH face on each finite width-density rectangle and verify all six positive-denominator-cleared facet inequalities there. Each is affine in the width endpoint and polynomial in \(\nu\) after clearing denominators. Exact endpoint/ Bernstein positivity proves the rectangle. If different faces are chosen at the two width endpoints, positivity does NOT automatically interpolate; split the width interval or use a common face first.
+
+The finite rational source graph must be certified before the new source face is used in a further HIGH or LOW calculation.
+
+\hypertarget{feedback:the-selected-finite-ordinary-source-moments}{%
+\section{The selected finite ordinary source moments}\label{feedback:the-selected-finite-ordinary-source-moments}}
+
+\hypertarget{feedback:statement-and-literal-coefficient-scope}{%
+\subsection{1. Statement and literal coefficient scope}\label{feedback:statement-and-literal-coefficient-scope}}
+
+We now construct the finite graph of ordinary source moments used in the final return. The coefficient is the literal two-ordinary-factor row (160), with the fixed marked pools and natural zeros. The final selected graph and exact constants are printed below; its two selected faces are used by the following complete return chapter. The analytic ingredients are the complete source identities, divisor transport, centered terminal, and LOW/HIGH estimates proved above.
+
+For a fixed face write
+
+\[
+G(B,\Lambda,h):\quad
+\mathcal E\ll U^{Q+\epsilon}\mathcal H_J,
+\qquad m_1,m_2\ge0,\quad0\le s\le hQ,\quad
+m_1+m_2+\Lambda s\le BQ.
+\tag{NF1}
+\]
+
+Here the ambient row scale is U\^{}Q; the normalized exponent is Q=1 when no rescaling is displayed. Equivalently, at an independent ambient scale V the bound is V\^{}(1+epsilon), with source lengths normalized to V. The row character, natural zeros, finite rays, keep predicate, supplementary holes, ordinary two-factor coefficient, common profiles and independently bounded polynomial heights are exactly those of G1. Every canonical marked pool is fixed before moving rows and heights; the retained-projector collision reconstruction includes overlapping pools. The final ordinary source has no lower individual plain-length or marked-width edge.
+
+\textbf{Theorem NF.} Every face in the selected 222-node graph printed below is an admitted moment (NF1). Its LOW and HIGH dependencies are strictly earlier faces. The only natural premise in the graph is
+
+\[
+G(1,K,11/200),\qquad K=11243277/2500000=4.4973108,
+\tag{NF2}
+\]
+
+which was proved from the earlier endpoint c=0.1252241 in the first complete return above. The natural premise precedes all 221 derived nodes. Every LOW and HIGH ancestor used here is printed below and precedes its child.
+
+\hypertarget{feedback:fixed-data-and-the-source-cell}{%
+\subsection{2. Fixed data and the source cell}\label{feedback:fixed-data-and-the-source-cell}}
+
+For each node use exactly the rational parameters in the selected graph. Fix its earlier LOW parent \((B_0,\Lambda_0,h_0)\), earlier HIGH parent when present, and the printed accounting schedule \((e,r,f)\). At width-cell upper endpoint \(b\), put \[
+ t=B-\Lambda(b-e),\quad T=t+b,\quad S=b-2e,
+\] \[
+ a=\frac{q\{b+(t-B_0)/\Lambda_0\}+r}
+        {1-6qB_0/\Lambda_0},\qquad F=1-6a,\quad F_p=F-e.
+ \tag{NF4}
+\] These are the actual parameters checked in the gates below.
+
+\hypertarget{feedback:complete-low-domain-and-induction}{%
+\subsection{3. Complete LOW domain and induction}\label{feedback:complete-low-domain-and-induction}}
+
+For a child and its LOW parent let
+
+\[
+b_\times=(B_0-B)/(\Lambda_0-\Lambda).
+\tag{NF8}
+\]
+
+The final graph verifies \ensuremath{\Lambda}\textless \ensuremath{\Lambda}0 and 0\ensuremath{\le}b\ensuremath{\times}\ensuremath{\le}min(h,h0). For 0\ensuremath{\le}s\ensuremath{\le}b\ensuremath{\times} the child line B\ensuremath{-}\ensuremath{\Lambda}s is no greater than its earlier parent line, and the parent cap covers s. Thus that complete lower-width interval is already proved. On b\ensuremath{\times}\ensuremath{\le}b\ensuremath{\le}h use the original source proof with (NF4).
+
+The temporary two-plain squarefree restriction is imposed exactly as in Chapter 25. The forward and inverse divisor kernels have subpower central mass, and the restoration shortens both ordinary factors. The extraction law retains the full common puncture. Therefore only the original four first-common types 11,12,21,22 occur. With their notation the genuine RAW radius is Q=F\ensuremath{-}(B12\ensuremath{-}C21)+, and
+
+\[
+Q\ge F-T/2-o(1).
+\tag{NF9}
+\]
+
+The exact certificate keeps this uniformly positive. The earlier theorem is applied at the actual rescaled ambient norm U\^{}Q, including both the actual and equal-product reference rectangles; its globally downward closed source domain admits every later shortening.
+
+The LOW proof retains both erasure floors. Its three branches are exactly G12--G13: the zero-erasure branch costs at most \ensuremath{-}a; the affine parent-cap branch costs at most \ensuremath{-}r; and the parent's upper-width-cap branch costs at most \ensuremath{-}r after retaining the weak guard h0F\ensuremath{-}z0\ensuremath{\ge}0, where z0=(B0F\ensuremath{-}t)/\ensuremath{\Lambda}0. The upper-width-cap branch uses this non-strict guard. The positive reserves in the other gates pay the smoothing and greedy slot loss. The natural zero factors in the RAW character are never removed by division.
+
+The independent scalar replay checks every one of the following at b\ensuremath{\times} and h; every expression is affine in b:
+
+\[
+\begin{gathered}
+1-6qB_0/\Lambda_0>0,\quad S>0,\quad a>0,\quad1/75-a>0,\\
+F-T/2-4e>0,\quad B_0F-t-b-4e>0,\quad1-qh_0>0,\\
+r-(qB_0/\Lambda_0+qh_0+4)e-10e>0,\quad a-20e>0,\\
+L_{\rm ref}=49/100-Kb>0,\quad
+1-L_{\rm ref}-1/2-Kb-10e>0,\\
+5/6+(499/1000)L_{\rm ref}-T-9a-f>0,\\
+1-T-5a-f>0,\quad1-1/50-T-4a-f>0,\\
+1-1/50-T-(9/2)a-f>0,\quad L_{\rm ref}-7a-f>0,\\
+h_0F-z_0\ge0.
+\end{gathered}
+\tag{NF10}
+\]
+
+The centered terminal uses the same elementary contour 501/1000 and saving 499/1000. The equal-product double residue is canceled before absolute values. The corrected amplifier retains the full restricted centered coefficient at fixed-inducing terminals. The exact corrected-amplifier identity is applied to the whole centered coefficient.
+
+\hypertarget{feedback:all-high-facets-and-exceptional-sectors}{%
+\subsection{4. All HIGH facets and exceptional sectors}\label{feedback:all-high-facets-and-exceptional-sectors}}
+
+For q\ensuremath{\le}\ensuremath{\nu}\ensuremath{\le}3/4 put w\ensuremath{\nu}=5\ensuremath{-}6\ensuremath{\nu}, t\ensuremath{\nu}=15\ensuremath{-}6\ensuremath{\nu}, \ensuremath{\rho}\ensuremath{\nu}=1\ensuremath{-}10\ensuremath{\nu}/t\ensuremath{\nu}, and
+
+\[
+H_\nu=1-\rho_\nu-\nu T-a(5-6\rho_\nu).
+\tag{NF11}
+\]
+
+The earlier HIGH face has the six gains proved in HF3--HF10. In their original order they are
+
+\[
+\begin{gathered}
+\frac{3\nu w_\nu}{t_\nu}S,\qquad
+\frac{2\nu w_\nu}{t_\nu}S+
+\frac{\nu w_\nu h_H}{t_\nu}F_p,\\
+\frac{2\nu w_\nu(\Lambda_H-1)}{\Lambda_Ht_\nu-10}S+
+\frac{\nu w_\nu(B_Ht_\nu-10)}{t_\nu(\Lambda_Ht_\nu-10)}F_p,\\
+\frac{\nu w_\nu}{10+3w_\nu}S+
+\frac{2\nu w_\nu^2}{t_\nu(10+3w_\nu)}F_p,\\
+\left\{\frac{2\nu w_\nu^2}{t_\nu(10+3w_\nu)}+
+\frac{\nu w_\nu h_H}{10+3w_\nu}\right\}F_p,\\
+\frac{\nu w_\nu\{2w_\nu(\Lambda_H-1)+B_Ht_\nu-10\}}
+ {t_\nu\{\Lambda_H(10+3w_\nu)-(10+2w_\nu)\}}F_p.
+\end{gathered}
+\tag{NF12}
+\]
+
+The final graph checks H\ensuremath{\nu} plus \textbf{each} gain in (NF12) exceeds f on the full closed density interval. Thus its minimum is sufficient. A single earlier HIGH parent remains fixed on a child's whole width interval. Every HIGH parent satisfies 22/23\ensuremath{\le}BH\ensuremath{\le}1, \ensuremath{\Lambda}H\textgreater1, 0\ensuremath{\le}hH\textless1.
+
+For original nodes without HIGH feedback, the original three regular gains G14--G16 are replayed instead. The rule for each node is determined by whether it has an earlier HIGH parent. The original special sectors are retained with r0=1/50:
+
+\[
+\begin{gathered}
+H_\nu+\nu F_p/2-(1-\nu)b>f,\\
+H_\nu+(\rho_\nu-1/6)F_p-(1-\nu)b>f,\\
+H_\nu+\nu(F_p-r_0)/2-(1-\rho_\nu)r_0-(1-\nu)b>f.
+\end{gathered}
+\tag{NF13}
+\]
+
+These are the actual fixed-inducing, small-core and tiny-core bounds, not uses of the regular count outside its eligible family. They include every common root and natural zero in their original orientation.
+
+The earlier HF proof already establishes the complete root and common-width reserves
+
+\[
+\nu-\phi-2C_{\max}\ge1/12,\quad
+6(\rho_\nu-C_{\max})\ge3/2,\quad
+(\rho_\nu-1/6)/2-C_{\max}\ge1/42.
+\tag{NF14}
+\]
+
+The checked parent domains preserve these inequalities. Thus the new choice of source constants neither truncates sixth-power completion nor loses the large-root tail. The original whole-source restoration and coefficient-specific physical transport remain applicable.
+
+\hypertarget{feedback:exact-continuous-and-computational-proof}{%
+\subsection{5. Exact continuous and computational proof}\label{feedback:exact-continuous-and-computational-proof}}
+
+Multiplying by the explicitly positive density denominators in (NF12) and (NF13) produces polynomials of degree at most three in \ensuremath{\nu}. For example, set
+
+\[
+P_H(\nu)=(a-\nu T)t_\nu+(10-60a)\nu.
+\]
+
+The third regular inequality has the exact cleared polynomial
+
+\[
+\begin{split}
+P_H(\Lambda_Ht_\nu-10)
+&+2\nu w_\nu(\Lambda_H-1)S t_\nu
++\nu w_\nu(B_Ht_\nu-10)F_p\\
+&-f t_\nu(\Lambda_Ht_\nu-10)>0.
+\end{split}
+\tag{NF15}
+\]
+
+If p(q+(3/4\ensuremath{-}q)x)=\ensuremath{\Sigma}a\_\allowbreak{}jx\^{}j has degree n\ensuremath{\le}3, its exact Bernstein coefficients are b\_\allowbreak{}i=\ensuremath{\Sigma}\_\{j\ensuremath{\le}i\}a\_\allowbreak{}j binom(i,j)/binom(n,j). Positivity of all b\_\allowbreak{}i implies p\textgreater0 on the closed interval. Both width endpoints are checked. Affinity in b then proves the complete width-density rectangle, including all boundary values. Exact rational bisection is permitted if a polynomial's initial Bernstein presentation has a negative coefficient; no point sampling is substituted for positivity.
+
+Use the exact rational parameters in the complete selected graph below. For each node, form every cleared scalar and density polynomial above and test its Bernstein coefficients at both width endpoints. Both parent relations are included in the printed graph, so the induction has no unlisted source premise.
+
+The two permitted per-node accounting schedules are
+
+\begin{landscape}
+\begingroup % exact-table-layout
+\fontsize{7.5}{9.5}\selectfont\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.18}
+\begin{longtable}{@{}
+ >{\raggedright\arraybackslash}p{48mm}
+ >{\raggedright\arraybackslash}p{62mm}
+ >{\raggedright\arraybackslash}p{62mm}
+ >{\raggedright\arraybackslash}p{62mm}@{}}
+\toprule\noalign{}
+Schedule & e (each support, tiny-slot, radius and analytic allowance) & r & f \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+original & 10\^{}\ensuremath{-}12 & 10\^{}\ensuremath{-}8 & 10\^{}\ensuremath{-}7 \\
+tight & 10\^{}\ensuremath{-}17 & 10\^{}\ensuremath{-}12 & 10\^{}\ensuremath{-}10 \\
+\end{longtable}
+\endgroup
+\end{landscape}
+
+These are fixed positive rational budgets for the actual losses. Once the finite graph and its minimum positive normalized reserve are fixed, choose every actual smoothing, height, mesh, Fourier, profile and tail loss smaller than the relevant allowances and that minimum. The finite positive lower bounds in (NF9) permit pulling the meshes back through every dependency path. This fixes a common permitted outer mesh before the moving arithmetic data and target height.
+
+Induction over the finite acyclic graph now proves all faces in (NF1). The exact ordinary restoration is completed at each node before its moment enters a later LOW or HIGH calculation. This proves Theorem NF.
+
+\hypertarget{feedback:complete-selected-source-graph}{%
+\section{Complete selected source graph}\label{feedback:complete-selected-source-graph}}
+
+All decimals below are exact rationals. Both parent columns are dependencies. There are 222 nodes, including the natural premise, and 221 derived nodes. Each parent precedes its child. O means \(e=10^{-12},r=10^{-8},f=10^{-7}\); T means \(e=10^{-17},r=10^{-12},f=10^{-10}\).
+
+\begin{landscape}
+\begingroup % exact-table-layout
+\fontsize{7.5}{9.5}\selectfont\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.18}
+\begin{longtable}{@{}
+ >{\raggedright\arraybackslash}p{40mm}
+ >{\raggedright\arraybackslash}p{40mm}
+ >{\raggedright\arraybackslash}p{40mm}
+ >{\raggedright\arraybackslash}p{26mm}
+ >{\raggedright\arraybackslash}p{26mm}
+ >{\raggedright\arraybackslash}p{26mm}
+ >{\raggedright\arraybackslash}p{26mm}
+ >{\raggedright\arraybackslash}p{12mm}@{}}
+\toprule\noalign{}
+ID & Earlier LOW & Earlier HIGH & B & Lambda & q & Cap & Budget \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+natural & --- & --- & 1 & 4.4973108 & --- & 0.055 & O \\
+g1\_\allowbreak{}14000 & natural & --- & 0.999728337095 & 4.477808881865 & 0.746594775892 & 0.029031830945 & O \\
+g2\_\allowbreak{}14000 & g1\_\allowbreak{}14000 & --- & 0.999594902255 & 4.468137794316 & 0.745036095459 & 0.02928436799 & O \\
+g3\_\allowbreak{}14000 & g2\_\allowbreak{}14000 & --- & 0.999529803492 & 4.463458465136 & 0.744281511009 & 0.029406485102 & O \\
+d1\_\allowbreak{}15000 & g3\_\allowbreak{}14000 & --- & 0.999160571842 & 4.437915516591 & 0.740398227149 & 0.030034563047 & O \\
+d2\_\allowbreak{}15000 & d1\_\allowbreak{}15000 & --- & 0.998979353436 & 4.425621858467 & 0.738418617533 & 0.030352855066 & O \\
+d3\_\allowbreak{}16000 & d2\_\allowbreak{}15000 & --- & 0.998526782073 & 4.396190384595 & 0.733933259727 & 0.031074755403 & O \\
+d4\_\allowbreak{}16000 & d3\_\allowbreak{}16000 & --- & 0.998305148906 & 4.382076743662 & 0.73166196806 & 0.031437171018 & O \\
+d5\_\allowbreak{}17000 & d4\_\allowbreak{}16000 & --- & 0.997806629136 & 4.351604636136 & 0.727033114831 & 0.032176781955 & O \\
+d6\_\allowbreak{}17000 & d5\_\allowbreak{}17000 & --- & 0.997563469218 & 4.337040689065 & 0.724689897985 & 0.032547808962 & O \\
+d7\_\allowbreak{}17000 & d6\_\allowbreak{}17000 & --- & 0.99744582902 & 4.330063533905 & 0.723566154511 & 0.032725474844 & O \\
+d8\_\allowbreak{}17000 & d7\_\allowbreak{}17000 & --- & 0.997389116831 & 4.326717090516 & 0.72302691939 & 0.032810663544 & O \\
+d9\_\allowbreak{}18000 & d8\_\allowbreak{}17000 & --- & 0.996945441116 & 4.301321094119 & 0.719238029225 & 0.033412291804 & O \\
+hf1\_\allowbreak{}18000 & d9\_\allowbreak{}18000 & d9\_\allowbreak{}18000 & 0.99672936873 & 4.289147546159 & 0.717279384318 & 0.033719481145 & O \\
+hf2\_\allowbreak{}18000 & hf1\_\allowbreak{}18000 & hf1\_\allowbreak{}18000 & 0.996625328299 & 4.283331355402 & 0.716342414852 & 0.033866370851 & O \\
+hf3\_\allowbreak{}18000 & hf2\_\allowbreak{}18000 & hf2\_\allowbreak{}18000 & 0.996575370429 & 4.280550216348 & 0.715894196565 & 0.033936591505 & O \\
+hf4\_\allowbreak{}19000 & hf3\_\allowbreak{}18000 & hf3\_\allowbreak{}18000 & 0.996107700343 & 4.255238388437 & 0.712142385557 & 0.034527842718 & O \\
+hf5\_\allowbreak{}19000 & hf4\_\allowbreak{}19000 & hf4\_\allowbreak{}19000 & 0.995882099985 & 4.243209054717 & 0.710205709078 & 0.034829541873 & O \\
+hf6\_\allowbreak{}19000 & hf5\_\allowbreak{}19000 & hf5\_\allowbreak{}19000 & 0.995773892149 & 4.237481015354 & 0.709282624823 & 0.034973164796 & O \\
+hf7\_\allowbreak{}20000 & hf6\_\allowbreak{}19000 & hf6\_\allowbreak{}19000 & 0.995250827005 & 4.210584516618 & 0.705298937632 & 0.03559664186 & O \\
+hf8\_\allowbreak{}20000 & hf7\_\allowbreak{}20000 & hf7\_\allowbreak{}20000 & 0.994999413199 & 4.197848916322 & 0.703247759178 & 0.035913866151 & O \\
+hf9\_\allowbreak{}20000 & hf8\_\allowbreak{}20000 & hf8\_\allowbreak{}20000 & 0.994879250807 & 4.191805939032 & 0.702273428495 & 0.036064361467 & O \\
+hf10\_\allowbreak{}20000 & hf9\_\allowbreak{}20000 & hf9\_\allowbreak{}20000 & 0.99482194504 & 4.188935102552 & 0.70181033895 & 0.036135843944 & O \\
+hf11\_\allowbreak{}21000 & hf10\_\allowbreak{}20000 & hf10\_\allowbreak{}20000 & 0.994296235347 & 4.163260665204 & 0.698046419081 & 0.036721446668 & O \\
+hf12\_\allowbreak{}21000 & hf11\_\allowbreak{}21000 & hf11\_\allowbreak{}21000 & 0.994044763586 & 4.15114487246 & 0.696093431603 & 0.037021283019 & O \\
+hf13\_\allowbreak{}21000 & hf12\_\allowbreak{}21000 & hf12\_\allowbreak{}21000 & 0.99392506662 & 4.145415673306 & 0.695168917434 & 0.037163056127 & O \\
+hf14\_\allowbreak{}22000 & hf13\_\allowbreak{}21000 & hf13\_\allowbreak{}21000 & 0.993341719307 & 4.118217994941 & 0.691182423061 & 0.037779250731 & O \\
+hf15\_\allowbreak{}22000 & hf14\_\allowbreak{}22000 & hf14\_\allowbreak{}22000 & 0.993063736241 & 4.105433270088 & 0.689119844696 & 0.038093734712 & O \\
+hf16\_\allowbreak{}22000 & hf15\_\allowbreak{}22000 & hf15\_\allowbreak{}22000 & 0.992931914267 & 4.099410332475 & 0.688146977768 & 0.03824189353 & O \\
+hf17\_\allowbreak{}23000 & hf16\_\allowbreak{}22000 & hf16\_\allowbreak{}22000 & 0.992315106324 & 4.071930830049 & 0.68413754839 & 0.038857977104 & O \\
+hf18\_\allowbreak{}23000 & hf17\_\allowbreak{}23000 & hf17\_\allowbreak{}23000 & 0.992022432465 & 4.059062212086 & 0.682058959125 & 0.03917274804 & O \\
+hf19\_\allowbreak{}24000 & hf18\_\allowbreak{}23000 & hf18\_\allowbreak{}23000 & 0.99130064954 & 4.028192423722 & 0.677524714812 & 0.039864751485 & O \\
+hf20\_\allowbreak{}24000 & hf19\_\allowbreak{}24000 & hf19\_\allowbreak{}24000 & 0.990959343997 & 4.013799589186 & 0.675197222069 & 0.040214962673 & O \\
+hf21\_\allowbreak{}24000 & hf20\_\allowbreak{}24000 & hf20\_\allowbreak{}24000 & 0.990798743487 & 4.007072252125 & 0.674107674548 & 0.040378700074 & O \\
+hf22\_\allowbreak{}24000 & hf21\_\allowbreak{}24000 & hf21\_\allowbreak{}24000 & 0.990723321394 & 4.003923795898 & 0.67359741305 & 0.040455333676 & O \\
+hf23\_\allowbreak{}25000 & hf22\_\allowbreak{}24000 & hf22\_\allowbreak{}24000 & 0.990077625687 & 3.977541258072 & 0.669809745484 & 0.041031369151 & O \\
+hf24\_\allowbreak{}25000 & hf23\_\allowbreak{}25000 & hf23\_\allowbreak{}25000 & 0.989774091932 & 3.965281527808 & 0.667822948365 & 0.041328286815 & O \\
+hf25\_\allowbreak{}25000 & hf24\_\allowbreak{}25000 & hf24\_\allowbreak{}25000 & 0.989631953208 & 3.959572136647 & 0.666896432582 & 0.041466606877 & O \\
+hf26\_\allowbreak{}26000 & hf25\_\allowbreak{}25000 & hf25\_\allowbreak{}25000 & 0.988926394765 & 3.931849506857 & 0.662913807865 & 0.042068799432 & O \\
+hf27\_\allowbreak{}26000 & hf26\_\allowbreak{}26000 & hf26\_\allowbreak{}26000 & 0.988596125754 & 3.919022727362 & 0.660831253508 & 0.042378100024 & O \\
+hf28\_\allowbreak{}27000 & hf27\_\allowbreak{}26000 & hf27\_\allowbreak{}26000 & 0.987773250694 & 3.887835855811 & 0.656308351216 & 0.043057452934 & O \\
+hf29\_\allowbreak{}27000 & hf28\_\allowbreak{}27000 & hf28\_\allowbreak{}27000 & 0.987389549473 & 3.873475154569 & 0.653972325597 & 0.043402354825 & O \\
+hf30\_\allowbreak{}28000 & hf29\_\allowbreak{}27000 & hf29\_\allowbreak{}27000 & 0.986513545378 & 3.8414719366 & 0.649336924806 & 0.044094993118 & O \\
+hf31\_\allowbreak{}28000 & hf30\_\allowbreak{}28000 & hf30\_\allowbreak{}28000 & 0.986106993006 & 3.826802385042 & 0.6469448432 & 0.044446083805 & O \\
+hf32\_\allowbreak{}29000 & hf31\_\allowbreak{}28000 & hf31\_\allowbreak{}28000 & 0.985192390682 & 3.794564884978 & 0.642290688484 & 0.045138232893 & O \\
+hf33\_\allowbreak{}29000 & hf32\_\allowbreak{}29000 & hf32\_\allowbreak{}29000 & 0.984770022896 & 3.779855703275 & 0.639885490763 & 0.045489205967 & O \\
+hf34\_\allowbreak{}29000 & hf33\_\allowbreak{}29000 & hf33\_\allowbreak{}29000 & 0.984575692548 & 3.773125909625 & 0.638782863509 & 0.045649928802 & O \\
+hf35\_\allowbreak{}30000 & hf34\_\allowbreak{}29000 & hf34\_\allowbreak{}29000 & 0.983732461943 & 3.744486776747 & 0.634735336593 & 0.046250643205 & O \\
+hfd1\_\allowbreak{}30000 & hf35\_\allowbreak{}30000 & hf35\_\allowbreak{}30000 & 0.983345336653 & 3.731473928414 & 0.632600050951 & 0.046560406497 & O \\
+hfd2\_\allowbreak{}30500 & hfd1\_\allowbreak{}30000 & hfd1\_\allowbreak{}30000 & 0.982781163598 & 3.712754005416 & 0.629859768541 & 0.046963721777 & O \\
+hfd3\_\allowbreak{}31000 & hfd2\_\allowbreak{}30500 & hfd2\_\allowbreak{}30500 & 0.982128539481 & 3.691417541341 & 0.626693906859 & 0.04742770084 & O \\
+hfd4\_\allowbreak{}31500 & hfd3\_\allowbreak{}31000 & hfd3\_\allowbreak{}31000 & 0.981428622487 & 3.668886738299 & 0.6233348932 & 0.047918525836 & O \\
+hfd5\_\allowbreak{}32000 & hfd4\_\allowbreak{}31500 & hfd4\_\allowbreak{}31500 & 0.98070055431 & 3.64581392482 & 0.619889261176 & 0.048420745598 & O \\
+hfd6\_\allowbreak{}32000 & hfd5\_\allowbreak{}32000 & hfd5\_\allowbreak{}32000 & 0.980370106018 & 3.635423616051 & 0.618171022473 & 0.048667246738 & O \\
+hfd7\_\allowbreak{}32500 & hfd6\_\allowbreak{}32000 & hfd6\_\allowbreak{}32000 & 0.979804946823 & 3.617851768494 & 0.615634958594 & 0.049037936909 & O \\
+hfd8\_\allowbreak{}33000 & hfd7\_\allowbreak{}32500 & hfd7\_\allowbreak{}32500 & 0.979125927981 & 3.597023089626 & 0.61256406237 & 0.049484402919 & O \\
+hfd9\_\allowbreak{}33000 & hfd8\_\allowbreak{}33000 & hfd8\_\allowbreak{}33000 & 0.978819509534 & 3.587688258235 & 0.611013711509 & 0.04970564193 & O \\
+hfd10\_\allowbreak{}33500 & hfd9\_\allowbreak{}33000 & hfd9\_\allowbreak{}33000 & 0.978251705516 & 3.570571696674 & 0.608560693423 & 0.050063096856 & O \\
+hfd11\_\allowbreak{}34000 & hfd10\_\allowbreak{}33500 & hfd10\_\allowbreak{}33500 & 0.977558486421 & 3.549943534308 & 0.605528254125 & 0.05050233955 & O \\
+hfd12\_\allowbreak{}34000 & hfd11\_\allowbreak{}34000 & hfd11\_\allowbreak{}34000 & 0.977247443492 & 3.540748883153 & 0.603994468703 & 0.05072011157 & O \\
+hfd13\_\allowbreak{}34500 & hfd12\_\allowbreak{}34000 & hfd12\_\allowbreak{}34000 & 0.97666394312 & 3.52367483789 & 0.601556071949 & 0.051074234096 & O \\
+hfd14\_\allowbreak{}34500 & hfd13\_\allowbreak{}34500 & hfd13\_\allowbreak{}34500 & 0.976402999446 & 3.516080692664 & 0.600285744531 & 0.051254121523 & O \\
+hfd15\_\allowbreak{}35000 & hfd14\_\allowbreak{}34500 & hfd14\_\allowbreak{}34500 & 0.975835299743 & 3.499715244101 & 0.597969382119 & 0.05159038214 & O \\
+hfd16\_\allowbreak{}35000 & hfd15\_\allowbreak{}35000 & hfd15\_\allowbreak{}35000 & 0.975582191037 & 3.492456227587 & 0.596752083824 & 0.051762334998 & O \\
+hfd17\_\allowbreak{}35500 & hfd16\_\allowbreak{}35000 & hfd16\_\allowbreak{}35000 & 0.975011157491 & 3.476230034848 & 0.594462939819 & 0.052094218112 & O \\
+hfd18\_\allowbreak{}36000 & hfd17\_\allowbreak{}35500 & hfd17\_\allowbreak{}35500 & 0.974290739357 & 3.456002433325 & 0.591506671298 & 0.052519542295 & O \\
+hfd19\_\allowbreak{}36000 & hfd18\_\allowbreak{}36000 & hfd18\_\allowbreak{}36000 & 0.973970684391 & 3.447071234237 & 0.59000283812 & 0.052731013724 & O \\
+hfd20\_\allowbreak{}36500 & hfd19\_\allowbreak{}36000 & hfd19\_\allowbreak{}36000 & 0.973356670357 & 3.430099495213 & 0.587595344622 & 0.053078501843 & O \\
+hfd21\_\allowbreak{}36500 & hfd20\_\allowbreak{}36500 & hfd20\_\allowbreak{}36500 & 0.973085321609 & 3.422637616638 & 0.586334523985 & 0.05325534842 & O \\
+hfd22\_\allowbreak{}37000 & hfd21\_\allowbreak{}36500 & hfd21\_\allowbreak{}36500 & 0.972485691643 & 3.406294983996 & 0.5840371495 & 0.053586901491 & O \\
+hfd23\_\allowbreak{}37000 & hfd22\_\allowbreak{}37000 & hfd22\_\allowbreak{}37000 & 0.972221535637 & 3.39913063001 & 0.582823182389 & 0.053756779143 & O \\
+hfd24\_\allowbreak{}37500 & hfd23\_\allowbreak{}37000 & hfd23\_\allowbreak{}37000 & 0.971618318473 & 3.3829124746 & 0.580550503438 & 0.054084415412 & O \\
+hfd25\_\allowbreak{}38000 & hfd24\_\allowbreak{}37500 & hfd24\_\allowbreak{}37500 & 0.97085814833 & 3.362704874854 & 0.577605351897 & 0.054505430243 & O \\
+hfd26\_\allowbreak{}38000 & hfd25\_\allowbreak{}38000 & hfd25\_\allowbreak{}38000 & 0.97052522138 & 3.353906246758 & 0.576106840654 & 0.054714220194 & O \\
+hfd27\_\allowbreak{}38500 & hfd26\_\allowbreak{}38000 & hfd26\_\allowbreak{}38000 & 0.969878141446 & 3.336958424757 & 0.573717169116 & 0.054998999999 & O \\
+hfd28\_\allowbreak{}39000 & hfd27\_\allowbreak{}38500 & hfd27\_\allowbreak{}38500 & 0.969086121998 & 3.316446771585 & 0.570723367576 & 0.054998999999 & O \\
+near\_\allowbreak{}g1\_\allowbreak{}s22 & hfd27\_\allowbreak{}38500 & hfd26\_\allowbreak{}38000 & 0.969595880287 & 3.329601584001 & 0.572459738081 & 0.054998900000 & O \\
+near\_\allowbreak{}g1\_\allowbreak{}s24 & hfd28\_\allowbreak{}39000 & hfd28\_\allowbreak{}39000 & 0.968741508719 & 3.307573478665 & 0.569203024136 & 0.054998900000 & O \\
+near\_\allowbreak{}g2\_\allowbreak{}s22 & near\_\allowbreak{}g1\_\allowbreak{}s22 & hfd27\_\allowbreak{}38500 & 0.969472744386 & 3.326399659468 & 0.571911697535 & 0.054998900000 & O \\
+near\_\allowbreak{}g2\_\allowbreak{}s23 & near\_\allowbreak{}g1\_\allowbreak{}s22 & hfd27\_\allowbreak{}38500 & 0.969219972657 & 3.319855423243 & 0.571047449562 & 0.054998900000 & O \\
+near\_\allowbreak{}g2\_\allowbreak{}s24 & near\_\allowbreak{}g1\_\allowbreak{}s24 & near\_\allowbreak{}g1\_\allowbreak{}s24 & 0.968591750349 & 3.303727757550 & 0.568542832967 & 0.054998900000 & O \\
+near\_\allowbreak{}g3\_\allowbreak{}s23 & near\_\allowbreak{}g2\_\allowbreak{}s22 & hfd27\_\allowbreak{}38500 & 0.969166575597 & 3.318469007242 & 0.570809729630 & 0.054998900000 & O \\
+near\_\allowbreak{}g3\_\allowbreak{}s25 & near\_\allowbreak{}g2\_\allowbreak{}s24 & near\_\allowbreak{}g2\_\allowbreak{}s23 & 0.968270645266 & 3.295515409091 & 0.567394304180 & 0.054998900000 & O \\
+near\_\allowbreak{}g4\_\allowbreak{}s23 & near\_\allowbreak{}g3\_\allowbreak{}s23 & hfd27\_\allowbreak{}38500 & 0.969033339078 & 3.315026290121 & 0.570219531498 & 0.054998900000 & O \\
+near\_\allowbreak{}g4\_\allowbreak{}s24 & near\_\allowbreak{}g3\_\allowbreak{}s23 & near\_\allowbreak{}g3\_\allowbreak{}s23 & 0.968778613874 & 3.308473874365 & 0.569355289036 & 0.054998900000 & O \\
+near\_\allowbreak{}g4\_\allowbreak{}s25 & near\_\allowbreak{}g3\_\allowbreak{}s25 & near\_\allowbreak{}g2\_\allowbreak{}s24 & 0.968131273476 & 3.291959856623 & 0.566782922512 & 0.054998900000 & O \\
+near\_\allowbreak{}g5\_\allowbreak{}s24 & near\_\allowbreak{}g4\_\allowbreak{}s23 & near\_\allowbreak{}g4\_\allowbreak{}s23 & 0.968720922087 & 3.306985426201 & 0.569099689595 & 0.054998900000 & O \\
+near\_\allowbreak{}g5\_\allowbreak{}s26 & near\_\allowbreak{}g4\_\allowbreak{}s25 & near\_\allowbreak{}g4\_\allowbreak{}s24 & 0.967813002360 & 3.283872228334 & 0.565656651889 & 0.054998900000 & O \\
+near\_\allowbreak{}g6\_\allowbreak{}s24 & near\_\allowbreak{}g5\_\allowbreak{}s24 & near\_\allowbreak{}g4\_\allowbreak{}s23 & 0.968585184306 & 3.303500502907 & 0.568501352641 & 0.054998900000 & O \\
+near\_\allowbreak{}g6\_\allowbreak{}s25 & near\_\allowbreak{}g5\_\allowbreak{}s24 & near\_\allowbreak{}g4\_\allowbreak{}s23 & 0.968328812394 & 3.296947881826 & 0.567638254688 & 0.054998900000 & O \\
+near\_\allowbreak{}g6\_\allowbreak{}s26 & near\_\allowbreak{}g5\_\allowbreak{}s26 & near\_\allowbreak{}g4\_\allowbreak{}s25 & 0.967675086336 & 3.280376240015 & 0.565054535826 & 0.054998900000 & O \\
+near\_\allowbreak{}g7\_\allowbreak{}s25 & near\_\allowbreak{}g6\_\allowbreak{}s24 & near\_\allowbreak{}g4\_\allowbreak{}s23 & 0.968270152871 & 3.295444133760 & 0.567379606644 & 0.054998900000 & O \\
+near\_\allowbreak{}g7\_\allowbreak{}s27 & near\_\allowbreak{}g6\_\allowbreak{}s26 & near\_\allowbreak{}g6\_\allowbreak{}s25 & 0.967355787369 & 3.272313829340 & 0.563933433932 & 0.054998900000 & O \\
+near\_\allowbreak{}g8\_\allowbreak{}s25 & near\_\allowbreak{}g7\_\allowbreak{}s25 & near\_\allowbreak{}g6\_\allowbreak{}s24 & 0.968133428615 & 3.291956266589 & 0.566779858426 & 0.054998900000 & O \\
+near\_\allowbreak{}g8\_\allowbreak{}s26 & near\_\allowbreak{}g7\_\allowbreak{}s25 & near\_\allowbreak{}g6\_\allowbreak{}s24 & 0.967875280040 & 3.285400127685 & 0.565917424960 & 0.054998900000 & O \\
+near\_\allowbreak{}g8\_\allowbreak{}s27 & near\_\allowbreak{}g7\_\allowbreak{}s27 & near\_\allowbreak{}g6\_\allowbreak{}s26 & 0.967217655071 & 3.268834445446 & 0.563333198617 & 0.054998900000 & O \\
+near\_\allowbreak{}g9\_\allowbreak{}s26 & near\_\allowbreak{}g8\_\allowbreak{}s25 & near\_\allowbreak{}g6\_\allowbreak{}s24 & 0.967816296200 & 3.283897695840 & 0.565658584607 & 0.054998900000 & O \\
+near\_\allowbreak{}g9\_\allowbreak{}s28 & near\_\allowbreak{}g8\_\allowbreak{}s27 & near\_\allowbreak{}g8\_\allowbreak{}s26 & 0.966896596881 & 3.260778508627 & 0.562214045109 & 0.054998900000 & O \\
+near\_\allowbreak{}g10\_\allowbreak{}s26 & near\_\allowbreak{}g9\_\allowbreak{}s26 & near\_\allowbreak{}g8\_\allowbreak{}s25 & 0.967678884239 & 3.280414511918 & 0.565058681958 & 0.054998900000 & O \\
+near\_\allowbreak{}g10\_\allowbreak{}s27 & near\_\allowbreak{}g9\_\allowbreak{}s26 & near\_\allowbreak{}g8\_\allowbreak{}s25 & 0.967418966176 & 3.273855080971 & 0.564196942541 & 0.054998900000 & O \\
+near\_\allowbreak{}g10\_\allowbreak{}s28 & near\_\allowbreak{}g9\_\allowbreak{}s28 & near\_\allowbreak{}g8\_\allowbreak{}s27 & 0.966757941500 & 3.257307824619 & 0.561614313838 & 0.054998900000 & O \\
+near\_\allowbreak{}g11\_\allowbreak{}s27 & near\_\allowbreak{}g10\_\allowbreak{}s26 & near\_\allowbreak{}g8\_\allowbreak{}s25 & 0.967359786280 & 3.272357201287 & 0.563938464526 & 0.054998900000 & O \\
+near\_\allowbreak{}g11\_\allowbreak{}s29 & near\_\allowbreak{}g10\_\allowbreak{}s28 & near\_\allowbreak{}g10\_\allowbreak{}s27 & 0.966434991168 & 3.249254952469 & 0.560496517784 & 0.054998900000 & O \\
+near\_\allowbreak{}g12\_\allowbreak{}s27 & near\_\allowbreak{}g11\_\allowbreak{}s27 & near\_\allowbreak{}g10\_\allowbreak{}s26 & 0.967221755234 & 3.268880373211 & 0.563338677046 & 0.054998900000 & O \\
+near\_\allowbreak{}g12\_\allowbreak{}s28 & near\_\allowbreak{}g11\_\allowbreak{}s27 & near\_\allowbreak{}g10\_\allowbreak{}s26 & 0.966960069533 & 3.262317737533 & 0.562477642957 & 0.054998900000 & O \\
+near\_\allowbreak{}g12\_\allowbreak{}s29 & near\_\allowbreak{}g11\_\allowbreak{}s29 & near\_\allowbreak{}g10\_\allowbreak{}s28 & 0.966295759952 & 3.245791544802 & 0.559897033079 & 0.054998900000 & O \\
+near\_\allowbreak{}g13\_\allowbreak{}s28 & near\_\allowbreak{}g12\_\allowbreak{}s27 & near\_\allowbreak{}g10\_\allowbreak{}s26 & 0.966900722291 & 3.260825076321 & 0.562219640711 & 0.054998900000 & O \\
+near\_\allowbreak{}g13\_\allowbreak{}s30 & near\_\allowbreak{}g12\_\allowbreak{}s29 & near\_\allowbreak{}g12\_\allowbreak{}s28 & 0.965970895277 & 3.237741146891 & 0.558780488201 & 0.054998900000 & O \\
+near\_\allowbreak{}g14\_\allowbreak{}s28 & near\_\allowbreak{}g13\_\allowbreak{}s28 & near\_\allowbreak{}g12\_\allowbreak{}s27 & 0.966762092583 & 3.257355036325 & 0.561620027871 & 0.054998900000 & O \\
+near\_\allowbreak{}g14\_\allowbreak{}s29 & near\_\allowbreak{}g13\_\allowbreak{}s28 & near\_\allowbreak{}g12\_\allowbreak{}s27 & 0.966498635891 & 3.250789152281 & 0.560759693257 & 0.054998900000 & O \\
+near\_\allowbreak{}g14\_\allowbreak{}s30 & near\_\allowbreak{}g13\_\allowbreak{}s30 & near\_\allowbreak{}g12\_\allowbreak{}s29 & 0.965831078243 & 3.234284678635 & 0.558181184861 & 0.054998900000 & O \\
+near\_\allowbreak{}g15\_\allowbreak{}s29 & near\_\allowbreak{}g14\_\allowbreak{}s28 & near\_\allowbreak{}g12\_\allowbreak{}s27 & 0.966439136844 & 3.249302032211 & 0.560502213342 & 0.054998900000 & O \\
+near\_\allowbreak{}g15\_\allowbreak{}s31 & near\_\allowbreak{}g14\_\allowbreak{}s30 & near\_\allowbreak{}g14\_\allowbreak{}s29 & 0.965504304646 & 3.226236858253 & 0.557065895168 & 0.054998900000 & O \\
+near\_\allowbreak{}g16\_\allowbreak{}s29 & near\_\allowbreak{}g15\_\allowbreak{}s29 & near\_\allowbreak{}g14\_\allowbreak{}s28 & 0.966299908209 & 3.245838689575 & 0.559902757726 & 0.054998900000 & O \\
+near\_\allowbreak{}g16\_\allowbreak{}s30 & near\_\allowbreak{}g15\_\allowbreak{}s29 & near\_\allowbreak{}g14\_\allowbreak{}s28 & 0.966034687307 & 3.239269766124 & 0.559043149898 & 0.054998900000 & O \\
+near\_\allowbreak{}g16\_\allowbreak{}s31 & near\_\allowbreak{}g15\_\allowbreak{}s31 & near\_\allowbreak{}g14\_\allowbreak{}s30 & 0.965363915306 & 3.222787576083 & 0.556466796784 & 0.054998900000 & O \\
+near\_\allowbreak{}g17\_\allowbreak{}s30 & near\_\allowbreak{}g16\_\allowbreak{}s29 & near\_\allowbreak{}g14\_\allowbreak{}s28 & 0.965975035477 & 3.237788094612 & 0.558786175096 & 0.054998900000 & O \\
+near\_\allowbreak{}g17\_\allowbreak{}s32 & near\_\allowbreak{}g16\_\allowbreak{}s31 & near\_\allowbreak{}g16\_\allowbreak{}s30 & 0.965035243319 & 3.214742558764 & 0.555352792887 & 0.054998900000 & O \\
+near\_\allowbreak{}g18\_\allowbreak{}s30 & near\_\allowbreak{}g17\_\allowbreak{}s30 & near\_\allowbreak{}g14\_\allowbreak{}s28 & 0.965835330569 & 3.234334402478 & 0.558187271830 & 0.054998900000 & O \\
+near\_\allowbreak{}g18\_\allowbreak{}s31 & near\_\allowbreak{}g17\_\allowbreak{}s30 & near\_\allowbreak{}g16\_\allowbreak{}s29 & 0.965568242001 & 3.227759914860 & 0.557328043237 & 0.054998900000 & O \\
+near\_\allowbreak{}g18\_\allowbreak{}s32 & near\_\allowbreak{}g17\_\allowbreak{}s32 & near\_\allowbreak{}g16\_\allowbreak{}s31 & 0.964894284621 & 3.211300446733 & 0.554753890987 & 0.054998900000 & O \\
+near\_\allowbreak{}g19\_\allowbreak{}s31 & near\_\allowbreak{}g18\_\allowbreak{}s30 & near\_\allowbreak{}g16\_\allowbreak{}s29 & 0.965508487376 & 3.226284864241 & 0.557071777794 & 0.054998900000 & O \\
+near\_\allowbreak{}g19\_\allowbreak{}s33 & near\_\allowbreak{}g18\_\allowbreak{}s32 & near\_\allowbreak{}g18\_\allowbreak{}s31 & 0.964563716387 & 3.203258250691 & 0.553641171680 & 0.054998900000 & O \\
+near\_\allowbreak{}g20\_\allowbreak{}s31 & near\_\allowbreak{}g19\_\allowbreak{}s31 & near\_\allowbreak{}g16\_\allowbreak{}s29 & 0.965368178272 & 3.222837556364 & 0.556472947105 & 0.054998900000 & O \\
+near\_\allowbreak{}g20\_\allowbreak{}s32 & near\_\allowbreak{}g19\_\allowbreak{}s31 & near\_\allowbreak{}g18\_\allowbreak{}s30 & 0.965099329661 & 3.216260220742 & 0.555614470316 & 0.054998900000 & O \\
+near\_\allowbreak{}g20\_\allowbreak{}s33 & near\_\allowbreak{}g19\_\allowbreak{}s33 & near\_\allowbreak{}g18\_\allowbreak{}s32 & 0.964422199241 & 3.199823486632 & 0.553042479238 & 0.054998900000 & O \\
+near\_\allowbreak{}g21\_\allowbreak{}s49 & near\_\allowbreak{}g1\_\allowbreak{}s22 & near\_\allowbreak{}g2\_\allowbreak{}s22 & 0.969472726138 & 3.326397668936 & 0.571911422249 & 0.054998900000 & T \\
+near\_\allowbreak{}g21\_\allowbreak{}s50 & near\_\allowbreak{}g4\_\allowbreak{}s23 & near\_\allowbreak{}g2\_\allowbreak{}s22 & 0.968924641326 & 3.312220918364 & 0.569790124318 & 0.054998900000 & T \\
+near\_\allowbreak{}g21\_\allowbreak{}s51 & near\_\allowbreak{}g5\_\allowbreak{}s24 & near\_\allowbreak{}g4\_\allowbreak{}s23 & 0.968686957675 & 3.306111929954 & 0.568845616821 & 0.054998900000 & T \\
+near\_\allowbreak{}g21\_\allowbreak{}s52 & near\_\allowbreak{}g5\_\allowbreak{}s24 & near\_\allowbreak{}g2\_\allowbreak{}s22 & 0.968585271796 & 3.303501257044 & 0.568501467049 & 0.054998900000 & T \\
+near\_\allowbreak{}g21\_\allowbreak{}s53 & near\_\allowbreak{}g6\_\allowbreak{}s24 & near\_\allowbreak{}g6\_\allowbreak{}s24 & 0.968424066978 & 3.299371517830 & 0.567896749934 & 0.054998900000 & T \\
+near\_\allowbreak{}g21\_\allowbreak{}s54 & near\_\allowbreak{}g7\_\allowbreak{}s25 & near\_\allowbreak{}g2\_\allowbreak{}s22 & 0.968184939214 & 3.293268004062 & 0.566952556714 & 0.054998900000 & T \\
+near\_\allowbreak{}g21\_\allowbreak{}s55 & near\_\allowbreak{}g8\_\allowbreak{}s25 & near\_\allowbreak{}g5\_\allowbreak{}s24 & 0.968022796250 & 3.289137326692 & 0.566347729311 & 0.054998900000 & T \\
+near\_\allowbreak{}g21\_\allowbreak{}s57 & near\_\allowbreak{}g9\_\allowbreak{}s26 & near\_\allowbreak{}g7\_\allowbreak{}s25 & 0.967678905491 & 3.280413576135 & 0.565058563776 & 0.054998900000 & T \\
+near\_\allowbreak{}g21\_\allowbreak{}s58 & near\_\allowbreak{}g10\_\allowbreak{}s26 & near\_\allowbreak{}g9\_\allowbreak{}s26 & 0.967515830180 & 3.276288774145 & 0.564454811962 & 0.054998900000 & T \\
+near\_\allowbreak{}g21\_\allowbreak{}s59 & near\_\allowbreak{}g11\_\allowbreak{}s27 & near\_\allowbreak{}g7\_\allowbreak{}s25 & 0.967273875958 & 3.270190953854 & 0.563510765501 & 0.054998900000 & T \\
+near\_\allowbreak{}g21\_\allowbreak{}s60 & near\_\allowbreak{}g12\_\allowbreak{}s27 & near\_\allowbreak{}g9\_\allowbreak{}s26 & 0.967110057053 & 3.266070094774 & 0.562907691347 & 0.054998900000 & T \\
+near\_\allowbreak{}g21\_\allowbreak{}s61 & near\_\allowbreak{}g13\_\allowbreak{}s28 & near\_\allowbreak{}g7\_\allowbreak{}s25 & 0.966866957015 & 3.259978485824 & 0.561964078319 & 0.054998900000 & T \\
+near\_\allowbreak{}g21\_\allowbreak{}s64 & near\_\allowbreak{}g15\_\allowbreak{}s29 & near\_\allowbreak{}g10\_\allowbreak{}s26 & 0.966352853957 & 3.247153498501 & 0.560074957322 & 0.054998900000 & T \\
+near\_\allowbreak{}g21\_\allowbreak{}s65 & near\_\allowbreak{}g17\_\allowbreak{}s30 & near\_\allowbreak{}g13\_\allowbreak{}s28 & 0.965835366195 & 3.234333849119 & 0.558187204689 & 0.054998900000 & T \\
+near\_\allowbreak{}g21\_\allowbreak{}s66 & near\_\allowbreak{}g20\_\allowbreak{}s31 & near\_\allowbreak{}g18\_\allowbreak{}s30 & 0.965039414015 & 3.214788851815 & 0.555358467161 & 0.054998900000 & T \\
+near\_\allowbreak{}g21\_\allowbreak{}s67 & near\_\allowbreak{}g20\_\allowbreak{}s33 & near\_\allowbreak{}g20\_\allowbreak{}s32 & 0.964089731988 & 3.191782604847 & 0.551930848624 & 0.054998900000 & T \\
+near\_\allowbreak{}g22\_\allowbreak{}s49 & near\_\allowbreak{}g21\_\allowbreak{}s49 & hfd26\_\allowbreak{}38000 & 0.969419229822 & 3.325007191901 & 0.571673090338 & 0.054998900000 & T \\
+near\_\allowbreak{}g22\_\allowbreak{}s50 & near\_\allowbreak{}g21\_\allowbreak{}s50 & near\_\allowbreak{}g21\_\allowbreak{}s49 & 0.968877401975 & 3.311002677100 & 0.569581008719 & 0.054998900000 & T \\
+near\_\allowbreak{}g22\_\allowbreak{}s53 & near\_\allowbreak{}g21\_\allowbreak{}s53 & near\_\allowbreak{}g21\_\allowbreak{}s49 & 0.968354341158 & 3.297586689220 & 0.567589718874 & 0.054998900000 & T \\
+near\_\allowbreak{}g22\_\allowbreak{}s55 & near\_\allowbreak{}g21\_\allowbreak{}s55 & near\_\allowbreak{}g21\_\allowbreak{}s49 & 0.967975123266 & 3.287923556580 & 0.566138467121 & 0.054998900000 & T \\
+near\_\allowbreak{}g22\_\allowbreak{}s57 & near\_\allowbreak{}g21\_\allowbreak{}s57 & near\_\allowbreak{}g21\_\allowbreak{}s52 & 0.967619540989 & 3.278909582251 & 0.564799197707 & 0.054998900000 & T \\
+near\_\allowbreak{}g22\_\allowbreak{}s58 & near\_\allowbreak{}g21\_\allowbreak{}s58 & near\_\allowbreak{}g21\_\allowbreak{}s51 & 0.967445532061 & 3.274512044945 & 0.564148145928 & 0.054998900000 & T \\
+near\_\allowbreak{}g22\_\allowbreak{}s59 & near\_\allowbreak{}g21\_\allowbreak{}s59 & near\_\allowbreak{}g21\_\allowbreak{}s54 & 0.967236743202 & 3.269255198608 & 0.563349204036 & 0.054998900000 & T \\
+near\_\allowbreak{}g22\_\allowbreak{}s60 & near\_\allowbreak{}g21\_\allowbreak{}s60 & near\_\allowbreak{}g21\_\allowbreak{}s51 & 0.967062145193 & 3.264865582557 & 0.562699278159 & 0.054998900000 & T \\
+near\_\allowbreak{}g22\_\allowbreak{}s64 & near\_\allowbreak{}g21\_\allowbreak{}s64 & near\_\allowbreak{}g21\_\allowbreak{}s57 & 0.966315714405 & 3.246229223437 & 0.559914809154 & 0.054998900000 & T \\
+near\_\allowbreak{}g22\_\allowbreak{}s65 & near\_\allowbreak{}g21\_\allowbreak{}s65 & near\_\allowbreak{}g21\_\allowbreak{}s61 & 0.965775345546 & 3.232850821421 & 0.557929797330 & 0.054998900000 & T \\
+near\_\allowbreak{}g22\_\allowbreak{}s66 & near\_\allowbreak{}g21\_\allowbreak{}s66 & near\_\allowbreak{}g21\_\allowbreak{}s65 & 0.964898597740 & 3.211348806496 & 0.554759774914 & 0.054998900000 & T \\
+near\_\allowbreak{}g22\_\allowbreak{}s67 & near\_\allowbreak{}g21\_\allowbreak{}s67 & near\_\allowbreak{}g21\_\allowbreak{}s66 & 0.963947815110 & 3.188357536618 & 0.551332622880 & 0.054998900000 & T \\
+near\_\allowbreak{}g23\_\allowbreak{}s49 & near\_\allowbreak{}g22\_\allowbreak{}s49 & hfd24\_\allowbreak{}37500 & 0.969396431979 & 3.324414865924 & 0.571571079621 & 0.054998900000 & T \\
+near\_\allowbreak{}g23\_\allowbreak{}s50 & near\_\allowbreak{}g22\_\allowbreak{}s50 & near\_\allowbreak{}g22\_\allowbreak{}s49 & 0.968856868639 & 3.310473329652 & 0.569490126046 & 0.054998900000 & T \\
+near\_\allowbreak{}g23\_\allowbreak{}s51 & near\_\allowbreak{}g22\_\allowbreak{}s50 & near\_\allowbreak{}g22\_\allowbreak{}s49 & 0.968755410916 & 3.307861806079 & 0.569145676280 & 0.054998900000 & T \\
+near\_\allowbreak{}g23\_\allowbreak{}s57 & near\_\allowbreak{}g22\_\allowbreak{}s57 & near\_\allowbreak{}g22\_\allowbreak{}s49 & 0.967594218141 & 3.278268298766 & 0.564688233604 & 0.054998900000 & T \\
+near\_\allowbreak{}g23\_\allowbreak{}s59 & near\_\allowbreak{}g22\_\allowbreak{}s58 & near\_\allowbreak{}g22\_\allowbreak{}s53 & 0.967311322662 & 3.271125936247 & 0.563671754699 & 0.054998900000 & T \\
+near\_\allowbreak{}g23\_\allowbreak{}s61 & near\_\allowbreak{}g22\_\allowbreak{}s60 & near\_\allowbreak{}g22\_\allowbreak{}s55 & 0.966936922090 & 3.261722428769 & 0.562265249057 & 0.054998900000 & T \\
+near\_\allowbreak{}g23\_\allowbreak{}s65 & near\_\allowbreak{}g22\_\allowbreak{}s65 & near\_\allowbreak{}g22\_\allowbreak{}s59 & 0.965749716837 & 3.232217825336 & 0.557819723233 & 0.054998900000 & T \\
+near\_\allowbreak{}g23\_\allowbreak{}s66 & near\_\allowbreak{}g22\_\allowbreak{}s66 & near\_\allowbreak{}g22\_\allowbreak{}s64 & 0.964838496778 & 3.209881928452 & 0.554504071955 & 0.054998900000 & T \\
+near\_\allowbreak{}g23\_\allowbreak{}s67 & near\_\allowbreak{}g22\_\allowbreak{}s67 & near\_\allowbreak{}g22\_\allowbreak{}s66 & 0.963887225356 & 3.186896562588 & 0.551077261979 & 0.054998900000 & T \\
+near\_\allowbreak{}g23\_\allowbreak{}s68 & near\_\allowbreak{}g22\_\allowbreak{}s67 & near\_\allowbreak{}g22\_\allowbreak{}s67 & 0.963558298572 & 3.178999175297 & 0.550050673458 & 0.054998900000 & T \\
+near\_\allowbreak{}g24\_\allowbreak{}s49 & near\_\allowbreak{}g23\_\allowbreak{}s49 & hfd23\_\allowbreak{}37000 & 0.969386945549 & 3.324168435540 & 0.571528390971 & 0.054998900000 & T \\
+near\_\allowbreak{}g24\_\allowbreak{}s50 & near\_\allowbreak{}g23\_\allowbreak{}s50 & near\_\allowbreak{}g23\_\allowbreak{}s50 & 0.968847912094 & 3.310242465208 & 0.569450516508 & 0.054998900000 & T \\
+near\_\allowbreak{}g24\_\allowbreak{}s51 & near\_\allowbreak{}g23\_\allowbreak{}s51 & near\_\allowbreak{}g23\_\allowbreak{}s49 & 0.968702423595 & 3.306498749821 & 0.568911570651 & 0.054998900000 & T \\
+near\_\allowbreak{}g24\_\allowbreak{}s59 & near\_\allowbreak{}g23\_\allowbreak{}s59 & near\_\allowbreak{}g23\_\allowbreak{}s51 & 0.967253497295 & 3.269668354838 & 0.563419960589 & 0.054998900000 & T \\
+near\_\allowbreak{}g24\_\allowbreak{}s61 & near\_\allowbreak{}g23\_\allowbreak{}s61 & near\_\allowbreak{}g23\_\allowbreak{}s57 & 0.966882802263 & 3.260365160093 & 0.562030702078 & 0.054998900000 & T \\
+near\_\allowbreak{}g24\_\allowbreak{}s66 & near\_\allowbreak{}g23\_\allowbreak{}s66 & near\_\allowbreak{}g23\_\allowbreak{}s65 & 0.964812552546 & 3.209248956478 & 0.554394000237 & 0.054998900000 & T \\
+near\_\allowbreak{}g24\_\allowbreak{}s67 & near\_\allowbreak{}g23\_\allowbreak{}s67 & near\_\allowbreak{}g23\_\allowbreak{}s65 & 0.963861781463 & 3.186283284460 & 0.550969583231 & 0.054998900000 & T \\
+near\_\allowbreak{}g24\_\allowbreak{}s68 & near\_\allowbreak{}g23\_\allowbreak{}s68 & near\_\allowbreak{}g23\_\allowbreak{}s67 & 0.963392384197 & 3.175022733550 & 0.549354811198 & 0.054998900000 & T \\
+near\_\allowbreak{}g25\_\allowbreak{}s51 & near\_\allowbreak{}g24\_\allowbreak{}s51 & hfd25\_\allowbreak{}38000 & 0.968680008119 & 3.305922353438 & 0.568811940428 & 0.054998900000 & T \\
+near\_\allowbreak{}g25\_\allowbreak{}s52 & near\_\allowbreak{}g24\_\allowbreak{}s51 & near\_\allowbreak{}g24\_\allowbreak{}s49 & 0.968577672810 & 3.303294975281 & 0.568465575630 & 0.054998900000 & T \\
+near\_\allowbreak{}g25\_\allowbreak{}s66 & near\_\allowbreak{}g24\_\allowbreak{}s66 & near\_\allowbreak{}g24\_\allowbreak{}s59 & 0.964802261525 & 3.208997927249 & 0.554349384912 & 0.054998900000 & T \\
+near\_\allowbreak{}g25\_\allowbreak{}s67 & near\_\allowbreak{}g24\_\allowbreak{}s67 & near\_\allowbreak{}g24\_\allowbreak{}s61 & 0.963851853156 & 3.186044022457 & 0.550926734549 & 0.054998900000 & T \\
+near\_\allowbreak{}g25\_\allowbreak{}s68 & near\_\allowbreak{}g24\_\allowbreak{}s68 & near\_\allowbreak{}g24\_\allowbreak{}s66 & 0.963321995933 & 3.173337509610 & 0.549059348063 & 0.054998900000 & T \\
+near\_\allowbreak{}g26\_\allowbreak{}s51 & near\_\allowbreak{}g25\_\allowbreak{}s51 & hfd26\_\allowbreak{}38000 & 0.968670079697 & 3.305667092635 & 0.568768274855 & 0.054998900000 & T \\
+near\_\allowbreak{}g26\_\allowbreak{}s52 & near\_\allowbreak{}g25\_\allowbreak{}s52 & near\_\allowbreak{}g24\_\allowbreak{}s49 & 0.968523530672 & 3.301905768140 & 0.568226819395 & 0.054998900000 & T \\
+near\_\allowbreak{}g26\_\allowbreak{}s53 & near\_\allowbreak{}g25\_\allowbreak{}s52 & near\_\allowbreak{}g24\_\allowbreak{}s49 & 0.968421464632 & 3.299292042025 & 0.567882442879 & 0.054998900000 & T \\
+near\_\allowbreak{}g26\_\allowbreak{}s68 & near\_\allowbreak{}g25\_\allowbreak{}s68 & near\_\allowbreak{}g25\_\allowbreak{}s67 & 0.963291785509 & 3.172614534583 & 0.548932895858 & 0.054998900000 & T \\
+near\_\allowbreak{}g26\_\allowbreak{}s69 & near\_\allowbreak{}g25\_\allowbreak{}s68 & near\_\allowbreak{}g25\_\allowbreak{}s67 & 0.963181865635 & 3.169988015303 & 0.548591879188 & 0.054998900000 & T \\
+near\_\allowbreak{}g27\_\allowbreak{}s52 & near\_\allowbreak{}g26\_\allowbreak{}s52 & hfd25\_\allowbreak{}38000 & 0.968500721000 & 3.301320737179 & 0.568125545749 & 0.054998900000 & T \\
+near\_\allowbreak{}g27\_\allowbreak{}s53 & near\_\allowbreak{}g26\_\allowbreak{}s53 & near\_\allowbreak{}g24\_\allowbreak{}s49 & 0.968353704595 & 3.297557576250 & 0.567584201578 & 0.054998900000 & T \\
+near\_\allowbreak{}g27\_\allowbreak{}s68 & near\_\allowbreak{}g26\_\allowbreak{}s68 & near\_\allowbreak{}g25\_\allowbreak{}s66 & 0.963279180581 & 3.172312940437 & 0.548879758596 & 0.054998900000 & T \\
+near\_\allowbreak{}g27\_\allowbreak{}s70 & near\_\allowbreak{}g26\_\allowbreak{}s69 & near\_\allowbreak{}g25\_\allowbreak{}s67 & 0.963012019864 & 3.165936633315 & 0.548001273281 & 0.054998900000 & T \\
+near\_\allowbreak{}g28\_\allowbreak{}s52 & near\_\allowbreak{}g27\_\allowbreak{}s52 & hfd25\_\allowbreak{}38000 & 0.968490826188 & 3.301066993060 & 0.568081909573 & 0.054998900000 & T \\
+near\_\allowbreak{}g28\_\allowbreak{}s53 & near\_\allowbreak{}g27\_\allowbreak{}s53 & near\_\allowbreak{}g24\_\allowbreak{}s49 & 0.968324322000 & 3.296805827059 & 0.567454883433 & 0.054998900000 & T \\
+near\_\allowbreak{}g28\_\allowbreak{}s54 & near\_\allowbreak{}g27\_\allowbreak{}s53 & near\_\allowbreak{}g26\_\allowbreak{}s51 & 0.968221845907 & 3.294188295990 & 0.567110171499 & 0.054998900000 & T \\
+near\_\allowbreak{}g28\_\allowbreak{}s71 & near\_\allowbreak{}g27\_\allowbreak{}s70 & near\_\allowbreak{}g25\_\allowbreak{}s67 & 0.962939824583 & 3.164216356823 & 0.547699454760 & 0.054998900000 & T \\
+near\_\allowbreak{}g29\_\allowbreak{}s53 & near\_\allowbreak{}g28\_\allowbreak{}s53 & near\_\allowbreak{}g24\_\allowbreak{}s49 & 0.968311583998 & 3.296479995594 & 0.567398821416 & 0.054998900000 & T \\
+near\_\allowbreak{}g29\_\allowbreak{}s54 & near\_\allowbreak{}g28\_\allowbreak{}s54 & near\_\allowbreak{}g24\_\allowbreak{}s49 & 0.968164868545 & 3.292733759277 & 0.566859712084 & 0.054998900000 & T \\
+near\_\allowbreak{}g29\_\allowbreak{}s72 & near\_\allowbreak{}g28\_\allowbreak{}s71 & near\_\allowbreak{}g25\_\allowbreak{}s67 & 0.962798689407 & 3.160858881964 & 0.547230515727 & 0.054998900000 & T \\
+near\_\allowbreak{}g30\_\allowbreak{}s54 & near\_\allowbreak{}g29\_\allowbreak{}s54 & near\_\allowbreak{}g24\_\allowbreak{}s49 & 0.968140180139 & 3.292103759762 & 0.566751259983 & 0.054998900000 & T \\
+near\_\allowbreak{}g30\_\allowbreak{}s55 & near\_\allowbreak{}g29\_\allowbreak{}s54 & near\_\allowbreak{}g24\_\allowbreak{}s50 & 0.968037440162 & 3.289486174492 & 0.566406733666 & 0.054998900000 & T \\
+near\_\allowbreak{}g30\_\allowbreak{}s72 & near\_\allowbreak{}g29\_\allowbreak{}s72 & near\_\allowbreak{}g25\_\allowbreak{}s67 & 0.962738747040 & 3.159434155041 & 0.546980322634 & 0.054998900000 & T \\
+near\_\allowbreak{}g30\_\allowbreak{}s73 & near\_\allowbreak{}g29\_\allowbreak{}s72 & near\_\allowbreak{}g27\_\allowbreak{}s68 & 0.962627788448 & 3.156801677691 & 0.546639054678 & 0.054998900000 & T \\
+near\_\allowbreak{}g31\_\allowbreak{}s54 & near\_\allowbreak{}g30\_\allowbreak{}s54 & hfd25\_\allowbreak{}38000 & 0.968130351194 & 3.291852991271 & 0.566707191296 & 0.054998900000 & T \\
+near\_\allowbreak{}g31\_\allowbreak{}s55 & near\_\allowbreak{}g30\_\allowbreak{}s55 & near\_\allowbreak{}g24\_\allowbreak{}s49 & 0.967982428791 & 3.288085438761 & 0.566165353718 & 0.054998900000 & T \\
+near\_\allowbreak{}g31\_\allowbreak{}s72 & near\_\allowbreak{}g30\_\allowbreak{}s72 & near\_\allowbreak{}g25\_\allowbreak{}s66 & 0.962713737745 & 3.158839950807 & 0.546875456467 & 0.054998900000 & T \\
+near\_\allowbreak{}g31\_\allowbreak{}s73 & near\_\allowbreak{}g30\_\allowbreak{}s73 & near\_\allowbreak{}g25\_\allowbreak{}s67 & 0.962555438185 & 3.155085888612 & 0.546337381821 & 0.054998900000 & T \\
+near\_\allowbreak{}g32\_\allowbreak{}s56 & near\_\allowbreak{}g31\_\allowbreak{}s55 & near\_\allowbreak{}g24\_\allowbreak{}s50 & 0.967855556785 & 3.284860288864 & 0.565716404654 & 0.054998900000 & T \\
+near\_\allowbreak{}g32\_\allowbreak{}s73 & near\_\allowbreak{}g31\_\allowbreak{}s73 & near\_\allowbreak{}g31\_\allowbreak{}s72 & 0.962524459258 & 3.154351548125 & 0.546208578249 & 0.054998900000 & T \\
+near\_\allowbreak{}g33\_\allowbreak{}s56 & near\_\allowbreak{}g32\_\allowbreak{}s56 & near\_\allowbreak{}g24\_\allowbreak{}s49 & 0.967800854158 & 3.283470960109 & 0.565476797504 & 0.054998900000 & T \\
+near\_\allowbreak{}g33\_\allowbreak{}s73 & near\_\allowbreak{}g32\_\allowbreak{}s73 & near\_\allowbreak{}g25\_\allowbreak{}s66 & 0.962512109261 & 3.154058856095 & 0.546156255166 & 0.054998900000 & T \\
+near\_\allowbreak{}g34\_\allowbreak{}s57 & near\_\allowbreak{}g33\_\allowbreak{}s56 & near\_\allowbreak{}g31\_\allowbreak{}s54 & 0.967673636288 & 3.280245219427 & 0.565028081698 & 0.054998900000 & T \\
+near\_\allowbreak{}g35\_\allowbreak{}s57 & near\_\allowbreak{}g34\_\allowbreak{}s57 & near\_\allowbreak{}g29\_\allowbreak{}s53 & 0.967618636710 & 3.278851885347 & 0.564787823542 & 0.054998900000 & T \\
+near\_\allowbreak{}g36\_\allowbreak{}s58 & near\_\allowbreak{}g35\_\allowbreak{}s57 & near\_\allowbreak{}g29\_\allowbreak{}s53 & 0.967491410923 & 3.275634115668 & 0.564340238491 & 0.054998900000 & T \\
+near\_\allowbreak{}g37\_\allowbreak{}s58 & near\_\allowbreak{}g36\_\allowbreak{}s58 & near\_\allowbreak{}g28\_\allowbreak{}s52 & 0.967436469761 & 3.274245781992 & 0.564100653008 & 0.054998900000 & T \\
+near\_\allowbreak{}g38\_\allowbreak{}s58 & near\_\allowbreak{}g37\_\allowbreak{}s58 & near\_\allowbreak{}g24\_\allowbreak{}s49 & 0.967413145687 & 3.273656623119 & 0.563998537102 & 0.054998900000 & T \\
+near\_\allowbreak{}g39\_\allowbreak{}s58 & near\_\allowbreak{}g38\_\allowbreak{}s58 & near\_\allowbreak{}g24\_\allowbreak{}s49 & 0.967403070550 & 3.273402169816 & 0.563954607164 & 0.054998900000 & T \\
+alt\_\allowbreak{}focused\_\allowbreak{}g1\_\allowbreak{}C & near\_\allowbreak{}g33\_\allowbreak{}s73 & near\_\allowbreak{}g33\_\allowbreak{}s73 & 0.96236728488060 & 3.15063185213785 & 0.54570649935321 & 0.05499890000000 & T \\
+alt\_\allowbreak{}focused\_\allowbreak{}g1\_\allowbreak{}P & near\_\allowbreak{}g39\_\allowbreak{}s58 & near\_\allowbreak{}g39\_\allowbreak{}s58 & 0.96739676975432 & 3.27324305194549 & 0.56392916380335 & 0.05499890000000 & T \\
+alt\_\allowbreak{}focused\_\allowbreak{}g2\_\allowbreak{}C & alt\_\allowbreak{}focused\_\allowbreak{}g1\_\allowbreak{}C & alt\_\allowbreak{}focused\_\allowbreak{}g1\_\allowbreak{}C & 0.96230568251169 & 3.14917544130912 & 0.54545054061067 & 0.05499890000000 & T \\
+alt\_\allowbreak{}focused\_\allowbreak{}g2\_\allowbreak{}P & alt\_\allowbreak{}focused\_\allowbreak{}g1\_\allowbreak{}P & near\_\allowbreak{}g38\_\allowbreak{}s58 & 0.96739447187175 & 3.27318502444400 & 0.56391870494007 & 0.05499890000000 & T \\
+alt\_\allowbreak{}focused\_\allowbreak{}g3\_\allowbreak{}C & alt\_\allowbreak{}focused\_\allowbreak{}g2\_\allowbreak{}C & alt\_\allowbreak{}focused\_\allowbreak{}g2\_\allowbreak{}C & 0.96227948182933 & 3.14855623588510 & 0.54534167948918 & 0.05499890000000 & T \\
+alt\_\allowbreak{}focused\_\allowbreak{}g3\_\allowbreak{}P & alt\_\allowbreak{}focused\_\allowbreak{}g2\_\allowbreak{}P & alt\_\allowbreak{}focused\_\allowbreak{}g2\_\allowbreak{}P & 0.96739250152685 & 3.27313526952874 & 0.56391113411921 & 0.05499890000000 & T \\
+alt\_\allowbreak{}focused\_\allowbreak{}g4\_\allowbreak{}C & alt\_\allowbreak{}focused\_\allowbreak{}g3\_\allowbreak{}C & alt\_\allowbreak{}focused\_\allowbreak{}g3\_\allowbreak{}C & 0.96226831325612 & 3.14829232960439 & 0.54529530355548 & 0.05499890000000 & T \\
+alt\_\allowbreak{}focused\_\allowbreak{}g4\_\allowbreak{}P & alt\_\allowbreak{}focused\_\allowbreak{}g3\_\allowbreak{}P & near\_\allowbreak{}g39\_\allowbreak{}s58 & 0.96739119188673 & 3.27310219934594 & 0.56390590273686 & 0.05499890000000 & T \\
+alt\_\allowbreak{}focused\_\allowbreak{}g5\_\allowbreak{}C & alt\_\allowbreak{}focused\_\allowbreak{}g4\_\allowbreak{}C & alt\_\allowbreak{}focused\_\allowbreak{}g4\_\allowbreak{}C & 0.96226354319698 & 3.14817962398374 & 0.54527550684579 & 0.05499890000000 & T \\
+alt\_\allowbreak{}focused\_\allowbreak{}g6\_\allowbreak{}C & alt\_\allowbreak{}focused\_\allowbreak{}g5\_\allowbreak{}C & alt\_\allowbreak{}focused\_\allowbreak{}g4\_\allowbreak{}C & 0.96226151753982 & 3.14813176381578 & 0.54526708734661 & 0.05499890000000 & T \\
+alt\_\allowbreak{}focused\_\allowbreak{}g7\_\allowbreak{}P & alt\_\allowbreak{}focused\_\allowbreak{}g4\_\allowbreak{}P & alt\_\allowbreak{}focused\_\allowbreak{}g1\_\allowbreak{}P & 0.96739031091242 & 3.27307995389766 & 0.56390239081147 & 0.05499890000000 & T \\
+\end{longtable}
+\endgroup
+\end{landscape}

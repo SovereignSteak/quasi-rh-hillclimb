@@ -1,0 +1,9 @@
+'QRH.Record1252270103Return.GenericPhysical.PhysicalDirect.chosen_finite_numerator_of_initial_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QRH.Record1252270103Return.GenericPhysical.PhysicalDirect.common_probe_of_initial_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QRH.Record1252270103Return.GenericPhysical.PhysicalDirect.beta_le_theta_of_initial_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

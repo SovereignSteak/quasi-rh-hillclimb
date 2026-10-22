@@ -1,0 +1,530 @@
+% qrh-direct-exposition-v1
+\hypertarget{first-return:the-first-complete-return-and-the-new-natural-cost}{%
+\section{The first complete return and the new natural cost}\label{first-return:the-first-complete-return-and-the-new-natural-cost}}
+
+\hypertarget{first-return:final-return-from-the-global-affine-source-family}{%
+\subsubsection{Final return from the global affine source family}\label{first-return:final-return-from-the-global-affine-source-family}}
+
+\hypertarget{first-return:endpoint-fixed-input-and-selected-source-moments}{%
+\paragraph{1. Endpoint, fixed input, and selected source moments}\label{first-return:endpoint-fixed-input-and-selected-source-moments}}
+
+The global source theorem proved above gives the following improved ordinary-character conclusion:
+
+\[
+\boxed{\quad c=\frac{1252241}{10000000}=0.1252241,\qquad
+\theta=1-c=\frac{8747759}{10000000}=0.8747759.\quad}
+\tag{FR1}
+\]
+
+For every presented Dirichlet character \(\chi\), \(L(s,\chi)\ne0\) on \(\Re s>\theta\), with the principal pole at \(s=1\) excluded. The proof retains the ordinary character family, all natural zeros, the original same-zero detector, the compensated physical probe, and the full reciprocal Mellin return. The arithmetic restriction used to prove the new source moments has already been removed by the completed source theorem before these moments are used here.
+
+The fixed earlier input is the established endpoint \(\theta_I=0.87481891\), hence
+
+\[
+\kappa_I=2\theta_I-1=\frac{37481891}{50000000},\qquad
+K_I=6\kappa_I=\frac{112445673}{25000000}.
+\tag{FR2}
+\]
+
+The minimal source construction contains 64 derived faces and the natural premise \(G(1,K_I,11/200)\). Every derived face uses a strictly earlier face. The final return uses the following two members of that finite construction; their displayed decimals are exact.
+
+\begin{landscape}
+\begingroup % exact-table-layout
+\fontsize{7.5}{9.5}\selectfont\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.18}
+\begin{longtable}{@{}
+ >{\raggedright\arraybackslash}p{45mm}
+ >{\raggedright\arraybackslash}p{48mm}
+ >{\raggedright\arraybackslash}p{48mm}
+ >{\raggedright\arraybackslash}p{48mm}
+ >{\raggedright\arraybackslash}p{48mm}@{}}
+\toprule\noalign{}
+Label & Exact source ID & \(B\) & \(\Lambda\) & Proved upper slot width \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(C\) & \texttt{d16\_\allowbreak{}42000} & 0.964090187378 & 3.198839752287 & 0.054998999999 \\
+\(P\) & \texttt{d16\_\allowbreak{}39000} & 0.969340504570 & 3.328741896069 & 0.054998999999 \\
+\end{longtable}
+\endgroup
+\end{landscape}
+
+Each is the ordinary moment \(G(B,\Lambda,s_{\max})\): it admits all \(m_1,m_2\ge0\), all \(0\le s\le s_{\max}\), and \(m_1+m_2+\Lambda s\le B\), with the inherited coefficient, common-profile, puncture, keep, marked-pool, and independent-height conventions. All source constants, width cells and admission domains are fixed using (FR2), independently of the contrary zero supremum introduced at the end of the proof. In particular, no source moment uses (FR1) as an input.
+
+For a conservative exact return certificate, use only the subdomains
+
+\[
+\frac25\le m_i\le\frac{11}{25},\qquad
+\frac{17}{500}\le s\le s_+,
+\quad s_+=\begin{cases}11/250&\text{for }C,\\43/1000&\text{for }P.
+\end{cases}
+\tag{FR3}
+\]
+
+They lie strictly inside the global width caps. We may also replace either intercept by \(B-j/4000\), \(0\le j\le8\), retaining the same slope and domain. These weaker faces follow by inclusion. The physical numerator uses \(P\) itself; the same-zero count is the admitted finite minimum of the old natural count and the faces just listed, including their constant-width branches.
+
+\hypertarget{first-return:one-complete-same-zero-count-on-every-admitted-window}{%
+\paragraph{2. One complete same-zero count on every admitted window}\label{first-return:one-complete-same-zero-count-on-every-admitted-window}}
+
+Write \(0\le\delta\le3/4\), \(0\le p\le1/2\), and \(V=5/6-\delta>0\). For an affine face \((B,\Lambda)\), put
+
+\[
+\begin{aligned}
+D&=3-p-4p/\Lambda,& A&=2-4p/\Lambda,& C_0&=1-2pB/\Lambda,\\
+U&=(1-p)C_0,&J&=VD+\delta(1-p)A,&
+N&=(1-\delta)J+V\delta U,\\
+T&=J+\delta U,& R_n&=AT+(2pB/\Lambda-p)J,& M_n&=DT-R_n.
+\end{aligned}
+\tag{FR4}
+\]
+
+The proposed count is \(R=N/J\), with common detector and crossing lengths
+
+\[
+t_*=T/J,\qquad r_*=R_n/(DJ),\qquad m_*=M_n/(DJ),
+\qquad t_*=r_*+m_*.
+\tag{FR5}
+\]
+
+For a constant-width branch, let \(\eta=10^{-7}\) and \(z_*=s_+-\eta\), replace \((D,A,C_0)\) in (FR4) by \((3-p,2,1-2pz_*)\), and replace \(2pB/\Lambda\) in \(R_n\) by \(2pz_*\). This branch is continued by \(z(m)=\min(z_*,(B-2m)/\Lambda)\), so that its plain bound is continuous at the cap.
+
+The always available old count has
+
+\[
+\begin{aligned}
+D_O&=3-p-\frac{2p}{3\kappa},&
+C_O&=2(1-p)\left(1-\frac{p}{3\kappa}\right),\\
+J_O&=VD_O+\delta C_O,&
+N_O&=(1-\delta)J_O+\frac{\delta C_OV}{2},
+\qquad R_O=N_O/J_O.
+\end{aligned}
+\tag{FR6}
+\]
+
+Here only \(\kappa\) in (FR6) is allowed to vary. The tail point for every improved count is fixed at
+
+\[
+m_H=\frac{1-K_I(17/500)}2.
+\tag{FR7}
+\]
+
+For clarity, the complete buffered admission tests used by the exact checker are specified here. Set \(m_-=2/5\), \(m_+=11/25\), \(s_-=17/500\). On an affine branch define
+
+\[
+\begin{aligned}
+m_L&=\max\left(m_-+\eta,
+ \frac{B-\Lambda(s_+-\eta)}2+\eta\right),\\
+m_U&=\min\left(m_+-\eta,m_H-\eta,
+ \frac{B-\Lambda(s_-+\eta)}2-\eta\right).
+\end{aligned}
+\]
+
+On a capped branch use \(m_L=m_-+\eta\) and \(m_U=\min(m_+-\eta,m_H-\eta,(B-\Lambda z_*)/2-\eta)\). All the following polynomials must be strictly positive on the whole closed admission window:
+
+\[
+\begin{gathered}
+D,\ A,\ C_0,\ J,\quad T-J,\quad (12499/10000)J-T,\\
+R_n-(23/37)DJ,\quad DJ-R_n,\quad
+M_n-m_LDJ,\quad m_UDJ-M_n,\\
+N-\{1-2\delta m_H-2\delta p s_-\}J,\quad
+UJ_p-U_pJ,\\
+m_+-m_H-\eta,\qquad
+B-2m_H-\Lambda(s_-+\eta)-2\eta.
+\end{gathered}
+\tag{FR8}
+\]
+
+The capped branch also requires \((z_*-s_--\eta)DJ>0\). In particular, (FR8) verifies the whole source continuation through the source-to-natural tail join; it checks more than the isolated crossing point.
+
+Here is the actual witness argument. Fix one buffered nonfloor fixed-amplitude row class and choose \(t=t_*\) before selecting its witnesses. Lemma 14.2 gives one common-zero inverse/plain pair at one height and presentation, with \(r\le t_*+o(1)\), \(r+m\ge t_*-o(1)\), and \(0\le m\le1/2+o(1)\). The three relevant count lines are
+
+\[
+I(r)=1-\delta[p+(1-p)r],\qquad
+P(m)=1-2\delta m-2\delta pz(m),\qquad
+L(r)=\frac16+(5/6-\delta)r.
+\tag{FR9}
+\]
+
+Direct substitution of (FR4) gives \(I(r_*)=P(m_*)=L(t_*)=N/J\). If \(r_*\le r\le1\), the admitted short inverse line decreases with \(r\). If \(r<r_*\), then \(m\ge m_*-o(1)\); the source plain line decreases, with slopes \(-2\delta\) on the capped part and \(-2\delta(1-2p/\Lambda)<0\) on the affine part. The source bounds remain admitted to \(m_H\) by (FR8). For \(m\ge m_H\), the natural width \((1-2m)/K_I\) gives a decreasing plain count up to \(m=1/2\); the explicit tail polynomial in (FR8) pays its value at \(m_H\). For larger \(m\), the unmarked plain bound and the inherited endpoint loss apply. Finally, for \(r>1\), \(L(r)\) increases and \(r\le t_*+o(1)\), so the long inverse line also gives \(N/J+o(1)\). A plain witness below \(m_-\) forces \(r>r_*\), and is already covered by the inverse case.
+
+This proves the same-zero class bound \(U^{N/J+\epsilon}\), with the original finite label, height and profile costs. All terms use that same zero and its witness heights. All actual whole-slot selections and support erosions are paid from the positive buffers in (FR8) and the final loss budget.
+
+Every improved admission window is extended from its lower \(p\) edge through \(p=1/2\). The derivative test in (FR8) implies \(\partial_p(N/J)\le0\). New candidates can therefore appear as \(p\) increases but cannot disappear. Their admitted finite minimum with \(R_O\), denoted \(R_*\), remains antitone, including at window boundaries.
+
+\hypertarget{first-return:exact-physical-geometry-and-a-fixed-conductor-join}{%
+\paragraph{3. Exact physical geometry and a fixed conductor join}\label{first-return:exact-physical-geometry-and-a-fixed-conductor-join}}
+
+The geometry is fixed as follows.
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Quantity & Exact rational value \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+theta & 8747759/10000000 \\
+h & 799737/1000000 \\
+ell & 1256723/7500000 \\
+x & 5517391/15000000 \\
+y & 6969163/15000000 \\
+\ensuremath{\kappa}star & 3747759/5000000 \\
+d\ensuremath{{}_0} & 1/200 \\
+d\ensuremath{{}_+} & 7997370001/10000000000 \\
+d\ensuremath{{}_s} & 174229075/221229831 \\
+d\ensuremath{{}_k} & 69691630000000/87285687845457 \\
+\end{longtable}
+
+These values satisfy
+
+\[
+\ell=4c-\frac13=\frac{11}{3}-4\theta,\quad
+x=1+\ell-h,\quad y=h-2\ell,\quad x+y=1-\ell,
+\quad\kappa_*=2\theta-1.
+\tag{FR10}
+\]
+
+Set \(s_P=1/25\), \(d_0=1/200\), \(d_+=h+10^{-10}\). Define
+
+\[
+C_O(\kappa,d)=\frac{\min(d,2y-d)}{6\kappa},\qquad
+C_N(d)=\min\left(s_Pd,\frac{2y-(2-B_P)d}{\Lambda_P}\right),
+\tag{FR11}
+\]
+
+and choose the conductor join and new-capacity kink once and for all by
+
+\[
+d_s=\frac{2y}{1+6\kappa_*s_P},\qquad
+d_k=\frac{2y}{2-B_P+\Lambda_Ps_P}.
+\tag{FR12}
+\]
+
+The exact reserves below prove \(d_0<y<d_s<d_k<d_+<2y\), with \(C_O(\kappa_*,d_s)=s_Pd_s=C_N(d_s)\). Use the natural physical estimate on \([d_0,d_s]\) and the new estimate on \([d_s,d_+]\). The join \(d_s\) is fixed at \(\kappa_*\); it is not recomputed when the actual contrary parameter \(\kappa=2\beta-1\) is substituted later.
+
+The complete normalized return exponent at a capacity \(C\) is
+
+\[
+E_\kappa(d,C;\delta,p)
+=\frac12+\frac{13h}{75}-\frac y2-\frac\ell2-\frac9{100}d
+ +\frac\delta2+\delta p\left(\ell-\frac C2\right)
+ +\frac34dR_*(\kappa,\delta,p).
+\tag{FR13}
+\]
+
+At fixed \((\delta,p)\), this expression is affine in \(d\) on each of the four intervals cut by \(y,d_s,d_k\). The exact return thus needs only the six labeled conductor/capacity edges \(O_0,O_y,O_s,N_s,N_+,N_k\), with the join retained on both source branches. These are the six edges recorded in the certificate. Although different valid counts may certify different endpoints, their common minimum \(R_*\) is independent of \(d\). Endpoint interpolation therefore uses one valid count envelope on every complete conductor interval.
+
+\hypertarget{first-return:exact-continuous-return-certificate}{%
+\paragraph{4. Exact continuous return certificate}\label{first-return:exact-continuous-return-certificate}}
+
+Put \(r_0=10^{-9}\). For each endpoint and admitted branch \(R_b=N_b/J_b\), form
+
+\[
+F_b(\delta,p)
+=J_b\{\theta-r_0-E_{\mathrm{base}}(d,C;\delta,p)\}
+ -\frac34dN_b,
+\tag{FR14}
+\]
+
+where \(E_{\mathrm{base}}\) is (FR13) with the final count term removed and every varying old parameter is set to \(\kappa_*\). The polynomials have degree at most \((2,3)\). On a closed box \([a,b]\times[c,d]\), substitute \(\delta=a+(b-a)u\), \(p=c+(d-c)v\). If the resulting power coefficients are \(A_{kl}\), the tensor Bernstein coefficients are exactly
+
+\[
+\beta_{ij}=\sum_{k\le i,\ l\le j}
+A_{kl}\frac{\binom{i}{k}}{\binom{2}{k}}
+       \frac{\binom{j}{l}}{\binom{3}{l}},\qquad
+0\le i\le2,\quad0\le j\le3.
+\tag{FR15}
+\]
+
+The nonnegative tensor Bernstein basis sums to one on the full closed square. Strict positivity of all twelve coefficients proves (FR14) continuously, including every edge and corner. Admission guards are checked in the same way on the larger box whose upper \(p\) edge is \(1/2\). The old count requires only its positive denominator.
+
+The complete rational receipt contains 212 closed return rectangles and 2,544 return coefficients. The following table summarizes their strict lower bounds; the full rectangle table appears at the end of this section. Every displayed integer lower bound is in units of \(10^{-18}\).
+
+\begin{landscape}
+\begingroup % exact-table-layout
+\fontsize{7.5}{9.5}\selectfont\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.18}
+\begin{longtable}{@{}
+ >{\raggedright\arraybackslash}p{35mm}
+ >{\raggedright\arraybackslash}p{35mm}
+ >{\raggedright\arraybackslash}p{170mm}@{}}
+\toprule\noalign{}
+Conductor edge & Number of rectangles & Lower bound for every return coefficient \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+old\_\allowbreak{}small & 35 & 86018277460362112 \\
+old\_\allowbreak{}peak & 35 & 58288142713806320 \\
+old\_\allowbreak{}switch & 35 & 4245652310513802 \\
+new\_\allowbreak{}switch & 35 & 4245652310513802 \\
+new\_\allowbreak{}top & 37 & 745062308695 \\
+new\_\allowbreak{}kink & 35 & 523643385986201 \\
+\end{longtable}
+\endgroup
+\end{landscape}
+
+The least exact coefficient is
+
+\[
+\frac{6239163648941934437455615175707415647}{8374015939509264312481718992896000000000000}>0.
+\tag{FR16}
+\]
+
+Every conductor edge has exact total rectangle area \(3/8\), no positive-area overlap, and a complete closed cover of \([0,3/4]\times[0,1/2]\). The construction starts from the retained exact closed cover and only bisects its rectangles, preserving containment; the checker verifies exact area and pairwise overlap. Thus there is no inference from a sampled numerical grid. Dividing (FR14) by \(J_b>0\), using \(R_*\le R_b\), and interpolating along the conductor intervals gives
+
+\[
+\begin{aligned}
+E_{\kappa_*}(d,C_O(\kappa_*,d);\delta,p)&\le\theta-r_0
+ &&(d_0\le d\le d_s),\\
+E_{\kappa_*}(d,C_N(d);\delta,p)&\le\theta-r_0
+ &&(d_s\le d\le d_+).
+\end{aligned}
+\tag{FR17}
+\]
+
+\hypertarget{first-return:every-reflected-shift-and-shortening-is-admitted}{%
+\paragraph{5. Every reflected shift and shortening is admitted}\label{first-return:every-reflected-shift-and-shortening-is-admitted}}
+
+For \(d_s\le d\le d_+\), let
+
+\[
+n_0(d)=1-y/d,\quad b(d)=2y/d-1,\quad
+z_d(t)=\min\left(s_P,\frac{B_P-2n_0(d)-2t}{\Lambda_P}\right).
+\tag{FR18}
+\]
+
+Use the free-shift cutoff \(t_f=1/400\). The exact domain guards prove, for \(0\le t\le t_f\), that \(2/5<n_0(d)+t<11/25\) and \(17/500<z_d(t)<43/1000\), with buffer \(\eta\). The selected equal plains satisfy the affine source inequality; all shorter plains and all smaller marked subsets are in the global source theorem. For the narrower subdomain used by the checker, the following conservative natural margins also provide a direct shortening completion:
+
+\[
+1-2n_{\max}-\frac92\frac{17}{500}>\eta,
+\qquad
+1-\frac25-\frac{B_P}{2}
+ -\left(\frac92-\frac{\Lambda_P}{2}\right)s_P>\eta,
+\tag{FR19}
+\]
+
+where \(n_{\max}=1-y/d_++t_f\). The first covers a marked width falling below \(17/500\). The second covers one plain falling below \(2/5\), including simultaneous shortening and zero slots. These follow from the old natural moment with the conservative coefficient \(9/2\).
+
+For small shifts, \(z_d(0)-z_d(t)\le2t/\Lambda_P\). If \(q=\delta p\le\delta/2\), the coefficient damping pays the fourth-root width loss, with a uniform proportional reserve:
+
+\[
+\frac{\delta t}{2}-\frac q2\{z_d(0)-z_d(t)\}
+\ge\delta t\left(\frac12-\frac1{2\Lambda_P}\right)
+\ge\frac{\delta t}{500}.
+\tag{FR20}
+\]
+
+The final comparison is strict whenever \(\delta t>0\); the zero endpoints retain the fixed return reserve from (FR17).
+
+For \(t\ge t_f\), use the clipped old width \(z_O(t)=\max(0,(b-2t)/(9/2))\). On its positive branch, with \(z_0=\min(s_P,(b-(1-B_P))/\Lambda_P)\),
+
+\[
+\frac t2-\frac14(z_0-z_O(t))-\frac{t}{500}
+=\left(\frac7{18}-\frac1{500}\right)t+\frac b{18}-\frac{z_0}{4}.
+\]
+
+Because \(3<\Lambda_P<9/2\), the last two terms decrease on the affine part and increase on the capped part. Their minimum is at \(b=1-B_P+\Lambda_Ps_P\). The sufficient uniform reserve is therefore
+
+\[
+\left(\frac7{18}-\frac1{500}\right)t_f
+ +\frac{1-B_P}{18}
+ +\left(\frac{\Lambda_P}{18}-\frac14\right)s_P>\eta.
+\tag{FR21}
+\]
+
+On the clipped branch \(b\le2t\), the corresponding bound is
+
+\[
+\frac t2-\frac{z_0}{4}-\frac{t}{500}
+\ge\left(\frac12-\frac1{500}-\frac1{2\Lambda_P}\right)t
+ +\frac{1-B_P}{4\Lambda_P}>0.
+\tag{FR22}
+\]
+
+Thus every large shift, including its dyadic tails and Fourier seminorm losses, is paid. This minimization holds for all relevant \(b\ge0\); it imposes no artificial upper bound \(b<1/6\). Lower conductor rows retain the original natural shift argument.
+
+\hypertarget{first-return:complementary-rows-and-actual-parameter-feedback}{%
+\paragraph{6. Complementary rows and actual-parameter feedback}\label{first-return:complementary-rows-and-actual-parameter-feedback}}
+
+The following table gives every complement reserve used by the exact checker. All entries are exact positive fractions. The domain tests subtract \(\eta=10^{-7}\); the floor test retains a saving \(1/200\). The floor saving is a chosen positive loss allowance, so changing an earlier convenient value \(1/100\) requires no change to the underlying floor estimate.
+
+\begingroup % exact-table-layout
+\fontsize{7.5}{9.5}\selectfont\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.18}
+\begin{longtable}{@{}
+ >{\raggedright\arraybackslash}p{57mm}
+ >{\raggedright\arraybackslash}p{99mm}@{}}
+\toprule\noalign{}
+Reserve & Exact value \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Gram\_\allowbreak{}x\_\allowbreak{}above\_\allowbreak{}ell & 200263/1000000 \\
+Gram\_\allowbreak{}y\_\allowbreak{}above\_\allowbreak{}x & 120981/1250000 \\
+Gram\_\allowbreak{}ell\_\allowbreak{}below\_\allowbreak{}one\_\allowbreak{}fifth & 243277/7500000 \\
+Gram\_\allowbreak{}2x\_\allowbreak{}above\_\allowbreak{}y\_\allowbreak{}plus\_\allowbreak{}ell & 517391/5000000 \\
+conductor\_\allowbreak{}small\_\allowbreak{}before\_\allowbreak{}peak & 6894163/15000000 \\
+conductor\_\allowbreak{}peak\_\allowbreak{}before\_\allowbreak{}switch & 357216457432849/1106149155000000 \\
+conductor\_\allowbreak{}switch\_\allowbreak{}before\_\allowbreak{}top & 26966063765699831/2212298310000000000 \\
+new\_\allowbreak{}capacity\_\allowbreak{}at\_\allowbreak{}switch & 402081518181/25000000000000 \\
+capacity\_\allowbreak{}positive\_\allowbreak{}at\_\allowbreak{}top & 314895601000696421371/3000000000000000000000 \\
+physical\_\allowbreak{}plain\_\allowbreak{}lower & 2513421/250000000 \\
+physical\_\allowbreak{}plain\_\allowbreak{}upper & 4427617241014997/239921100030000000 \\
+physical\_\allowbreak{}width\_\allowbreak{}lower & 3136270544069938020268341793/798635417420822412782070000000 \\
+physical\_\allowbreak{}width\_\allowbreak{}upper & 29999/10000000 \\
+small\_\allowbreak{}width\_\allowbreak{}shortening & 937862173149997/239921100030000000 \\
+short\_\allowbreak{}plain\_\allowbreak{}shortening & 95224281819/50000000000000 \\
+large\_\allowbreak{}shift & 30434281819/450000000000000 \\
+large\_\allowbreak{}shift\_\allowbreak{}clipped & 578856732121181/1664370948034500 \\
+small\_\allowbreak{}shift\_\allowbreak{}cost & 2328741896069/1000000000000 \\
+prime\_\allowbreak{}supply & 1142349997/119960550015 \\
+capacity\_\allowbreak{}domain & 3884541997/30000000000 \\
+incumbent & 4301/50000000 \\
+feedback\_\allowbreak{}kappa & 247759/5000000 \\
+feedback\_\allowbreak{}d & 2002629999/10000000000 \\
+feedback\_\allowbreak{}y & 530837/15000000 \\
+floor & 13165423799/3000000000000 \\
+small\_\allowbreak{}row & 5607653/150000000 \\
+principal\_\allowbreak{}w & 63542419/3000000000 \\
+principal\_\allowbreak{}z & 16579/200000000 \\
+holomorphic\_\allowbreak{}box & 247759/10000000 \\
+source\_\allowbreak{}lambda & 328741896069/1000000000000 \\
+source\_\allowbreak{}intercept & 3065949543/100000000000 \\
+\end{longtable}
+\endgroup
+
+Here the Gram tests are \(x>\ell\), \(y>x\), \(\ell<1/5\), and \(2x>y+\ell\). Prime supply is \(\ell/d_+>1/5\). The floor is
+
+\[
+F_{\rm fl}(d)=\frac4{25}x-\frac3{20}-\frac{51}{100}y
+ +\frac{67}{100}d-\frac3{20}\ell,
+\]
+
+and the floor reserve is \(\theta-(4+y-x)/6-1/200-F_{\rm fl}(d_+)\). Since the floor increases with \(d\), this covers all floor rows. The small-row reserve is \(-1/20-[13h/75-y/2+(63/50)d_0]\), including the inherited nonprincipal unit sector. The principal contour reserves are \(y/20-(1+h)/1000-1/4000\) and \(h/600-1/1000-1/4000\). The holomorphic box is preserved by \(\theta>17/20\). These are the original complementary estimates at the new fixed geometry.
+
+All source faces, count windows and the conductor join \(d_s\) are now held fixed. For \(\kappa_*\le a\le\kappa\le\kappa_I\), the old count satisfies \(R_O(\kappa)-R_O(a)\le(5/216)(\kappa-a)\). For completeness, put
+
+\[
+D_\kappa=3\kappa(3-p)-2p,\quad
+C_\kappa=\frac{2(1-p)(3\kappa-p)}{D_\kappa},\quad
+S_\kappa=V+\delta C_\kappa.
+\]
+
+Then \(D_\kappa,D_a\ge17/4\), and direct subtraction gives
+
+\[
+C_\kappa-C_a
+=\frac{6p(1-p)^2(\kappa-a)}{D_\kappa D_a}
+\le\frac{\kappa-a}{18},\qquad
+R_O(\kappa)-R_O(a)
+=\frac{\delta V^2}{2S_\kappa S_a}(C_\kappa-C_a)
+\le\frac5{216}(\kappa-a).
+\tag{FR23}
+\]
+
+Every improved candidate is constant in \(\kappa\), and its admission is independent of \(\kappa\). Selecting a minimizing candidate at \(a\) therefore proves the same upper difference bound for \(R_*\).
+
+The resulting count cost in (FR13) is at most \(5d(\kappa-\kappa_*)/288\), which is less than \((\kappa-\kappa_*)/50\) because \(d\le d_+<1\). New physical capacity is fixed. On old rows its additional cost is
+
+\[
+\frac{\delta p\min(d,2y-d)}{12}
+ (\kappa_*^{-1}-\kappa^{-1})
+\le\frac{25}{784}(\kappa-\kappa_*),
+\]
+
+using \(y<1/2\), \(\delta p\le3/8\), and \(\kappa\kappa_*\ge(7/10)^2\). Since \(5/288+25/784<1/8\), setting \(\mu=\beta-\theta>0\) and \(\kappa-\kappa_*=2\mu\) in (FR17) gives
+
+\[
+\begin{aligned}
+E_\kappa-\beta&\le-r_0-\frac{24}{25}\mu
+ &&\text{on new rows},\\
+E_\kappa-\beta&\le-r_0-\frac34\mu
+ &&\text{on old rows}.
+\end{aligned}
+\tag{FR24}
+\]
+
+At the fixed join, the old capacity may decrease as \(\kappa\) increases. That change is exactly the cost just bounded. No equality between old and new capacity at the actual \(\kappa\) is assumed, and the source admission on the new interval is unaffected.
+
+\hypertarget{first-return:the-complete-reciprocal-mellin-contradiction}{%
+\paragraph{7. The complete reciprocal Mellin contradiction}\label{first-return:the-complete-reciprocal-mellin-contradiction}}
+
+Let \(\beta\) be the zero supremum of the full finite-order Eisenstein Hecke family retained in the earlier chapters. If \(\beta\le\theta\), the Hecke conclusion already holds. Otherwise the previously proved endpoint (FR2) gives
+
+\[
+\theta<\beta\le\theta_I,\qquad
+\kappa_*<\kappa=2\beta-1\le\kappa_I<3/4.
+\tag{FR25}
+\]
+
+This is exactly the range required by the source, count and feedback arguments. Let \(k=(4+y-x)/6\). The geometry identities (FR10) give
+
+\[
+\theta-k=\frac x2+\frac{y-x}{12}.
+\tag{FR26}
+\]
+
+The original signed Gram and marked-energy bounds for the common compensated probe, together with its nonzero prime normalizer, imply for a common \(0<\omega<(\beta-\theta)/4\) that
+
+\[
+J_\eta(Z)\ll_\eta Z^{\theta-k+\omega}.
+\tag{FR27}
+\]
+
+Equations (FR17)--(FR24), all shifted-product estimates, and the strict complementary reserves imply a common \(\sigma_0>0\) such that
+
+\[
+J_\eta(Z)-f_\eta(Z)\ll_\eta Z^{\beta-k-\sigma_0}.
+\tag{FR28}
+\]
+
+To specify the quantifiers, choose the front, frequency, scalar, mass, count, source, selection, height and zero-buffer losses after the positive difference \(\beta-\theta\), and before scale, with their total smaller than both the retained fixed reserves and a fixed fraction of \(\beta-\theta\). All source meshes are fixed before the target and the finite slot system. Once that system is fixed, its least positive width is fixed; choose the principal normalizer loss and the principal contour buffer inside the displayed margins. The original far-right contour gives arbitrary saving for large rows, and \(d_+=h+10^{-10}\) covers the intervening central rows. The finite minimum of all remaining positive exponent gaps supplies \(\sigma_0\). Thresholds and constants may depend on the primitive target; the exponent gaps do not. Independent-height integrals, finite profile seminorms and all natural-zero factors are unchanged.
+
+The signal remains the exact reciprocal Mellin integral
+
+\[
+f_\eta(Z)=\frac1{2\pi i}\int_{(a)}
+ Z^{s-k}e^{(s-5/6)^2}\frac{H_\eta(s)}{L_K^S(s,\eta)}\,ds,
+\qquad a>1.
+\tag{FR29}
+\]
+
+The retained principal Euler-product proof gives a holomorphic, nonvanishing \(H_\eta\) on \(\Re s>\theta\); fixed deletions can ensure \(|H_\eta-1|\le1/2\) there. The fixed-ray prime ideal theorem gives a nonzero normalizer with subpower reciprocal. The Gaussian and original Mellin weights give vertical convergence. Absolute-line shifts imply \(f_\eta(Z)=O_{\eta,A}(Z^{A-k})\) as \(Z\to0\) for every fixed \(A\).
+
+Put \(m=\min(\beta-\theta-\omega,\sigma_0)>0\). Equations (FR27)--(FR28) imply \(f_\eta(Z)\ll_\eta Z^{\beta-k-m}\) as \(Z\to\infty\). Consequently
+
+\[
+\mathcal F_\eta(s)=\int_0^\infty f_\eta(Z)Z^{k-s}\frac{dZ}{Z}
+\tag{FR30}
+\]
+
+is locally uniformly holomorphic on \(\Re s>\beta-m\). Integrability at infinity follows from the displayed exponent, and at zero from choosing \(A\) larger than the real parts of the compact set under consideration. The same bounds with fixed powers of \(\log Z\) justify differentiation under the integral.
+
+On a line right of one, absolute Fourier--Mellin inversion gives
+
+\[
+\mathcal F_\eta(s)=e^{(s-5/6)^2}
+ \frac{H_\eta(s)}{L_K^S(s,\eta)}.
+\tag{FR31}
+\]
+
+This meromorphic identity continues to \(\Re s>\beta-m\). Its numerator is nonzero there, since \(\beta-m\ge\theta+\omega>\theta\). A denominator zero of any multiplicity would therefore be a pole, contrary to the holomorphy of (FR30). The gap \(m\) is common to all primitive targets. Lemma 9.1 supplies a primitive zero with real part greater than \(\beta-m/2\), inside this forbidden half-plane. This contradiction proves \(\beta\le\theta\).
+
+Primitive reduction and restoration of the fixed Euler factors preserve zeros on \(\Re s>0\). For every presented ordinary Dirichlet character \(\chi\), the original norm-pullback identity is
+
+\[
+L_K(s,\eta_\chi)=L(s,\chi)L(s,\chi\chi_{-3}).
+\tag{FR32}
+\]
+
+Both ordinary factors are holomorphic on \(\theta<\Re s<1\). A zero of either would contradict the Hecke nonvanishing just proved. The classical boundary nonvanishing and absolute Euler convergence handle the line \(\Re s=1\) and the half-plane to its right, with the principal pole excluded. This proves (FR1) for every ordinary Dirichlet character, and in particular for the Riemann zeta function. No assertion is made on the new boundary line itself.
+
+The exact improvement over the immediately preceding endpoint is
+
+\[
+\frac{1252241}{10000000}-\frac{12518109}{100000000}
+=\frac{4301}{100000000}=0.00004301>0.
+\tag{FR33}
+\]
+
+The exact closed cover for this first return is given in the certificate appendix. Its endpoint is used only after the ordinary source theorem, the complete same-zero count, the shifted physical numerator, and the Mellin contradiction just proved. It therefore supplies the later natural moment \(G(1,11243277/2500000,11/200)\).

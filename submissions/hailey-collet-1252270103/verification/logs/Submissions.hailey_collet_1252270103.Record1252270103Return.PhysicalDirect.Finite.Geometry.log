@@ -1,0 +1,3 @@
+'QRH.Record1252270103Return.GenericPhysical.PhysicalDirect.FiniteNumerator.actual_cell_geometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

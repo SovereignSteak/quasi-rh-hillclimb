@@ -1,0 +1,13 @@
+Submissions/hailey_collet_1252270103/Record1252270103Return/Transport/FinalFixedHigh.lean:24:0: warning: automatically included section variable(s) unused in theorem `QRH.Record1252270103Return.GenericPhysical.FinalAssembly.baseline_beta`:
+  [Parameters]
+  [Bounds]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Parameters] [Bounds] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'QRH.Record1252270103Return.GenericPhysical.FinalAssembly.sourceProbe_high_of_finite_numerator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QRH.Record1252270103Return.GenericPhysical.FinalAssembly.sourceProbe_high_of_finite_numerator_at' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

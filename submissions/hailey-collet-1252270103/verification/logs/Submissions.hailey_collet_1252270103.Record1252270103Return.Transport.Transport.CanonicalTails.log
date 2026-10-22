@@ -1,0 +1,6 @@
+'OAI.SevenEighths.Record1252270103Return.TransportHighRowFamily.canonical_small_original_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.SevenEighths.Record1252270103Return.TransportHighRowFamily.canonical_large_original_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

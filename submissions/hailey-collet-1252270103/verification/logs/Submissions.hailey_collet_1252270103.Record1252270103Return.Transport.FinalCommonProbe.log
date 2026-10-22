@@ -1,0 +1,6 @@
+'QRH.Record1252270103Return.GenericPhysical.FinalAssembly.common_probe_of_finite_numerator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QRH.Record1252270103Return.GenericPhysical.FinalAssembly.beta_le_theta_of_finite_numerator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

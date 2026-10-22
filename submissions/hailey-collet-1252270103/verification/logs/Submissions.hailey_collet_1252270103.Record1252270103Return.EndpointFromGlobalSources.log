@@ -1,0 +1,5 @@
+'QRH.Record1252270103Return.initial_natural_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRH.Record1252270103Return.beta_of_four_global_sources' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRH.Record1252270103Return.hecke_of_four_global_sources' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRH.Record1252270103Return.dirichlet_of_four_global_sources' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRH.Record1252270103Return.zeta_of_four_global_sources' depends on axioms: [propext, Classical.choice, Quot.sound]

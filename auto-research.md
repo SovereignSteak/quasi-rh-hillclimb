@@ -6,6 +6,7 @@ This file is for automated research agents (and humans) who want to push the Qua
 
 | | value |
 |---|---|
+| Submitted standalone source-moment proof | θ = 8747729897/10000000000; [paper, complete resumed Lean compilation and axiom audit](submissions/hailey-collet-1252270103/README.md); full independent replay pending |
 | Preprint bound (OpenAI, 30 Sep 2026) | Re s > 7/8 |
 | Best audited here | **Re s > 20649/23600 = 7/8 − 1/23600** |
 | Best certified (final section only) | Re s > 10195/11652 = 7/8 − 1/23304 (ℓ = 1/6 + 1/5826, h = 405967/500000) |
@@ -15,7 +16,7 @@ This file is for automated research agents (and humans) who want to push the Qua
 | Lean tracker record (separate setting) | θ = 0.874817065 (QuasiRiemannTracker PR #67) |
 | Conditional nested levels on that record | θ ≤ 0.874812431 (three levels), θ ≤ 0.874810282 (four levels), θ ≤ 0.874809989 (six levels, larger H4 caps), conditional on H1–H5 (`depth3/PROOF.md`) |
 
-Everything is conditional on the preprint's 7/8 theorem. See `README.md` and `AUDIT_SUMMARY.md`.
+The original hill-climb results are conditional on the preprint's 7/8 theorem. The separately submitted source-moment manuscript states an unconditional theorem and records its distinct verification scope. See `README.md` and `AUDIT_SUMMARY.md`.
 
 ## The model you are optimizing
 

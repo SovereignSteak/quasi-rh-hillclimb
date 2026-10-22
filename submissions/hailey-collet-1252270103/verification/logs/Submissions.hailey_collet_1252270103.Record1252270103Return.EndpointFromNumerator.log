@@ -1,0 +1,9 @@
+'QRH.Record1252270103Return.Final.beta_of_literal_numerator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRH.Record1252270103Return.Final.hecke_of_literal_numerator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRH.Record1252270103Return.Final.dirichlet_of_literal_numerator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QRH.Record1252270103Return.Final.zeta_of_literal_numerator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRH.Record1252270103Return.Intermediate.beta_of_literal_numerator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

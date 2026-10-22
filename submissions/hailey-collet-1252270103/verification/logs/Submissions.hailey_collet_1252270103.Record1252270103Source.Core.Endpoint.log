@@ -1,0 +1,15 @@
+Submissions/hailey_collet_1252270103/Record1252270103Source/Core/Endpoint.lean:16:50: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Submissions/hailey_collet_1252270103/Record1252270103Source/Core/Endpoint.lean:27:21: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Submissions/hailey_collet_1252270103/Record1252270103Source/Core/Endpoint.lean:31:21: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'QRH.Record1252270103Source.Endpoint.seed_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRH.Record1252270103Source.Endpoint.nf_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRH.Record1252270103Source.Endpoint.beta_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRH.Record1252270103Source.Endpoint.hecke_nonvanishing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRH.Record1252270103Source.Endpoint.dirichlet_nonvanishing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRH.Record1252270103Source.Endpoint.zeta_nonvanishing' depends on axioms: [propext, Classical.choice, Quot.sound]

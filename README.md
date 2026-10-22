@@ -35,6 +35,12 @@ The Lean-verified record is on the [QuasiRiemannTracker](https://github.com/GTim
 
 ![The best boundary over time, with contributors](graphs/timeline.png)
 
+## Submitted standalone proof: finite ordinary source moments
+
+Hailey Collet ([@HaileyStormC](https://x.com/HaileyStormC)) contributes a [standalone paper, exact Lean sources and verification receipts](submissions/hailey-collet-1252270103/README.md) for **Re(s) > 8747729897/10000000000 = 0.8747729897**, covering all Dirichlet characters with the principal pole excluded. This separate structural route includes the analytic arguments and exact finite certificates; its manuscript claims an unconditional theorem. The complete 6,471-module closure has compiled in resumed development, and the final theorem's axiom audit exited zero with only Lean's three standard axioms. Complete fresh final replay and independent exact-head tracker acceptance remain pending. See the [Track B writeup](auto-research/proposals/2026-10-21-finite-ordinary-source-moments.md) for the proof route and evidence scopes. The existing conditional claims and audits elsewhere on this page retain their original scope.
+
+[QRH-Catalogue](https://github.com/HaileyStorm/QRH-Catalogue), used extensively for this work, is a public index of reusable QRH mathematics and formal components, open to source-backed contributions and corrections.
+
 ## Main structural facts
 
 1. **Closed form of the boundary.** With l_x = 1 + ℓ − h and M + ℓ = 1, the low estimate Z^{l_x/2 + b/12} and the Mellin exponent C(s) = l_x/2 + s − 1 + h/6 meet at **σ₀ = 11/12 − ℓ/4** (h cancels). Part I (ℓ = 0) gives 11/12, and the preprint's ℓ = 1/6 gives 7/8.
@@ -90,4 +96,4 @@ Contributions from humans and agents are welcome. See [CONTRIBUTING.md](CONTRIBU
 
 ## License
 
-[MIT](LICENSE) for the code and documentation in this repository. The preprint itself is OpenAI's work and isn't covered by this license; this repository only references it.
+[MIT](LICENSE) for the repository code and integration documentation, except externally authored proof artifacts under `submissions/hailey-collet-1252270103/`: those retain Apache-2.0 and inherited notices as documented in their [NOTICE](submissions/hailey-collet-1252270103/NOTICE.md). The preprint itself is OpenAI's work and isn't covered by this license; this repository only references it.

@@ -1,0 +1,50 @@
+{
+  "result": {
+    "c": "1252270103/10000000000",
+    "theta": "8747729897/10000000000",
+    "entry": "Candidate.bound",
+    "source_commit": "ac76d5ef6008d976a7b8f3c1d921af2317e79ce9"
+  },
+  "completed": {
+    "entire_closure_resumed_development_compilation": true,
+    "source_modules": 6471,
+    "prior_clean_prefix_modules": 6431,
+    "remaining_modules_whole_process_exit0": 40,
+    "separate_candidate_bound_audit_exit0": true,
+    "candidate_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "finite_component_modules": 657,
+    "finite_component_theorem_audits": 2953
+  },
+  "outstanding": {
+    "single_fresh_full_dependency_source_replay": true,
+    "exact_head_canonical_comparator_and_all_three_endpoint_kernels": true,
+    "protected_tracker_acceptance": true
+  },
+  "protected_attempt": {
+    "url": "https://github.com/GTimG/QuasiRiemannTracker/actions/runs/39666255945",
+    "attempt": 1,
+    "source_commit": "ac76d5ef6008d976a7b8f3c1d921af2317e79ce9",
+    "outcome": "resource-exhausted during compilation at shared 10800-second budget",
+    "cached_modules": 2923,
+    "fresh_compiled_modules": 3305,
+    "covered_modules": 6228,
+    "required_modules": 6471,
+    "worker_report": null,
+    "endpoint_kernel_acceptance": false
+  },
+  "packaging": {
+    "original_lean_archive_sha256": "f68aaac739905e8f0909cde9e65df6d246f99b80d39839cfe39e8d49f6d30881",
+    "included_lean_archive_sha256": "e69c31261bb4f7b997679220f7b0c32063af4721dd95dcb787d8b5074f95adfa",
+    "changes": [
+      "README.md: replace planned site-validation claim with actual verification scopes",
+      "metadata.json: replace planned site link with existing tracker PR"
+    ],
+    "all_6471_lean_source_bytes_identical_to_frozen_commit": true,
+    "paper_pdf_sha256": "96fc120420664b94c8ea5aa3ce3f4d96fb6d0f33ff2ffc3ed31594ef586b4062"
+  },
+  "receipt_scope": "Public projections of locally retained source-bound process receipts. They are not signed upstream acceptance certificates."
+}

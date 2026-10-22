@@ -1,0 +1,10 @@
+Submissions/hailey_collet_1252270103/Record1252270103Return/Transport/Transport/NormalizedTransport.lean:24:8: warning: automatically included section variable(s) unused in theorem `_private.Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.NormalizedTransport.0.OAI.SevenEighths.Record1252270103Return.TransportHighRowFamily.transportPoolOutside`:
+  [QRH.Record1252270103Return.Geometry.Parameters]
+  [QRH.Record1252270103Return.Geometry.Bounds]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [QRH.Record1252270103Return.Geometry.Parameters] [QRH.Record1252270103Return.Geometry.Bounds] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'OAI.SevenEighths.Record1252270103Return.TransportHighRowFamily.actual_normalized_probe_transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

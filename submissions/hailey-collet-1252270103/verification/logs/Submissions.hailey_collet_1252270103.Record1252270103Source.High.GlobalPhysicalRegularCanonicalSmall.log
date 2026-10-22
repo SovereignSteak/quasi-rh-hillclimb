@@ -1,0 +1,3 @@
+'QRH.Record1252270103Source.High.GlobalPhysical.regular_canonical_small' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

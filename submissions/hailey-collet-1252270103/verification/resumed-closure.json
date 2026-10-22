@@ -1,0 +1,1236 @@
+{
+  "kind": "public projection of local source-bound receipts; unsigned development evidence",
+  "source_commit": "ac76d5ef6008d976a7b8f3c1d921af2317e79ce9",
+  "source_receipt_manifest_sha256": "f58d91c3953d0a11262612e48b6a2c6e860c399eb1b046b4f1451c609098adf9",
+  "status": "resumed-development-closure-passed",
+  "qualification": "40 missing modules compiled using6431 prior clean replay03 objects; not full clean replay or protected acceptance",
+  "build_order_count": 6471,
+  "missing_modules_completed_exit0": 40,
+  "candidate_audit_separate": true,
+  "candidate_bound_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "compiler_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "receipts": [
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.LargeSaving",
+      "source_sha256": "7d4d32a91515037925b2d4874d278ea9182583fee892eb31c09508696248508c",
+      "object_sha256": "7e929ee5a3af113b6cf333e28f97a13aa40c464f2c939e48c618a805751a85b1",
+      "receipt_sha256": "4c65b7bff09f2d3af409269f3fb73152392d2f57b675c4a548f2fd912959d86d",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 2.2055732998996973,
+      "log_sha256": "0fa6608da3e41ff1e42478c648fb9b221df09371daea396e57dfdf274448c94b",
+      "setup_sha256": "6872b5e5ae2ee8af1453095866adccd8893d34dd67f6f42c176badbfe2c15764",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.TransportGeometry",
+          "object_sha256": "f85e654310de7a232d7e6853504360f61af05cabfd04921756a483266e2f08ce"
+        },
+        {
+          "module": "Submissions.openai_baseline.OAI.NumberTheory.DirichletL.PrimeRows.LargeSaving",
+          "object_sha256": "e095d9641370872a4979307bc16afbd5dd281a868f40e74800d40961eb90e699"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.LargeTail",
+          "object_sha256": "dcf8a22bc87a85b6ca41c9dedc913f6f5f3a56aace3207ec323b9a249a4eb7c7"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.PhysicalLargeTail",
+      "source_sha256": "5bfe8be92bd73557a058a354a42cdb4bc173226beb38ebc752db8e68ac861e81",
+      "object_sha256": "817e3e88e9330df47af1c443c20a5efa0b4b2a28f9fd61bc0cb96522ee4c6ef6",
+      "receipt_sha256": "ca96e85268ef39c0c27c2deec962f3b0c570373f8ad15ff6c8743382ec5a6050",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 2.4058542139828205,
+      "log_sha256": "2bdadef2b1504c200df04712ba383738ab6271ed0aaef71b2a500c90f3e751da",
+      "setup_sha256": "2ac80ab05a7c2535e1cddd1e1e48f11731117edce4893720535e14b6d674078c",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.TransportGeometry",
+          "object_sha256": "f85e654310de7a232d7e6853504360f61af05cabfd04921756a483266e2f08ce"
+        },
+        {
+          "module": "Submissions.openai_baseline.OAI.NumberTheory.DirichletL.PrimeRows.PhysicalLargeTail",
+          "object_sha256": "42dda721390e8fedcb8c3b6fa9b9dd4f61033f8ccf0f2ec9a1d648a2d5609b95"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.LargeSaving",
+          "object_sha256": "7e929ee5a3af113b6cf333e28f97a13aa40c464f2c939e48c618a805751a85b1"
+        },
+        {
+          "module": "Submissions.openai_baseline.OAI.NumberTheory.DirichletL.PrimeRows.PhysicalDyad",
+          "object_sha256": "2815358f09d7fc44e45f19141b46389402453af0b03e3bdbae432ca6b34fd2c5"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.CanonicalTails",
+      "source_sha256": "d0fdada0dad2328696be32b736cbf4182cfa56424b0313ecd54da9fe0d4d8a0c",
+      "object_sha256": "e9680ba62b039a59441f95319ac4c401d9df35e52a21dc414520c107e05772fd",
+      "receipt_sha256": "03ddd1be7012e5fed664b263d1251f4056827eaea3f866b72a678c608c3330ed",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 2.205673668999225,
+      "log_sha256": "f7d68a95bc590ae498f58f1861b2880193f6b8e9aa78e9cd708f5892ca304c5e",
+      "setup_sha256": "f65b10c16a0c7fd549d49115df8b43cbd1128388da9ab2a2aacd7cedf4a59a97",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.TransportGeometry",
+          "object_sha256": "f85e654310de7a232d7e6853504360f61af05cabfd04921756a483266e2f08ce"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.PhysicalLargeTail",
+          "object_sha256": "817e3e88e9330df47af1c443c20a5efa0b4b2a28f9fd61bc0cb96522ee4c6ef6"
+        },
+        {
+          "module": "Submissions.openai_baseline.OAI.NumberTheory.DirichletL.PrimeRows.CanonicalTails",
+          "object_sha256": "fc87ab3e9e36ebdcb728528f099b4ce49946740234e256ba6833c17ed17c6965"
+        },
+        {
+          "module": "Submissions.openai_baseline.OAI.NumberTheory.DirichletL.PrimeRows.PhysicalPartition",
+          "object_sha256": "5d41854db5d8d5ce7b0de4679e567a95c1c358aca354cb3303d78a024d188514"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.PhysicalSmallTail",
+          "object_sha256": "cd6d6874d8be2057ef832e4ef6284e537d540ad3ce711b32510761b5a4c40e5b"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.CanonicalReduction",
+      "source_sha256": "5a54bb9f698f85057c927211ffa6d6b42b8a3969fe92df6eb336e9b7db2d49a1",
+      "object_sha256": "14d4299d93adf99c16fa84237fbb783077a78746fdd1d90071c5e83a750a0e91",
+      "receipt_sha256": "53d78d9819d5897738214ec0a440f2c6e583009100880963e0b2c838b4c755d7",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 2.8066655481234193,
+      "log_sha256": "baa9ed9ae973720800881a1d20ba231fccb7a8b18e569765980cee82b95cd1e7",
+      "setup_sha256": "480a9ba87c6b4a764a23670beb4f37527bcd964dfe5d1fd4c3490919a61fbe6a",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.TransportGeometry",
+          "object_sha256": "f85e654310de7a232d7e6853504360f61af05cabfd04921756a483266e2f08ce"
+        },
+        {
+          "module": "Submissions.openai_baseline.OAI.NumberTheory.DirichletL.PrimeRows.CanonicalReduction",
+          "object_sha256": "142ce7703181b2f6a573120752884f0f9e62f22eccc2d085c6461f35657dad39"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.CanonicalTails",
+          "object_sha256": "e9680ba62b039a59441f95319ac4c401d9df35e52a21dc414520c107e05772fd"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.CanonicalCubeReduction",
+      "source_sha256": "c71425b276a9b61df565e958259c347f2d8913d00c37e9748a588fbc26f229ba",
+      "object_sha256": "be9c968a6bd22a939cb5106509471d9cb6d90dc37ddc1d76d513679d5fb205ae",
+      "receipt_sha256": "94da473367b19ed904dbc954534027f7ff22b90240d2ea906867976eb33f95eb",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 2.8065945878624916,
+      "log_sha256": "3970af3b202495aa10bc10993992a4f1f4e87a3aef0f81de3a382d586b416194",
+      "setup_sha256": "e03150b480d7615925c90b82217038daa779e37f0ccb77ba6bac3597eecfe8c0",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.TransportGeometry",
+          "object_sha256": "f85e654310de7a232d7e6853504360f61af05cabfd04921756a483266e2f08ce"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.CubeFiniteError",
+          "object_sha256": "3d235e7b4f7aa7c3b8995a9152e6542c70f5d1749d259897768a5d360acccbee"
+        },
+        {
+          "module": "Submissions.openai_baseline.OAI.NumberTheory.DirichletL.PrimeRows.CanonicalCubeReduction",
+          "object_sha256": "06c00a305bae3311328e8db5e758c28d303b57660f0d1f9ba4457a8774dc680d"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.CanonicalReduction",
+          "object_sha256": "14d4299d93adf99c16fa84237fbb783077a78746fdd1d90071c5e83a750a0e91"
+        },
+        {
+          "module": "Submissions.openai_baseline.OAI.NumberTheory.DirichletL.PrimeRows.CubeFiniteIntegral",
+          "object_sha256": "c5a20bae02812e3969d09b27796d2feacd0fde1cc911fe47d985b8c5e00d9f45"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.CanonicalCubeChoice",
+      "source_sha256": "3c8f736f5818d23b24655bb09a5bfb462a547ec65224ddad8db5f3a8fee0ee1a",
+      "object_sha256": "9b8465d0ca1d215025f3da8f3928d306b10a5a18b9a6e03dc0a134571515476c",
+      "receipt_sha256": "dabd16bda3fc7add50217c9fb4fcdf5650d5c9e989ee39500ca022c07280811b",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 2.806590453023091,
+      "log_sha256": "e47a64997e52f25d52eb306a871d5a1d3975a7182c1a5152af0b4ad871998d9b",
+      "setup_sha256": "c7ecf8675397b6085c34598e379a437e0d744f4aa4a836841ac3949da6a63f20",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.TransportGeometry",
+          "object_sha256": "f85e654310de7a232d7e6853504360f61af05cabfd04921756a483266e2f08ce"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.CanonicalCubeReduction",
+          "object_sha256": "be9c968a6bd22a939cb5106509471d9cb6d90dc37ddc1d76d513679d5fb205ae"
+        },
+        {
+          "module": "Submissions.openai_baseline.OAI.NumberTheory.DirichletL.PrimeRows.CanonicalCubeChoice",
+          "object_sha256": "309e596e486e72c1f9fc71ad2f75ba1072914034e450842d9ee467e294ef8adb"
+        },
+        {
+          "module": "Submissions.openai_baseline.OAI.NumberTheory.DirichletL.PrimeRows.CanonicalCubeBins",
+          "object_sha256": "ea1024c66880a2c0cf90d34b8e98380b02a746215a44a828b97724489695d656"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.CanonicalRayCube",
+      "source_sha256": "33bc891d2f9893fb93b3cc613568b4858ef476aedcae6d57999310a280eaa6d0",
+      "object_sha256": "0fa7d6dfc9b6c1c544f49077be2b67701f94da26e6a688088c3d601ff205c79b",
+      "receipt_sha256": "45de7019c49e3ddcafca2d2847f830a9d1ac5fda1e503c7df87ba2cdc46f39bf",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 2.4062379179522395,
+      "log_sha256": "765b56b8fcc57bb165de143cb5cd25d6f456a6d201e09c83f9a292446fc4cdd7",
+      "setup_sha256": "69e00f3dfb749cc3e96116408a4cd7690ec230bf1f265908fcecbd9b707fdef1",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.TransportGeometry",
+          "object_sha256": "f85e654310de7a232d7e6853504360f61af05cabfd04921756a483266e2f08ce"
+        },
+        {
+          "module": "Submissions.openai_baseline.OAI.NumberTheory.DirichletL.PrimeRows.CanonicalRayCube",
+          "object_sha256": "e383ffd5345a5e78b343085f73388175247de1eb0dfd5188c191914863c68238"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.CanonicalCubeChoice",
+          "object_sha256": "9b8465d0ca1d215025f3da8f3928d306b10a5a18b9a6e03dc0a134571515476c"
+        },
+        {
+          "module": "Submissions.openai_baseline.OAI.NumberTheory.DirichletL.Detector.RayCharacterFamily",
+          "object_sha256": "80ed99959bc4e625ecd1740a947252b8d316ae343fd8d4de83c867b17faa28b2"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.NormalizedTransport",
+      "source_sha256": "7a48944e4d401adefe467010a0cda981f3a18d098ad22dcb663b56a45d5db465",
+      "object_sha256": "70d5e59c3d387e7324fe6c80d52afd9bcb1209242e827d0d3dd78360d9f4c299",
+      "receipt_sha256": "974ba6552f459c240136054e48b624b5525e0e483d75476ad467c486aff93eaa",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 4.208788684103638,
+      "log_sha256": "f3c92670c03a40ac149f6a91350512f2bcb3b2890b2d36c7aa37946affbf870d",
+      "setup_sha256": "bd91d4bff43b418a1f76e2164fd0d7a77c99e570dccf6ece7ea3b047417f2afc",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.TransportGeometry",
+          "object_sha256": "f85e654310de7a232d7e6853504360f61af05cabfd04921756a483266e2f08ce"
+        },
+        {
+          "module": "Submissions.openai_baseline.OAI.NumberTheory.DirichletL.PrimeRows.NormalizedTransport",
+          "object_sha256": "0e7a3e429d22cd1443d5f6c1f9788fd0fa7097c68c1bec05ecd8ce39f1153c7c"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.CanonicalRayCube",
+          "object_sha256": "0fa7d6dfc9b6c1c544f49077be2b67701f94da26e6a688088c3d601ff205c79b"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.LowNormalizer",
+          "object_sha256": "ba271640c4d1c14741bf0ebd8c3b50a0197d0ad3274365dce5457b1e55e8f7e6"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.PrincipalRemainderNormalized",
+          "object_sha256": "322b5d4cf08d0539363fba2329e96ff059ffeafb7068a1e9dafca6c82fc90a77"
+        },
+        {
+          "module": "Submissions.openai_baseline.OAI.NumberTheory.DirichletL.PrimeRows.CubeNormalizer",
+          "object_sha256": "bac00a2b5a9ced03e03739504744110797d2725ed710eaa36039d2fb8e4f102e"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.NormalizedTransportSaving",
+      "source_sha256": "b07531aede5c3b54d40941f0becec8d9695b415cf81a7eff5192ad8512153be4",
+      "object_sha256": "8c4d2330a8953efe9fb2475a5374f06e5a6c857cffc87930949b72d0acacaad1",
+      "receipt_sha256": "11fd4d332f0d6012c8980eb00a3a87d487f7aabbd98c19f7040071f278cbfe64",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 3.4081586429383606,
+      "log_sha256": "268c22300d730f35380b24bd04bf2cfbf451cbfe5a5b322ed7c305d5bd416085",
+      "setup_sha256": "fe4f611701f386d3c1cf8c437e88997b1db995505353e132cabee75f4b340099",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.TransportGeometry",
+          "object_sha256": "f85e654310de7a232d7e6853504360f61af05cabfd04921756a483266e2f08ce"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.NormalizedTransport",
+          "object_sha256": "70d5e59c3d387e7324fe6c80d52afd9bcb1209242e827d0d3dd78360d9f4c299"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.NonfloorTransport",
+      "source_sha256": "7be2a634b9754a980633af17b0501fc410406c84a2205c0621ee06efb7517a99",
+      "object_sha256": "d956a41eaa31088584646a3dde49898ec183e1d1c6c7f893acdece0d92c32ecc",
+      "receipt_sha256": "13c156f02af62e1d702333ffa2d774fee66c1836f7055386b275330ebe6b369b",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 3.4072818441782147,
+      "log_sha256": "267f564b9b275c00e07ed214f13fe63b877c383e85723df4f50e143efc41f41a",
+      "setup_sha256": "4a836176ab4660f7692dcfefad23309e3173a68dc7b6a6c77dfd2a1cf9dfb2a2",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.TransportGeometry",
+          "object_sha256": "f85e654310de7a232d7e6853504360f61af05cabfd04921756a483266e2f08ce"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.NormalizedTransportSaving",
+          "object_sha256": "8c4d2330a8953efe9fb2475a5374f06e5a6c857cffc87930949b72d0acacaad1"
+        },
+        {
+          "module": "Submissions.openai_baseline.OAI.NumberTheory.DirichletL.PrimeRows.CentralSupportedSplit",
+          "object_sha256": "63ef10408b448c2bfc187de802506a572e57f84e32e3955aa975cc6eb920a782"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.CubeFloorCollected",
+          "object_sha256": "e276bb71d77d6974ffa9b90e61a62cef4c7836b4600577cd7c770edf0ec72e7d"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.SharedNonfloor",
+      "source_sha256": "a77ed4b8ab79f187ccc50ad6f895aefdfa83277a6325d601e979aa32a43fe7db",
+      "object_sha256": "7943d3cda7fc9910982077da220cd22929766e3d821153ad445cb0bda432cb7a",
+      "receipt_sha256": "03d8c132a4f0391e10e38bc4f40fcc16c3c5fc408747c76dbea57706a3f82a52",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 2.406670311000198,
+      "log_sha256": "4e5dc2054fa8cc7450267847e6931a959c1890e6006a5dec3fb3e5d672bd4ed6",
+      "setup_sha256": "d61cf924c66ffa6c89436d78a123631c906807b4eabadeac5c81d99b067dea09",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.CommonProbe",
+          "object_sha256": "9d988373d39917b63ca01c503c2677862ac61c7aa3579369e61aeecac6237783"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.NonfloorTransport",
+          "object_sha256": "d956a41eaa31088584646a3dde49898ec183e1d1c6c7f893acdece0d92c32ecc"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.HighApproximation",
+      "source_sha256": "a0c31b758c828c0a658c9f63fd961feea16e22d7fe878eee1080f1869eaa70c0",
+      "object_sha256": "43c54f1eaf0830f5289a2ef32009c537164f3c761cdb5fc6ee9e320f82dab89d",
+      "receipt_sha256": "583ebb2b1ad1ea19a38fe85f3c481fbcd6b188798a61d7dfcd3fd67d0f22500c",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 2.6060979401227087,
+      "log_sha256": "d14f22be28e3a6e2111e3e37458e1665d62c874f140a5bb5bcde16a0e4c9d811",
+      "setup_sha256": "747d7725c718f62ce7a83b8e987a1a189353bf8b13145a1a6e9a7a1aa112cb53",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.SharedNonfloor",
+          "object_sha256": "7943d3cda7fc9910982077da220cd22929766e3d821153ad445cb0bda432cb7a"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Normalizer",
+          "object_sha256": "469337fc379a7d0c8413fb0e67d6f6649838ae909b317d83ff80612f56ff28d9"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.FinalFixedHigh",
+      "source_sha256": "62a9089502d05732eb16b83792baa29ea816f28f7b7851713e62ce68cb7b965b",
+      "object_sha256": "fed74d7f8c2bc7e9db99c4acc7256b0160f03b12e508466f937ccc0350a5c8fb",
+      "receipt_sha256": "60174cf444b5820c11cd0cb9070f8ddca00af7bc58bce778fdc1ac2b46ebb399",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 3.006905979011208,
+      "log_sha256": "0b79c405ce9669f1605f999ddd092d90ff1c07bcf91a8cc129a35b782c6e0e5f",
+      "setup_sha256": "103b8e344d5ad0af72c7bd41e4d2e2c7a7a234c756bfd14444402b26f917eac6",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.openai_baseline.OAI.NumberTheory.DirichletL.Detector.FinalAssemblyUnconditional",
+          "object_sha256": "4a9130086181302340668b7aff6dbf8472097a23e674163d9b0ec34839efc487"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.FinalSourceProbe",
+          "object_sha256": "c85a4d99c805bd149f3e1503395e4d9c8e2a13f402aa9d0b13d6d0a03e7ada61"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.FinalHeight",
+          "object_sha256": "076099a102ef67d736da27d39b760647785ecb3382259d01c12b55239b2022da"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.HighApproximation",
+          "object_sha256": "43c54f1eaf0830f5289a2ef32009c537164f3c761cdb5fc6ee9e320f82dab89d"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.FinalCommonProbe",
+      "source_sha256": "0aa4df02df831b5c28ed43e1f0a20350f9630d8a0fe100ea01ead6ec5ee49361",
+      "object_sha256": "13df0e54bda140abd3a0452b0d4ae6cebc4d4510aa60863dd78d9b745a85fcc4",
+      "receipt_sha256": "77cde68945dca3514d7f365453efc3ae2ea0e7c094d20f973b8644278383187a",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 2.4059259109199047,
+      "log_sha256": "4fa5f9d374f6f270cfb79335885917baeefd1584d1afe0e873ef6d3adf5db6dc",
+      "setup_sha256": "36a08aa82e6877a48c5907bcceb261cf53c7a051a7d73d94fc777779fc805413",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.FinalFixedHigh",
+          "object_sha256": "fed74d7f8c2bc7e9db99c4acc7256b0160f03b12e508466f937ccc0350a5c8fb"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Cycle25.Assembly.Continuation",
+          "object_sha256": "2680a31f0308a8da898ba9f7dabfed168ee6698a019294c906dfabd18d4c61b8"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.EndpointFromNumerator",
+      "source_sha256": "d51c2250c81e047733d0c792fadde39614cec1b4a5eefcf2d8ee693284fa51e1",
+      "object_sha256": "b42f8b5dff84d18d89f9ed65a83f9ced102449b840559d838bd6be3d9e427535",
+      "receipt_sha256": "e47cdf07340f4daefbe9907643f5ca5da80b543226b2ce58876ca8afbc1e81fa",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 2.4058825420215726,
+      "log_sha256": "67dec5181408b82bb84c96b4c7787ff8233c769306a9214f98fe3705dd8ae609",
+      "setup_sha256": "f9ad92af64900c4715d6aa5381ce4d18e82c6cb52dfcfd495bad19d9e7e9e104",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.FinalCommonProbe",
+          "object_sha256": "13df0e54bda140abd3a0452b0d4ae6cebc4d4510aa60863dd78d9b745a85fcc4"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.TransportInstances",
+          "object_sha256": "5e031acbd37fcec562a4eb74278ca3fd64d5b032128fa9af50d9745327f8a77e"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.PhysicalDirect.Finite.Cells",
+      "source_sha256": "209272e6d9b37ebab414777184824820bae32641b1cebb2d0a5f2852f986910d",
+      "object_sha256": "296d56d593adb15138db490d9db63bec74bcd8091a6e9d0f6f9cfc091cbe1f97",
+      "receipt_sha256": "2667a5b13a1bc6e277429fd7474f79132ab087c3c920ed59cab61fed1c889df8",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 3.6079333040397614,
+      "log_sha256": "140e9a191963529407498c2c8387946bcd9f9e0c532ac45f7a09f8def4422089",
+      "setup_sha256": "9aa1f00cce1fb7afad27202f52c60684c040c19573ce1e09712906c90e21e477",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.PhysicalDirect.Finite.Partition",
+          "object_sha256": "f6507000cf4082edc797476cad86be21a7cbb26b927c1a25c94fdb772d4d70dd"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.PhysicalDirect.Chosen",
+          "object_sha256": "68252bfbb2b2df36c2c01d9b8091ef9f3c098f65bba92eaecdfe0676b11fe2a1"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.FinalFixedHigh",
+          "object_sha256": "fed74d7f8c2bc7e9db99c4acc7256b0160f03b12e508466f937ccc0350a5c8fb"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Schedule",
+          "object_sha256": "61f51138ffb2dbd53250684348c95ab55fa58f18320fe1a4f652007b4a1ab0c4"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.GenericScalar",
+          "object_sha256": "1f0276c9ef13cfde83d4684fb74e1c4d21b6423153ed6850467e29b14f7218a3"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.PhysicalDirect.Finite.Geometry",
+      "source_sha256": "4a6a526539aa4b2fbfc9016c61e2c7bec3189b93055edfd20d658b1d314ce068",
+      "object_sha256": "6afe110b13c73b94c52350ce1fb56b8b89f04f0454277e0f14e43e37b83a3ba3",
+      "receipt_sha256": "8677c4e40f014ab85851365701ada6be4c0133413fcf68092776fd5d4db155f1",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 4.208737212000415,
+      "log_sha256": "c92737285c959731c5bbe8dabf366a3ced11a08a225989853c375ec8ad79ad06",
+      "setup_sha256": "28224fb40dea0a97147c39d43eb7865da7642cc2f7d7210281842ef7ebc6ff1c",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.PhysicalDirect.Finite.Cells",
+          "object_sha256": "296d56d593adb15138db490d9db63bec74bcd8091a6e9d0f6f9cfc091cbe1f97"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Schedule",
+          "object_sha256": "61f51138ffb2dbd53250684348c95ab55fa58f18320fe1a4f652007b4a1ab0c4"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.GenericScalar",
+          "object_sha256": "1f0276c9ef13cfde83d4684fb74e1c4d21b6423153ed6850467e29b14f7218a3"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.PhysicalDirect.Finite.Summation",
+      "source_sha256": "1ecbcfc41a18a3fcc1f1a69a05681898bf5b68b7fc6546f7c7c977388dcc3a1c",
+      "object_sha256": "ba453d5ccbcf42b8572dee7120f56376d19f66d2672f21e417f6011f55a498ee",
+      "receipt_sha256": "fabf6d27ca282e7e4a40dd8863692b6b6f038334c04b619fc00888e823ec6014",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 3.808043829863891,
+      "log_sha256": "6b1cac6d6e5d694c86d2dbe1d3aa9d41d92c8edff907fc5722d4ce9da7da83a6",
+      "setup_sha256": "95d0a96e763c95526c26a1a95755d9d9d0943cd12624dac48850ab6190f8617b",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.PhysicalDirect.Finite.Geometry",
+          "object_sha256": "6afe110b13c73b94c52350ce1fb56b8b89f04f0454277e0f14e43e37b83a3ba3"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Schedule",
+          "object_sha256": "61f51138ffb2dbd53250684348c95ab55fa58f18320fe1a4f652007b4a1ab0c4"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.GenericScalar",
+          "object_sha256": "1f0276c9ef13cfde83d4684fb74e1c4d21b6423153ed6850467e29b14f7218a3"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.PhysicalDirect.Finite.SourceCells",
+      "source_sha256": "710fcbe4bfea11ae87e2a18f66565039377fc1ae32797d6e935cb27cdfc50620",
+      "object_sha256": "7814688d90a2fffc1a82aea84967fd35427a5c7f367c376d0bfd1b18be531ad1",
+      "receipt_sha256": "cd438b2b67df745cc220537cea7d3ea974ca5cb8c7a850ff5b0f5ae93966708a",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 3.607733904849738,
+      "log_sha256": "c0dcd77e96f8cf3d97f956ce52c569f30c28e4ab8a727dfd190276dbd8c4ddc3",
+      "setup_sha256": "40246c0e626b53a2a72d7bb6013a1b57eebc561a513e38d3e883284c9dc8dcef",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.PhysicalDirect.Finite.Summation",
+          "object_sha256": "ba453d5ccbcf42b8572dee7120f56376d19f66d2672f21e417f6011f55a498ee"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.PhysicalDirect.SourceFullW",
+          "object_sha256": "5acba006e8f702445306f9d997261b36aa6172494883f347b119bba23b7ac491"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Schedule",
+          "object_sha256": "61f51138ffb2dbd53250684348c95ab55fa58f18320fe1a4f652007b4a1ab0c4"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.GenericScalar",
+          "object_sha256": "1f0276c9ef13cfde83d4684fb74e1c4d21b6423153ed6850467e29b14f7218a3"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.PhysicalDirect.FiniteError.Normalized",
+      "source_sha256": "b13a3da2258fd67d1eefb438f0352d2d3e308414e7c9d43f81c6dd8ff076043f",
+      "object_sha256": "aef98899c8b7617f276ca06fdcfa4048f553de3f6c4062babb6cf1c6bb553e3e",
+      "receipt_sha256": "94ffa741697342ba9c4b2a0dcf7622d6f9953dd27e4dce3a9799db3e7012c22c",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 4.008376890793443,
+      "log_sha256": "ce225aa6a0d2ace428edb98379be2d9270f7cabeda6a402cf7378f93ce444492",
+      "setup_sha256": "f94d0f8afa47b15152702e89f0be8884755b42a6e2025a9a9445f1a27fa1fad9",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.PhysicalDirect.FiniteError.CubeTransfer",
+          "object_sha256": "99ce061f9f2c7016a2044bcee23696c36b93b607b88189001cb97e93745dcc9d"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.CanonicalRayCube",
+          "object_sha256": "0fa7d6dfc9b6c1c544f49077be2b67701f94da26e6a688088c3d601ff205c79b"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.Transport.LowNormalizer",
+          "object_sha256": "ba271640c4d1c14741bf0ebd8c3b50a0197d0ad3274365dce5457b1e55e8f7e6"
+        },
+        {
+          "module": "Submissions.openai_baseline.OAI.NumberTheory.DirichletL.PrimeRows.CubeNormalizer",
+          "object_sha256": "bac00a2b5a9ced03e03739504744110797d2725ed710eaa36039d2fb8e4f102e"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Schedule",
+          "object_sha256": "61f51138ffb2dbd53250684348c95ab55fa58f18320fe1a4f652007b4a1ab0c4"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.GenericScalar",
+          "object_sha256": "1f0276c9ef13cfde83d4684fb74e1c4d21b6423153ed6850467e29b14f7218a3"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.PhysicalDirect.Finite.Transfer",
+      "source_sha256": "7291a49a3f48cacff65c30d3300f6345f01348444470f146716add3254580177",
+      "object_sha256": "78a236e591ebc0d4e56140de605625d829d23e85ec144109617b70eb651ac664",
+      "receipt_sha256": "896a0367abc3d9a6f01034af603392d13221dca749a5c96652269d644f80412d",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 3.8083879030309618,
+      "log_sha256": "dcf7fbcbe77f310b049fc0e60eb0fd9cb8338914352427fa229fa20bd2779807",
+      "setup_sha256": "33add9999b9655c1c1dfa43940d0be2470a19d8eae97a97aafa5f268a94151ce",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.PhysicalDirect.Finite.Summation",
+          "object_sha256": "ba453d5ccbcf42b8572dee7120f56376d19f66d2672f21e417f6011f55a498ee"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.PhysicalDirect.FiniteError.Normalized",
+          "object_sha256": "aef98899c8b7617f276ca06fdcfa4048f553de3f6c4062babb6cf1c6bb553e3e"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Schedule",
+          "object_sha256": "61f51138ffb2dbd53250684348c95ab55fa58f18320fe1a4f652007b4a1ab0c4"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.GenericScalar",
+          "object_sha256": "1f0276c9ef13cfde83d4684fb74e1c4d21b6423153ed6850467e29b14f7218a3"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.PhysicalDirect.Finite.Bridge",
+      "source_sha256": "3096bbf8823ac82aa0ca86a8973091c75de0114a443784934704a820a86920ee",
+      "object_sha256": "896b773b92977a29ac6109ba1566c2d49e71ff4588c355c103f384c3dd58fe8d",
+      "receipt_sha256": "c257d54b86684d6d32801e2b9847ff76716f8a64ae457c6e031880ad546ea23e",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 4.007739152992144,
+      "log_sha256": "e21eb0b3a2e150c3ea214d04c49fa900d713b9e7d88004d904b4e440134347e7",
+      "setup_sha256": "902547ab05969d7957805f2a703af52be783d45b97b820f9e81b54b3442732a1",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.PhysicalDirect.Finite.SourceCells",
+          "object_sha256": "7814688d90a2fffc1a82aea84967fd35427a5c7f367c376d0bfd1b18be531ad1"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.PhysicalDirect.Finite.Transfer",
+          "object_sha256": "78a236e591ebc0d4e56140de605625d829d23e85ec144109617b70eb651ac664"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Schedule",
+          "object_sha256": "61f51138ffb2dbd53250684348c95ab55fa58f18320fe1a4f652007b4a1ab0c4"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.GenericScalar",
+          "object_sha256": "1f0276c9ef13cfde83d4684fb74e1c4d21b6423153ed6850467e29b14f7218a3"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.PhysicalDirect.SourceClosure",
+      "source_sha256": "a44bd7325168b8d6b198c701748f82eb2e187d070deba6cd00775e6067020654",
+      "object_sha256": "f090908adee710e0fc7c24b6ce9bf623613786419c003cea8b1c5d5690e2cac1",
+      "receipt_sha256": "ebe4700d77eb4dabb707030e21717b6fcf5c7c825a24761230aa9dc12a7a0af1",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 3.60701613384299,
+      "log_sha256": "ad72cd215f10d9280296234230ce3b8b82b5d5472239d8d00706694d980949ee",
+      "setup_sha256": "4f38b7c33f65cc704f92e7fee16c5795ee28e9e85ab384472fd13e3ca9c2626e",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Schedule",
+          "object_sha256": "61f51138ffb2dbd53250684348c95ab55fa58f18320fe1a4f652007b4a1ab0c4"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.PhysicalDirect.Finite.Bridge",
+          "object_sha256": "896b773b92977a29ac6109ba1566c2d49e71ff4588c355c103f384c3dd58fe8d"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.PhysicalDirect.JointHeight",
+          "object_sha256": "446897e2a6dec97125a36af3f2a2216f070b9059e48078bc0ad74818f02e691e"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.PhysicalDirect.ChosenMesh",
+          "object_sha256": "1d02dfd599435ffc16b1621971a6019fe8360e335ecdd17f11f976b7145e2b1d"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Transport.FinalCommonProbe",
+          "object_sha256": "13df0e54bda140abd3a0452b0d4ae6cebc4d4510aa60863dd78d9b745a85fcc4"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.PhysicalDirect.ChosenSource",
+      "source_sha256": "64fd1764c6383670876810239b67d795a97ec7f7cf74cff0de3fafdc35cf9215",
+      "object_sha256": "cad18bb46346f234b636ccec1f215ad24665efb295a68325befa1a5bfcb9db33",
+      "receipt_sha256": "b54d931ca93617b71828b9bb1ac1622d19f8e4dc870a72bab9ad6dd028a1a958",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 3.6077125929296017,
+      "log_sha256": "4ada64f26570ae4ecce32f7583f215a8e07713f45da3b3dd25e198b887319e71",
+      "setup_sha256": "6ecbef686ab38397ab16e99ca90675e77a5384a193f75bba1e1d1d21e06bd1e2",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.CountSource",
+          "object_sha256": "74de6d376738b62f095d9ea8481bacd4351efb4aab22bda90036ea96094bcacb"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.Schedule",
+          "object_sha256": "61f51138ffb2dbd53250684348c95ab55fa58f18320fe1a4f652007b4a1ab0c4"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.PhysicalDirect.SourceClosure",
+          "object_sha256": "f090908adee710e0fc7c24b6ce9bf623613786419c003cea8b1c5d5690e2cac1"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.EndpointFromSources",
+      "source_sha256": "1cf9dfd226ea39381d95304b505092d1e3bb0affa5e77a55cb8465b31cee75f4",
+      "object_sha256": "4b62c68496db1c0070aa015a07997eb35612a42f0a94105631e76820f3a35e37",
+      "receipt_sha256": "fab49ed864a574707bddbd83a2255f7266e0cfc30d2e9a194c7970c1eb3fa3a3",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 3.8079740169923753,
+      "log_sha256": "ee860862f9c6e3e22a0140db645295293c35e44eb1a05023a1388e74a868d1b2",
+      "setup_sha256": "b28c04efcb5458ea2f535d86ad1202d2e4e66c3aaaea88c9d3b7766360568ff1",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.FinalSchedule",
+          "object_sha256": "debb1bd0465d316aef93ebe9aca46cb6d42aa1af3aa0ba4fe58bd40fef4ece60"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.IntermediateCount.Schedule",
+          "object_sha256": "4cb6132d98fb22da76cce6c4dc770c97d79a08f78a4d62a91117359428c52476"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.PhysicalDirect.ChosenSource",
+          "object_sha256": "cad18bb46346f234b636ccec1f215ad24665efb295a68325befa1a5bfcb9db33"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.EndpointFromNumerator",
+          "object_sha256": "b42f8b5dff84d18d89f9ed65a83f9ced102449b840559d838bd6be3d9e427535"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.EndpointFromGlobalSources",
+      "source_sha256": "42f6fde1f5c35b985912588b4f84de81e539df1efd2cf29c00f3cd68c2e51a2a",
+      "object_sha256": "23050ac385caab1ce1c3ff7aff669f5b3a293d06eb4b923c3e0545fb38aa4757",
+      "receipt_sha256": "80916250a3f1cd974f4c8749e2941486fabd06667c8a611ea3c39ea8508d3d2c",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 4.810186619870365,
+      "log_sha256": "f7f3fda9abcb3f1a1c48c2db04a33a5c2e33c8c0c87cf533a71322852b4ce886",
+      "setup_sha256": "152815e227cac181d5f0da6fe81695bc66e4c8756485f9811efaecfe020129b5",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.EndpointFromSources",
+          "object_sha256": "4b62c68496db1c0070aa015a07997eb35612a42f0a94105631e76820f3a35e37"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Bootstrap.Incumbent",
+          "object_sha256": "53fa51057f67d9378f2f94dd34d892659536c71ae398f67016e134203a22d790"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Graph.SeedSources",
+      "source_sha256": "ac2cb8b9d744db3bebde0a8552550111df0365e4958f586738e01bc09446b075",
+      "object_sha256": "a39a27098f7cc582b82a6566c947550fc978c69247c699a0b2654c3418185966",
+      "receipt_sha256": "a98d4cc16dfc6c5ed0b09203c022c135c6ea672ab86b27b0451ee9bb91fa265c",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 4.4083145030308515,
+      "log_sha256": "5f068445767b5316ece7808e086a027e20c9376070ba54d96a271a7fb8834ca8",
+      "setup_sha256": "6e95daf3656f206569375a5fa7831e03bd02dbac3418832b2329f1804bf5bd23",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Graph.Natural",
+          "object_sha256": "7e8cfa104aeabde9b1fa8c35140facc1230ad5f954802353d9539170c21dd740"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Finite.SeedConnections",
+          "object_sha256": "9b6e58022492fc2ea323d8a5fb1dea665918f62f9b62ef95dd90fcff70cf22b7"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Return.EndpointFromGlobalSources",
+          "object_sha256": "23050ac385caab1ce1c3ff7aff669f5b3a293d06eb4b923c3e0545fb38aa4757"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Graph.FinalSources",
+      "source_sha256": "47b62bdd0dbf74588c2658a979470ecf51cae1fddee1f53ffeeb2a72e406145f",
+      "object_sha256": "acfca27679c4e8428ce6d03e9c5ac62274157422a1f2a19ba2d9ad9b1e6a0c48",
+      "receipt_sha256": "b118afe5bfcd10d3a9ccf9945987f92884675b97cbea432aea7b5d73f7bb49d0",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 4.209132755175233,
+      "log_sha256": "5b5c80d636034369fb951127e5275a1956c9b70ab4e2b7bbf3ff40718d6bc7a6",
+      "setup_sha256": "ecab77dbffff2de402199bdc19aa7325f7b79ccc4e9357b9f5b08459b3ee3483",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Graph.FiniteInduction",
+          "object_sha256": "104085b7ac83c41c1b9b159d502fff5cb34c20849e0eb9d918c6728d2781b875"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Graph.SeedSources",
+          "object_sha256": "a39a27098f7cc582b82a6566c947550fc978c69247c699a0b2654c3418185966"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Graph.Endpoint",
+      "source_sha256": "64b2748b2e98d62fa12f1bbf4307918c2e0c3ffc0d5ba5a10d00644cc3ef32f4",
+      "object_sha256": "10507d73cc466a82c960113c8ef55ad169b3a800b821bff4d13055f5f18e579a",
+      "receipt_sha256": "5ff6d5e92f3d58b03469a20765f79730921a90dee1dde44eca1a467b6a52019c",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 4.008494626963511,
+      "log_sha256": "c390ef78b3ab895e805e4c23c275c4551af7bf187c3ddce79a9d005e65252d55",
+      "setup_sha256": "4cb225b1859b13e1e831f805470f5a9e0dd34a75f4a66dd57597c2f03d1bfd46",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Graph.FinalSources",
+          "object_sha256": "acfca27679c4e8428ce6d03e9c5ac62274157422a1f2a19ba2d9ad9b1e6a0c48"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Admission.SelectedRegularCanonicalAbsoluteData",
+      "source_sha256": "6c28f99487c70df9918e51d456d0a56dffecd36de866bf1c81cc41781ab246c7",
+      "object_sha256": "9a4fede09966d34c78edfaaaa8f2d3a383c2e481d0a5d185973c11bbed0b11b9",
+      "receipt_sha256": "9a1a31f1285efa91de4b207f35ce5f22df6572e2c11544dc9c9fa77dab684ab8",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 4.209003672935069,
+      "log_sha256": "70436552c5ea1a8140ec41d45dbab50b324fd2a10934f3c2c6615e56ebca77b9",
+      "setup_sha256": "2c580280bd6fb96ac6101a943ce84fb23215082eb023da47a37fd79f697ba8a6",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Admission.SelectedRegularAbsolute",
+          "object_sha256": "c29c87ede52d805a80dbc042eb9accf72016834f1aade8288512087b141a87b4"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Admission.SelectedRegularLowPointData",
+          "object_sha256": "8a6318ec038b7fcb3b34ba8b07cae999e194b9ffb40924bbe44567e27e4b1ddc"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularFamily",
+          "object_sha256": "d8dc5a88b67b33172f71dbe1bb7303f3265d8468dd8e767c6b52a4221c46130d"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Core.ExceptionalInitialGeometryUniform",
+          "object_sha256": "85d412f677142df7dc3c1d65264a548e03590b6d1d77d7e4a6b4053018fa6a6e"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Admission.RetainedGeometryWidth",
+          "object_sha256": "68db1d52a663a5883979c31817a23fba701df443640942c9387d375bdbeb25ac"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Admission.SelectedRegularCanonicalAbsolute",
+      "source_sha256": "e2b0db77b12e8175eeb9a9afa1a7a3256ffcd32af1b5204977a46fcdd72667ed",
+      "object_sha256": "279c409af1874203b553f8c2e6deddf53d090a071f2b990d66eedfa9860f8118",
+      "receipt_sha256": "53132d3c494edad734ece1a6016c1aa5220ede90039f9ccf15e3f4b81a0d39d8",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 6.212417538976297,
+      "log_sha256": "4867c206848efe22a87d94339b984d23abaddb5dad5aa448a8b8f1d9b3337c9c",
+      "setup_sha256": "c6174022de962456aba096b4b61c8ff67c1e0a1f4b079acce80d6217ab3331f9",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Admission.SelectedRegularCanonicalAbsoluteData",
+          "object_sha256": "9a4fede09966d34c78edfaaaa8f2d3a383c2e481d0a5d185973c11bbed0b11b9"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularPoints",
+      "source_sha256": "f8b2cd4757034a40ce9395b2aa61a56b3e3526c6bdee45fd852ee153190abc5a",
+      "object_sha256": "8e3191321c1b2e33a6155ed8d45b96f9164fd1552b607558e7ba697dbc33be5a",
+      "receipt_sha256": "8495ef5b0fb17abb1282d28a7f5b537f0e5e6bc26345330c0d4f2bcffa1c10bd",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 3.807863726047799,
+      "log_sha256": "0d6a515a018e8fff2d2a5eddd2759e3ed22922eca5235b8101d273816cf187e5",
+      "setup_sha256": "6779958f1856ab700e6dcb88d3bef86940a2a1172091ea7ff651f5a1c7373996",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularControls",
+          "object_sha256": "0422e0de55f765d4fdbc4479130787382015f118a75c785fd6923cd69a75a9e1"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Admission.SelectedRegularCombinedPointSome",
+          "object_sha256": "165c854697db237f9e740aebe31c64a33dc447c2ae67c435a4cd44e753252ae4"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Admission.SelectedRegularCombinedPointNatural",
+          "object_sha256": "ebcdd4a30c94f176c06419abc332f2a967446d15a8df522eda917ba113c56db6"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularSmall",
+      "source_sha256": "877143e4f36a2b10907c4901e018c9b08fab2779c89411a5d3b1e8fa556c082d",
+      "object_sha256": "ed3f51d1eeb26a0809b1e049988d878219f6215de4836ea6eff287f39077a0cb",
+      "receipt_sha256": "7c5f81578c5e511ea9f58ac9a370fc6f7bfe1037bc35c3b5b8fa7cb9ac5e6f99",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 4.008851655060425,
+      "log_sha256": "7b3cdbc8d48c7592927a0a7d594ef0b7f07c58affcccd6ecbd920c97e73e6ba2",
+      "setup_sha256": "b34f1eb089c166397148e4e156f1a8fb2fe38b8b555fb876ab5a7654a8aae1c4",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularPoints",
+          "object_sha256": "8e3191321c1b2e33a6155ed8d45b96f9164fd1552b607558e7ba697dbc33be5a"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularFinite",
+          "object_sha256": "4e0b1ed528b2e007eb5789735ca967717cbcd5c2a671b6bd0e9445d940b65b2d"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularCofactorBridge",
+          "object_sha256": "73e1cadcabf4a04eb3ef1dcd71d573fe6a796d8392e02e900007be8f9e25fd85"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Admission.SelectedRegularCombinedPointSome",
+          "object_sha256": "165c854697db237f9e740aebe31c64a33dc447c2ae67c435a4cd44e753252ae4"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Admission.SelectedRegularCombinedPointNatural",
+          "object_sha256": "ebcdd4a30c94f176c06419abc332f2a967446d15a8df522eda917ba113c56db6"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularCanonicalSmall",
+      "source_sha256": "11cb672563b1e1939f010942810af4434fb9b99b6aef76420d31b53ad7343374",
+      "object_sha256": "f33a75bcab46417447fd6ea96310151174b0b784092952a5e2ee751fbb068926",
+      "receipt_sha256": "d2341f5cbfc7bbb1cc186cf322db864b99587b3310320d51be9aa75d6855245f",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 7.012971231946722,
+      "log_sha256": "e8612e5b2fe054c9dfe813d9b1eedb9771bb85bde82c4d4700b9e1f49c86eca0",
+      "setup_sha256": "65efe52683d606acfd7d066b74ad285249cc416ef9da1e234c0a2b5b4a62b9cc",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularSmall",
+          "object_sha256": "ed3f51d1eeb26a0809b1e049988d878219f6215de4836ea6eff287f39077a0cb"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularFamily",
+          "object_sha256": "d8dc5a88b67b33172f71dbe1bb7303f3265d8468dd8e767c6b52a4221c46130d"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Admission.SelectedRegularCanonicalAbsolute",
+          "object_sha256": "279c409af1874203b553f8c2e6deddf53d090a071f2b990d66eedfa9860f8118"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularFinite",
+          "object_sha256": "4e0b1ed528b2e007eb5789735ca967717cbcd5c2a671b6bd0e9445d940b65b2d"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularCofactorBridge",
+          "object_sha256": "73e1cadcabf4a04eb3ef1dcd71d573fe6a796d8392e02e900007be8f9e25fd85"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Admission.SelectedRegularCombinedPointSome",
+          "object_sha256": "165c854697db237f9e740aebe31c64a33dc447c2ae67c435a4cd44e753252ae4"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Admission.SelectedRegularCombinedPointNatural",
+          "object_sha256": "ebcdd4a30c94f176c06419abc332f2a967446d15a8df522eda917ba113c56db6"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularCanonicalNorm",
+      "source_sha256": "6edb72b0f3680e7e66472b3bc0a13fe38a7ee977a2ab0fca5659bf9025f2b1e8",
+      "object_sha256": "7b1650019a2d8879930a9de73eeec611adb282feb4637b4a7a673cc0782714ba",
+      "receipt_sha256": "d841eb095c13d472b44a3f6dccc481c3df38dd4953c1c67da39b1f50d69d8a23",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 9.81706448388286,
+      "log_sha256": "5e0f0386b85b46eaf8ed8563ceb30c1092372220d1a85bc195815125a932ea77",
+      "setup_sha256": "8d80a62d3b97eb42b965f91e23f5305bb36ac831661693ea44b645f9db39164f",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularCanonicalSmall",
+          "object_sha256": "f33a75bcab46417447fd6ea96310151174b0b784092952a5e2ee751fbb068926"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularNorm",
+          "object_sha256": "56e4782ebc9652ecefa6b864c4ae4e3923e5bd40b58cec0d50efc4ab2dc226d3"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularFamily",
+          "object_sha256": "d8dc5a88b67b33172f71dbe1bb7303f3265d8468dd8e767c6b52a4221c46130d"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Admission.SelectedRegularCanonicalAbsolute",
+          "object_sha256": "279c409af1874203b553f8c2e6deddf53d090a071f2b990d66eedfa9860f8118"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularFinite",
+          "object_sha256": "4e0b1ed528b2e007eb5789735ca967717cbcd5c2a671b6bd0e9445d940b65b2d"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularCofactorBridge",
+          "object_sha256": "73e1cadcabf4a04eb3ef1dcd71d573fe6a796d8392e02e900007be8f9e25fd85"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Admission.SelectedRegularCombinedPointSome",
+          "object_sha256": "165c854697db237f9e740aebe31c64a33dc447c2ae67c435a4cd44e753252ae4"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Admission.SelectedRegularCombinedPointNatural",
+          "object_sha256": "ebcdd4a30c94f176c06419abc332f2a967446d15a8df522eda917ba113c56db6"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularSupplier",
+      "source_sha256": "a7ffc56d473a069e2b5d4a168b133f2ae8c92d9b010cf6112e8b7ba834ea7dd4",
+      "object_sha256": "c6ceb5d5fa12dd6056e711031cd69e187e3d718d60257afdda3cb97f1c550113",
+      "receipt_sha256": "e7daea80d58290158e8980f4a38f35a07962917f37dd358078bb382bdac64d3c",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 5.810793729964644,
+      "log_sha256": "f66cb7ac3bd64050d40cbf8cd5c0d5264ec5581222f1fd3df098181f7113bb3f",
+      "setup_sha256": "7c4227ebe02167b63cc139f156b7d4eec96e1187c52221a62c89987ebf07e6c7",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularCanonicalNorm",
+          "object_sha256": "7b1650019a2d8879930a9de73eeec611adb282feb4637b4a7a673cc0782714ba"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Contraction.SelectedMainExceptionalIdentity",
+          "object_sha256": "bc4f7357681e56ea63cf056dcb1f8fda385ef3af2ea6a987956bc78a6d2d5711"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularMesh",
+          "object_sha256": "b7e2af241649f2a49d3478977467a66fc9649e6646fc24184a498541791ad038"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularNorm",
+          "object_sha256": "56e4782ebc9652ecefa6b864c4ae4e3923e5bd40b58cec0d50efc4ab2dc226d3"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularFamily",
+          "object_sha256": "d8dc5a88b67b33172f71dbe1bb7303f3265d8468dd8e767c6b52a4221c46130d"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Admission.SelectedRegularCanonicalAbsolute",
+          "object_sha256": "279c409af1874203b553f8c2e6deddf53d090a071f2b990d66eedfa9860f8118"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularFinite",
+          "object_sha256": "4e0b1ed528b2e007eb5789735ca967717cbcd5c2a671b6bd0e9445d940b65b2d"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularCofactorBridge",
+          "object_sha256": "73e1cadcabf4a04eb3ef1dcd71d573fe6a796d8392e02e900007be8f9e25fd85"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Admission.SelectedRegularCombinedPointSome",
+          "object_sha256": "165c854697db237f9e740aebe31c64a33dc447c2ae67c435a4cd44e753252ae4"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Admission.SelectedRegularCombinedPointNatural",
+          "object_sha256": "ebcdd4a30c94f176c06419abc332f2a967446d15a8df522eda917ba113c56db6"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularSuppliers",
+      "source_sha256": "b508f4984c8bdc94e30335a9cc802cd48f3033bdc09c97dfef8d27f87088148d",
+      "object_sha256": "3a53e177ea36bd4ce9ba877f9dd97dc70eb52fbefa038148bc190adeec041c84",
+      "receipt_sha256": "841164104910050098d1c39fcd5a8ec40ed5f3ca1b3f85639c1a1e9faa8457b4",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 3.0066345350351185,
+      "log_sha256": "1909bf5f67882d1f220447c40788ac810b2b60567d6b47f684bdcff0f814d2bb",
+      "setup_sha256": "d88d57a0d4f6e7c83eaac2eb5c38d184aae08da41821b581cc6e39b25bb32bfe",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularSupplier",
+          "object_sha256": "c6ceb5d5fa12dd6056e711031cd69e187e3d718d60257afdda3cb97f1c550113"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularPoints",
+          "object_sha256": "8e3191321c1b2e33a6155ed8d45b96f9164fd1552b607558e7ba697dbc33be5a"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Cycle61.Density.CountingSetup",
+          "object_sha256": "80569f7ebbd5e4e9b681522ad59c54034a49d9b6e8b12d7c8129ff868f9221a2"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Contraction.SelectedMainExceptionalIdentity",
+          "object_sha256": "bc4f7357681e56ea63cf056dcb1f8fda385ef3af2ea6a987956bc78a6d2d5711"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularMesh",
+          "object_sha256": "b7e2af241649f2a49d3478977467a66fc9649e6646fc24184a498541791ad038"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularNorm",
+          "object_sha256": "56e4782ebc9652ecefa6b864c4ae4e3923e5bd40b58cec0d50efc4ab2dc226d3"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularFamily",
+          "object_sha256": "d8dc5a88b67b33172f71dbe1bb7303f3265d8468dd8e767c6b52a4221c46130d"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Admission.SelectedRegularCanonicalAbsolute",
+          "object_sha256": "279c409af1874203b553f8c2e6deddf53d090a071f2b990d66eedfa9860f8118"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularFinite",
+          "object_sha256": "4e0b1ed528b2e007eb5789735ca967717cbcd5c2a671b6bd0e9445d940b65b2d"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularCofactorBridge",
+          "object_sha256": "73e1cadcabf4a04eb3ef1dcd71d573fe6a796d8392e02e900007be8f9e25fd85"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Admission.SelectedRegularCombinedPointSome",
+          "object_sha256": "165c854697db237f9e740aebe31c64a33dc447c2ae67c435a4cd44e753252ae4"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Admission.SelectedRegularCombinedPointNatural",
+          "object_sha256": "ebcdd4a30c94f176c06419abc332f2a967446d15a8df522eda917ba113c56db6"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Core.InitialRegularCallbacks",
+      "source_sha256": "4bc211ee345727d13c170de1bb73a16c20cd9f97897d8b712d6fd712732faa85",
+      "object_sha256": "3ed6c1d7d85395807f616088c0030d5d10f763d63178fb434db00cbfbf1b4c4c",
+      "receipt_sha256": "337458dab36664a8b9694b41b16eace1409a680bfd5a9ad2257628ab2dbc38ca",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 4.2088142700959,
+      "log_sha256": "2d888cc7d0928201a7af6ed795e25e865b3ebe16409d2393ce2a3571d70495cc",
+      "setup_sha256": "5fd02138952f5cd46d2505f0d7f516e9ebae5aaf5681092deaadab426ab64639",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Core.InitialRegularToTruncated",
+          "object_sha256": "e874fe90158cd7fe8485db31306df252c18946818357623fb95c74b1a75c378d"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Core.InitialRegularParameters",
+          "object_sha256": "e04627b6c35902b5032cd85e41cb9f14c6669f0a987f6b8037aa0b42e36fca53"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Core.InitialTruncatedCallbacks",
+          "object_sha256": "ccecfe852d3f1ea65b160abb8aebb94a81e1cca9d60b4b9c1707c20542419146"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.High.GlobalPhysicalRegularSuppliers",
+          "object_sha256": "3a53e177ea36bd4ce9ba877f9dd97dc70eb52fbefa038148bc190adeec041c84"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Bootstrap.Incumbent",
+          "object_sha256": "53fa51057f67d9378f2f94dd34d892659536c71ae398f67016e134203a22d790"
+        }
+      ]
+    },
+    {
+      "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Core.Endpoint",
+      "source_sha256": "a6651f6a154ba28310a6f51a3e364d2ef0d4afa7298d7b7db3d22bcacc45616a",
+      "object_sha256": "1b0cbfbd752994569e62c3ab268808ba37d6e7d18744823eec84394656559f59",
+      "receipt_sha256": "5f3978c00200dfed9477236cac38bcfb74acf505cba23d41d83f166052bac805",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 4.208471745951101,
+      "log_sha256": "1ece3327953eb77ee22bb4b0c4a7ec314cbe45f0442b191aab719ba8ca108ef6",
+      "setup_sha256": "f270a5582d980a059d7b575c969729ac44e8cfcd6050fa38f1dbfb4a9baa7a81",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Core.InitialRegularCallbacks",
+          "object_sha256": "3ed6c1d7d85395807f616088c0030d5d10f763d63178fb434db00cbfbf1b4c4c"
+        },
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Graph.Endpoint",
+          "object_sha256": "10507d73cc466a82c960113c8ef55ad169b3a800b821bff4d13055f5f18e579a"
+        }
+      ]
+    },
+    {
+      "module": "Candidate.Main",
+      "source_sha256": "652520b072af8428ce4688da261341169cf1b01aa7fc3b613eef7197dfda343d",
+      "object_sha256": "97c6a740986cadcac9ec505b748c42ea0e3c95a233fc6c01f6741dc551e98ecf",
+      "receipt_sha256": "cb384b1e30547df597e3caf5a676b3800b9847d74828f99423fa4d75b3d99603",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 4.209441404091194,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "setup_sha256": "46e2852f8ba5392ced24319edf9e5ea75fe7f704b1c019560351ead10bb61890",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Submissions.hailey_collet_1252270103.Record1252270103Source.Core.Endpoint",
+          "object_sha256": "1b0cbfbd752994569e62c3ab268808ba37d6e7d18744823eec84394656559f59"
+        }
+      ]
+    },
+    {
+      "module": "RecoveryCandidateAudit",
+      "source_sha256": "f586dd0da92869453d5aad356bcdfed4950039f4d959fe54f745ca77206ffe37",
+      "object_sha256": "e8bd059d2dbd5cf66e591535d2f2f6886575f6e36e962037a7e2ea6ca54cd7eb",
+      "receipt_sha256": "d30d2ea080f974aec9b29b23ac7336ddc7b59b1596a6f90af6501610a5a6fdb0",
+      "exit_code": 0,
+      "stop": null,
+      "elapsed_seconds": 3.8085315520875156,
+      "log_sha256": "07f817a44385a0e5c996310aed4e9a1d13adc87e5860ccb78ad7dc696579eac1",
+      "setup_sha256": "900adfe12c5b689bc10c5c56ad1c36f8918ecd6f46fc7aa11b9a9b92c9a6a54c",
+      "imports_unchanged": true,
+      "imports": [
+        {
+          "module": "Candidate.Main",
+          "object_sha256": "97c6a740986cadcac9ec505b748c42ea0e3c95a233fc6c01f6741dc551e98ecf"
+        }
+      ]
+    }
+  ]
+}

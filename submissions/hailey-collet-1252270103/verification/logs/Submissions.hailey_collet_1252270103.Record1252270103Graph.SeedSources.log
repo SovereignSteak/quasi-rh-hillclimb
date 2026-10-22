@@ -1,0 +1,2 @@
+'QRH.Record1252270103Graph.seed_selected_sources' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRH.Record1252270103Graph.beta_intermediate_of_seed_step' depends on axioms: [propext, Classical.choice, Quot.sound]
