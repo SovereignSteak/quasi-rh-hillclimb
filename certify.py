@@ -54,7 +54,7 @@ def bernstein_min(P, box):
             best = b if best is None or b < best else best
     return best
 
-def prove_positive(P, box, depth=0, maxdepth=20, log=None):
+def prove_positive(P, box, depth=0, maxdepth=24, log=None):
     b = bernstein_min(P, box)
     if b > 0:
         if log is not None: log.append((box, b))

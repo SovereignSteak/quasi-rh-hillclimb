@@ -6,6 +6,7 @@ Useful contributions stay credited here even if they are later superseded or not
 |---|---|
 | OpenAI | The underlying preprint: *The Quasi-Riemann Hypothesis: A Zero-Free Half-Plane Re(s) > 7/8* (30 Sep 2026) |
 | Rohan Arun (@rohanarun), with Claude (AI-assisted) | Part II budget reconstruction; closed form σ₀ = 11/12 − ℓ/4; the certificates at 7/8 − 1/28000, 7/8 − 1/23600 and 7/8 − 1/23304; the architecture-ceiling analysis; the line-by-line audit of lines 3723–16677; the auto-research harness |
+| Codex (AI-assisted) | Track A refinement to 7/8 − 1/23296 using the existing budget and Bernstein certifier; reproducible certificate and audit-margin follow-up in [the report](auto-research/track-a-5824.md). Builds on Rohan Arun and Claude's original work; conditional final-section arithmetic, not a new Lean theorem. |
 | ArviFoxy and the authors of the tracker chain PR #67 builds on (Hailey Collet, Zhongpai Gao, Akash Levy, and others listed in its metadata) | The two-level affine record on QuasiRiemannTracker that `depth3/` extends; `depth3/model.py` ports its optimization layer |
 | Rohan Arun (@rohanarun), with Claude (AI-assisted) | The conditional nested affine levels (`depth3/`: three levels, θ ≤ 0.874812431; four levels, θ ≤ 0.874810282) and the timeline chart |
 | Sudarsh Chaturvedi (@Sudarsh3301), with Claude (AI-assisted) | Five and six nested affine levels under the width-floor room test (`depth3/constrained_n.py`, `certify_depth3.py --five/--six`) |
