@@ -10,7 +10,8 @@ The 5 October 2026 companion preprint in the same repository proves 11/12 only, 
 >
 > ```
 > pip install numpy scipy sympy
-> python certify.py                             # verify the current point (about 1 s)
+> python certify.py                             # verify the audited baseline
+> python certify.py 5824 405967/500000            # best Track A final-section certificate
 > python auto-research/hillclimb.py             # Track A: search and certify (ℓ, h)
 > python auto-research/whatif.py --alpha 0.75   # Track B: what would a better input buy?
 > ```
@@ -32,6 +33,7 @@ Snapshot: **22 October 2026**. PR numbers in this table refer to **this reposito
 | PR / work | Contributor | Contribution and boundary | Lean verification status | PR state |
 |---|---|---|---|---|
 | [Initial research](AUDIT_SUMMARY.md) | Rohan Arun, with Claude | Track A: audited `20649/23600`; final-section certificate `10195/11652`; budget and architecture analysis | Exact arithmetic and written audit; conditional on the preprint; full endpoint not Lean-verified | On main |
+| [Track A at N = 5824](auto-research/track-a-5824.md) | Sagar Thakrar (@thakrarsagar), with Codex; builds on Rohan Arun and Claude's budget and certifier | Final-section certificate `20383/23296 = 7/8 − 1/23296` | 26 exact Bernstein boxes and all 12 side constraints; audit margins recomputed; conditional on the preprint and audit edits; full endpoint not audited or Lean-verified at this point | Certified (final section only) |
 | [#1](https://github.com/rohanarun/quasi-rh-hillclimb/pull/1) | Rohan Arun, with Claude; builds on ArviFoxy's tracker #67 | Three/four affine levels; four-level θ ≤ `0.874810282` | Conditional on H1–H5; exact arithmetic certificates; no complete Lean endpoint | Merged |
 | [#2](https://github.com/rohanarun/quasi-rh-hillclimb/pull/2) | Sudarsh Chaturvedi (@Sudarsh3301), with Claude | Five/six levels under the width-floor test; six-level θ ≤ `0.874809989` | Conditional on H1–H5 and larger caps; no complete Lean endpoint | Merged |
 | [#3](https://github.com/rohanarun/quasi-rh-hillclimb/pull/3) | Rohan Arun, with Claude | Constrained re-optimization; θ ≤ `0.874810187` at four levels and `0.874809963` at seven | Conditional on H1–H5; exact arithmetic certificates; no complete Lean endpoint | Merged |
@@ -151,7 +153,7 @@ Contributions from humans and agents are welcome. See [CONTRIBUTING.md](CONTRIBU
 - `optimize.py`, `edge.py`: a numerical search for the feasibility edge.
 - `leverage.py`: sensitivity to the amplification slope and the plain capacity.
 - `AUDIT_SUMMARY.md`, `audit/*.md`: the line-by-line audit.
-- `auto-research.md`, `auto-research/`: instructions and tools for agents continuing the hill-climb (`hillclimb.py`, `whatif.py`, `results.md`, `proposals/`). The pipeline already found a slightly better final-section certificate, 7/8 − 1/23304; see `auto-research/results.md`.
+- `auto-research.md`, `auto-research/`: instructions and tools for agents continuing the hill-climb (`hillclimb.py`, `whatif.py`, `results.md`, `proposals/`). The best Track A final-section certificate is 7/8 − 1/23296; see [exact evidence and audit scope](auto-research/track-a-5824.md) and `auto-research/results.md`.
 - `auto-research/plot_improvement.py`: regenerates `graphs/improvement.png`.
 - `auto-research/plot_pr8_comparison.py`: regenerates the independently verified comparison chart; see the [verification report](verification/pr8-independent/README.md).
 - `auto-research/update_readme_progress.py`: regenerates the upstream contributor/verification table from the retained tracker snapshot.
