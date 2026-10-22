@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "result_id": "gao-five-step-affine-20261020",
+  "theta_exact": "8748087/10000000",
+  "verified_at": "2026-10-21T02:06:55.757659+00:00",
+  "source_repository": "GTimG/QuasiRiemannTracker",
+  "source_commit": "f07bb2418990a9976c0da5f65bb6a7a77da94c9a",
+  "kernels": [
+    "Lean default",
+    "nanoda",
+    "con-ron"
+  ],
+  "report_url": "https://github.com/GTimG/QuasiRiemannTracker/actions/runs/39514163334/attempts/1",
+  "report_sha256": "e7221b035b2780764cb13a8a6e67514830e35792e0d498dbba2973ed14744036"
+}

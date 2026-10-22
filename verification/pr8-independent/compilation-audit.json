@@ -1,0 +1,9 @@
+{
+  "source_commit": "ac76d5ef6008d976a7b8f3c1d921af2317e79ce9",
+  "modules": 6471,
+  "all_compiler_exits_zero": true,
+  "all_source_log_object_receipt_bindings_match": true,
+  "driver_and_canonical_sources_unchanged": true,
+  "canonical_target_olean_sha256": "913cd72d52fbcf54b675ce0609325dee0333258eca3a75ba182dfcfc87957464",
+  "endpoint_olean_sha256": "8bdd8e3c98fcf8400becd65c5dd805be52d44b41b0bc8f554476537ad3478850"
+}

@@ -1,0 +1,22 @@
+warning: PrimeNumberTheoremAnd: repository '/Users/rohanarun/LocalBuilds/quasi-rh-pr8/.lake/packages/PrimeNumberTheoremAnd' has local changes
+warning: rellich-kondrachov: repository '/Users/rohanarun/LocalBuilds/quasi-rh-pr8/.lake/packages/rellich-kondrachov' has local changes
+✔ [3811/3829] Built PrimeNumberTheoremAnd.SmoothExistence (4.7s)
+✔ [3812/3829] Built RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.L2Compactness.Kernels (4.7s)
+✔ [3813/3829] Built RellichKondrachov.MeasureTheory.Function.LpSpace.Restrict (4.0s)
+✔ [3814/3829] Built RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.H1 (5.1s)
+✔ [3815/3829] Built PrimeNumberTheoremAnd.Sobolev (6.1s)
+✔ [3816/3829] Built RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.Translation (2.6s)
+✔ [3817/3829] Built RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.L2Compactness.Smoothing (2.7s)
+✔ [3818/3829] Built RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.TranslationEstimate (2.7s)
+✔ [3819/3829] Built PrimeNumberTheoremAnd.Fourier (2.4s)
+✔ [3820/3829] Built RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.L2Compactness.Compactness (2.5s)
+✔ [3821/3829] Built RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.TranslationEstimateL2 (3.0s)
+✔ [3822/3829] Built RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.L2Compactness.Approximation (4.0s)
+✔ [3823/3829] Built RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.TranslationEstimateH1 (3.1s)
+✔ [3824/3829] Built RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.L2Compactness.ArzelaAscoli (3.9s)
+✔ [3825/3829] Built RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.L2Compactness.TranslationIntegral (3.2s)
+✔ [3826/3829] Built PrimeNumberTheoremAnd.Wiener (8.5s)
+✔ [3827/3829] Built RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.L2Compactness.Transfer (3.2s)
+✔ [3828/3829] Built RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.L2Compactness.FrechetKolmogorov (4.4s)
+✔ [3829/3829] Built RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.Rellich (4.5s)
+Build completed successfully (3829 jobs).

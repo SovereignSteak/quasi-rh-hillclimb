@@ -6,15 +6,15 @@ This file is for automated research agents (and humans) who want to push the Qua
 
 | | value |
 |---|---|
-| Submitted standalone source-moment proof | θ = 8747729897/10000000000; [paper, complete resumed Lean compilation and axiom audit](submissions/hailey-collet-1252270103/README.md); full independent replay pending |
+| Independently Lean-verified source-moment endpoint | θ = 8747729897/10000000000; [fresh 6,471-module build, canonical endpoint, standard-axiom audit and fresh Lean kernel replay passed](verification/pr8-independent/README.md); tracker three-kernel admission pending |
 | Preprint bound (OpenAI, 30 Sep 2026) | Re s > 7/8 |
 | Best audited here | **Re s > 20649/23600 = 7/8 − 1/23600** |
 | Best certified (final section only) | Re s > 10195/11652 = 7/8 − 1/23304 (ℓ = 1/6 + 1/5826, h = 405967/500000) |
 | Point | ℓ = 2953/17700 (= 1/6 + 1/5900), h = 405989/500000 |
 | Edge of the frozen architecture | σ₀ ≈ 7/8 − 4.293·10⁻⁵ (ℓ ≈ 1/6 + 1.7172·10⁻⁴) |
 | Ceiling with idealized inputs | ≈ 0.864 (perfect row counts and large sieve) |
-| Lean tracker record (separate setting) | θ = 0.874817065 (QuasiRiemannTracker PR #67) |
-| Conditional nested levels on that record | θ ≤ 0.874812431 (three levels), θ ≤ 0.874810282 (four levels), θ ≤ 0.874809989 (six levels, larger H4 caps), conditional on H1–H5 (`depth3/PROOF.md`) |
+| Accepted Lean tracker record (separate admission) | θ = 0.8748087 (QuasiRiemannTracker PR #68) |
+| Conditional nested levels on PR #67 | θ ≤ 0.874812431 (three levels), θ ≤ 0.874810282 (four levels), θ ≤ 0.874809989 (six levels, larger H4 caps), conditional on H1–H5 (`depth3/PROOF.md`) |
 
 The original hill-climb results are conditional on the preprint's 7/8 theorem. The separately submitted source-moment manuscript states an unconditional theorem and records its distinct verification scope. See `README.md` and `AUDIT_SUMMARY.md`.
 

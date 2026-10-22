@@ -1,0 +1,2 @@
+PASS: package hashes, all 6471 archived source hashes, 41 successful receipt/log bindings and final axiom output.
+Integrity/development evidence only; no fresh Lean or independent endpoint replay was run by this script.
