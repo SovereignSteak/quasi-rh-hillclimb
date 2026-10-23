@@ -44,12 +44,14 @@ There is a familiar algebraic reason to investigate inverse/plain products.
 For one common completely multiplicative character psi, extended by zero,
 and real heights t,u, the unrestricted divisor convolution is
 
-$$
+**(CM1)**
+
+```math
 \sum_{ab=n}\mu(a)\psi(a)\psi(b)
        (Na)^{-it}(Nb)^{-iu}
 =\psi(n)(Nn)^{-iu}
-  \prod_{p\mid n}\bigl(1-(Np)^{-i(t-u)}\bigr).             \tag{CM1}
-$$
+  \prod_{p\mid n}\bigl(1-(Np)^{-i(t-u)}\bigr).
+```
 
 For psi(n)=0 both sides vanish. Otherwise, factor the divisor sum prime
 by prime; only valuations zero and one of the squarefree divisor a survive.
@@ -69,10 +71,12 @@ complete convolution cancellation. Reusing it is not an improvement.
 For the common-twist case, on unit n>1, writing k=omega(n), the elementary
 bound |1-exp(ix)|<=min(2,|x|) gives
 
-$$
+**(CM2)**
+
+```math
 \left|\prod_{p\mid n}(1-(Np)^{-i\tau})\right|
- \le 2^k\min(1,|\tau|\log Nn),\qquad \tau=t-u.          \tag{CM2}
-$$
+ \le 2^k\min(1,|\tau|\log Nn),\qquad \tau=t-u.
+```
 
 To obtain a fixed power U^(-rho) from this bound at polynomial norm scales,
 one needs a separation as small as U^(-rho)/log U, after divisor costs.

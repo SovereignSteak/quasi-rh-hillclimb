@@ -19,9 +19,9 @@ estimates and recompute the finite source and return inequalities.
 
 The resulting conditional candidate is
 
-$$
+```math
 \theta=\frac{87477137}{100000000}=0.87477137.
-$$
+```
 
 It lowers the proposed boundary by **0.0000016197** relative to Collet's
 0.8747729897. The contribution consists of an exact source graph, a
@@ -58,9 +58,9 @@ All listed decimal parameters are exact rationals. Every LOW and HIGH
 parent precedes its child, so the graph contains no circular dependencies.
 Both chains start from the inherited natural face
 
-$$
+```math
 G\!\left(1,\frac{11243277}{2500000},\frac{11}{200}\right).
-$$
+```
 
 The accounting remains $(e,r,f)=(10^{-17},10^{-12},10^{-10})$, and the
 centered terminal saving remains 0.499. No analytic lemma of the original
@@ -86,13 +86,13 @@ revisions, statement labels and Lean interfaces for these references.
 For every node of the finite graph, establish the full inherited assertion
 $G(B,\Lambda,H)$. Its bound and parameter domain are
 
-$$
+```math
 \begin{aligned}
-\mathcal E &\ll U^{Q+\epsilon}\mathcal H_J,\\
+\mathcal{E} &\ll U^{Q+\epsilon}\mathcal{H}_{J},\\
 m_1,m_2&\ge 0,\qquad 0\le s\le HQ,\\
 m_1+m_2+\Lambda s&\le BQ.
 \end{aligned}
-$$
+```
 
 Here $H$ is the **source width cap**, distinct from the return parameter
 $h$. The fixed-data, canonical marked-pool, natural-zero, puncture,
@@ -111,29 +111,29 @@ Instantiate Collet's full physical/Mellin return with:
 | $\ell$ | $12568589/75000000$ |
 | $x$ | $27563357/75000000$ |
 | $y$ | $17434027/37500000$ |
-| $\kappa_*$ | $37477137/50000000$ |
+| $\kappa_{\ast}$ | $37477137/50000000$ |
 
 The finite return expression is
 
-$$
+```math
 \begin{aligned}
-E(d,\delta,p)={}&\frac12+\frac{13h}{75}
- -\frac y2-\frac\ell2-\frac{9d}{100}+\frac\delta2\\
-&+\delta p\left(\ell-\frac{C(d)}2\right)
- +\frac{3d}{4}R_*(\kappa_*,\delta,p).
+E(d,\delta,p)={}&\frac{1}{2}+\frac{13h}{75}
+ -\frac{y}{2}-\frac{\ell}{2}-\frac{9d}{100}+\frac{\delta}{2}\\
+&+\delta p\left(\ell-\frac{C(d)}{2}\right)
+ +\frac{3d}{4}R_{\ast}(\kappa_{\ast},\delta,p).
 \end{aligned}
-$$
+```
 
 The required inequality is
 
-$$
+```math
 E(d,\delta,p)\le\theta-10^{-9}.
-$$
+```
 
 It must hold for $\delta\in[0,3/4]$, $p\in[0,1/2]$, and every conductor
 interval from $d_0=1/200$ to $d_+=h+10^{-10}$, using NR4's old/new
 capacities $C(d)$ and NR5's fixed joins. The balanced row-count term
-$R_*$ is inherited from the same return framework.
+$R_{\ast}$ is inherited from the same return framework.
 
 The exact checker certifies the six endpoint covers, admissions and scalar
 reserves. **The remaining task is the full implication to the literal
@@ -145,16 +145,16 @@ source-step or return assertion is assumed as an axiom.
 If the inherited analytic interfaces apply with every required hypothesis,
 the proposed conclusion is nonvanishing in
 
-$$
-\operatorname{Re}s>\frac{87477137}{100000000}=0.87477137,
-$$
+```math
+\Re(s)>\frac{87477137}{100000000}=0.87477137,
+```
 
 with the principal pole excluded. The exact improvement over Collet's
 0.8747729897 is
 
-$$
+```math
 \frac{16197}{10^{10}}=0.0000016197.
-$$
+```
 
 This proposal uses its own source/return budget, rather than the frozen
 Track A model. The modified budget and exact certificate are attached;

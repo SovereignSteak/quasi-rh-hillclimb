@@ -9,27 +9,30 @@ Assume the saved regime 22/23<=B<=1, 1<L<9B/2, 1/2<=q<=3/4, and
 1-6qB/L>0. The first density gate at nu=q, after inserting the crossing
 identity, has its non-accounting part
 
-$$
+```math
 \frac q{15-6q}\{10-(15-6q)B+[(15-6q)L-12q]b\}.
-$$
+```
 
 The omitted terms subtract positive quantities: q*L_child*e,
 6q(5-6q)e/(15-6q), a(5-6rho), and the positive NF fee. Here
 rho=1-10q/(15-6q) and the exact amplifier a>0. In particular
 5-6rho=(66q-15)/(15-6q)>0. Positivity therefore requires
 
-$$
+**(FD1)**
+
+```math
 b> f(q):=\frac{(15-6q)B-10}{(15-6q)L-12q}.
-\tag{FD1}
-$$
+```
 
 The denominator is positive in the stated regime. Direct differentiation
 gives f'(q)=60(3B-L-2)/[(15-6q)L-12q]^2<0.
 Since q<L/(6B)<3/4, every such finite step necessarily satisfies
 
-$$
-b>F(B,L):=\frac{B(15B-L-10)}{L(15B-L-2)}.                 \tag{FD2}
-$$
+**(FD2)**
+
+```math
+b>F(B,L):=\frac{B(15B-L-10)}{L(15B-L-2)}.
+```
 
 The companion checker verifies the stated regime and strict FD2 for every
 saved stage, and checks both rational identities symbolically.
@@ -38,17 +41,19 @@ If one *formally* takes infinitesimal slope decrements, sets the crossing
 equal to this lower bound and omits the fixed accounting costs and all other
 gates, the candidate flow is
 
-$$
+**(FD3)**
+
+```math
 \frac{dB}{dL}=F(B,L).
-\tag{FD3}
-$$
+```
 
 It has the explicit first integral
 
-$$
+**(FD4)**
+
+```math
 I(B,L)=\frac{B(L+2-3B)^4}{L^5},\qquad I_BF+I_L=0.
-\tag{FD4}
-$$
+```
 
 Starting from B=1,L=K=4.4973108 gives I=(K-1)^4/K^5.
 Equivalently, for r=L/B,
