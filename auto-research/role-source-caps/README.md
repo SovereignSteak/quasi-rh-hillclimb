@@ -9,9 +9,9 @@ zero-free endpoint is not Lean-verified or independently accepted.**
 This extends Hailey Collet's ordinary-source construction from [PR #8](https://github.com/rohanarun/quasi-rh-hillclimb/pull/8).
 It supplies a different finite source graph and recomputes its return at
 
-\[
+$$
 \theta=\frac{87477137}{100000000}=0.87477137.
-\]
+$$
 
 The analytic source and return theorems are inherited, rather than proved
 anew here. Their application to this graph and geometry remains an explicit

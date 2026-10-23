@@ -1,143 +1,260 @@
-# Role-specific ordinary-source chains and a conditional theta = 0.87477137
+# Role-specific source caps: θ = 0.87477137
 
-**Status: proposal.** Subhanjan Das (@subhanjandas), substantially assisted
-by OpenAI Codex. 23 October 2026. Exact finite premises pass; the changed
-analytic endpoint is not Lean-verified or independently accepted.
+**Subhanjan Das (@subhanjandas) · 23 October 2026**
 
-## 1. Change
+Prepared with substantial assistance from OpenAI Codex.
 
-Extend the finite source graph in Hailey Collet's [PR #8](https://github.com/rohanarun/quasi-rh-hillclimb/pull/8),
-using her unchanged generic NF source step and parameterized return.
-Use separate chains for the count source and physical numerator:
+> **Status: proposal.** The exact finite checks pass. Applying the inherited
+> analytic framework to this candidate, and completing its Lean endpoint
+> proof, remain open. This is not a Lean-verified or accepted new record.
+> The proposal inherits the repository's stated preprint dependencies.
 
-| Role | Slope decrement per step | Global cap | Steps | Final `(B, Lambda)` |
-|---|---:|---:|---:|---|
-| Count | `1/2000` | `.044001` | 2691 | `(.96258631988264, 3.1518108)` |
-| Physical | `1/1000` | `.043001` | 1220 | `(.96772063836150, 3.2773108)` |
+## Summary
 
-Every LOW/HIGH parent is strictly earlier. The only initial face is the
-inherited natural `G(1, 11243277/2500000, 11/200)`. The accounting remains
-`(e,r,f)=(10^-17,10^-12,10^-10)`; the centered terminal saving remains `.499`.
+This proposal extends Hailey Collet's ordinary-source construction in
+[PR #8](https://github.com/rohanarun/quasi-rh-hillclimb/pull/8). The idea is
+to use **separate source chains for row counting and the physical numerator**,
+with a width cap chosen for each role. We keep the inherited analytic
+estimates and recompute the finite source and return inequalities.
 
-No analytic lemma of the original preprint is strengthened or patched.
-The directly affected interfaces are Collet's NF1/NF4/NF8/NF10–NF15 in
-`paper/feedback.tex`, lines 254–430, and NR1–NR10 in `paper/return.tex`,
-lines 10–147. They are pinned and mapped in [SOURCE_MAP.md](../role-source-caps/SOURCE_MAP.md).
-For the requested original `build/paper.tex` map, the inherited compensated
-row norm is at line 8111, the short-prime plain moment at 12531, and the
-old balanced endpoint at 15994, at OpenAI revision
-`fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb`. These are inherited context;
-their old Track A certificate is not reused as a certificate for this point.
+The resulting conditional candidate is
 
-## 2. Needed statement
+$$
+\theta=\frac{87477137}{100000000}=0.87477137.
+$$
 
-For every node in the new finite graph, establish the full inherited
-ordinary-source assertion
+It lowers the proposed boundary by **0.0000016197** relative to Collet's
+0.8747729897. The contribution consists of an exact source graph, a
+reproducible rational certificate, a research account and a formalization
+handoff. The finite certificate does not establish the complete analytic
+theorem.
 
-\[
-G(B,\Lambda,H):\quad
-\mathcal E\ll U^{Q+\epsilon}\mathcal H_J,
-\qquad m_1,m_2\ge0,\quad 0\le s\le HQ,\quad
-m_1+m_2+\Lambda s\le BQ.
-\]
+**Supporting documents:** [Research account](../role-source-caps/README.md)
+· [Verification scope](../role-source-caps/VERIFICATION.md)
+· [Source map](../role-source-caps/SOURCE_MAP.md)
+· [Search and failed routes](../role-source-caps/RESEARCH_LOG.md)
+· [Open proof obligations](../role-source-caps/formalization/PROOF_OBLIGATIONS.md)
 
-Here `H` is the source cap, distinct from the return parameter `h`.
-All fixed-data, canonical marked-pool, natural-zero, puncture, profile,
-restoration and independently bounded height conditions are exactly those
-of Collet's NF1/G1. This notation does not remove their quantifiers or
-replace a uniform analytic assertion by a finite sample.
+## 1. Change: give the two source roles separate chains
 
-Then instantiate her full physical/Mellin return at
+The final return uses source estimates for two jobs: counting rows and
+bounding the physical numerator. We choose the chain and global width cap
+for each job separately. Both chains use Collet's unchanged generic NF
+source step and parameterized return.
 
-\[
-\theta=87477137/10^8,\qquad h=1250109/1562500,\qquad
-\ell=12568589/75000000,\quad x=27563357/75000000,\quad
-y=17434027/37500000,\quad\kappa_*=37477137/50000000.
-\]
+| Source role | Stages | Slope decrement per stage | Global width cap |
+|---|---:|---:|---:|
+| Row count | 2,691 | 1/2000 | 0.044001 |
+| Physical numerator | 1,220 | 1/1000 | 0.043001 |
 
-The finite return target is
+The final source parameters are:
 
-\[
-\frac12+\frac{13h}{75}-\frac y2-\frac\ell2-
-\frac9{100}d+\frac\delta2+
-\delta p\left(\ell-\frac{C(d)}2\right)+
-\frac{3d}{4}R_*(\kappa_*,\delta,p)
-\le\theta-10^{-9},
-\]
+| Source role | $B$ | $\Lambda$ |
+|---|---:|---:|
+| Row count | 0.96258631988264 | 3.1518108 |
+| Physical numerator | 0.96772063836150 | 3.2773108 |
 
-for `delta in [0,3/4]`, `p in [0,1/2]`, and every conductor interval from
-`d0=1/200` to `d+=h+10^-10`, using NR4's old/new capacities and NR5's
-fixed joins. The exact checker certifies the six endpoint covers,
-admissions and scalar reserves. Completing the implication to the literal
-analytic numerator, common meshes and final canonical endpoint remains
-required. A new source-step or return assertion is not assumed as an axiom.
+All listed decimal parameters are exact rationals. Every LOW and HIGH
+parent precedes its child, so the graph contains no circular dependencies.
+Both chains start from the inherited natural face
 
-## 3. Payoff
+$$
+G\!\left(1,\frac{11243277}{2500000},\frac{11}{200}\right).
+$$
 
-Conditional on those inherited analytic interfaces applying with all
-required hypotheses, the proposed nonvanishing boundary is
+The accounting remains $(e,r,f)=(10^{-17},10^{-12},10^{-10})$, and the
+centered terminal saving remains 0.499. No analytic lemma of the original
+preprint is strengthened or patched.
 
-\[
-\operatorname{Re}s>87477137/100000000=0.87477137,
-\]
+### Affected mathematical interfaces
 
-with the principal pole excluded. No unconditional new endpoint or tracker
-record is asserted. The exact boundary reduction relative to Collet's
-`.8747729897` is `16197/10^10`.
+| Source | Location | Role in the proposal |
+|---|---|---|
+| Collet's `paper/feedback.tex` | Lines 254–430; NF1/NF4/NF8/NF10–NF15 and accounting | Ordinary-source domains, finite steps and induction |
+| Collet's `paper/return.tex` | Lines 10–147; NR1–NR10 | Source admissions, geometry and physical/Mellin return |
+| Original `build/paper.tex` | Lines 8111–8325 | Inherited compensated row norm |
+| Original `build/paper.tex` | Lines 12531–12579 | Inherited short-prime plain moment |
+| Original `build/paper.tex` | Lines 15994–16048 | Historical balanced endpoint; its certificate is not reused for this point |
 
-This is a different source/return budget from the frozen Track A model;
-`whatif.py` is not used to infer this number. The attached modified budget
-and exact certificate are reproduced by:
+The [pinned source map](../role-source-caps/SOURCE_MAP.md) gives the exact
+revisions, statement labels and Lean interfaces for these references.
+
+## 2. Needed statement: establish the source and return assertions
+
+### Ordinary-source assertion
+
+For every node of the finite graph, establish the full inherited assertion
+$G(B,\Lambda,H)$. Its bound and parameter domain are
+
+$$
+\begin{aligned}
+\mathcal E &\ll U^{Q+\epsilon}\mathcal H_J,\\
+m_1,m_2&\ge 0,\qquad 0\le s\le HQ,\\
+m_1+m_2+\Lambda s&\le BQ.
+\end{aligned}
+$$
+
+Here $H$ is the **source width cap**, distinct from the return parameter
+$h$. The fixed-data, canonical marked-pool, natural-zero, puncture,
+profile, restoration and independently bounded height conditions are
+exactly those of Collet's NF1/G1. All their quantifiers remain required;
+finite sampling does not replace a uniform analytic assertion.
+
+### Exact return parameters
+
+Instantiate Collet's full physical/Mellin return with:
+
+| Parameter | Exact value |
+|---|---:|
+| $\theta$ | $87477137/100000000$ |
+| $h$ | $1250109/1562500$ |
+| $\ell$ | $12568589/75000000$ |
+| $x$ | $27563357/75000000$ |
+| $y$ | $17434027/37500000$ |
+| $\kappa_*$ | $37477137/50000000$ |
+
+The finite return expression is
+
+$$
+\begin{aligned}
+E(d,\delta,p)={}&\frac12+\frac{13h}{75}
+ -\frac y2-\frac\ell2-\frac{9d}{100}+\frac\delta2\\
+&+\delta p\left(\ell-\frac{C(d)}2\right)
+ +\frac{3d}{4}R_*(\kappa_*,\delta,p).
+\end{aligned}
+$$
+
+The required inequality is
+
+$$
+E(d,\delta,p)\le\theta-10^{-9}.
+$$
+
+It must hold for $\delta\in[0,3/4]$, $p\in[0,1/2]$, and every conductor
+interval from $d_0=1/200$ to $d_+=h+10^{-10}$, using NR4's old/new
+capacities $C(d)$ and NR5's fixed joins. The balanced row-count term
+$R_*$ is inherited from the same return framework.
+
+The exact checker certifies the six endpoint covers, admissions and scalar
+reserves. **The remaining task is the full implication to the literal
+analytic numerator, common meshes and final canonical endpoint.** No new
+source-step or return assertion is assumed as an axiom.
+
+## 3. Payoff: the conditional nonvanishing boundary
+
+If the inherited analytic interfaces apply with every required hypothesis,
+the proposed conclusion is nonvanishing in
+
+$$
+\operatorname{Re}s>\frac{87477137}{100000000}=0.87477137,
+$$
+
+with the principal pole excluded. The exact improvement over Collet's
+0.8747729897 is
+
+$$
+\frac{16197}{10^{10}}=0.0000016197.
+$$
+
+This proposal uses its own source/return budget, rather than the frozen
+Track A model. The modified budget and exact certificate are attached;
+`whatif.py` is not used to infer this value.
+
+The symmetry-related strip description would follow only after the
+analytic endpoint and functional-equation application are established.
+No additional interior zero-free band, 0.86 bound or 0.7x bound is claimed.
+
+## 4. Evidence: exact finite checks and their scope
+
+### Reproduce the candidate certificate
+
+From the repository root, use Python 3.11 or later and install the pinned
+exact-checking dependency:
 
 ```sh
+python -m pip install -r auto-research/role-source-caps/requirements.txt
 python auto-research/role-source-caps/replay.py
 ```
 
-The symmetry-related critical-strip description would follow only after
-the analytic endpoint and functional-equation application are established.
-No additional interior zero-free band, `.86` bound or `.7x` bound is claimed.
+The replay regenerates and compares the complete saved receipt. Its checks
+use rational arithmetic; floating-point search only supplied candidates.
 
-## 4. Evidence and partial proof
+| Check | Count |
+|---|---:|
+| Acyclic source stages | 3,911 |
+| Width endpoints | 7,822 |
+| Strict scalar gates | 125,152 |
+| Weak LOW-cap guards | 7,822 |
+| Cubic density positivity tests | 70,398 |
+| Return boxes | 224 |
+| Return coefficients | 2,688 |
+| Admission windows | 49 |
+| Scalar reserves | 33 |
 
-The complete graph and regenerated receipt check 3,911 acyclic stages,
-125,152 strict scalar gates, 7,822 weak LOW-cap guards and 70,398 cubic
-density positivity tests, each cross-checked by independent interpolation.
-The return checks 224 boxes, 2,688 coefficients, 49 admission windows and
-33 scalar reserves. Every test is rational; floating search only generated
-candidates. The two actual cap reserves are each `10^-6`.
+The actual count width is 0.044 and the physical width is 0.043. Each is
+below its selected global cap by exactly $10^{-6}$.
 
-The code also reproduces the old return and compares all 2,688 normalized
-coefficients with Collet's archived Lean sources. This checks the
-transcription at the old point; it does not formally verify the changed
-point. Negative controls reject invalid source dependencies and incomplete
-or duplicated covers, and optimized Python is rejected explicitly.
+### Finite proof mechanism
 
-The finite proof mechanism is affine interpolation in width, positive cubic
+The certificate uses affine interpolation in width, positive cubic
 Bernstein coefficients in density, tensor Bernstein positivity on return
 rectangles, and the inherited piecewise-affine conductor interpolation.
-See the [readable account](../role-source-caps/README.md),
-[verification scope](../role-source-caps/VERIFICATION.md) and
-[research log](../role-source-caps/RESEARCH_LOG.md).
+An independent interpolation calculation cross-checks every cubic density
+test. These checks cover intervals and rectangles, rather than testing
+only isolated sample points.
 
-## 5. What breaks, downstream changes and next steps
+The code also reproduces Collet's old return and compares all 2,688
+normalized coefficients with her archived Lean sources. That comparison
+checks the transcription at the **old point**; it does not formally verify
+the changed point. Negative controls reject invalid source dependencies
+and incomplete or duplicated covers. The verifiers explicitly reject
+optimized Python execution so their assertions cannot silently disappear.
 
-The count/physical source constants, actual caps, return height and theta
-change. Therefore source admissions, source restrictions, return
-polynomials, the closed cover and every geometry reserve must be
-recomputed; the old point's positivity or generic headline audit is
-insufficient. Those finite computations are supplied.
+The [verification note](../role-source-caps/VERIFICATION.md) records the
+commands, evidence and limits. The [research log](../role-source-caps/RESEARCH_LOG.md)
+explains how the candidate was found and which exploratory routes failed.
 
-The unfinished formal tasks are the new admitted-window constructors,
-full cover and all-conductor bounds, `PhysicalSchedule`, common-mesh
-literal numerator and canonical nonvanishing theorem, followed by
-transitive axiom audits and fresh kernel replay. An optional uncompiled
-Lean source exporter is supplied as a handoff, not proof evidence.
+## 5. What breaks, remaining proof work and next steps
 
-The larger mixed off-diagonal estimate remains open. The exploratory
-coefficient, profile and Mellin routes in the research log are not premises
-of this candidate. Finite numerical reductions do not yield asymptotic
-power savings. No optimality or universal method ceiling is established.
+Changing the count and physical source constants, actual caps, return
+height and $\theta$ requires recomputing source admissions, source
+restrictions, return polynomials, the closed cover and every geometry
+reserve. The supplied finite computations do this; the old point's
+positivity or generic headline audit cannot certify the new point.
 
-New integration is MIT; Collet/OpenAI and all inherited author/license
-notices remain. Codex substantially assisted mathematics, code, checking
-and writing. Independent mathematical review is outstanding.
+The remaining formal work is:
+
+1. Construct the new admitted windows and prove the full cover and
+   all-conductor bounds.
+2. Instantiate `PhysicalSchedule`, the common-mesh literal numerator and
+   the canonical nonvanishing theorem at the new parameters.
+3. Complete transitive axiom audits and a fresh Lean kernel replay.
+
+The [formalization handoff](../role-source-caps/formalization/README.md)
+includes an optional **uncompiled** Lean source exporter. It is a starting
+point for these tasks, not proof evidence.
+
+For a substantially larger gain, the mixed off-diagonal estimate discussed
+in the research log remains open. The exploratory coefficient, profile,
+flow and Mellin routes are not premises of this candidate. Finite numerical
+reductions do not establish asymptotic power savings. No optimality or
+universal method ceiling has been proved here.
+
+## Credits, AI disclosure and licensing
+
+**Hailey Collet** supplies the analytic source/return framework, natural
+premise, original certificate cover and generic Lean source interface.
+**OpenAI** supplies the underlying QRH framework. **Rohan Arun and the
+repository's credited contributors** supply the budget, audit and research
+tools. The larger mixed-moment direction builds on **Thibaud Gloaguen's
+@thebest contribution**, as documented in the research account. These
+credits do not imply review or endorsement of this proposal.
+
+**Subhanjan Das** directed the research and is submitting the contribution.
+**OpenAI Codex substantially assisted** the exploration, derivations,
+search, exact-checking implementation, source export and writing.
+Independent mathematical review remains outstanding.
+
+New integration is offered under the repository's MIT License. Inherited
+material retains its authors, licenses and notices; see
+[NOTICE.md](../role-source-caps/NOTICE.md).
