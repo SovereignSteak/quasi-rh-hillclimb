@@ -14,6 +14,8 @@ See the README's [PR progress and Lean verification tables](README.md#progress-a
 | Best certified (final section only) | Re s > 10195/11652 = 7/8 − 1/23304 (ℓ = 1/6 + 1/5826, h = 405967/500000) |
 | Point | ℓ = 2953/17700 (= 1/6 + 1/5900), h = 405989/500000 |
 | Best Lean-verified on this line | Re s > 139999/160000 = 7/8 − 1/160000 (τ = 1/40000, `lean-tau/`); the Lean proof caps τ near 2.965·10⁻⁵ |
+| Best certified (final section only) | σ₀ = **4374785349/5000000000 = 0.8749570698**, submitted in [PR #12](https://github.com/rohanarun/quasi-rh-hillclimb/pull/12); [independently replayed with Node BigInt](auto-research/track-a-independent-replay.md). No new point is claimed by the replay. |
+| Audited default point | ℓ = 2953/17700 (= 1/6 + 1/5900), h = 405989/500000 |
 | Edge of the frozen architecture | σ₀ ≈ 7/8 − 4.293·10⁻⁵ (ℓ ≈ 1/6 + 1.7172·10⁻⁴) |
 | Best certified Track A (final section only) | Re s > 4374785349/5000000000 = 0.8749570698 (ℓ = 625643953/3750000000, h = 8119602997/10000000000); [exact evidence and audit scope](auto-research/track-a-near-edge.md) |
 | Audited point | ℓ = 2953/17700 (= 1/6 + 1/5900), h = 405989/500000 |
@@ -43,6 +45,7 @@ where E_* is the high exponent at d = h with the balanced row count R_*. The cod
 
 The remaining room is **less than 10⁻¹² in σ₀**, by an exact obstruction checked in `auto-research/edge_certificate.py`. For ℓ = 1/6 + 1/N with N > 0, feasibility requires N > 2910 + 96√921 ≈ 5823.406253854755. Thus N = 5824 is the best possible integer choice; the current record uses rational N = 1250000000/214651. To claim any remaining room:
 The [exact limit proof](auto-research/track-a-exact-limit.md) establishes the sharp infimum of this frozen budget, including arbitrarily close strictly feasible rational points. The concurrent [PR #12](https://github.com/rohanarun/quasi-rh-hillclimb/pull/12) supplies the best integer choice `N=5824`, its necessary obstruction, and a fractional-N point less than 10⁻¹² above the limit. Check its current status before starting another search. The search recipe below starts from the historical main-branch certificate; do not report those submitted points as new.
+The near-edge point submitted in [PR #12](https://github.com/rohanarun/quasi-rh-hillclimb/pull/12) is already within 10⁻¹² of the frozen-budget obstruction. The [independent Node replay](auto-research/track-a-independent-replay.md) checks it against the same formulas without Python or SymPy. Check current submissions before searching; the original integer-search recipe below starts from the historical N=5826 certificate, and the submitted N=5824 and fractional-N points must not be claimed again as new.
 
 1. Pick rational N between 2910 + 96√921 and 1250000000/214651, and rational h near 0.8119602997.
 2. Run `python certify.py N h --maxdepth 34`. Every side constraint must print `OK`, and the adaptive endpoint and denominator must print `True`.
@@ -101,6 +104,9 @@ pip install numpy scipy sympy
 python certify.py                   # audited baseline
 python certify.py 1250000000/214651 8119602997/10000000000 --maxdepth 34 # best Track A certificate
 python auto-research/edge_certificate.py # exact frozen-budget obstruction and near-edge certificate
+python certify.py                   # audited default point, about 1 s
 python auto-research/hillclimb.py   # Track A
 python auto-research/whatif.py --alpha 0.75 --cap 1.5   # Track B
 ```
+
+For an independent replay of the four known points, run `node auto-research/verify_track_a.mjs` (tested with Node.js 22; no Python or packages required for that command).

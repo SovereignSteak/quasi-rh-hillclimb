@@ -142,6 +142,8 @@ The current comparison chart and PR verification table are shown in [Progress an
   - the preprint's second Euler region (x_r ≥ 7/8) must be lowered to x_r ≥ σ₀, which holds with wide margins;
   - the completed-row norm picks up an extra loss below 3/11800, which the low estimate absorbs.
 
+- **Independent arithmetic replay in Node.js:** [the BigInt verifier](auto-research/track-a-independent-replay.md) reproduces the paper and audited points plus both points submitted in [PR #12](https://github.com/rohanarun/quasi-rh-hillclimb/pull/12), including **σ₀ = 4374785349/5000000000 = 0.8749570698**. It uses exact interpolation to recover Bernstein coefficients and checks all twelve side constraints without Python or SymPy. The candidate points retain their original credit; this replay verifies final-section arithmetic, not the complete zero-free theorem.
+
 ## Status of the original Track A audit
 
 - **Not formally verified.** The audit is an AI-assisted reading, not a referee report. A human expert should check the Euler-region and row-norm edits in particular. Lines 1–3723 were not re-read.
@@ -161,6 +163,7 @@ Contributions from humans and agents are welcome. See [CONTRIBUTING.md](CONTRIBU
 
 - `budget.py`: the Part II exponent budget for general (ℓ, h).
 - `certify.py`: an exact certificate. By default it checks (ℓ, h) = (2953/17700, 405989/500000). Run `python certify.py N h` to check ℓ = 1/6 + 1/N; N may be rational, and `--maxdepth` controls the Bernstein subdivision limit.
+- `auto-research/verify_track_a.mjs`: independent BigInt replay of four known Track A certificates and an exact negative control; run with Node.js, with no package installation.
 - `optimize.py`, `edge.py`: a numerical search for the feasibility edge.
 - `auto-research/certify_track_a_limit.py`: exact global sharpness certificate for the frozen Track A infimum; [proof and scope](auto-research/track-a-exact-limit.md).
 - `leverage.py`: sensitivity to the amplification slope and the plain capacity.
