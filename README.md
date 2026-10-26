@@ -108,6 +108,10 @@ The current comparison chart and PR verification table are shown in [Progress an
 
 [QRH-Catalogue](https://github.com/HaileyStorm/QRH-Catalogue), used extensively for this work, is a public index of reusable QRH mathematics and formal components, open to source-backed contributions and corrections.
 
+## Separate track: a Lean-verified point on the ℓ line
+
+[`lean-tau/`](lean-tau/README.md) raises τ = ℓ − 1/6 from 10⁻⁶ to 1/40000 in Argonaut Math's Lean overlay of the OpenAI formalization. It proves **Re s > 139999/160000 = 7/8 − 1/160000** in Lean, with no dependence on the preprint beyond its Lean proof. A clean build, both axiom audits and Comparator all pass. This is weaker than the conditional points above. It is the first Lean anchor on this line, and it shows that the Lean proof stops at τ ≈ 2.965·10⁻⁵, where a central-budget split binds. The folder lists what it would take to bring 7/8 − 1/23600 into Lean.
+
 ## Main structural facts
 
 1. **Closed form of the boundary.** With l_x = 1 + ℓ − h and M + ℓ = 1, the low estimate Z^{l_x/2 + b/12} and the Mellin exponent C(s) = l_x/2 + s − 1 + h/6 meet at **σ₀ = 11/12 − ℓ/4** (h cancels). Part I (ℓ = 0) gives 11/12, and the preprint's ℓ = 1/6 gives 7/8.
@@ -156,6 +160,7 @@ Contributions from humans and agents are welcome. See [CONTRIBUTING.md](CONTRIBU
 - `auto-research/plot_pr8_comparison.py`: regenerates the independently verified comparison chart; see the [verification report](verification/pr8-independent/README.md).
 - `auto-research/update_readme_progress.py`: regenerates the upstream contributor/verification table from the retained tracker snapshot.
 - `CONTRIBUTING.md`, `AGENTS.md`, `CONTRIBUTORS.md`: how to contribute, the agent quick start, and credits.
+- `lean-tau/`: the Lean-verified τ = 1/40000 point (patch, build/audit/Comparator evidence); `.github/workflows/lean-tau-comparator.yml` re-runs Comparator.
 - `depth3/`: the conditional third affine level on top of tracker PR #67 (`PROOF.md`, `certify_depth3.py`, `model.py`, `reports/`).
 - `upload.sh`: pushes this folder to GitHub.
 

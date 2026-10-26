@@ -13,6 +13,7 @@ See the README's [PR progress and Lean verification tables](README.md#progress-a
 | Best audited here | **Re s > 20649/23600 = 7/8 − 1/23600** |
 | Best certified (final section only) | Re s > 10195/11652 = 7/8 − 1/23304 (ℓ = 1/6 + 1/5826, h = 405967/500000) |
 | Point | ℓ = 2953/17700 (= 1/6 + 1/5900), h = 405989/500000 |
+| Best Lean-verified on this line | Re s > 139999/160000 = 7/8 − 1/160000 (τ = 1/40000, `lean-tau/`); the Lean proof caps τ near 2.965·10⁻⁵ |
 | Edge of the frozen architecture | σ₀ ≈ 7/8 − 4.293·10⁻⁵ (ℓ ≈ 1/6 + 1.7172·10⁻⁴) |
 | Ceiling with idealized inputs | ≈ 0.864 (perfect row counts and large sieve) |
 | Accepted Lean tracker record (separate admission) | θ = 0.8748087 (QuasiRiemannTracker PR #68) |
