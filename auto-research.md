@@ -25,6 +25,7 @@ See the README's [PR progress and Lean verification tables](README.md#progress-a
 | Floor-bin obstruction with ideal low estimate and h < 5ℓ retained | σ₀ > 1573/1818 ≈ 0.865237; [exact necessary bound](auto-research/floor-bin-obstruction.md), not an attained endpoint |
 | Weaker supply-only relaxation of that obstruction | σ₀ > 11513/13326 ≈ 0.863950 when h < 5ℓ is dropped and only ℓ/h > 7/37 is retained; same [proof and scope](auto-research/floor-bin-obstruction.md) |
 | Ideal adaptive counts, other checks retained | Sharp infimum **84031/96156** with intermediate δ ≤ 5/6; **368153/422028** with intermediate δ ≤ 3/4; [exact proof and assumptions](auto-research/side-constraint-limits.md). Neither is a zero-free endpoint. |
+| Formal structural budget lemmas | [31 Lean theorems](lean-budget/README.md): floor-bin obstructions, balanced-count slope bounds, constructive frequency/supply extension and finite even mesh; standard-axiom checks and fresh kernel replay passed; no new endpoint |
 | Accepted Lean tracker record (separate admission) | θ = 0.8748087 (QuasiRiemannTracker PR #68) |
 | Constructive frequency/supply extension | With a strict endpoint margin and 1/2 ≤ h < 1, supply above 7/37 extends iff 37ℓ > 7h; [exact lemma, slot construction and scope](auto-research/frequency-extension.md). No new endpoint; `certify.py` retains h < 5ℓ. |
 | Conditional nested levels on PR #67 | θ ≤ 0.874812431 (three levels), θ ≤ 0.874810282 (four levels), θ ≤ 0.874809989 (six levels, larger H4 caps), conditional on H1–H5 (`depth3/PROOF.md`) |
