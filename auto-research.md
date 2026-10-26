@@ -18,6 +18,7 @@ See the README's [PR progress and Lean verification tables](README.md#progress-a
 | Best certified Track A (final section only) | Re s > 4374785349/5000000000 = 0.8749570698 (ℓ = 625643953/3750000000, h = 8119602997/10000000000); [exact evidence and audit scope](auto-research/track-a-near-edge.md) |
 | Audited point | ℓ = 2953/17700 (= 1/6 + 1/5900), h = 405989/500000 |
 | Exact obstruction in the frozen budget | Every feasible point requires σ₀ > (1507 − 2√921)/1653; [algebra checked against the budget](auto-research/track-a-near-edge.md), matching the prior report in issue #4 |
+| Infimum of the frozen Track A budget | **(1507 − 2√921)/1653 ≈ 0.87495706979916874**, not attained; [exact global sharpness proof](auto-research/track-a-exact-limit.md) |
 | Ceiling with idealized inputs | ≈ 0.864 (perfect row counts and large sieve) |
 | Accepted Lean tracker record (separate admission) | θ = 0.8748087 (QuasiRiemannTracker PR #68) |
 | Conditional nested levels on PR #67 | θ ≤ 0.874812431 (three levels), θ ≤ 0.874810282 (four levels), θ ≤ 0.874809989 (six levels, larger H4 caps), conditional on H1–H5 (`depth3/PROOF.md`) |
@@ -37,6 +38,7 @@ where E_* is the high exponent at d = h with the balanced row count R_*. The cod
 ### Track A: parameter hill-climbing (small gains, easy to verify)
 
 The remaining room is **less than 10⁻¹² in σ₀**, by an exact obstruction checked in `auto-research/edge_certificate.py`. For ℓ = 1/6 + 1/N with N > 0, feasibility requires N > 2910 + 96√921 ≈ 5823.406253854755. Thus N = 5824 is the best possible integer choice; the current record uses rational N = 1250000000/214651. To claim any remaining room:
+The [exact limit proof](auto-research/track-a-exact-limit.md) establishes the sharp infimum of this frozen budget, including arbitrarily close strictly feasible rational points. The concurrent [PR #12](https://github.com/rohanarun/quasi-rh-hillclimb/pull/12) supplies the best integer choice `N=5824`, its necessary obstruction, and a fractional-N point less than 10⁻¹² above the limit. Check its current status before starting another search. The search recipe below starts from the historical main-branch certificate; do not report those submitted points as new.
 
 1. Pick rational N between 2910 + 96√921 and 1250000000/214651, and rational h near 0.8119602997.
 2. Run `python certify.py N h --maxdepth 34`. Every side constraint must print `OK`, and the adaptive endpoint and denominator must print `True`.
