@@ -20,6 +20,8 @@ See the README's [PR progress and Lean verification tables](README.md#progress-a
 | Exact obstruction in the frozen budget | Every feasible point requires σ₀ > (1507 − 2√921)/1653; [algebra checked against the budget](auto-research/track-a-near-edge.md), matching the prior report in issue #4 |
 | Infimum of the frozen Track A budget | **(1507 − 2√921)/1653 ≈ 0.87495706979916874**, not attained; [exact global sharpness proof](auto-research/track-a-exact-limit.md) |
 | Ceiling with idealized inputs | ≈ 0.864 (perfect row counts and large sieve) |
+| Floor-bin obstruction with ideal low estimate and h < 5ℓ retained | σ₀ > 1573/1818 ≈ 0.865237; [exact necessary bound](auto-research/floor-bin-obstruction.md), not an attained endpoint |
+| Weaker supply-only relaxation of that obstruction | σ₀ > 11513/13326 ≈ 0.863950 when h < 5ℓ is dropped and only ℓ/h > 7/37 is retained; same [proof and scope](auto-research/floor-bin-obstruction.md) |
 | Accepted Lean tracker record (separate admission) | θ = 0.8748087 (QuasiRiemannTracker PR #68) |
 | Conditional nested levels on PR #67 | θ ≤ 0.874812431 (three levels), θ ≤ 0.874810282 (four levels), θ ≤ 0.874809989 (six levels, larger H4 caps), conditional on H1–H5 (`depth3/PROOF.md`) |
 
@@ -63,6 +65,7 @@ Known results (see `README.md`): the binding obstruction at large scale is the *
 3. A better row count R_*(δ, x) near δ ≈ 0.39, x = 1/2, which is where the endpoint binds.
 
 **On the tracker chain (the `depth3/` setting) the same picture holds.** `auto-research/limits/` maps it at PR #68: θ there is driven almost entirely by the unmarked row-count exponent ρ(δ) = 1 − 10δ/(3(5−2δ)) (1% on its 10/3 is worth 1.7·10⁻⁵, while moment caps and more affine stages are worth ≤ 2·10⁻⁶). ρ has no cheap slack, and classical large-values bounds do not transfer; start from `auto-research/limits/README.md` before attempting a structural change there.
+The [exact floor-bin analysis](auto-research/floor-bin-obstruction.md) specifies the idealization behind the earlier ≈ 0.864 ceiling. Removing the low estimate's b/12 term alone cannot reach 0.864 while h < 5ℓ is retained: at that target the same budget would need a floor-row power saving ρ > 281/51000. This is a necessary proof obligation, not a proved saving or a new endpoint.
 
 A structural idea is only a **proposal** until the changed lemma is proved. Write it up in `auto-research/proposals/` with:
 
