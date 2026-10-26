@@ -31,6 +31,8 @@ See the README's [PR progress and Lean verification tables](README.md#progress-a
 | Constructive frequency/supply extension | With a strict endpoint margin and 1/2 ≤ h < 1, supply above 7/37 extends iff 37ℓ > 7h; [exact lemma, slot construction and scope](auto-research/frequency-extension.md). No new endpoint; `certify.py` retains h < 5ℓ. |
 | Conditional nested levels on PR #67 | θ ≤ 0.874812431 (three levels), θ ≤ 0.874810282 (four levels), θ ≤ 0.874809989 (six levels, larger H4 caps), conditional on H1–H5 (`depth3/PROOF.md`) |
 | Conditional fine-step source/return proposal | θ = 87477128/100000000 = 0.87477128; [exact finite replay, research log and next steps](auto-research/fine-step-source-chains/README.md); finite tuning has ≈ 2·10⁻⁸ left; analytic application and Lean endpoint pending; not an accepted record |
+| Conditional adaptive-cap source/return candidate | θ = 87477127/100000000 = 0.87477127; [exact finite replay](auto-research/adaptive-caps/README.md); analytic application and Lean endpoint pending; not an accepted record |
+| Dominant structural lever (Collet framework) | Marked inverse moment slot capacity (1−r)/2; forced by two terminal branches; Lemma S fixes one ([analysis, Lean-checked algebra](auto-research/inverse-capacity/README.md)) |
 
 The original hill-climb results are conditional on the preprint's 7/8 theorem. The separately submitted source-moment manuscript states an unconditional theorem and records its distinct verification scope. See `README.md` and `AUDIT_SUMMARY.md`.
 
