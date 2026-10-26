@@ -69,7 +69,7 @@ Changing only `--cap`, with the other knobs at their defaults, cannot bypass the
 Known results (see `README.md`): the binding obstruction at large scale is the **floor bin**, i.e. rows with zeros near Re s = 0.51 have no witness and get no saving. Promising directions:
 
 1. A witness or saving for floor-bin rows.
-2. A sharper low estimate than Z^{l_x/2 + b/12}, or a probe where M + ℓ > 1 is allowed. The completed-row norm lemma is what forbids it now (`AUDIT_SUMMARY.md`, item 2).
+2. A sharper low estimate than Z^{l_x/2 + b/12}. The [general completed-row bound](auto-research/completed-row-geometry.md) allows M + ℓ ≠ 1 but charges an explicit low-side loss; with that loss and the existing row counts, changing M alone cannot improve the frozen-budget obstruction. A useful extension must improve this bound or another structural input (`AUDIT_SUMMARY.md`, item 2).
 3. A better row count R_*(δ, x) near δ ≈ 0.39, x = 1/2, which is where the endpoint binds.
 
 **On the tracker chain (the `depth3/` setting) the same picture holds.** `auto-research/limits/` maps it at PR #68: θ there is driven almost entirely by the unmarked row-count exponent ρ(δ) = 1 − 10δ/(3(5−2δ)) (1% on its 10/3 is worth 1.7·10⁻⁵, while moment caps and more affine stages are worth ≤ 2·10⁻⁶). ρ has no cheap slack, and classical large-values bounds do not transfer; start from `auto-research/limits/README.md` before attempting a structural change there.

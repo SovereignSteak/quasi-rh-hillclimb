@@ -123,7 +123,7 @@ The current comparison chart and PR verification table are shown in [Progress an
 
 1. **Closed form of the boundary.** With l_x = 1 + ℓ − h and M + ℓ = 1, the low estimate Z^{l_x/2 + b/12} and the Mellin exponent C(s) = l_x/2 + s − 1 + h/6 meet at **σ₀ = 11/12 − ℓ/4** (h cancels). Part I (ℓ = 0) gives 11/12, and the preprint's ℓ = 1/6 gives 7/8.
 2. **The frozen Track A limit is exact.** With plain capacity 2/9, strictly feasible boundaries have infimum **(1507 − 2√921)/1653 ≈ 0.87495706979916874**, which is not attained. The [global limiting certificate and strict-feasibility proof](auto-research/track-a-exact-limit.md) establish sharpness on the whole adaptive rectangle with all twelve side constraints. The formula was already reported in [issue #4](https://github.com/rohanarun/quasi-rh-hillclimb/issues/4); [PR #12](https://github.com/rohanarun/quasi-rh-hillclimb/pull/12) supplies a rational point within 10⁻¹². This is a limit of the frozen budget, not a new zero-free theorem.
-3. **M + ℓ = 1 is the right choice.** Freeing M gives σ₀ = 5/6 + M/12 − ℓ/6. The most efficient direction needs M + ℓ > 1, and the completed-row norm lemma rules that out.
+3. **Freeing M requires a low-side loss.** The [general completed-row bound](auto-research/completed-row-geometry.md) permits ρ = M + ℓ − 1 of either sign, with low allowance L = ρ₊/2 + (5ℓ − 1 − 2ρ)₊/8. The corrected boundary is σ₀ = 5/6 + M/12 − ℓ/6 + L. With the existing row counts and this allowance, nonzero ρ strictly worsens the high exponent at the same boundary. An exact comparison gives a positive penalty above the known frozen-budget obstruction; improving the underlying norm estimate remains open.
 4. **Exact floor-bin obstructions.** Keep the detector floor at 51/100, its count exponent R = 1, the worst allowed q = 1/100, and the probe scale relations. Regardless of improvements to other row counts:
    - the original low estimate and b > 0 force σ₀ > 167/192 ≈ 0.869792;
    - hypothetically removing the low estimate's b/12 loss changes the boundary to σ₀ = 1 − h/6. Retaining the extension rule h < 5ℓ then forces **σ₀ > 1573/1818 ≈ 0.865237**;
@@ -166,6 +166,7 @@ Contributions from humans and agents are welcome. See [CONTRIBUTING.md](CONTRIBU
 - `budget.py`: the Part II exponent budget for general (ℓ, h).
 - `certify.py`: an exact certificate. By default it checks (ℓ, h) = (2953/17700, 405989/500000). Run `python certify.py N h` to check ℓ = 1/6 + 1/N; N may be rational, and `--maxdepth` controls the Bernstein subdivision limit.
 - `auto-research/verify_track_a.mjs`: independent BigInt replay of four known Track A certificates and an exact negative control; run with Node.js, with no package installation.
+- `auto-research/certify_completed_row_geometry.py`: exact identities and controls for the [general completed-row loss and geometry comparison](auto-research/completed-row-geometry.md).
 - `optimize.py`, `edge.py`: a numerical search for the feasibility edge.
 - `auto-research/certify_track_a_limit.py`: exact global sharpness certificate for the frozen Track A infimum; [proof and scope](auto-research/track-a-exact-limit.md).
 - `leverage.py`: sensitivity to the amplification slope and the plain capacity.
