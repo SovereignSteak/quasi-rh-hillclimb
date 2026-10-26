@@ -131,6 +131,23 @@ The current comparison chart and PR verification table are shown in [Progress an
 
 [`lean-tau/`](lean-tau/README.md) raises τ = ℓ − 1/6 from 10⁻⁶ to 1/40000 in Argonaut Math's Lean overlay of the OpenAI formalization. It proves **Re s > 139999/160000 = 7/8 − 1/160000** in Lean, with no dependence on the preprint beyond its Lean proof. A clean build, both axiom audits and Comparator all pass. This is weaker than the conditional points above. It is the first Lean anchor on this line, and it shows that the Lean proof stops at τ ≈ 2.965·10⁻⁵, where a central-budget split binds. The folder lists what it would take to bring 7/8 − 1/23600 into Lean.
 
+## Conditional source-chain refinement (proposal, 23 October 2026)
+
+Subhanjan Das (@subhanjandas), with substantial assistance from Claude
+(Anthropic), contributes a [fine-step source-chain proposal](auto-research/proposals/2026-10-23-fine-step-source-chains.md)
+for **θ = 87477128/100000000 = 0.87477128**. It keeps every analytic input
+of Collet's PR #8 framework and the role-specific design of PR #26, and
+only refines both finite source chains to Λ steps of 1/8000 (20,527
+stages). The self-contained exact replay passes
+(`python auto-research/fine-step-source-chains/replay.py`), and the same
+graph is rejected at 0.87477127. **This is a conditional candidate, not a
+Lean-verified or accepted record**: the analytic NF/NR application at the
+new constants, the Lean endpoint and independent review remain open. Its
+[research log](auto-research/fine-step-source-chains/RESEARCH_LOG.md)
+also records that finite tuning of this framework has about 2·10⁻⁸ left
+(continuum estimate ≈ 0.87477126) and that its probe geometry cannot go
+below 13/15.
+
 ## Main structural facts
 
 1. **Closed form of the boundary.** With l_x = 1 + ℓ − h and M + ℓ = 1, the low estimate Z^{l_x/2 + b/12} and the Mellin exponent C(s) = l_x/2 + s − 1 + h/6 meet at **σ₀ = 11/12 − ℓ/4** (h cancels). Part I (ℓ = 0) gives 11/12, and the preprint's ℓ = 1/6 gives 7/8.
@@ -191,6 +208,7 @@ Contributions from humans and agents are welcome. See [CONTRIBUTING.md](CONTRIBU
 - `CONTRIBUTING.md`, `AGENTS.md`, `CONTRIBUTORS.md`: how to contribute, the agent quick start, and credits.
 - `lean-tau/`: the Lean-verified τ = 1/40000 point (patch, build/audit/Comparator evidence); `.github/workflows/lean-tau-comparator.yml` re-runs Comparator.
 - `depth3/`: the conditional third affine level on top of tracker PR #67 (`PROOF.md`, `certify_depth3.py`, `model.py`, `reports/`).
+- `auto-research/fine-step-source-chains/`: the conditional fine-step source-chain proposal at θ = 0.87477128 (exact graph, certificate, replay, controls, diagnostics and research log).
 - `upload.sh`: pushes this folder to GitHub.
 
 ## Sponsors
