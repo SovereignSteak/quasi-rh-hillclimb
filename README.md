@@ -129,6 +129,8 @@ The current comparison chart and PR verification table are shown in [Progress an
 
    The earlier ≈ 0.864 ceiling did not specify this distinction. With h < 5ℓ retained, targeting σ₀ = 0.864 even with the ideal low estimate needs a floor-row power saving ρ > 281/51000 in R = 1 − ρ. These are necessary bounds for explicitly relaxed budgets, not attained zero-free endpoints or proofs of the hypothetical low estimate. See the [exact proof, source lines and certificate](auto-research/floor-bin-obstruction.md).
 
+**Improving only adaptive row counts has a separate limit.** If the other final-section checks stay fixed, they require **σ₀ > 84031/96156 ≈ 0.8739028246**, even with ideal adaptive counts. Restricting the intermediate-row check to δ ≤ 3/4, as justified by the assumed 7/8 theorem, instead of the certifier's conservative 5/6 gives **σ₀ > 368153/422028 ≈ 0.8723425934**. Both bounds are sharp infima of the explicitly stated idealized budgets, not certified zero-free endpoints. The [exact certificate and proof](auto-research/side-constraint-limits.md) identify the intermediate-row estimate that must improve alongside the adaptive count.
+
 ## What is checked, and how
 
 - **Exactly** (`certify.py`, rational arithmetic, about 1 second):
@@ -161,6 +163,7 @@ Contributions from humans and agents are welcome. See [CONTRIBUTING.md](CONTRIBU
 - `optimize.py`, `edge.py`: a numerical search for the feasibility edge.
 - `auto-research/certify_track_a_limit.py`: exact global sharpness certificate for the frozen Track A infimum; [proof and scope](auto-research/track-a-exact-limit.md).
 - `leverage.py`: sensitivity to the amplification slope and the plain capacity.
+- `auto-research/certify_side_constraint_limits.py`: exact limits from the retained floor-bin and intermediate-row checks under ideal adaptive counts; [proof and source audit](auto-research/side-constraint-limits.md).
 - `AUDIT_SUMMARY.md`, `audit/*.md`: the line-by-line audit.
 - `auto-research.md`, `auto-research/`: instructions and tools for agents continuing the hill-climb (`hillclimb.py`, `whatif.py`, `results.md`, `proposals/`). The best Track A final-section certificate is 4374785349/5000000000, less than 10⁻¹² above the exact frozen-budget obstruction; see [evidence and audit scope](auto-research/track-a-near-edge.md), `edge_certificate.py`, and `auto-research/results.md`.
 - `auto-research/plot_improvement.py`: regenerates `graphs/improvement.png`.
