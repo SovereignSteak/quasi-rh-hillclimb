@@ -48,6 +48,18 @@ The independent verification and comparison chart in this update were prepared b
 
 **Structural budget proofs (23 October 2026):** Sagar Thakrar, with Codex, contributes [31 Lean theorems](lean-budget/README.md) formalizing the floor-bin bounds and constructive frequency/supply extension from PRs [#15](https://github.com/rohanarun/quasi-rh-hillclimb/pull/15) and [#19](https://github.com/rohanarun/quasi-rh-hillclimb/pull/19). The pinned standalone build passed all 31 standard-axiom checks, eight concrete checks and a fresh Lean kernel replay. These are algebraic lemmas under explicit hypotheses; they establish no new zero-free endpoint or analytic estimate.
 
+### Additional conditional proposal (23 October 2026)
+
+Subhanjan Das (@subhanjandas), with substantial OpenAI Codex assistance,
+contributes a [role-specific source/return proposal](auto-research/proposals/2026-10-23-role-specific-source-caps.md)
+for `theta = 87477137/100000000 = .87477137`, extending Collet's PR #8
+framework with two finite source chains. The self-contained exact replay
+passes. **The changed endpoint is not Lean-verified or independently
+accepted:** analytic integration, the revised return formalization and
+kernel replay remain outstanding. This proposal does not replace the
+independently checked endpoint or accepted tracker record above.
+See the [readable account, evidence, failed routes and next steps](auto-research/role-source-caps/README.md).
+
 ### Upstream contributors and verified bounds
 
 These **26 entries** come from the [tracker catalogue snapshot](verification/readme-progress/tracker-catalogue.json), retrieved on 22 October 2026. “Tracker verified” links to that entry's certificate; it reports the tracker's verification, rather than claiming a new independent rebuild of every row here. Decimal bounds below are rounded to 12 places; exact statements and source revisions are in the certificates. Useful non-record contributions remain listed and credited.
