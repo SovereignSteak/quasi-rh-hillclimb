@@ -39,11 +39,18 @@ assert all(row["status"] == "conditional, not Lean-verified" for row in conditio
 assert len({(r["time_utc"], r["contributor"], r["theta_exact"]) for r in conditional}) == len(conditional)
 
 records = [r for r in catalogue["records"] if r["status"] == "framework-verified"]
+# Tracker records accepted after the frozen catalogue snapshot (sourced from the
+# tracker's verifier receipts; see graphs/tracker-updates.json).
+updates = json.loads((ROOT / "graphs/tracker-updates.json").read_text())
+known = {r["id"] for r in records}
+records += [r for r in updates["records"] if r["id"] not in known]
 fraction = lambda r: Fraction(int(r["theta"]["numerator"]), int(r["theta"]["denominator"]))
 best = min(records, key=fraction)
 baseline = next(r for r in records if r["id"] == "openai-baseline")
 base = fraction(baseline)
-assert target < fraction(best), "The submission is no longer the strongest compared boundary"
+previous = next(r for r in records if r.get("pr") == 68)  # accepted record at the 22 Oct snapshot
+pr8_record = next(r for r in records if r.get("pr") == 69)
+assert fraction(pr8_record) == target, "tracker #69 must be the PR #8 endpoint"
 assert tracker_pr["headRefOid"] == summary["result"]["source_commit"]
 verified = False
 receipt = None
@@ -75,8 +82,8 @@ author = ", ".join(a["name"] for a in metadata["authors"])
 candidate_time = date(pr["createdAt"])
 retrieved_at = json.loads((args.evidence / "retrieval.json").read_text())["retrieved_at"]
 checked_label = date(retrieved_at).strftime("%b %d, %Y %H:%M %Z")
-gain = fraction(best) - target
-relative_gain = gain / (base - fraction(best))
+gain = fraction(previous) - fraction(best)
+relative_gain = (base - fraction(best)) / (base - fraction(previous))
 INK, MUTED, BLUE, GREEN, AMBER, BG = "#17243a", "#53647b", "#2864b5", "#077b61", "#ad601c", "#f8fafc"
 accent = GREEN if verified else AMBER
 plt.rcParams.update({"font.family": "DejaVu Sans", "text.color": INK,
@@ -85,21 +92,23 @@ plt.rcParams.update({"font.family": "DejaVu Sans", "text.color": INK,
 fig = plt.figure(figsize=(20, 20), facecolor=BG)
 fig.text(.06, .96, "Quasi-Riemann Hypothesis: progress in the zero-free boundary", fontsize=25, weight="bold")
 fig.text(.06, .935, "All-moduli Dirichlet nonvanishing for Re(s) > θ, excluding the principal pole. Lower θ is stronger.", fontsize=12, color=MUTED)
-fig.text(.06, .885, f"θ = {float(target):.10f}", fontsize=36, weight="bold", color=accent)
-fig.text(.06, .855, f"{author} · hillclimb PR #{pr['url'].split('/')[-1]} · {summary['result']['theta']}", fontsize=12)
-status = "Fresh native Lean compilation + kernel replay passed" if verified else "Lowest submitted boundary · independent Lean replay pending"
+best_name = ", ".join(a["name"] for a in best["authors"])
+fig.text(.06, .885, f"θ = {float(fraction(best)):.10g}", fontsize=36, weight="bold", color=BLUE)
+fig.text(.06, .855, f"Current accepted tracker record · {best_name} · tracker #{best['pr']} · {fraction(best)}", fontsize=12)
+status = (f"This repo's PR #8 ({author}, θ = {float(target):.10f}) was accepted as tracker #69"
+          + (" after a fresh native Lean replay here" if verified else ""))
 fig.text(.06, .825, status, fontsize=12, color=accent, weight="bold")
-fig.text(.66, .9, f"{float(relative_gain):.1%}", fontsize=32, weight="bold", color=accent)
-fig.text(.66, .875, "more improvement beyond 7/8", fontsize=12)
-fig.text(.66, .855, "than the accepted tracker record", fontsize=12, color=MUTED)
-fig.text(.66, .825, f"Boundary reduction: {float(gain):.10f}", fontsize=11, color=MUTED)
+fig.text(.66, .9, f"{float(relative_gain):.2f}×", fontsize=32, weight="bold", color=BLUE)
+fig.text(.66, .875, "the improvement beyond 7/8", fontsize=12)
+fig.text(.66, .855, f"of the 22 Oct record ({float(fraction(previous))}, tracker #68)", fontsize=12, color=MUTED)
+fig.text(.66, .825, f"Boundary reduction since then: {float(gain):.10f}", fontsize=11, color=MUTED)
 
 ax = fig.add_axes([.08, .38, .46, .39], facecolor=BG)
 times, values = [stamp(r) for r in frontier], [float(fraction(r)) for r in frontier]
-ax.step(times + [candidate_time], values + [values[-1]], where="post", color=BLUE, lw=2.4)
+now = date(updates["records"][-1]["first_verified_at"]).replace(hour=23, minute=59)
+ax.step(times + [now], values + [values[-1]], where="post", color=BLUE, lw=2.4)
 ax.scatter(times, values, s=26, color=BLUE, zorder=3)
-ax.plot([candidate_time, candidate_time], [values[-1], float(target)], color=accent, ls="--", lw=2)
-ax.scatter([candidate_time], [float(target)], s=95, marker="D", color=accent if verified else BG, edgecolor=accent, lw=2, zorder=4)
+ax.scatter([stamp(pr8_record)], [float(target)], s=95, marker="D", color=accent, edgecolor=accent, lw=2, zorder=4)
 conditional_time = lambda row: date(row["time_utc"].replace(" ", "T") + ("Z" if not row["time_utc"].endswith("Z") else ""))
 conditional_groups = {number: [r for r in conditional if r["pr"] == number]
                       for number in sorted({r["pr"] for r in conditional})}
@@ -123,11 +132,10 @@ ax.margins(x=.05, y=.13)
 fig.text(.59, .785, "Contributor · source PR · boundary θ", fontsize=12, weight="bold")
 points = [
     (stamp(r), fraction(r), ", ".join(a["name"] for a in r["authors"]),
-     f"#{r['pr']}" if r.get("pr") else "", BLUE, r["id"] == best["id"])
+     (f"#{r['pr']} (repo PR #8)" if r is pr8_record else f"#{r['pr']}") if r.get("pr") else "",
+     accent if r is pr8_record else BLUE, r["id"] == best["id"] or r is pr8_record)
     for r in frontier
 ]
-points.append((candidate_time, target, author,
-               f"PR #{pr['url'].split('/')[-1]} (this repo)", accent, True))
 for row in conditional_endpoints:
     points.append((conditional_time(row), Fraction(row["theta_exact"]),
                    row["contributor"].split(" · ")[0],
@@ -151,32 +159,32 @@ for index, (time, boundary, name, source, color, highlight) in enumerate(points)
     contributor_labels.append(annotation)
 
 bx = fig.add_axes([.08, .16, .85, .14], facecolor=BG)
-recent = sorted(records, key=fraction)[:3][::-1]
-labels = [", ".join(a["name"] for a in r["authors"]) + f" · #{r['pr']}" for r in recent] + [author + " · PR #8"]
-gains = [float((base - fraction(r)) * 10**6) for r in recent] + [float((base - target) * 10**6)]
-bars = bx.barh(range(len(gains)), gains, color=[BLUE]*len(recent)+[accent], height=.42)
+recent = [previous] + [r for r in updates["records"] if r in frontier]
+labels = [", ".join(a["name"] for a in r["authors"]) + f" · #{r['pr']}" + (" (repo PR #8)" if r is pr8_record else "") for r in recent]
+gains = [float((base - fraction(r)) * 10**6) for r in recent]
+bars = bx.barh(range(len(gains)), gains, color=[accent if r is pr8_record else BLUE for r in recent], height=.42)
 bx.invert_yaxis()
 bx.set_yticks([])
 bx.set_xlim(0, max(gains)*1.12)
 for i, (label, value, bar) in enumerate(zip(labels, gains, bars)):
-    bx.text(0, i-.31, label, fontsize=10, weight="bold" if i == len(gains)-1 else "normal")
+    bx.text(0, i-.36, label, fontsize=10, weight="bold" if i == len(gains)-1 else "normal")
     bx.text(value+2, i, f"{value:.2f}", va="center", fontsize=10)
 bx.set_ylim(len(gains)-.3, -.8)
 bx.set_xlabel("Improvement beyond 7/8 (× 10⁻⁶)", labelpad=10, fontsize=10)
-bx.set_title("Recent accepted bounds vs PR #8", loc="left", pad=16, fontsize=12, weight="bold")
+bx.set_title("Accepted tracker records since 22 Oct", loc="left", pad=16, fontsize=12, weight="bold")
 for a in (ax, bx):
     a.grid(axis="y" if a is ax else "x", color="#dce4ed", linewidth=.7)
     a.set_axisbelow(True)
     a.tick_params(length=0, pad=8)
     for spine in a.spines.values():
         spine.set_visible(False)
-foot = ("Blue: accepted tracker records. " + ("Green: independent native Lean verification." if verified else "Amber: submitted proof, replay pending.") +
-        " Orange dashed: one line per conditional PR; not Lean-verified.")
-fig.text(.06, .085, "Tracker Comparator/NanoDa/con-ron acceptance for PR #8 remains pending.", fontsize=9, color=MUTED)
+foot = ("Blue: accepted tracker records. Green: this repo's PR #8, accepted as tracker #69." +
+        " Orange dashed: one line per conditional PR in this repo; not Lean-verified, and now above the accepted record.")
+fig.text(.06, .085, "Tracker records after 22 Oct come from the tracker's verifier receipts (Comparator/NanoDa/con-ron PASS) and merged tracker PRs; see graphs/tracker-updates.json.", fontsize=9, color=MUTED)
 
 fig.text(.06, .1, foot, fontsize=9, color=MUTED)
-fig.text(.06, .06, f"Compared {checked_label} · {len(records)} accepted tracker entries, PR #8 and {len(conditional)} conditional PR points. Timeline dates shown in America/New_York.\n"
-         "Sources: GTimG/QuasiRiemannTracker live catalogue; rohanarun/quasi-rh-hillclimb PRs #1–3, #6, #8; original timeline.csv; frozen source package.", fontsize=9, color=MUTED, linespacing=1.7)
+fig.text(.06, .06, f"Updated {updates['as_of']} · {len(records)} accepted tracker entries and {len(conditional)} conditional PR points. Timeline dates shown in America/New_York.\n"
+         "Sources: GTimG/QuasiRiemannTracker catalogue and receipts; rohanarun/quasi-rh-hillclimb PRs #1–3, #6, #8, #26–28; original timeline.csv; frozen source package.", fontsize=9, color=MUTED, linespacing=1.7)
 fig.text(.06, .025, "This is a comparison of the cited sources, not a claim of a worldwide record or independent verification of the entire manuscript.", fontsize=9, color=MUTED)
 # Measure the rendered labels, shrink long entries only as needed, and ensure
 # the expanded contributor list stays on the canvas without overlapping.
@@ -200,8 +208,9 @@ for suffix in ("png", "svg"):
     if suffix == "svg":
         svg = args.output.with_suffix(".svg")
         svg.write_text("\n".join(line.rstrip() for line in svg.read_text().splitlines()) + "\n")
-args.output.with_suffix(".json").write_text(json.dumps({"candidate_theta": str(target), "accepted_best_theta": str(fraction(best)),
+args.output.with_suffix(".json").write_text(json.dumps({"candidate_theta": str(target), "accepted_best_theta": str(fraction(best)), "previous_record_theta": str(fraction(previous)),
     "difference_exact": str(gain), "relative_gain_beyond_baseline_exact": str(relative_gain),
-    "conditional_points": conditional, "independent_native_lean_passed": verified, "tracker_acceptance": False,
-    "catalogue_as_of": catalogue["as_of"], "retrieved_at": retrieved_at, "source_commit": summary["result"]["source_commit"]}, indent=2)+"\n")
+    "conditional_points": conditional, "independent_native_lean_passed": verified, "tracker_acceptance": True, "tracker_pr": 69,
+    "current_record": {"id": best["id"], "tracker_pr": best["pr"], "theta": str(fraction(best))},
+    "catalogue_as_of": catalogue["as_of"], "tracker_updates_as_of": updates["as_of"], "retrieved_at": retrieved_at, "source_commit": summary["result"]["source_commit"]}, indent=2)+"\n")
 print(args.output.with_suffix(".png"))

@@ -34,5 +34,32 @@
     "pr": 6,
     "source": "https://github.com/rohanarun/quasi-rh-hillclimb/pull/6",
     "timestamp_source": "PR creation time; bound from current PR description"
+  },
+  {
+    "time_utc": "2026-10-23 05:27:00",
+    "contributor": "subhanjandas \u00b7 role-specific source caps",
+    "theta_exact": "87477137/100000000",
+    "status": "conditional, not Lean-verified",
+    "pr": 26,
+    "source": "https://github.com/rohanarun/quasi-rh-hillclimb/pull/26",
+    "timestamp_source": "PR creation time; bound from current PR description"
+  },
+  {
+    "time_utc": "2026-10-23 07:35:16",
+    "contributor": "subhanjandas \u00b7 fine-step source chains",
+    "theta_exact": "87477128/100000000",
+    "status": "conditional, not Lean-verified",
+    "pr": 27,
+    "source": "https://github.com/rohanarun/quasi-rh-hillclimb/pull/27",
+    "timestamp_source": "PR creation time; bound from current PR description"
+  },
+  {
+    "time_utc": "2026-10-23 14:43:06",
+    "contributor": "subhanjandas \u00b7 adaptive caps",
+    "theta_exact": "87477127/100000000",
+    "status": "conditional, not Lean-verified",
+    "pr": 28,
+    "source": "https://github.com/rohanarun/quasi-rh-hillclimb/pull/28",
+    "timestamp_source": "PR creation time; bound from current PR description"
   }
 ]

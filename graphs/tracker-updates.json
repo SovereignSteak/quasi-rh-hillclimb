@@ -1,0 +1,24 @@
+{
+  "as_of": "2026-10-26",
+  "source": "GTimG/QuasiRiemannTracker main at ed22fa90634bcbf8c547973a94651290a42a300e: verifier/standard/receipts/*/result.json (status PASS) and merged tracker PRs",
+  "records": [
+    {"id": "hailey-collet-1252270103", "pr": 69, "status": "framework-verified", "first_verified_at": "2026-10-22T22:13:39Z",
+     "theta": {"numerator": "8747729897", "denominator": "10000000000"}, "authors": [{"name": "Hailey Collet"}],
+     "evidence": "verifier/standard/receipts/pr69-ac76d5ef-20261023/result.json", "hillclimb_pr": 8},
+    {"id": "lewko-acyclic-bootstrap-874772906", "pr": 70, "status": "framework-verified", "first_verified_at": "2026-10-23T10:21:00Z",
+     "theta": {"numerator": "437386453", "denominator": "500000000"}, "authors": [{"name": "Mark Lewko"}],
+     "evidence": "verifier/standard/receipts/pr70-8ee28f24-20261023/result.json"},
+    {"id": "slayer-recost-0p87477290596", "pr": 71, "status": "framework-verified", "first_verified_at": "2026-10-24T21:41:24Z",
+     "theta": {"numerator": "21869322649", "denominator": "25000000000"}, "authors": [{"name": "Slayer"}],
+     "evidence": "verifier/standard/receipts/pr71-17d05f9a-20261024/result.json"},
+    {"id": "arvi-repeated-marks-20261024", "pr": 73, "status": "framework-verified", "first_verified_at": "2026-10-25T20:44:20Z",
+     "theta": {"numerator": "8747289", "denominator": "10000000"}, "authors": [{"name": "ArviFoxy"}],
+     "evidence": "verifier/standard/receipts/pr73-41ddc0dd-20261025/result.json"},
+    {"id": "sil-fourth-power-20261025", "pr": 74, "status": "framework-verified", "first_verified_at": "2026-10-25T21:50:01Z",
+     "theta": {"numerator": "1749387", "denominator": "2000000"}, "authors": [{"name": "Sil"}],
+     "evidence": "tracker PR #74 merged 2026-10-25T21:50:01Z; submissions/sil-fourth-power-20261025/metadata.json"},
+    {"id": "arvi-repeated-marks-on-sil-face-20261025", "pr": 76, "status": "framework-verified", "first_verified_at": "2026-10-26T01:21:30Z",
+     "theta": {"numerator": "349843", "denominator": "400000"}, "authors": [{"name": "ArviFoxy"}],
+     "evidence": "verifier/standard/receipts/pr76-2fd55e03-20261026/result.json"}
+  ]
+}
