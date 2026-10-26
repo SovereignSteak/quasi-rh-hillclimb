@@ -12,14 +12,10 @@ See the README's [PR progress and Lean verification tables](README.md#progress-a
 | Conditional role-specific source/return proposal | theta = 87477137/100000000 = .87477137; [exact finite replay and handoff](auto-research/role-source-caps/README.md); new analytic integration and Lean endpoint pending; not an accepted record |
 | Preprint bound (OpenAI, 30 Sep 2026) | Re s > 7/8 |
 | Best audited here | **Re s > 20649/23600 = 7/8 − 1/23600** |
-| Best certified (final section only) | Re s > 10195/11652 = 7/8 − 1/23304 (ℓ = 1/6 + 1/5826, h = 405967/500000) |
-| Point | ℓ = 2953/17700 (= 1/6 + 1/5900), h = 405989/500000 |
 | Best Lean-verified on this line | Re s > 139999/160000 = 7/8 − 1/160000 (τ = 1/40000, `lean-tau/`); the Lean proof caps τ near 2.965·10⁻⁵ |
 | Best certified (final section only) | σ₀ = **4374785349/5000000000 = 0.8749570698**, submitted in [PR #12](https://github.com/rohanarun/quasi-rh-hillclimb/pull/12); [independently replayed with Node BigInt](auto-research/track-a-independent-replay.md). No new point is claimed by the replay. |
 | Audited default point | ℓ = 2953/17700 (= 1/6 + 1/5900), h = 405989/500000 |
 | Edge of the frozen architecture | σ₀ ≈ 7/8 − 4.293·10⁻⁵ (ℓ ≈ 1/6 + 1.7172·10⁻⁴) |
-| Best certified Track A (final section only) | Re s > 4374785349/5000000000 = 0.8749570698 (ℓ = 625643953/3750000000, h = 8119602997/10000000000); [exact evidence and audit scope](auto-research/track-a-near-edge.md) |
-| Audited point | ℓ = 2953/17700 (= 1/6 + 1/5900), h = 405989/500000 |
 | Exact obstruction in the frozen budget | Every feasible point requires σ₀ > (1507 − 2√921)/1653; [algebra checked against the budget](auto-research/track-a-near-edge.md), matching the prior report in issue #4 |
 | Infimum of the frozen Track A budget | **(1507 − 2√921)/1653 ≈ 0.87495706979916874**, not attained; [exact global sharpness proof](auto-research/track-a-exact-limit.md) |
 | Ceiling with idealized inputs | ≈ 0.864 (perfect row counts and large sieve) |
@@ -107,9 +103,8 @@ Append one row to `auto-research/results.md` and open a pull request:
 ```
 pip install numpy scipy sympy
 python certify.py                   # audited baseline
-python certify.py 1250000000/214651 8119602997/10000000000 --maxdepth 34 # best Track A certificate
+python certify.py 1250000000/214651 8119602997/10000000000 --maxdepth 34 # best Track A certificate (PR #12)
 python auto-research/edge_certificate.py # exact frozen-budget obstruction and near-edge certificate
-python certify.py                   # audited default point, about 1 s
 python auto-research/hillclimb.py   # Track A
 python auto-research/whatif.py --alpha 0.75 --cap 1.5   # Track B
 ```
