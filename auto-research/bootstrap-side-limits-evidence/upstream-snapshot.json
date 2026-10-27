@@ -1,0 +1,21 @@
+{
+  "observed_date": "2026-10-27",
+  "repository": "rohanarun/quasi-rh-hillclimb",
+  "base_commit": "10d1b8031dc6d1e293db6089e4a7a8f5a76af3d9",
+  "open_repository_issues_reviewed": [
+    4,
+    22
+  ],
+  "open_repository_pull_requests_at_start": [],
+  "tracker_submission": {
+    "number": 84,
+    "url": "https://github.com/GTimG/QuasiRiemannTracker/pull/84",
+    "title": "Add Dirichlet nonvanishing bound 0.873985",
+    "head": "71996e7e79840455f7beead063a73b7b31cfb586",
+    "merge_commit_sha": "fe439f0b02c73d4ce7ac4389ce149c53b22a1c83",
+    "merged_at": "2026-10-27T14:48:59Z",
+    "declared_boundary": "174797/200000",
+    "scope": "Dirichlet nonvanishing; author-reported local Lean build; no independent replay in this research round"
+  },
+  "relationship": "Context only. The finite-budget result derives from this repository's original exponent model, not the tracker submission."
+}

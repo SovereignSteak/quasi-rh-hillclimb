@@ -1,0 +1,16 @@
+PASS: variable-ceiling elimination and sharpness for 37/50 <= D <= 5/6
+  S(D) = (71975 D + 38057) / (36 (2225 D + 1262))
+  two limiting margins vanish; the other ten and ideal adaptive margin are positive
+  strict rational interpolation passes all twelve sides and the full ideal rectangle
+PASS: bootstrap fixed point, exact root isolation, and excluded second root
+  sigma > (89309 + sqrt(2542433881)) / 160200
+  exact enclosure: 8722319182091823/10000000000000000 < sigma_* < 545144948880739/625000000000000
+  S(2u-1) < u for sigma_* < u <= 7/8; 0 < derivative < 1/20
+  the strict iteration (u + S(2u-1))/2 converges to sigma_*
+PASS: 12 strictly feasible rational bootstrap witnesses (ideal budget only)
+  final rational sigma = 43611595910459117/50000000000000000; all sides and the full ideal rectangle pass
+PASS: exact infeasibility witness at sigma=0.87223, independent of h
+PASS: the present adaptive count rejects the idealized D=3/4 limiting pair
+PASS: the present adaptive count also rejects the final strict ideal witness
+Displayed approximation only: 0.87223191820918231072025623
+All proof decisions used exact arithmetic. No new zero-free endpoint is claimed.

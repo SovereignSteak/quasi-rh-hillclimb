@@ -22,6 +22,7 @@ See the README's [PR progress and Lean verification tables](README.md#progress-a
 | Floor-bin obstruction with ideal low estimate and h < 5ℓ retained | σ₀ > 1573/1818 ≈ 0.865237; [exact necessary bound](auto-research/floor-bin-obstruction.md), not an attained endpoint |
 | Weaker supply-only relaxation of that obstruction | σ₀ > 11513/13326 ≈ 0.863950 when h < 5ℓ is dropped and only ℓ/h > 7/37 is retained; same [proof and scope](auto-research/floor-bin-obstruction.md) |
 | Ideal adaptive counts, other checks retained | Sharp infimum **84031/96156** with intermediate δ ≤ 5/6; **368153/422028** with intermediate δ ≤ 3/4; [exact proof and assumptions](auto-research/side-constraint-limits.md). Neither is a zero-free endpoint. |
+| Ideal adaptive counts with repeated bin-ceiling updates | Sharp infimum **(89309 + √2542433881)/160200 ≈ 0.8722319182091823**; [exact variable-ceiling proof and rational iteration](auto-research/bootstrap-side-limits.md). Hypothetical adaptive count; no new analytic estimate or zero-free endpoint. |
 | Formal structural budget lemmas | [31 Lean theorems](lean-budget/README.md): floor-bin obstructions, balanced-count slope bounds, constructive frequency/supply extension and finite even mesh; standard-axiom checks and fresh kernel replay passed; no new endpoint |
 | Accepted Lean tracker record (separate admission) | θ = 349843/400000 = 0.8746075 (QuasiRiemannTracker PR #76, 26 Oct 2026); PR #8 was accepted there as #69 |
 | Constructive frequency/supply extension | With a strict endpoint margin and 1/2 ≤ h < 1, supply above 7/37 extends iff 37ℓ > 7h; [exact lemma, slot construction and scope](auto-research/frequency-extension.md). No new endpoint; `certify.py` retains h < 5ℓ. |
@@ -65,6 +66,8 @@ Within the frozen architecture, tuning cannot beat about 7/8 − 4.3·10⁻⁵. 
 - `--z0`: the contour Re z (17/50).
 
 Changing only `--cap`, with the other knobs at their defaults, cannot bypass the retained side constraints: they force σ₀ > 84031/96156 regardless of the adaptive count. The [exact side-constraint proof](auto-research/side-constraint-limits.md) also treats the intermediate range δ ≤ 3/4 justified by the assumed 7/8 theorem, where the corresponding limit is 368153/422028. These sharp idealized bounds show why the intermediate-row estimate must also improve; they do not establish ideal row counts or a new analytic endpoint.
+
+If each preceding bound is allowed to narrow that intermediate range further, the [exact bootstrap analysis](auto-research/bootstrap-side-limits.md) gives the sharp ideal-budget limit `(89309 + sqrt(2542433881))/160200`. Run `python auto-research/certify_bootstrap_side_limits.py`. The iteration uses incoming ceilings and hypothetical ideal adaptive counts; interpreting any step analytically still requires the corresponding all-Hecke count and continuation arguments.
 
 Known results (see `README.md`): the binding obstruction at large scale is the **floor bin**, i.e. rows with zeros near Re s = 0.51 have no witness and get no saving. Promising directions:
 
