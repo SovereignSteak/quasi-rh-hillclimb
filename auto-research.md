@@ -22,8 +22,9 @@ See the README's [PR progress and Lean verification tables](README.md#progress-a
 | Floor-bin obstruction with ideal low estimate and h < 5ℓ retained | σ₀ > 1573/1818 ≈ 0.865237; [exact necessary bound](auto-research/floor-bin-obstruction.md), not an attained endpoint |
 | Weaker supply-only relaxation of that obstruction | σ₀ > 11513/13326 ≈ 0.863950 when h < 5ℓ is dropped and only ℓ/h > 7/37 is retained; same [proof and scope](auto-research/floor-bin-obstruction.md) |
 | Ideal adaptive counts, other checks retained | Sharp infimum **84031/96156** with intermediate δ ≤ 5/6; **368153/422028** with intermediate δ ≤ 3/4; [exact proof and assumptions](auto-research/side-constraint-limits.md). Neither is a zero-free endpoint. |
+| Conditional fourth density-step candidate | **θ = 873981/1000000 = 0.873981**, building on tracker #84; [proposal](auto-research/proposals/2026-10-27-fourth-density-step.md) and [exact scalar replay](auto-research/fourth-density-step/README.md). Source, admission, geometry and return certificates pass; changed analytic/Lean assembly and endpoint replay pending. |
 | Formal structural budget lemmas | [31 Lean theorems](lean-budget/README.md): floor-bin obstructions, balanced-count slope bounds, constructive frequency/supply extension and finite even mesh; standard-axiom checks and fresh kernel replay passed; no new endpoint |
-| Accepted Lean tracker record (separate admission) | θ = 349843/400000 = 0.8746075 (QuasiRiemannTracker PR #76, 26 Oct 2026); PR #8 was accepted there as #69 |
+| Latest merged tracker submission (27 Oct 2026) | θ = 174797/200000 = 0.873985 ([tracker PR #84](https://github.com/GTimG/QuasiRiemannTracker/pull/84), head `71996e7e79840455f7beead063a73b7b31cfb586`); merge and source inspected, not independently rebuilt here. PR #8 was accepted there as #69. |
 | Constructive frequency/supply extension | With a strict endpoint margin and 1/2 ≤ h < 1, supply above 7/37 extends iff 37ℓ > 7h; [exact lemma, slot construction and scope](auto-research/frequency-extension.md). No new endpoint; `certify.py` retains h < 5ℓ. |
 | Conditional nested levels on PR #67 | θ ≤ 0.874812431 (three levels), θ ≤ 0.874810282 (four levels), θ ≤ 0.874809989 (six levels, larger H4 caps), conditional on H1–H5 (`depth3/PROOF.md`) |
 | Conditional fine-step source/return proposal | θ = 87477128/100000000 = 0.87477128; [exact finite replay, research log and next steps](auto-research/fine-step-source-chains/README.md); finite tuning has ≈ 2·10⁻⁸ left; analytic application and Lean endpoint pending; not an accepted record |
@@ -65,6 +66,8 @@ Within the frozen architecture, tuning cannot beat about 7/8 − 4.3·10⁻⁵. 
 - `--z0`: the contour Re z (17/50).
 
 Changing only `--cap`, with the other knobs at their defaults, cannot bypass the retained side constraints: they force σ₀ > 84031/96156 regardless of the adaptive count. The [exact side-constraint proof](auto-research/side-constraint-limits.md) also treats the intermediate range δ ≤ 3/4 justified by the assumed 7/8 theorem, where the corresponding limit is 368153/422028. These sharp idealized bounds show why the intermediate-row estimate must also improve; they do not establish ideal row counts or a new analytic endpoint.
+
+The [fourth density-step proposal](auto-research/proposals/2026-10-27-fourth-density-step.md) provides exact scalar data for the newer tracker source/return framework; its next task is Lean integration, including separate parent capped-count and child physical-source constants.
 
 Known results (see `README.md`): the binding obstruction at large scale is the **floor bin**, i.e. rows with zeros near Re s = 0.51 have no witness and get no saving. Promising directions:
 

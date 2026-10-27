@@ -1,0 +1,237 @@
+{
+  "repository": "GTimG/QuasiRiemannTracker",
+  "head": "71996e7e79840455f7beead063a73b7b31cfb586",
+  "sources": [
+    {
+      "local": "HybridGates.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Source/HybridGates.lean",
+      "git_blob": "1882d37869cd241ad0ea51678205a441686cd62c",
+      "sha256": "a52d2481ec57ed6dcb6f15bb6aac15e5da6f0cb680a88cc6073b6f9fe00c3c8d",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Source/HybridGates.lean"
+    },
+    {
+      "local": "HybridCertificatesThird.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Source/HybridCertificatesThird.lean",
+      "git_blob": "f5a07ebc4060348d0c9bff3f080d1a982af60030",
+      "sha256": "b1163bf8e5b899c21e6e567ee0bcc339b6740f246916b40b225309389bb0225c",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Source/HybridCertificatesThird.lean"
+    },
+    {
+      "local": "Assembly.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Source/Assembly.lean",
+      "git_blob": "f86d673c7056c8b136f5747e7ccaf85fa61ac6e5",
+      "sha256": "787ff27655971617c2b58d8d736243314490e8b64d62e4b9c12df259ccc70bc2",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Source/Assembly.lean"
+    },
+    {
+      "local": "NativeBootstrap.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Source/NativeBootstrap.lean",
+      "git_blob": "8329bdc165864e76808af94e451a15a89954f2a8",
+      "sha256": "37087a8f48339152c992b9c1502d5d744bddca5425ee3bc03a68cfec33354cd7",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Source/NativeBootstrap.lean"
+    },
+    {
+      "local": "Price.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Density/Price.lean",
+      "git_blob": "cb5f4c54b01661317754babaf77a678e570c2ebe",
+      "sha256": "c0da91d5b0fbcf5c6f6f61ad5aef3f155c89e9be5a46206d3b13e1e9024f8f2f",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Density/Price.lean"
+    },
+    {
+      "local": "StepGates.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Density/StepGates.lean",
+      "git_blob": "cb7bf1f4f22a7302c0ab190737c8ea29471c601c",
+      "sha256": "6c3d572f1d4868ab66285a680c2c8f45af6f22ce57b5aa9c6d6de272c032cb01",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Density/StepGates.lean"
+    },
+    {
+      "local": "Leaf.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Density/Leaf.lean",
+      "git_blob": "8aa92a1fc50cb4b1f4e4341d507c4e189780304f",
+      "sha256": "eaf66d7e3815d96c86525650010b0db7a8f8db2a6c932e7caf8e708fd81aded0",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Density/Leaf.lean"
+    },
+    {
+      "local": "ReturnConstants.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/Constants.lean",
+      "git_blob": "128d19fc9c7620bc9ce014757c309f73789419a4",
+      "sha256": "8fdec71d595d92e613b9a068c0637b85a08b0d4c0a8d66b1f7c434b82d300880",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/Constants.lean"
+    },
+    {
+      "local": "CountWindow.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/CountWindow.lean",
+      "git_blob": "1cae659efd4165658cd2c55c0a55493b6e7b9a11",
+      "sha256": "7a3c206f4a0a6454f7832369b97fd2458a5d14e277140d038d1ebd8f796add36",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/CountWindow.lean"
+    },
+    {
+      "local": "ReturnFinalSchedule.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/FinalSchedule.lean",
+      "git_blob": "e53504a0c669e0b769f69b22d6ebf87a1cd3ed50",
+      "sha256": "c97b8ca19fe66b2c0785e4e2297c9b91f1720201d25197a40b6b9ab719a82d1c",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/FinalSchedule.lean"
+    },
+    {
+      "local": "GenericScalar.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/ReturnD/GenericScalar.lean",
+      "git_blob": "b6386ad9a5bd9aa11f95a4cdab2567fc9de3a922",
+      "sha256": "674562ebbb46ed3940364444fbb8d8d0463bd766aabe15535dccd43542503885",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/ReturnD/GenericScalar.lean"
+    },
+    {
+      "local": "ReturnFormulas.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/Formulas.lean",
+      "git_blob": "bb35e970957296fbb0d98e585b108ae63e091bb6",
+      "sha256": "a21b6b17ef2e10cac7cd54df5f1037f64d5cb802377dc4db19e37254bed8b8ee",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/Formulas.lean"
+    },
+    {
+      "local": "CountAdmission.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/CountAdmission.lean",
+      "git_blob": "7ac0964b54365eb135a440e88e07c0f8016671e4",
+      "sha256": "783ab67975d937c3730a1050f01a7006beeca0f000783c9874d573652f84bb12",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/CountAdmission.lean"
+    },
+    {
+      "local": "CountWidth.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/CountWidth.lean",
+      "git_blob": "d4545c0ac09b3175ac926c69ae674d3bd8c85a45",
+      "sha256": "39f3307f0ae481e09a7ac62f7a53406b13aa053db3fb90353a57088bde327050",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/CountWidth.lean"
+    },
+    {
+      "local": "CountDecode.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/CountDecode.lean",
+      "git_blob": "56e3fe93f288ca995ed3e5f247a43053d92f2d0c",
+      "sha256": "e6b9eb27a80e699bd016c9e464d3080bc8e7b6f9d2c8c7d6233cd863ff67f8f0",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/CountDecode.lean"
+    },
+    {
+      "local": "Windows.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/Windows.lean",
+      "git_blob": "c12a54e4bed6d6ea197741f046efc2bddb92baa3",
+      "sha256": "07ae20faff8f31fcc6c21415573fb60e3aacf559d128ad8054adc028560d3c28",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/Windows.lean"
+    },
+    {
+      "local": "Endpoint.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Endpoint.lean",
+      "git_blob": "f92d2805f66f9345d9fc5fb0771484d51740ac20",
+      "sha256": "441cf52f52b9a908f5631ec7264194a5abaa140d85714893eebdd53a93a512f2",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Endpoint.lean"
+    },
+    {
+      "local": "Theorem.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Theorem.lean",
+      "git_blob": "7bffe8d67abf0bb16eeaef572183d3b6d005592f",
+      "sha256": "f53d757e27910e7133fd842d65900d817ec5f1da78ea275da51cb65ef6bbe217",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Theorem.lean"
+    },
+    {
+      "local": "CubeFreeClosed.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/CubeFree/Assembly/Closed.lean",
+      "git_blob": "a639e7230f59b0aaf47e1f9b94d2e6ce7cafe656",
+      "sha256": "41daee76f5d314e1a19897ad38075db19b624cba915b172a16fb97be3ed9efb6",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/CubeFree/Assembly/Closed.lean"
+    },
+    {
+      "local": "CubeFreeFinal.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/CubeFree/Assembly/Final.lean",
+      "git_blob": "a59ef9fe7f1095f7ea6743ede9b5c144fe6c1c06",
+      "sha256": "2a0685a6dc4aa22a481c0f54b6f60a2c5f6534e8fd014b380804de7421de4443",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/CubeFree/Assembly/Final.lean"
+    },
+    {
+      "local": "CubeFreeProvider.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/CubeFree/Assembly/Provider.lean",
+      "git_blob": "1bd2f7a4c7852198c269889473183d8ba9d77651",
+      "sha256": "910a37030aec0d94bb105e7a5bdab2190637b2f82356671bf827d7dff139549f",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/CubeFree/Assembly/Provider.lean"
+    },
+    {
+      "local": "CubeFreeStep.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/CubeFree/Step.lean",
+      "git_blob": "d0903a200e81df75476abffabd6daa0195cbd213",
+      "sha256": "a8c99a6033e2c6120b9f36316ea3a08e8b2121006d4a99ee13d13928a8c774b5",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/CubeFree/Step.lean"
+    },
+    {
+      "local": "CubeFreeLeaves.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/CubeFree/Assembly/Leaves.lean",
+      "git_blob": "7eae530ce2769a8be2a32b0f2afded34bc2dc17b",
+      "sha256": "fb9d1c8defe4dc5f44f0cbc7f15dfa109325e24810c04857296d99fcb4b099cd",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/CubeFree/Assembly/Leaves.lean"
+    },
+    {
+      "local": "Schedule.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/ReturnD/Schedule.lean",
+      "git_blob": "3041e8ec38f3037c1ea972656ae6b633c6eb7cf8",
+      "sha256": "53be87a0f86131c78ff37e550ceeba65839434b7c8ce0f72f0331d3552d200b0",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/ReturnD/Schedule.lean"
+    },
+    {
+      "local": "FinalScheme.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/FinalScheme.lean",
+      "git_blob": "5d722b379958dcb8ac1df6ec519aea0063c9ed04",
+      "sha256": "2b35029d412d397ca3dc1522f77fd0870506304c110ac404cd9c36ac22a08a80",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/FinalScheme.lean"
+    },
+    {
+      "local": "Geometry.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/Geometry.lean",
+      "git_blob": "908ed2fab95d32cb859f4a8bfa1bce64b8623f54",
+      "sha256": "356b1d95150f75ef124586d5911bd9c38c00607d29a1d309699865222a06bdcc",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/Geometry.lean"
+    },
+    {
+      "local": "TransportInstances.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/TransportInstances.lean",
+      "git_blob": "b71326439ac088b2334b9ad81e5a6797f9b33099",
+      "sha256": "d5dfb2fd9ca6f806250dbbbc3152fc02159164e8fbe6af2ed5f0c613eb3f4300",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/TransportInstances.lean"
+    },
+    {
+      "local": "TransportGeometry.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/ReturnD/TransportGeometry.lean",
+      "git_blob": "cb39603756cfe5f77709e43bdc2f1f745b0a7fc8",
+      "sha256": "57a42ee65aa4f82a9fb09b79df3686d17cd7a8b6302c611bebaa16fa51bf63f5",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/ReturnD/TransportGeometry.lean"
+    },
+    {
+      "local": "FinalRows.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/FinalRows.lean",
+      "git_blob": "5b9f44c7a4e0714d2845484ec97bce71a7d76bb3",
+      "sha256": "6eb0b8655c82e2a9f0c2d7b56481d44c403ebe6f4b01258deca24d892bd05a5e",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/FinalRows.lean"
+    },
+    {
+      "local": "Conductor.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/Conductor.lean",
+      "git_blob": "0b2fca52f720087e61e5bf526ec5258a909a6efa",
+      "sha256": "96fa128262b8ff222ff4d7bf617b6e14bacb57b7863a2baf9267df90eba7e6e7",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/Conductor.lean"
+    },
+    {
+      "local": "EndpointFromSources.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/EndpointFromSources.lean",
+      "git_blob": "06299200d9381695c7639d87df69f5c8374780b4",
+      "sha256": "eac19aee79314f961dc70f1fa326dd408bf10d74008d8e505bbaed52766f902b",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/EndpointFromSources.lean"
+    },
+    {
+      "local": "WindowSources.lean",
+      "upstream": "submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/WindowSources.lean",
+      "git_blob": "1f0db16567889cbf1140e04e2565ab59f2fda133",
+      "sha256": "e347cd7ec0cbaf69ae616a10b9ac5ee59beacc36edd359c09a36654d919fa3d4",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/density-split-third-20261026/src/Submissions/density_split_third_20261026/Return/WindowSources.lean"
+    },
+    {
+      "local": "BaseGeometry.lean",
+      "upstream": "submissions/hailey-collet-1252270103/src/Submissions/hailey_collet_1252270103/Record1252270103Return/Geometry.lean",
+      "git_blob": "3a988832ab04c920a2fe23bb784f9a3f76f77348",
+      "sha256": "00d11219edc22da64f897e353399a9cabcfebe9b5856d7ba60f85fae42d32e65",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/71996e7e79840455f7beead063a73b7b31cfb586/submissions/hailey-collet-1252270103/src/Submissions/hailey_collet_1252270103/Record1252270103Return/Geometry.lean"
+    }
+  ]
+}

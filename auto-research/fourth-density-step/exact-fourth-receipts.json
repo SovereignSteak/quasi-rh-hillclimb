@@ -1,0 +1,886 @@
+{
+  "status": "exact scalar gates only; analytic and Lean instantiation pending",
+  "source_head": "71996e7e79840455f7beead063a73b7b31cfb586",
+  "cases": [
+    {
+      "name": "known_third",
+      "parameters": {
+        "B0": "4967/5000",
+        "L0": "49/20",
+        "c0": "1/10",
+        "B": "99/100",
+        "L": "239/100",
+        "c": "1/10",
+        "A": "3/5",
+        "D": "35"
+      },
+      "crossing": "17/300",
+      "upper_excess": "13/300",
+      "gates": {
+        "selection_denominator": {
+          "uniform_lower": "1",
+          "numerator": "35*v + 1",
+          "denominator": "1",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "13/300",
+              "numerator_lower": "1",
+              "denominator_lower": "1",
+              "denominator_upper": "1",
+              "gate_lower": "1"
+            }
+          ]
+        },
+        "density_denominator": {
+          "uniform_lower": "13539/6250",
+          "numerator": "21*v/10 + 13539/6250",
+          "denominator": "1",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "13/300",
+              "numerator_lower": "13539/6250",
+              "denominator_lower": "1",
+              "denominator_upper": "1",
+              "gate_lower": "13539/6250"
+            }
+          ]
+        },
+        "high_denominator": {
+          "uniform_lower": "1184121/50000",
+          "numerator": "63*v/2 + 1184121/50000",
+          "denominator": "1",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "13/300",
+              "numerator_lower": "1184121/50000",
+              "denominator_lower": "1",
+              "denominator_upper": "1",
+              "gate_lower": "1184121/50000"
+            }
+          ]
+        },
+        "q_lower": {
+          "uniform_lower": "33991/225724",
+          "numerator": "12847 - 35000*v",
+          "denominator": "70000*v + 72208",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "13/300",
+              "numerator_lower": "33991/3",
+              "denominator_lower": "72208",
+              "denominator_upper": "225724/3",
+              "gate_lower": "33991/225724"
+            }
+          ]
+        },
+        "q_upper": {
+          "uniform_lower": "15615/225724",
+          "numerator": "52500*v + 5205",
+          "denominator": "70000*v + 72208",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "13/300",
+              "numerator_lower": "5205",
+              "denominator_lower": "72208",
+              "denominator_upper": "225724/3",
+              "gate_lower": "15615/225724"
+            }
+          ]
+        },
+        "q_floor": {
+          "uniform_lower": "331/564310",
+          "numerator": "10079 - 227500*v",
+          "denominator": "350000*v + 361040",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "13/300",
+              "numerator_lower": "662/3",
+              "denominator_lower": "361040",
+              "denominator_upper": "1128620/3",
+              "gate_lower": "331/564310"
+            }
+          ]
+        },
+        "H_lower": {
+          "uniform_lower": "287/7550",
+          "numerator": "1 - v",
+          "denominator": "350*v + 10",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "13/300",
+              "numerator_lower": "287/300",
+              "denominator_lower": "10",
+              "denominator_upper": "151/6",
+              "gate_lower": "287/7550"
+            }
+          ]
+        },
+        "retained_cap": {
+          "uniform_lower": "78/18875",
+          "numerator": "-10500*v**2 + 227*v + 13",
+          "denominator": "10500*v + 300",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "13/300",
+              "numerator_lower": "78/25",
+              "denominator_lower": "300",
+              "denominator_upper": "755",
+              "gate_lower": "78/18875"
+            }
+          ]
+        },
+        "retained_width": {
+          "uniform_lower": "17/755",
+          "numerator": "10500*v**2 + 715*v + 17",
+          "denominator": "10500*v + 300",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "13/300",
+              "numerator_lower": "17",
+              "denominator_lower": "300",
+              "denominator_upper": "755",
+              "gate_lower": "17/755"
+            }
+          ]
+        },
+        "low_per_width": {
+          "uniform_lower": "441/755000",
+          "numerator": "147",
+          "denominator": "3500000*v + 100000",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "13/300",
+              "numerator_lower": "147",
+              "denominator_lower": "100000",
+              "denominator_upper": "755000/3",
+              "gate_lower": "441/755000"
+            }
+          ]
+        },
+        "high_at_q": {
+          "uniform_lower": "276287478720369/1160432452878820000",
+          "numerator": "4241065762500000*v**3 + 2495954533768500*v**2 - 40040203104435*v + 223514296299",
+          "denominator": "4287500000000000*v**3 + 7768680500000000*v**2 + 3543579323200000*v + 95003343520000",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "13/1200",
+              "numerator_lower": "92095826240123/2880",
+              "denominator_lower": "95003343520000",
+              "denominator_upper": "7252702830492625/54",
+              "gate_lower": "276287478720369/1160432452878820000"
+            },
+            {
+              "lo": "13/1200",
+              "hi": "13/600",
+              "numerator_lower": "507257676060377/5760",
+              "denominator_lower": "7252702830492625/54",
+              "denominator_upper": "4737729659137000/27",
+              "gate_lower": "1521773028181131/3032146981847680000"
+            },
+            {
+              "lo": "13/600",
+              "hi": "13/300",
+              "numerator_lower": "205497247793611/360",
+              "denominator_lower": "4737729659137000/27",
+              "denominator_upper": "7114369822034000/27",
+              "gate_lower": "616491743380833/284574792881360000"
+            }
+          ]
+        },
+        "high_deriv": {
+          "uniform_lower": "3913/75500",
+          "numerator": "1459500*v**2 + 84155*v + 3913",
+          "denominator": "1050000*v + 30000",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "13/300",
+              "numerator_lower": "3913",
+              "denominator_lower": "30000",
+              "denominator_upper": "75500",
+              "gate_lower": "3913/75500"
+            }
+          ]
+        },
+        "principal": {
+          "uniform_lower": "379/151000",
+          "numerator": "136500*v**2 - 11865*v + 321",
+          "denominator": "350000*v + 10000",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "13/300",
+              "numerator_lower": "379/6",
+              "denominator_lower": "10000",
+              "denominator_upper": "75500/3",
+              "gate_lower": "379/151000"
+            }
+          ]
+        },
+        "second_ref": {
+          "uniform_lower": "7589/151000",
+          "numerator": "2278500*v**2 + 168715*v + 7589",
+          "denominator": "2100000*v + 60000",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "13/300",
+              "numerator_lower": "7589",
+              "denominator_lower": "60000",
+              "denominator_upper": "151000",
+              "gate_lower": "7589/151000"
+            }
+          ]
+        },
+        "second_diag": {
+          "uniform_lower": "2663/75500",
+          "numerator": "1459500*v**2 + 62905*v + 2663",
+          "denominator": "1050000*v + 30000",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "13/300",
+              "numerator_lower": "2663",
+              "denominator_lower": "30000",
+              "denominator_upper": "75500",
+              "gate_lower": "2663/75500"
+            }
+          ]
+        },
+        "ref_upper": {
+          "uniform_lower": "66/755",
+          "numerator": "-3500*v**2 + 195*v + 11",
+          "denominator": "1750*v + 50",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "13/300",
+              "numerator_lower": "11",
+              "denominator_lower": "50",
+              "denominator_upper": "755/6",
+              "gate_lower": "66/755"
+            }
+          ]
+        },
+        "selection_derivative": {
+          "uniform_lower": "2160/22801",
+          "numerator": "3",
+          "denominator": "6125*v**2 + 350*v + 5",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "13/300",
+              "numerator_lower": "3",
+              "denominator_lower": "5",
+              "denominator_upper": "22801/720",
+              "gate_lower": "2160/22801"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "fourth_physical",
+      "parameters": {
+        "B0": "99/100",
+        "L0": "239/100",
+        "c0": "1/10",
+        "B": "49461297/50000000",
+        "L": "23767/10000",
+        "c": "1/10",
+        "A": "27/50",
+        "D": "94"
+      },
+      "crossing": "291/5000",
+      "upper_excess": "209/5000",
+      "gates": {
+        "selection_denominator": {
+          "uniform_lower": "1",
+          "numerator": "94*v + 1",
+          "denominator": "1",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "209/5000",
+              "numerator_lower": "1",
+              "denominator_lower": "1",
+              "denominator_upper": "1",
+              "gate_lower": "1"
+            }
+          ]
+        },
+        "density_denominator": {
+          "uniform_lower": "19303/10000",
+          "numerator": "6251*v/5000 + 19303/10000",
+          "denominator": "1",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "209/5000",
+              "numerator_lower": "19303/10000",
+              "denominator_lower": "1",
+              "denominator_upper": "1",
+              "gate_lower": "19303/10000"
+            }
+          ]
+        },
+        "high_denominator": {
+          "uniform_lower": "53046609/2500000",
+          "numerator": "18753*v/1000 + 53046609/2500000",
+          "denominator": "1",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "209/5000",
+              "numerator_lower": "53046609/2500000",
+              "denominator_lower": "1",
+              "denominator_upper": "1",
+              "gate_lower": "53046609/2500000"
+            }
+          ]
+        },
+        "q_lower": {
+          "uniform_lower": "14901511/99127918",
+          "numerator": "1620797 - 3125500*v",
+          "denominator": "6251000*v + 9651500",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "209/5000",
+              "numerator_lower": "14901511/10",
+              "denominator_lower": "9651500",
+              "denominator_upper": "49563959/5",
+              "gate_lower": "14901511/99127918"
+            }
+          ]
+        },
+        "q_upper": {
+          "uniform_lower": "3960390/49563959",
+          "numerator": "2344125*v + 396039",
+          "denominator": "3125500*v + 4825750",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "209/5000",
+              "numerator_lower": "396039",
+              "denominator_lower": "4825750",
+              "denominator_upper": "49563959/10",
+              "gate_lower": "3960390/49563959"
+            }
+          ]
+        },
+        "q_floor": {
+          "uniform_lower": "323233/991279180",
+          "numerator": "86536 - 2031575*v",
+          "denominator": "3125500*v + 4825750",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "209/5000",
+              "numerator_lower": "323233/200",
+              "denominator_lower": "4825750",
+              "denominator_upper": "49563959/10",
+              "gate_lower": "323233/991279180"
+            }
+          ]
+        },
+        "H_lower": {
+          "uniform_lower": "250/12323",
+          "numerator": "308*v + 5",
+          "denominator": "4700*v + 50",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "209/5000",
+              "numerator_lower": "5",
+              "denominator_lower": "50",
+              "denominator_upper": "12323/50",
+              "gate_lower": "250/12323"
+            }
+          ]
+        },
+        "retained_cap": {
+          "uniform_lower": "5643/3080750",
+          "numerator": "-470000*v**2 + 15726*v + 209",
+          "denominator": "470000*v + 5000",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "209/5000",
+              "numerator_lower": "5643/125",
+              "denominator_lower": "5000",
+              "denominator_upper": "24646",
+              "gate_lower": "5643/3080750"
+            }
+          ]
+        },
+        "retained_width": {
+          "uniform_lower": "291/24646",
+          "numerator": "470000*v**2 + 29654*v + 291",
+          "denominator": "470000*v + 5000",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "209/5000",
+              "numerator_lower": "291",
+              "denominator_lower": "5000",
+              "denominator_upper": "24646",
+              "gate_lower": "291/24646"
+            }
+          ]
+        },
+        "low_per_width": {
+          "uniform_lower": "6453/24646000",
+          "numerator": "6453",
+          "denominator": "470000000*v + 5000000",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "209/5000",
+              "numerator_lower": "6453",
+              "denominator_lower": "5000000",
+              "denominator_upper": "24646000",
+              "gate_lower": "6453/24646000"
+            }
+          ]
+        },
+        "high_at_q": {
+          "uniform_lower": "760046189558150229617943/6829467902821241782792187500",
+          "numerator": "6544968105189638250000*v**3 + 6286051703041445430900*v**2 - 21578372291546296704*v + 35156958430010409",
+          "denominator": "4591312617500000000000*v**3 + 12332776309791000000000*v**2 + 8151689899563000000000*v + 85329891127250000000",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "209/80000",
+              "numerator_lower": "760046189558150229617943/64000000",
+              "denominator_lower": "85329891127250000000",
+              "denominator_upper": "109271486445139868524675/1024",
+              "gate_lower": "760046189558150229617943/6829467902821241782792187500"
+            },
+            {
+              "lo": "209/80000",
+              "hi": "209/40000",
+              "numerator_lower": "8930692049091244784861013/409600000",
+              "denominator_lower": "109271486445139868524675/1024",
+              "denominator_upper": "16417256740481626870995/128",
+              "gate_lower": "330766372188564621661519/1945748947020044666192000000"
+            },
+            {
+              "lo": "209/40000",
+              "hi": "209/20000",
+              "numerator_lower": "24308919159906009951373401/256000000",
+              "denominator_lower": "16417256740481626870995/128",
+              "denominator_upper": "2749872960529306844155/16",
+              "gate_lower": "3472702737129429993053343/6285423909781272786640000000"
+            },
+            {
+              "lo": "209/20000",
+              "hi": "209/10000",
+              "numerator_lower": "16114701599218652959454769/32000000",
+              "denominator_lower": "2749872960529306844155/16",
+              "denominator_upper": "522258411302847030735/2",
+              "gate_lower": "596840799971061220720547/309486465957242684880000000"
+            },
+            {
+              "lo": "209/10000",
+              "hi": "209/5000",
+              "numerator_lower": "9558921556276037606132253/4000000",
+              "denominator_lower": "522258411302847030735/2",
+              "denominator_upper": "447954173835918696100",
+              "gate_lower": "9558921556276037606132253/1791816695343674784400000000"
+            }
+          ]
+        },
+        "high_deriv": {
+          "uniform_lower": "198847/7393800",
+          "numerator": "194114700*v**2 + 16504168*v + 198847",
+          "denominator": "141000000*v + 1500000",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "209/5000",
+              "numerator_lower": "198847",
+              "denominator_lower": "1500000",
+              "denominator_upper": "7393800",
+              "gate_lower": "198847/7393800"
+            }
+          ]
+        },
+        "principal": {
+          "uniform_lower": "16349/2464600",
+          "numerator": "17704900*v**2 + 510156*v + 16349",
+          "denominator": "47000000*v + 500000",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "209/5000",
+              "numerator_lower": "16349",
+              "denominator_lower": "500000",
+              "denominator_upper": "2464600",
+              "gate_lower": "16349/2464600"
+            }
+          ]
+        },
+        "second_ref": {
+          "uniform_lower": "128147/4929200",
+          "numerator": "100114700*v**2 + 10680868*v + 128147",
+          "denominator": "94000000*v + 1000000",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "209/5000",
+              "numerator_lower": "128147",
+              "denominator_lower": "1000000",
+              "denominator_upper": "4929200",
+              "gate_lower": "128147/4929200"
+            }
+          ]
+        },
+        "second_diag": {
+          "uniform_lower": "45449/2464600",
+          "numerator": "64704900*v**2 + 3880556*v + 45449",
+          "denominator": "47000000*v + 500000",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "209/5000",
+              "numerator_lower": "45449",
+              "denominator_lower": "500000",
+              "denominator_upper": "2464600",
+              "gate_lower": "45449/2464600"
+            }
+          ]
+        },
+        "ref_upper": {
+          "uniform_lower": "1627/36969",
+          "numerator": "-1410000*v**2 + 125788*v + 1627",
+          "denominator": "705000*v + 7500",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "209/5000",
+              "numerator_lower": "1627",
+              "denominator_lower": "7500",
+              "denominator_upper": "36969",
+              "gate_lower": "1627/36969"
+            }
+          ]
+        },
+        "selection_derivative": {
+          "uniform_lower": "3375000/151856329",
+          "numerator": "27",
+          "denominator": "441800*v**2 + 9400*v + 50",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "209/5000",
+              "numerator_lower": "27",
+              "denominator_lower": "50",
+              "denominator_upper": "151856329/125000",
+              "gate_lower": "3375000/151856329"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "fourth_count",
+      "parameters": {
+        "B0": "99/100",
+        "L0": "239/100",
+        "c0": "1/10",
+        "B": "987987/1000000",
+        "L": "2357/1000",
+        "c": "1/10",
+        "A": "103/200",
+        "D": "23"
+      },
+      "crossing": "61/1000",
+      "upper_excess": "39/1000",
+      "gates": {
+        "selection_denominator": {
+          "uniform_lower": "1",
+          "numerator": "23*v + 1",
+          "denominator": "1",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "39/1000",
+              "numerator_lower": "1",
+              "denominator_lower": "1",
+              "denominator_upper": "1",
+              "gate_lower": "1"
+            }
+          ]
+        },
+        "density_denominator": {
+          "uniform_lower": "1489/800",
+          "numerator": "759*v/1000 + 1489/800",
+          "denominator": "1",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "39/1000",
+              "numerator_lower": "1489/800",
+              "denominator_lower": "1",
+              "denominator_upper": "1",
+              "gate_lower": "1489/800"
+            }
+          ]
+        },
+        "high_denominator": {
+          "uniform_lower": "205410351/10000000",
+          "numerator": "2277*v/200 + 205410351/10000000",
+          "denominator": "1",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "39/1000",
+              "numerator_lower": "205410351/10000000",
+              "denominator_lower": "1",
+              "denominator_upper": "1",
+              "gate_lower": "205410351/10000000"
+            }
+          ]
+        },
+        "q_lower": {
+          "uniform_lower": "5683873/37817020",
+          "numerator": "5979883 - 7590000*v",
+          "denominator": "15180000*v + 37225000",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "39/1000",
+              "numerator_lower": "5683873",
+              "denominator_lower": "37225000",
+              "denominator_upper": "37817020",
+              "gate_lower": "5683873/37817020"
+            }
+          ]
+        },
+        "q_upper": {
+          "uniform_lower": "3326367/37817020",
+          "numerator": "11385000*v + 3326367",
+          "denominator": "15180000*v + 37225000",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "39/1000",
+              "numerator_lower": "3326367",
+              "denominator_lower": "37225000",
+              "denominator_upper": "37817020",
+              "gate_lower": "3326367/37817020"
+            }
+          ]
+        },
+        "q_floor": {
+          "uniform_lower": "566/1890851",
+          "numerator": "396133 - 9867000*v",
+          "denominator": "15180000*v + 37225000",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "39/1000",
+              "numerator_lower": "11320",
+              "denominator_lower": "37225000",
+              "denominator_upper": "37817020",
+              "gate_lower": "566/1890851"
+            }
+          ]
+        },
+        "H_lower": {
+          "uniform_lower": "6919/189700",
+          "numerator": "10 - 79*v",
+          "denominator": "2300*v + 100",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "39/1000",
+              "numerator_lower": "6919/1000",
+              "denominator_lower": "100",
+              "denominator_upper": "1897/10",
+              "gate_lower": "6919/189700"
+            }
+          ]
+        },
+        "retained_cap": {
+          "uniform_lower": "4017/948500",
+          "numerator": "-23000*v**2 + 103*v + 39",
+          "denominator": "23000*v + 1000",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "39/1000",
+              "numerator_lower": "4017/500",
+              "denominator_lower": "1000",
+              "denominator_upper": "1897",
+              "gate_lower": "4017/948500"
+            }
+          ]
+        },
+        "retained_width": {
+          "uniform_lower": "61/1897",
+          "numerator": "23000*v**2 + 1888*v + 61",
+          "denominator": "23000*v + 1000",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "39/1000",
+              "numerator_lower": "61",
+              "denominator_lower": "1000",
+              "denominator_upper": "1897",
+              "gate_lower": "61/1897"
+            }
+          ]
+        },
+        "low_per_width": {
+          "uniform_lower": "24617/37940000",
+          "numerator": "24617",
+          "denominator": "460000000*v + 20000000",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "39/1000",
+              "numerator_lower": "24617",
+              "denominator_lower": "20000000",
+              "denominator_upper": "37940000",
+              "gate_lower": "24617/37940000"
+            }
+          ]
+        },
+        "high_at_q": {
+          "uniform_lower": "39563912536312706831/1259881798210831030750000",
+          "numerator": "2942531297260335000000*v**3 + 4852134851195243462100*v**2 - 43744241491025013013*v + 152059762979909469",
+          "denominator": "1324986300000000000000*v**3 + 5697357889938000000000*v**2 + 6107446754853500000000*v + 254880010532500000000",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "39/4000",
+              "numerator_lower": "39563912536312706831/4000",
+              "denominator_lower": "254880010532500000000",
+              "denominator_upper": "629940899105415515375/2",
+              "gate_lower": "39563912536312706831/1259881798210831030750000"
+            },
+            {
+              "lo": "39/4000",
+              "hi": "39/2000",
+              "numerator_lower": "60651772945043224655847/320000",
+              "denominator_lower": "629940899105415515375/2",
+              "denominator_upper": "376151467197583387000",
+              "gate_lower": "60651772945043224655847/120368469503226683840000000"
+            },
+            {
+              "lo": "39/2000",
+              "hi": "39/1000",
+              "numerator_lower": "23317796656493725363863/20000",
+              "denominator_lower": "376151467197583387000",
+              "denominator_upper": "501814712184711898000",
+              "gate_lower": "23317796656493725363863/10036294243694237960000000"
+            }
+          ]
+        },
+        "high_deriv": {
+          "uniform_lower": "40937/569100",
+          "numerator": "9363300*v**2 + 537526*v + 40937",
+          "denominator": "6900000*v + 300000",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "39/1000",
+              "numerator_lower": "40937",
+              "denominator_lower": "300000",
+              "denominator_upper": "569100",
+              "gate_lower": "40937/569100"
+            }
+          ]
+        },
+        "principal": {
+          "uniform_lower": "129061/1897000000",
+          "numerator": "821100*v**2 - 118333*v + 3379",
+          "denominator": "2300000*v + 100000",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "39/1000",
+              "numerator_lower": "129061/10000",
+              "denominator_lower": "100000",
+              "denominator_upper": "189700",
+              "gate_lower": "129061/1897000000"
+            }
+          ]
+        },
+        "second_ref": {
+          "uniform_lower": "26237/379400",
+          "numerator": "4763300*v**2 + 347051*v + 26237",
+          "denominator": "4600000*v + 200000",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "39/1000",
+              "numerator_lower": "26237",
+              "denominator_lower": "200000",
+              "denominator_upper": "379400",
+              "gate_lower": "26237/379400"
+            }
+          ]
+        },
+        "second_diag": {
+          "uniform_lower": "9479/189700",
+          "numerator": "3121100*v**2 + 147717*v + 9479",
+          "denominator": "2300000*v + 100000",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "39/1000",
+              "numerator_lower": "9479",
+              "denominator_lower": "100000",
+              "denominator_upper": "189700",
+              "gate_lower": "9479/189700"
+            }
+          ]
+        },
+        "ref_upper": {
+          "uniform_lower": "115607/1138200",
+          "numerator": "-138000*v**2 + 3947*v + 634",
+          "denominator": "69000*v + 3000",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "39/1000",
+              "numerator_lower": "115607/200",
+              "denominator_lower": "3000",
+              "denominator_upper": "5691",
+              "gate_lower": "115607/1138200"
+            }
+          ]
+        },
+        "selection_derivative": {
+          "uniform_lower": "515000/3598609",
+          "numerator": "103",
+          "denominator": "105800*v**2 + 9200*v + 200",
+          "boxes": [
+            {
+              "lo": "0",
+              "hi": "39/1000",
+              "numerator_lower": "103",
+              "denominator_lower": "200",
+              "denominator_upper": "3598609/5000",
+              "gate_lower": "515000/3598609"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

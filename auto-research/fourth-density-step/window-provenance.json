@@ -1,0 +1,135 @@
+{
+  "source_head": "71996e7e79840455f7beead063a73b7b31cfb586",
+  "lean_module": "Submissions.density_split_third_20261026.Return.Windows",
+  "sha256": "07ae20faff8f31fcc6c21415573fb60e3aacf559d128ad8054adc028560d3c28",
+  "windows": [
+    {
+      "number": 1,
+      "branch": "capP",
+      "deltaLo": "9/32",
+      "deltaHi": "3/8",
+      "pLo": "3/8",
+      "pHi": "1/2"
+    },
+    {
+      "number": 2,
+      "branch": "capP",
+      "deltaLo": "9/32",
+      "deltaHi": "21/64",
+      "pLo": "7/16",
+      "pHi": "1/2"
+    },
+    {
+      "number": 3,
+      "branch": "C",
+      "deltaLo": "43/128",
+      "deltaHi": "3/8",
+      "pLo": "7/16",
+      "pHi": "1/2"
+    },
+    {
+      "number": 4,
+      "branch": "C",
+      "deltaLo": "3/8",
+      "deltaHi": "15/32",
+      "pLo": "3/8",
+      "pHi": "1/2"
+    },
+    {
+      "number": 5,
+      "branch": "C",
+      "deltaLo": "3/8",
+      "deltaHi": "27/64",
+      "pLo": "7/16",
+      "pHi": "1/2"
+    },
+    {
+      "number": 6,
+      "branch": "C",
+      "deltaLo": "27/64",
+      "deltaHi": "15/32",
+      "pLo": "7/16",
+      "pHi": "1/2"
+    },
+    {
+      "number": 7,
+      "branch": "C",
+      "deltaLo": "27/64",
+      "deltaHi": "57/128",
+      "pLo": "15/32",
+      "pHi": "1/2"
+    },
+    {
+      "number": 8,
+      "branch": "C",
+      "deltaLo": "27/64",
+      "deltaHi": "111/256",
+      "pLo": "31/64",
+      "pHi": "1/2"
+    },
+    {
+      "number": 9,
+      "branch": "C",
+      "deltaLo": "111/256",
+      "deltaHi": "57/128",
+      "pLo": "31/64",
+      "pHi": "1/2"
+    },
+    {
+      "number": 10,
+      "branch": "C",
+      "deltaLo": "111/256",
+      "deltaHi": "225/512",
+      "pLo": "63/128",
+      "pHi": "1/2"
+    },
+    {
+      "number": 11,
+      "branch": "C",
+      "deltaLo": "225/512",
+      "deltaHi": "57/128",
+      "pLo": "63/128",
+      "pHi": "1/2"
+    },
+    {
+      "number": 12,
+      "branch": "C",
+      "deltaLo": "225/512",
+      "deltaHi": "453/1024",
+      "pLo": "127/256",
+      "pHi": "1/2"
+    },
+    {
+      "number": 13,
+      "branch": "C",
+      "deltaLo": "453/1024",
+      "deltaHi": "57/128",
+      "pLo": "127/256",
+      "pHi": "1/2"
+    },
+    {
+      "number": 14,
+      "branch": "C",
+      "deltaLo": "57/128",
+      "deltaHi": "15/32",
+      "pLo": "15/32",
+      "pHi": "1/2"
+    },
+    {
+      "number": 15,
+      "branch": "C",
+      "deltaLo": "15/32",
+      "deltaHi": "33/64",
+      "pLo": "7/16",
+      "pHi": "1/2"
+    },
+    {
+      "number": 16,
+      "branch": "capP",
+      "deltaLo": "33/64",
+      "deltaHi": "69/128",
+      "pLo": "15/32",
+      "pHi": "1/2"
+    }
+  ]
+}
