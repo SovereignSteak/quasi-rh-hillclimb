@@ -1,0 +1,14 @@
+PASS fixed-D necessary frontier max(167/192, S_k(D)), transition kcrit(D)
+PASS global sharpness: all remaining sides and full ideal rectangle; two phases
+PASS bootstrap polynomial, unique fixed point, threshold 41863/56800
+PASS target sigma=87/100 requires slope k>16869/23125 in this ideal budget
+Derivative satisfies 0 < f_k prime < 1/20 on full u and k rectangle
+PASS ten strict incoming-ceiling steps, k=2/3, final sigma=1743471434399/2000000000000
+PASS ten strict incoming-ceiling steps, k=7/10, final sigma=870813647579343/1000000000000000
+PASS ten strict incoming-ceiling steps, k=41863/56800, final sigma=869791666666669/1000000000000000
+PASS ten strict incoming-ceiling steps, k=3/4, final sigma=217447916666667/250000000000000
+PASS ten strict incoming-ceiling steps, k=1, final sigma=217447916666667/250000000000000
+PASS exact negative controls below split-floor and floor/b limits
+PASS original adaptive count rejects the final ideal k=2/3 witness
+All exact checks passed. k>2/3 remains a hypothetical analytic input.
+Displayed approximation only: 0.87173571719949764865640183

@@ -187,6 +187,8 @@ below 13/15.
 
 **Repeated bin-ceiling updates have a further exact limit.** In that same ideal adaptive-count model, updating the intermediate ceiling from each preceding bound gives sharp infimum **(89309 + √2542433881)/160200 ≈ 0.8722319182091823**. The [variable-ceiling proof and exact rational iteration](auto-research/bootstrap-side-limits.md) retain the floor and intermediate estimates, check every other side constraint, and avoid assuming the outgoing bound. This is a finite-budget result; the improved adaptive count and its analytic iteration remain unproved, and no new zero-free endpoint is claimed.
 
+**Separating the floor removes an avoidable intermediate loss.** The preprint already supplies `R = 1 - 2δ/3` outside the floor, while the floor has its own bound. Using these cases separately improves the ideal bootstrap infimum to **(89309 + √2534423881)/160200 ≈ 0.8717357171994976**. The [exact split-floor analysis](auto-research/split-floor-limits.md) also proves that a hypothetical intermediate slope `k ≥ 41863/56800` saturates at the retained floor/width limit `167/192`. These are ideal-budget results, with no new zero-free endpoint.
+
 ## What is checked, and how
 
 - **Constructive frequency/supply lemma** ([proof and source audit](auto-research/frequency-extension.md), `python auto-research/certify_frequency_extension.py`): with a strict high-endpoint margin and 1/2 ≤ h < 1, a positive extension preserving prime supply above 7/37 exists exactly when 37ℓ > 7h. The certificate gives explicit extension and even-slot parameters and a frozen-budget witness excluded by h < 5ℓ. This proves a relaxation of the frequency/supply argument, not a new endpoint; the existing certifier retains its conservative check.
