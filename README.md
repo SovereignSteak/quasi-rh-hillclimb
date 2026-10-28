@@ -190,6 +190,9 @@ below 13/15.
 ## Conditional fourth density transition proposal
 
 A [fourth density-step proposal](auto-research/proposals/2026-10-27-fourth-density-step.md), building on Sil and Rohan Arun's tracker #84 construction, gives the exact scalar candidate **θ = 873981/1000000 = 0.873981**. Two additional source faces, 29 admission windows, complete geometry checks and a 91-rectangle return cover pass rational arithmetic and independent replay. The changed analytic/Lean assembly and endpoint replay remain outstanding; this is not an accepted record. The [replay bundle](auto-research/fourth-density-step/README.md) specifies the required separation of the parent capped-count source from the new physical source.
+**Repeated bin-ceiling updates have a further exact limit.** In that same ideal adaptive-count model, updating the intermediate ceiling from each preceding bound gives sharp infimum **(89309 + √2542433881)/160200 ≈ 0.8722319182091823**. The [variable-ceiling proof and exact rational iteration](auto-research/bootstrap-side-limits.md) retain the floor and intermediate estimates, check every other side constraint, and avoid assuming the outgoing bound. This is a finite-budget result; the improved adaptive count and its analytic iteration remain unproved, and no new zero-free endpoint is claimed.
+
+**Separating the floor removes an avoidable intermediate loss.** The preprint already supplies `R = 1 - 2δ/3` outside the floor, while the floor has its own bound. Using these cases separately improves the ideal bootstrap infimum to **(89309 + √2534423881)/160200 ≈ 0.8717357171994976**. The [exact split-floor analysis](auto-research/split-floor-limits.md) also proves that a hypothetical intermediate slope `k ≥ 41863/56800` saturates at the retained floor/width limit `167/192`. These are ideal-budget results, with no new zero-free endpoint.
 
 ## What is checked, and how
 
