@@ -30,6 +30,9 @@ then regenerates the exact source, return, and ablation receipts. It takes about
 four seconds in the research environment. All paths are relative to the script
 directory. Do not use `python -O`; the replay rejects disabled assertions.
 The two independent receipt verifiers use a separate Bernstein basis solver.
+The scripts and JSON receipts retain their pre-integration status strings as
+historical snapshots; they certify finite scalar claims only. The subsequent
+Lean proof and tracker verification are linked above.
 
 `source-pins.json` contains upstream URLs, commit and blob pins, and SHA256 hashes.
 The copied Lean source retains its original attribution and Apache-2.0 notices.
