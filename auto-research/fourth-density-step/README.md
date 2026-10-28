@@ -3,14 +3,17 @@
 This AI-assisted research bundle builds on Rohan Arun's and Sil's density-split
 work in [tracker PR84](https://github.com/GTimG/QuasiRiemannTracker/pull/84), pinned
 to `71996e7e79840455f7beead063a73b7b31cfb586`. All mathematical implications remain
-conditional on the preprint's seven-eighths theorem. No new zero-free theorem or
-Lean build is claimed here.
+conditional on the preprint's seven-eighths theorem. This bundle contains the
+exact finite scalar receipts; their formal integration is in
+[tracker PR #85](https://github.com/GTimG/QuasiRiemannTracker/pull/85).
+The tracker's [proof verification](https://github.com/GTimG/QuasiRiemannTracker/actions/runs/40622628467)
+accepted the exact PR head with the canonical Comparator and all three kernels.
+Review and merge remain pending.
 
-The result is an exact finite scalar certificate for the candidate
-`theta = 873981/1000000 = 0.873981`, using PR84's original
-`h = 16109/20000 = 0.80545`. The candidate is `1/250000 = 0.000004` below PR84's
-`174797/200000 = 0.873985`. Turning this into a zero-free bound requires the
-explicit Lean/source assembly described below.
+The certified boundary is `theta = 873981/1000000 = 0.873981`, using PR84's
+original `h = 16109/20000 = 0.80545`. It is `1/250000 = 0.000004` below PR84's
+`174797/200000 = 0.873985`. The Lean proof supplies the source and return
+assembly described below and excludes the principal character's pole.
 
 ## Reproduce
 
@@ -90,17 +93,17 @@ specified parent-only return fails the proposed theta:
 Adding only the new physical face also fails there. Adding both fourth faces
 gives a negative excess. This is a point diagnostic, not a global optimum claim.
 
-## Remaining proof work
+## Formal integration
 
-The finite scalar verification is complete for the stated model. Source
-existence and the assembled endpoint have not been re-elaborated in Lean.
-The declaration-level trace is:
+The finite scalar verification is complete for the stated model. The source
+instances and assembled endpoint were subsequently elaborated in Lean in
+[tracker PR #85](https://github.com/GTimG/QuasiRiemannTracker/pull/85).
+The declaration-level trace used for that integration is:
 `HybridGates` and `DSFace` -> `Density.dsGates` -> density leaf ->
 `CubeFree.cubefree_step` -> global source. PR84's final theorem supplies the
-generic diagonal provider, but its named instances and final chain currently
-hardcode only three density transitions. Both fourth instances must be added
-and checked. No new analytic estimate was identified by this audit, but that
-is a source-level handoff rather than a substitute for elaboration.
+generic diagonal provider. PR #85 adds and checks both fourth instances,
+while retaining the inherited analytic estimate. The research bundle alone
+supplies arithmetic receipts; the tracker submission supplies the Lean theorem.
 
 The return port must retain four distinct branch roles:
 
@@ -112,13 +115,13 @@ The return port must retain four distinct branch roles:
 | physical numerator | 49461297/50000000 | 23767/10000 | 3/50 |
 
 In PR84, `capP` and the physical numerator share `physicalB/physicalLambda`.
-This candidate deliberately separates them. Replacing those shared constants
-globally would change the inherited capped count branch and would not implement
-this certificate. Keep `parentCap` attached to the old source, add `fourthC`,
-retain `parentC` in the envelope, and provide a common mesh for the inherited,
-fourth count, and fourth physical sources. Then port the exact window/edge
-certificates and complete the physical schedule, endpoint assembly, Lean build,
-and axiom audit. The current bundle does none of those final proof steps.
+The integrated proof separates them. Replacing those shared constants globally
+would change the inherited capped count branch and would not implement this
+certificate. PR #85 keeps `parentCap` attached to the old source, adds `fourthC`,
+retains `parentC` in the envelope, and uses a common mesh for the inherited,
+fourth count, and fourth physical sources. It ports the exact window and edge
+certificates and completes the physical schedule, endpoint assembly, Lean build,
+and axiom audit.
 
 ## Search record
 
@@ -131,8 +134,8 @@ The constrained numerical search, including the floor condition, approaches
 `theta ~ 0.87398078913`, `h ~ 0.805460186`. That is only a diagnostic; the
 accepted exact candidate keeps the original, simpler `h=0.80545`.
 
-The tracker frontier checked during this work was merged PR84 at 0.873985;
-the other open tracker submissions inspected were weaker. The source transitions
-here are distinct from the original hillclimb's fixed side-budget recurrence
-and from its PR29 bootstrap-limit result. Fresh upstream checks should precede
-publishing an analytic endpoint claim.
+The tracker frontier checked when this work began was merged PR84 at 0.873985.
+The source transitions here are distinct from the original hillclimb's fixed
+side-budget recurrence and from its PR29 bootstrap-limit result. As of 28 October
+2026, independent [tracker PR #86](https://github.com/GTimG/QuasiRiemannTracker/pull/86)
+has passed admission with the stronger bound 0.8739558 using a finer chain.

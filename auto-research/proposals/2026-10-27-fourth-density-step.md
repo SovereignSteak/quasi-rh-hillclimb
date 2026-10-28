@@ -4,18 +4,21 @@
 Sil's density-split construction, Rohan Arun's third transition in tracker
 PR #84, and the inherited work of OpenAI, Hailey Collet and ArviFoxy.
 
-**Status: proposal with exact scalar certificates.** The candidate is
-`theta = 873981/1000000 = 0.873981`, at `h = 16109/20000` with return
-reserve `1/100000000`. This is exactly `1/250000` below the parent
-submission's declared `174797/200000 = 0.873985`. The proposed source,
-admission, geometry and return inequalities pass exact checks and an
-independent arithmetic replay. The fourth analytic source instances and
-changed return assembly have not been built in Lean; there is no new
-accepted or independently verified zero-free theorem here.
+**Status: exact scalar certificates and Lean verification complete; tracker review pending.**
+The conditional boundary is `theta = 873981/1000000 = 0.873981`, at
+`h = 16109/20000` with return reserve `1/100000000`. This is exactly
+`1/250000` below the parent submission's declared `174797/200000 = 0.873985`.
+The source, admission, geometry and return inequalities pass exact arithmetic
+checks. Their formal integration is in [tracker PR #85](https://github.com/GTimG/QuasiRiemannTracker/pull/85),
+whose [verification run](https://github.com/GTimG/QuasiRiemannTracker/actions/runs/40622628467)
+accepted the canonical Comparator and all three kernels. All implications remain
+conditional on the preprint's `7/8` theorem. The tracker PR is not merged.
+Independent [tracker PR #86](https://github.com/GTimG/QuasiRiemannTracker/pull/86)
+has since passed admission with a stronger 0.8739558 boundary via a finer chain.
 
 The self-contained [replay bundle](../fourth-density-step/README.md)
 contains the checkers, exact receipts, source pins, numerical search
-diagnostics and the remaining implementation obligations.
+diagnostics and the historical implementation handoff.
 
 ## Change and required source statements
 
@@ -53,8 +56,8 @@ to `9999/100000`.
 This distinction matters in Lean: the parent return shares
 `physicalB` and `physicalLambda` between the physical schedule and its
 `capP` count branch. Replacing those literals everywhere would describe
-different count windows from the certified ones. The new implementation
-must give the retained capped-count source its own parent constants.
+different count windows from the certified ones. The integrated implementation
+gives the retained capped-count source its own parent constants.
 
 The return certificate checks 29 upward admission windows and all four
 conductor edges on 91 rectangles covering
@@ -70,20 +73,15 @@ failed the inherited floor margin by exactly
 The final candidate uses the parent's original height `0.80545` and
 passes that margin with reserve `12159799/3000000000000`.
 
-## Remaining proof work
+## Lean integration completed
 
-1. Turn both source gate certificates into Lean instances and instantiate
-   the generic analytic fourth-step providers and leaves.
-2. Assemble the parent and both children on a common admissible mesh,
-   restricting their caps to the count and physical roles used here.
-3. Separate the retained parent capped-count constants from the new
-   physical source, add the new count branch, and instantiate the exact
-   admission cover and return schedule.
-4. Build the changed endpoint with the pinned Lean dependencies, audit
-   its axioms, compare the canonical all-moduli Dirichlet statement, and
-   complete a fresh kernel replay and independent review.
-
-These are concrete formal integration tasks. Passing the arithmetic
-checks does not establish that the changed analytic assembly already
-exists. The numerical optimum near `0.87398079` is a diagnostic only;
-the exact candidate in this proposal is `0.873981`.
+[Tracker PR #85](https://github.com/GTimG/QuasiRiemannTracker/pull/85) implements
+the original handoff: both source gate instances and generic analytic providers,
+a common admissible mesh for the parent and both children, separate retained
+parent capped-count constants, the additional count branch, exact admission and
+edge certificates, and the all-moduli endpoint. The renamed source compiled
+with Lean 4.34.1 (13,403 jobs); `Candidate.bound` uses only `propext`,
+`Classical.choice`, and `Quot.sound`. The tracker's proof worker accepted the
+canonical Comparator and all three kernels for this exact PR head. Review and
+merge are pending. The numerical optimum near `0.87398079` remains a diagnostic
+only; the proved conditional boundary here is `0.873981`.
