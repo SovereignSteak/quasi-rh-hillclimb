@@ -1,0 +1,60 @@
+[p1-three] rc=0 time=2s cmd=python3 certify_depth3.py
+[p1-four] rc=0 time=1s cmd=python3 certify_depth3.py --four
+[p1-pr67] rc=0 time=0s cmd=python3 certify_depth3.py --pr67
+[p1-depthscan] rc=0 time=0s cmd=python3 depth_scan.py
+[p1-identity] rc=0 time=1s cmd=python3 identity.py
+[p2-five] rc=0 time=1s cmd=python3 certify_depth3.py --five
+[p2-six] rc=0 time=1s cmd=python3 certify_depth3.py --six
+[p3-four-tight] rc=0 time=1s cmd=python3 -B certify_depth3.py --four-tight
+[p3-five-b] rc=0 time=1s cmd=python3 -B certify_depth3.py --five-b
+[p3-six-b] rc=0 time=0s cmd=python3 -B certify_depth3.py --six-b
+[p3-seven] rc=0 time=1s cmd=python3 -B certify_depth3.py --seven
+[p3-gao-pr68] rc=0 time=1s cmd=python3 -B certify_gao_depth.py --pr68
+[p3-gao-six] rc=0 time=0s cmd=python3 -B certify_gao_depth.py --six
+[p3-gao-six-k8] rc=0 time=1s cmd=python3 -B certify_gao_depth.py --six-k8 --kcap 8
+[p3-gao-eight-k12] rc=0 time=0s cmd=python3 -B certify_gao_depth.py --eight-k12 --kcap 12
+[p5-rho_powers] rc=0 time=2s cmd=python3 -B auto-research/limits/rho_powers.py
+[p5-rho_exact] rc=0 time=1s cmd=python3 -B auto-research/limits/rho_exact.py
+[p5-leverage] rc=0 time=2s cmd=python3 -B auto-research/limits/leverage.py
+[p6-five] rc=0 time=1s cmd=python3 -B certify_gao_depth.py --five-beta
+[p6-six] rc=0 time=0s cmd=python3 -B certify_gao_depth.py --six-beta
+[p9-certify40000] rc=0 time=1s cmd=python3 -B certify.py 40000 65003/80000
+[main-certify40000] rc=0 time=1s cmd=python3 -B certify.py 40000 65003/80000
+[p12-cert5824] rc=0 time=1s cmd=python3 -B certify.py 5824 405967/500000
+[p12-certedge] rc=0 time=0s cmd=python3 -B certify.py 1250000000/214651 8119602997/10000000000 --maxdepth 34
+[p12-negctl] rc=0 time=1s cmd=python3 -B certify.py 3000 405967/500000
+[p12-audit] rc=0 time=1s cmd=python3 -B auto-research/audit_5824.py
+[p12-edgecert] rc=0 time=1s cmd=python3 -B auto-research/edge_certificate.py
+[p12-auditedge] rc=0 time=0s cmd=python3 -B auto-research/audit_5824.py 1250000000/214651 8119602997/10000000000
+[p12-snippet] rc=0 time=1s cmd=python3 -B /tmp/claude-0/-home-claude/c29966f5-0a08-53bf-91d6-4f9bae166019/scratchpad/snip5824.py
+[p12-hillclimb] rc=0 time=4s cmd=python3 -B auto-research/hillclimb.py
+[p13-snippet] rc=0 time=1s cmd=python3 -B /tmp/claude-0/-home-claude/c29966f5-0a08-53bf-91d6-4f9bae166019/scratchpad/snip13.py
+[main-p13-snippet] rc=0 time=1s cmd=python3 -B /tmp/claude-0/-home-claude/c29966f5-0a08-53bf-91d6-4f9bae166019/scratchpad/snip13.py
+[p14-limit] rc=0 time=1s cmd=python3 -I auto-research/certify_track_a_limit.py
+[main-p14-limit] rc=0 time=0s cmd=python3 -I auto-research/certify_track_a_limit.py
+[p15-floor] rc=0 time=1s cmd=python3 -I auto-research/floor_bin_obstruction.py
+[main-p15-floor] rc=0 time=0s cmd=python3 -I auto-research/floor_bin_obstruction.py
+[p17-cert] rc=0 time=0s cmd=python3 -I auto-research/certify_side_constraint_limits.py
+[main-p17-cert] rc=0 time=0s cmd=python3 -I auto-research/certify_side_constraint_limits.py
+[p19-cert] rc=0 time=1s cmd=python3 -I auto-research/certify_frequency_extension.py
+[main-p19-cert] rc=0 time=1s cmd=python3 -I auto-research/certify_frequency_extension.py
+[p24-cert] rc=0 time=0s cmd=python3 -I auto-research/certify_completed_row_geometry.py
+[main-p24-cert] rc=0 time=1s cmd=python3 -I auto-research/certify_completed_row_geometry.py
+[p20-node] rc=0 time=0s cmd=node auto-research/verify_track_a.mjs
+[main-p20-node] rc=0 time=0s cmd=node auto-research/verify_track_a.mjs
+[p25-check] rc=0 time=0s cmd=python3 -I verification/early-analytic/check.py
+[p25-checkO] rc=0 time=1s cmd=python3 -I -O verification/early-analytic/check.py
+[p25-certify] rc=0 time=0s cmd=python3 -B certify.py
+[p26-root] rc=0 time=1s cmd=python3 -B certify.py
+[p26-baseline] rc=0 time=6s cmd=python3 -B auto-research/role-source-caps/return_budget.py --baseline
+[p26-replay] rc=0 time=31s cmd=python3 -B auto-research/role-source-caps/replay.py
+[p26-flow] rc=0 time=0s cmd=python3 -B auto-research/role-source-caps/flow_check.py
+[p26-controls] rc=0 time=2s cmd=python3 -B auto-research/role-source-caps/check_controls.py
+[p26-gen] rc=0 time=0s cmd=python3 -B auto-research/role-source-caps/formalization/generate.py
+[p26-genchk] rc=0 time=2s cmd=python3 -B auto-research/role-source-caps/formalization/check_generated.py
+[p27-replay] rc=0 time=151s cmd=python3 -B auto-research/fine-step-source-chains/replay.py
+[p27-controls] rc=0 time=152s cmd=python3 -B check_controls.py --slow
+[p27-root] rc=0 time=0s cmd=python3 -B certify.py
+[p27-baseline] rc=0 time=5s cmd=python3 -B return_budget.py --baseline
+[main-p26-replay] rc=0 time=32s cmd=python3 -B auto-research/role-source-caps/replay.py
+[main-p27-replay] rc=0 time=149s cmd=python3 -B auto-research/fine-step-source-chains/replay.py
