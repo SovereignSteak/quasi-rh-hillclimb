@@ -1,0 +1,11 @@
+PASS 29 entire upward admission windows, 29 boxes; all15 guards independently reconstructed
+PASS global old denominator Bernstein lower: 20304689/26926632
+PASS entire return rectangle covered exactly by 91 closed boxes with four edge certificates each
+Selected branch counts: {'old': 235, 'parentC': 0, 'parentCap': 83, 'fourthC': 46} smallest cleared margin 131692690707695717791/234959956606976000000000000
+PASS capacities recomputed: [1250/1121943, 125947/3365829, 57/1250, 170702049907883891/3565050000000000000]
+PASS PhysicalSchedule finite geometry; corrected incumbent reserve 1019/500000
+PASS certificate reserve1e-8 exceeds inherited rowFee1e-9
+PASS full Geometry.Parameters and BoundsN, all recorded finite fields: 45
+PASS floor slack: 12159799/3000000000000 at theta= 873981/1000000 h= 16109/20000
+PASS negative geometry control rejects theta=.873982,h=.8059 with floor margin -428480201/3000000000000
+Complete exact scalar receipt audit PASS; analytic/Lean assembly not independently built.

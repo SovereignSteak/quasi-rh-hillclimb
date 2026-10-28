@@ -1,0 +1,73 @@
+Independent scalar audit: fourth density-split research candidate
+
+PASS at theta=873981/1000000, h=16109/20000, reserve=1/100000000.
+This is a conditional scalar candidate, not an independently verified
+zero-free endpoint. All analytic implications remain conditional on the
+preprint's 7/8 theorem and the pinned source chain. AI-assisted audit.
+
+The source checker independently reconstructs all fourteen HybridGates
+functions, three denominator functions, both LOW identities and the
+selection derivative; it checks the DSFace conditions and crossing domains.
+It reconstructs Bernstein bases explicitly and solves for their coefficients
+by exact linear algebra rather than reusing the generator's coefficient
+formula. All 59 closed source boxes pass, including the known-third control.
+
+The return checker independently reconstructs the expressions in the pinned
+Return/Formulas.lean. It verifies all fifteen admission guards on all 29
+upward windows through p=1/2, and all four conductor-edge margins on 91
+closed rectangles covering [0,3/4] x [0,1/2]. A separate strip sweep verifies
+rectangle coverage and rejects gaps or overlapping interiors; an independent
+Bernstein-basis solve verifies each printed rational lower bound. Every
+chosen non-old branch is checked against a fully certified containing
+admission window. Branches can change at cell boundaries because the count
+envelope is at most every available branch; every boundary is included.
+The old denominator is positive on the whole return domain.
+
+All 45 recorded geometry/capacity fields and two identities were checked
+against Geometry.Parameters, BoundsN and PhysicalSchedule. In particular:
+  naturalK=9/2 corresponds to natural kappa=naturalK/6=3/4;
+  final incumbent reserve is 1019/500000;
+  final floor_margin reserve is 12159799/3000000000000;
+  the certificate reserve 1e-8 exceeds the generic rowFee 1e-9.
+The source-cap restrictions, physical capacity minima and positive
+capacities are checked exactly. Between conductor edges, the existing
+Conductor.lean reduction applies: each capacity is the minimum of two
+affine functions, so the row expression is the maximum of two affine
+functions in d for fixed delta,p and count envelope. Positive kappa is
+checked for the old capacity. Thus all four endpoint bounds cover both
+entire conductor intervals, regardless of where a capacity changes branch.
+
+A necessary negative control is included. The earlier proposed point
+(theta,h)=(436991/500000,8059/10000) passed admission/edge-row checks but
+fails the actual BoundsN.floor_margin by -428480201/3000000000000. The
+independent checker recomputes the full Lean expression and rejects it.
+This demonstrates why admission/edge certificates alone are insufficient.
+
+Source availability was inspected at pinned tracker head
+71996e7e79840455f7beead063a73b7b31cfb586. The parent declarations discharge
+native/hybrid step hypotheses through the universal diagonal supplier;
+the generic density leaf needs positive parent L0,B0,c0, B0<=1, positive
+Mmin and Mmin<=Mmax. These conditions hold for the proposed parent and
+[9/10,4] envelope. No Lean build or kernel replay was performed here.
+
+Remaining implementation and proof obligations:
+1. Instantiate both new source gates and the generic source steps in Lean,
+   including the leaf and source assembly; Python exactness is not a Lean
+   certificate.
+2. Keep the inherited capped count face parentCap=(99/100,239/100,31/500)
+   separate from the new physical numerator face. In the pinned Lean
+   constants capP's B/L and the physical schedule share physicalB/Lambda;
+   replacing those constants globally would change the admitted formulas
+   checked here. Add fourthC while retaining parent count sources, and
+   extend the finite common-mesh/source restrictions accordingly.
+3. Instantiate the changed count windows, full closed return cover,
+   Geometry.Parameters, BoundsN, PhysicalSchedule and final endpoint
+   assembly, then independently rebuild/replay. This audit certifies the
+   scalar obligations inspected, not the resulting analytic theorem.
+
+Portable checks use only Python, SymPy and the JSON receipts. They accept
+one optional receipt path and otherwise locate the receipt beside the
+script. verify_return_receipt.py includes the literal 16 window definitions
+independently extracted from the pinned Lean source. Their source SHA256
+and exact values are also recorded in window-provenance.json; no Lean
+checkout is required to replay the arithmetic.

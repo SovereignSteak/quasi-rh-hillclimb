@@ -1,0 +1,16 @@
+known_third : 17 exact functions and 19 covering Bernstein boxes independently checked
+  cross 17/300 upper_excess 13/300 high_at_q reserve 276287478720369/1160432452878820000
+  boundary gain at 3/50 : 1/5000
+  boundary gain at 7/100 : 1/1250
+  boundary gain at 1/10 : 13/5000
+fourth_physical : 17 exact functions and 21 covering Bernstein boxes independently checked
+  cross 291/5000 upper_excess 209/5000 high_at_q reserve 760046189558150229617943/6829467902821241782792187500
+  boundary gain at 3/50 : 1197/50000000
+  boundary gain at 7/100 : 7847/50000000
+  boundary gain at 1/10 : 27797/50000000
+fourth_count : 17 exact functions and 19 covering Bernstein boxes independently checked
+  cross 61/1000 upper_excess 39/1000 high_at_q reserve 39563912536312706831/1259881798210831030750000
+  boundary gain at 3/50 : -33/1000000
+  boundary gain at 7/100 : 297/1000000
+  boundary gain at 1/10 : 1287/1000000
+Exact source scalar receipt replay PASS; no analytic or Lean instantiation claimed.
