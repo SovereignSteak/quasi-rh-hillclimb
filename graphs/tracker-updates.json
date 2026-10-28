@@ -1,6 +1,6 @@
 {
-  "as_of": "2026-10-26",
-  "source": "GTimG/QuasiRiemannTracker main at ed22fa90634bcbf8c547973a94651290a42a300e: verifier/standard/receipts/*/result.json (status PASS) and merged tracker PRs",
+  "as_of": "2026-10-28",
+  "source": "GTimG/QuasiRiemannTracker main at 8f77ade2f22d40197711e45af08286faed51de13: verifier/standard/receipts/*/result.json (status PASS), merged new-bound tracker PRs and submissions/*/metadata.json",
   "records": [
     {"id": "hailey-collet-1252270103", "pr": 69, "status": "framework-verified", "first_verified_at": "2026-10-22T22:13:39Z",
      "theta": {"numerator": "8747729897", "denominator": "10000000000"}, "authors": [{"name": "Hailey Collet"}],
@@ -19,6 +19,18 @@
      "evidence": "tracker PR #74 merged 2026-10-25T21:50:01Z; submissions/sil-fourth-power-20261025/metadata.json"},
     {"id": "arvi-repeated-marks-on-sil-face-20261025", "pr": 76, "status": "framework-verified", "first_verified_at": "2026-10-26T01:21:30Z",
      "theta": {"numerator": "349843", "denominator": "400000"}, "authors": [{"name": "ArviFoxy"}],
-     "evidence": "verifier/standard/receipts/pr76-2fd55e03-20261026/result.json"}
+     "evidence": "verifier/standard/receipts/pr76-2fd55e03-20261026/result.json"},
+    {"id": "sil-density-split-20261026", "pr": 83, "status": "framework-verified", "first_verified_at": "2026-10-27T06:11:09Z",
+     "theta": {"numerator": "174799", "denominator": "200000"}, "authors": [{"name": "Sil"}],
+     "evidence": "tracker PR #83 merged 2026-10-27T06:11:09Z; submissions/2026-10-26-sil-density-split/metadata.json"},
+    {"id": "density-split-third", "pr": 84, "status": "framework-verified", "first_verified_at": "2026-10-27T14:48:59Z",
+     "theta": {"numerator": "174797", "denominator": "200000"}, "authors": [{"name": "Rohan Arun"}],
+     "evidence": "tracker PR #84 merged 2026-10-27T14:48:59Z; submissions/2026-10-27-density-split-third/metadata.json"},
+    {"id": "density-split-fine-chain", "pr": 86, "status": "framework-verified", "first_verified_at": "2026-10-28T04:30:17Z",
+     "theta": {"numerator": "4369779", "denominator": "5000000"}, "authors": [{"name": "Jacob Sussman"}],
+     "evidence": "tracker PR #86 merged 2026-10-28T04:30:17Z after canonical Comparator and three-kernel admission; submissions/2026-10-28-density-split-fine-chain/metadata.json"},
+    {"id": "density-split-fourth", "pr": 85, "status": "framework-verified", "first_verified_at": "2026-10-28T10:29:32Z",
+     "theta": {"numerator": "873981", "denominator": "1000000"}, "authors": [{"name": "Rohan Arun"}],
+     "evidence": "tracker PR #85 merged 2026-10-28T10:29:32Z; proof worker run 40622628467 accepted with canonical Comparator and all three kernels; submissions/2026-10-28-density-split-fourth/metadata.json; PR opened by @SovereignSteak", "hillclimb_pr": 30}
   ]
 }

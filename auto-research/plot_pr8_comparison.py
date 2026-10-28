@@ -85,30 +85,49 @@ checked_label = date(retrieved_at).strftime("%b %d, %Y %H:%M %Z")
 gain = fraction(previous) - fraction(best)
 relative_gain = (base - fraction(best)) / (base - fraction(previous))
 INK, MUTED, BLUE, GREEN, AMBER, BG = "#17243a", "#53647b", "#2864b5", "#077b61", "#ad601c", "#f8fafc"
+TEAL, PURPLE = "#3f8a8c", "#6a3fb5"
 accent = GREEN if verified else AMBER
 plt.rcParams.update({"font.family": "DejaVu Sans", "text.color": INK,
                      "axes.labelcolor": MUTED, "xtick.color": MUTED, "ytick.color": MUTED,
                      "font.size": 11, "svg.fonttype": "none"})
-fig = plt.figure(figsize=(20, 20), facecolor=BG)
-fig.text(.06, .96, "Quasi-Riemann Hypothesis: progress in the zero-free boundary", fontsize=25, weight="bold")
-fig.text(.06, .935, "All-moduli Dirichlet nonvanishing for Re(s) > θ, excluding the principal pole. Lower θ is stronger.", fontsize=12, color=MUTED)
+fig = plt.figure(figsize=(20, 13.5), facecolor=BG)
+fig.text(.06, .955, "Quasi-Riemann Hypothesis: progress in the zero-free boundary", fontsize=25, weight="bold")
+fig.text(.06, .922, "All-moduli Dirichlet nonvanishing for Re(s) > θ, excluding the principal pole. Lower θ is stronger.", fontsize=12, color=MUTED)
 best_name = ", ".join(a["name"] for a in best["authors"])
-fig.text(.06, .885, f"θ = {float(fraction(best)):.10g}", fontsize=36, weight="bold", color=BLUE)
-fig.text(.06, .855, f"Current accepted tracker record · {best_name} · tracker #{best['pr']} · {fraction(best)}", fontsize=12)
+fig.text(.06, .845, f"θ = {float(fraction(best)):.10g}", fontsize=36, weight="bold", color=BLUE)
+fig.text(.06, .8, f"Current accepted tracker record · {best_name} · tracker #{best['pr']} · {fraction(best)}", fontsize=12)
 status = (f"This repo's PR #8 ({author}, θ = {float(target):.10f}) was accepted as tracker #69"
           + (" after a fresh native Lean replay here" if verified else ""))
-fig.text(.06, .825, status, fontsize=12, color=accent, weight="bold")
-fig.text(.66, .9, f"{float(relative_gain):.2f}×", fontsize=32, weight="bold", color=BLUE)
-fig.text(.66, .875, "the improvement beyond 7/8", fontsize=12)
-fig.text(.66, .855, f"of the 22 Oct record ({float(fraction(previous))}, tracker #68)", fontsize=12, color=MUTED)
-fig.text(.66, .825, f"Boundary reduction since then: {float(gain):.10f}", fontsize=11, color=MUTED)
+fig.text(.06, .755, status, fontsize=12, color=accent, weight="bold")
+# Accepted tracker entries that came from this repo or its maintainer but were
+# superseded before admission (not on the frontier) are still shown and credited.
+off_frontier = [r for r in records if r not in frontier and r.get("hillclimb_pr")
+                and r is not pr8_record and fraction(r) < fraction(previous)]
+own = next((r for r in frontier if r.get("pr") == 84), None)
+if off_frontier or own:
+    parts = []
+    if own:
+        parts.append(f"tracker #84 ({float(fraction(own)):g}, Rohan Arun) accepted {stamp(own):%d %b}")
+    for r in off_frontier:
+        parts.append(f"repo PR #{r['hillclimb_pr']} formalized as tracker #{r['pr']} ({float(fraction(r)):g}), Lean-accepted {stamp(r):%d %b}")
+    fig.text(.06, .727, "Also: " + "; ".join(parts), fontsize=11, color=PURPLE, weight="bold")
+fig.text(.66, .865, f"{float(relative_gain):.2f}×", fontsize=32, weight="bold", color=BLUE)
+fig.text(.66, .83, "the improvement beyond 7/8", fontsize=12)
+fig.text(.66, .8, f"of the 22 Oct record ({float(fraction(previous))}, tracker #68)", fontsize=12, color=MUTED)
+fig.text(.66, .755, f"Boundary reduction since then: {float(gain):.10f}", fontsize=11, color=MUTED)
 
-ax = fig.add_axes([.08, .38, .46, .39], facecolor=BG)
+ax = fig.add_axes([.07, .1, .47, .54], facecolor=BG)
 times, values = [stamp(r) for r in frontier], [float(fraction(r)) for r in frontier]
-now = date(updates["records"][-1]["first_verified_at"]).replace(hour=23, minute=59)
+now = max(stamp(r) for r in updates["records"]).replace(hour=23, minute=59)
 ax.step(times + [now], values + [values[-1]], where="post", color=BLUE, lw=2.4)
 ax.scatter(times, values, s=26, color=BLUE, zorder=3)
 ax.scatter([stamp(pr8_record)], [float(target)], s=95, marker="D", color=accent, edgecolor=accent, lw=2, zorder=4)
+for r in off_frontier:
+    ax.scatter([stamp(r)], [float(fraction(r))], s=70, facecolor=BG, edgecolor=GREEN, lw=2, zorder=5)
+# Track A points from this repo (unchanged scope: Lean anchor and final-section certificate).
+track_a = [("2026-10-22T01:32:12Z", Fraction(139999, 160000), "rohanarun", "repo #9 · Lean (τ = 1/40000)"),
+           ("2026-10-22T17:45:17Z", Fraction(4374785349, 5000000000), "thakrarsagar", "repo #12 · Track A certificate")]
+ax.scatter([date(t) for t, *_ in track_a], [float(v) for _, v, *_ in track_a], s=70, marker="s", color=TEAL, zorder=4)
 conditional_time = lambda row: date(row["time_utc"].replace(" ", "T") + ("Z" if not row["time_utc"].endswith("Z") else ""))
 conditional_groups = {number: [r for r in conditional if r["pr"] == number]
                       for number in sorted({r["pr"] for r in conditional})}
@@ -125,17 +144,22 @@ ax.set_ylabel("Zero-free boundary θ")
 ax.yaxis.set_major_formatter(FormatStrFormatter("%.5f"))
 ax.xaxis.set_major_locator(mdates.AutoDateLocator(minticks=4, maxticks=6, tz=tz))
 ax.xaxis.set_major_formatter(mdates.DateFormatter("%b %d", tz=tz))
-ax.margins(x=.05, y=.13)
+ax.margins(x=.05, y=.08)
 
 # Keep labels in boundary order in their own column. Even vertical spacing
 # separates the crowded recent points while retaining a leader to every point.
-fig.text(.59, .785, "Contributor · source PR · boundary θ", fontsize=12, weight="bold")
+fig.text(.59, .69, "Contributor · source PR · boundary θ", fontsize=12, weight="bold")
+def tracker_color(r):
+    if r is pr8_record or r in off_frontier:
+        return accent
+    return PURPLE if r is own else BLUE
 points = [
     (stamp(r), fraction(r), ", ".join(a["name"] for a in r["authors"]),
-     (f"#{r['pr']} (repo PR #8)" if r is pr8_record else f"#{r['pr']}") if r.get("pr") else "",
-     accent if r is pr8_record else BLUE, r["id"] == best["id"] or r is pr8_record)
-    for r in frontier
+     (f"#{r['pr']} (repo PR #{r['hillclimb_pr']})" if r.get("hillclimb_pr") else f"#{r['pr']}") if r.get("pr") else "",
+     tracker_color(r), r["id"] == best["id"] or r is pr8_record or r is own or r in off_frontier)
+    for r in frontier + off_frontier
 ]
+points += [(date(t), v, name, source, TEAL, True) for t, v, name, source in track_a]
 for row in conditional_endpoints:
     points.append((conditional_time(row), Fraction(row["theta_exact"]),
                    row["contributor"].split(" · ")[0],
@@ -143,7 +167,7 @@ for row in conditional_endpoints:
 points.sort(key=lambda p: p[1], reverse=True)
 contributor_labels = []
 for index, (time, boundary, name, source, color, highlight) in enumerate(points):
-    label_y = .757 - index * (.363 / max(1, len(points) - 1))
+    label_y = .665 - index * (.565 / max(1, len(points) - 1))
     value = f"{float(boundary):.12f}".rstrip("0").rstrip(".")
     label = " · ".join(part for part in (name, source, value) if part)
     annotation = ax.annotate(
@@ -158,34 +182,20 @@ for index, (time, boundary, name, source, color, highlight) in enumerate(points)
     )
     contributor_labels.append(annotation)
 
-bx = fig.add_axes([.08, .16, .85, .14], facecolor=BG)
-recent = [previous] + [r for r in updates["records"] if r in frontier]
-labels = [", ".join(a["name"] for a in r["authors"]) + f" · #{r['pr']}" + (" (repo PR #8)" if r is pr8_record else "") for r in recent]
-gains = [float((base - fraction(r)) * 10**6) for r in recent]
-bars = bx.barh(range(len(gains)), gains, color=[accent if r is pr8_record else BLUE for r in recent], height=.42)
-bx.invert_yaxis()
-bx.set_yticks([])
-bx.set_xlim(0, max(gains)*1.12)
-for i, (label, value, bar) in enumerate(zip(labels, gains, bars)):
-    bx.text(0, i-.36, label, fontsize=10, weight="bold" if i == len(gains)-1 else "normal")
-    bx.text(value+2, i, f"{value:.2f}", va="center", fontsize=10)
-bx.set_ylim(len(gains)-.3, -.8)
-bx.set_xlabel("Improvement beyond 7/8 (× 10⁻⁶)", labelpad=10, fontsize=10)
-bx.set_title("Accepted tracker records since 22 Oct", loc="left", pad=16, fontsize=12, weight="bold")
-for a in (ax, bx):
-    a.grid(axis="y" if a is ax else "x", color="#dce4ed", linewidth=.7)
+for a in (ax,):
+    a.grid(axis="y", color="#dce4ed", linewidth=.7)
     a.set_axisbelow(True)
     a.tick_params(length=0, pad=8)
     for spine in a.spines.values():
         spine.set_visible(False)
-foot = ("Blue: accepted tracker records. Green: this repo's PR #8, accepted as tracker #69." +
-        " Orange dashed: one line per conditional PR in this repo; not Lean-verified, and now above the accepted record.")
-fig.text(.06, .085, "Tracker records after 22 Oct come from the tracker's verifier receipts (Comparator/NanoDa/con-ron PASS) and merged tracker PRs; see graphs/tracker-updates.json.", fontsize=9, color=MUTED)
+foot = ("Blue: accepted tracker records (frontier). Green: this repo's PRs accepted on the tracker (diamond: PR #8 as #69; hollow: PR #30 as #85, admitted after #86)."
+        " Purple: tracker #84. Teal squares: Track A points. Orange dashed: conditional PRs in this repo, not Lean-verified.")
+fig.text(.06, .043, "Tracker records after 22 Oct come from the tracker's verifier receipts (Comparator/NanoDa/con-ron PASS) and merged tracker PRs; see graphs/tracker-updates.json.", fontsize=9, color=MUTED)
 
-fig.text(.06, .1, foot, fontsize=9, color=MUTED)
-fig.text(.06, .06, f"Updated {updates['as_of']} · {len(records)} accepted tracker entries and {len(conditional)} conditional PR points. Timeline dates shown in America/New_York.\n"
-         "Sources: GTimG/QuasiRiemannTracker catalogue and receipts; rohanarun/quasi-rh-hillclimb PRs #1–3, #6, #8, #26–28; original timeline.csv; frozen source package.", fontsize=9, color=MUTED, linespacing=1.7)
-fig.text(.06, .025, "This is a comparison of the cited sources, not a claim of a worldwide record or independent verification of the entire manuscript.", fontsize=9, color=MUTED)
+fig.text(.06, .058, foot, fontsize=9, color=MUTED)
+fig.text(.06, .012, f"Updated {updates['as_of']} · {len(records)} accepted tracker entries and {len(conditional)} conditional PR points. Timeline dates shown in America/New_York.\n"
+         "Comparison of cited sources, not a worldwide-record claim. Sources: GTimG/QuasiRiemannTracker catalogue, receipts and merged PRs; rohanarun/quasi-rh-hillclimb PRs #1–3, #6, #8, #9, #12, #26–28, #30; original timeline.csv; frozen source package.", fontsize=9, color=MUTED, linespacing=1.7)
+# (scope note moved into the sources line below)
 # Measure the rendered labels, shrink long entries only as needed, and ensure
 # the expanded contributor list stays on the canvas without overlapping.
 from matplotlib.text import Text
